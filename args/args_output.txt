@@ -1,0 +1,10 @@
+ 
+ARGS
+  Count and print the arguments.
+ 
+  The number of arguments was 4.
+ 
+  Arg[0] = the program name = 'args.py'
+  Arg[1] = 'alpha'
+  Arg[2] = 'fred'
+  Arg[3] = '1.2'

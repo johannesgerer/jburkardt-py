@@ -1,0 +1,27 @@
+Sun Oct 28 10:32:25 2012
+
+QUAD_MPI
+  Python/MPI version
+  Estimate an integral of f(x) from A to B.
+  f(x) = 50 / (pi * ( 2500 * x * x + 1 ) )
+
+  A        =  0.0
+  B        =  10.0
+  N        =  10000
+  Exact    =  0.499363381076
+
+  Use MPI to divide the computation among
+  multiple processes.
+  Sum for process  1  is  128.81731236
+  Sum for process  3  is  120.839441838
+  Sum for process  0  is  132.786092424
+
+  Estimate =  0.507271223723
+  Error    =  0.00790784264629
+  Time     =  0.135361909866
+
+QUAD_SERIAL:
+  Normal end of execution.
+
+Sun Oct 28 10:32:25 2012
+  Sum for process  2  is  124.828377101

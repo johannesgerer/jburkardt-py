@@ -1,0 +1,73 @@
+Mon Oct 29 22:25:46 2012
+
+SEARCH_SERIAL:
+  PYTHON version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        =  1
+  B        =  10000
+  C        =  45
+
+  No solution was found.
+  Time     =  0.0579040050507
+
+SEARCH_SERIAL:
+  Normal end of execution.
+
+Mon Oct 29 22:25:46 2012
+Mon Oct 29 22:25:46 2012
+
+SEARCH_SERIAL:
+  PYTHON version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        =  1
+  B        =  100000
+  C        =  45
+
+  No solution was found.
+  Time     =  0.577445030212
+
+SEARCH_SERIAL:
+  Normal end of execution.
+
+Mon Oct 29 22:25:47 2012
+Mon Oct 29 22:25:47 2012
+
+SEARCH_SERIAL:
+  PYTHON version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        =  1
+  B        =  1000000
+  C        =  45
+
+  No solution was found.
+  Time     =  5.77069687843
+
+SEARCH_SERIAL:
+  Normal end of execution.
+
+Mon Oct 29 22:25:53 2012
+Mon Oct 29 22:25:53 2012
+
+SEARCH_SERIAL:
+  PYTHON version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        =  1674924000
+  B        =  1674924999
+  C        =  45
+
+  Found J =  1674924981
+  Verify F(J) =  45.0
+  Time     =  0.00573992729187
+
+SEARCH_SERIAL:
+  Normal end of execution.
+
+Mon Oct 29 22:25:53 2012

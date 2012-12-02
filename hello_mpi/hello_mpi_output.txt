@@ -1,0 +1,7 @@
+Hello, world, from process  2 !
+Hello, world, from process  1 !
+
+HELLO_MPI:
+  There are  4  MPI processes running.
+Hello, world, from process  0 !
+Hello, world, from process  3 !

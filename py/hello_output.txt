@@ -1,0 +1,9 @@
+Fri Jan 26 09:36:50 2007
+ 
+HELLO:
+  Python version
+  This is how to say
+ 
+  Hello, world!
+ 
+Fri Jan 26 09:36:50 2007

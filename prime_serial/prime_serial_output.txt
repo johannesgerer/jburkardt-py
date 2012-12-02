@@ -1,0 +1,34 @@
+Sat Oct 27 10:37:26 2012
+
+PRIME_SERIAL
+  PYTHON version
+  Count the primes between N_LO and N_HI.
+
+PRIME_NUMBER_SWEEP
+  Call PRIME_NUMBER to count the primes from 1 to N.
+
+         N         Pi       Time
+
+         1          0    0.00001
+         2          1    0.00000
+         4          2    0.00000
+         8          4    0.00001
+        16          6    0.00002
+        32         11    0.00005
+        64         18    0.00013
+       128         31    0.00039
+       256         54    0.00119
+       512         97    0.00448
+      1024        172    0.01654
+      2048        309    0.06546
+      4096        564    0.25960
+      8192       1028    1.00731
+     16384       1900    3.92110
+     32768       3512   15.14254
+     65536       6542   58.73342
+    131072      12251  232.86737
+
+PRIME_SERIAL
+  Normal end of execution.
+
+Sat Oct 27 10:42:38 2012

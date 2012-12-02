@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "prime_mpi.py", line 85, in <module>
+    prime_mpi ( )
+  File "prime_mpi.py", line 66, in prime_mpi
+    comm.Reduce ( [ t, MPI.DOUBLE ], [ primes, MPI.INT ], op = MPI.SUM, root = 0 )
+  File "Comm.pyx", line 534, in mpi4py.MPI.Comm.Reduce (src/mpi4py.MPI.c:63579)
+  File "message.pxi", line 557, in mpi4py.MPI._p_msg_cco.for_reduce (src/mpi4py.MPI.c:23271)
+  File "message.pxi", line 523, in mpi4py.MPI._p_msg_cco.for_cro_send (src/mpi4py.MPI.c:23007)
+  File "message.pxi", line 111, in mpi4py.MPI.message_simple (src/mpi4py.MPI.c:19256)
+  File "message.pxi", line 51, in mpi4py.MPI.message_basic (src/mpi4py.MPI.c:18433)
+  File "asbuffer.pxi", line 108, in mpi4py.MPI.getbuffer (src/mpi4py.MPI.c:5790)
+  File "prime_mpi.py", line 85, in <module>
+    prime_mpi ( )
+  File "prime_mpi.py", line 66, in prime_mpi
+    comm.Reduce ( [ t, MPI.DOUBLE ], [ primes, MPI.INT ], op = MPI.SUM, root = 0 )
+  File "Comm.pyx", line 534, in mpi4py.MPI.Comm.Reduce (src/mpi4py.MPI.c:63579)
+  File "message.pxi", line 557, in mpi4py.MPI._p_msg_cco.for_reduce (src/mpi4py.MPI.c:23271)
+  File "message.pxi", line 523, in mpi4py.MPI._p_msg_cco.for_cro_send (src/mpi4py.MPI.c:23007)
+  File "message.pxi", line 111, in mpi4py.MPI.message_simple (src/mpi4py.MPI.c:19256)
+  File "message.pxi", line 51, in mpi4py.MPI.message_basic (src/mpi4py.MPI.c:18433)
+  File "asbuffer.pxi", line 108, in mpi4py.MPI.getbuffer (src/mpi4py.MPI.c:5790)
+  File "asbuffer.pxi", line 50, in mpi4py.MPI.PyObject_GetBufferEx (src/mpi4py.MPI.c:5185)
+TypeError: expected a readable buffer object
+  File "asbuffer.pxi", line 50, in mpi4py.MPI.PyObject_GetBufferEx (src/mpi4py.MPI.c:5185)
+TypeError: expected a readable buffer object
+Mon Oct 29 10:32:52 2012
+
+PRIME_MPI
+  Python/MPI version
+  Count the primes between  1 and 131072
+
+  Use MPI to divide the computation among
+  multiple processes.
+Traceback (most recent call last):
+  File "prime_mpi.py", line 85, in <module>
+    prime_mpi ( )
+  File "prime_mpi.py", line 58, in prime_mpi
+    for i in range ( 2 + id, n + 1, id ):
+ValueError: range() step argument must not be zero
+
+PRIME_MPI:
+  Normal end of execution.
+
+Mon Oct 29 10:34:16 2012
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
