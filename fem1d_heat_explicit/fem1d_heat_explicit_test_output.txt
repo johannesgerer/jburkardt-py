@@ -1,0 +1,39 @@
+Mon Nov 17 11:29:32 2014
+
+FEM1D_HEAT_EXPLICIT_TEST
+  Python version.
+  Test the FEM1D_HEAT_EXPLICIT library.
+
+FEM1D_HEAT_EXPLICIT_TEST01:
+  The time dependent 1D heat equation is
+
+    Ut - k * Uxx = f(x,t)
+
+  for space interval A <= X <= B with boundary conditions
+
+    U(A,t) = UA(t)
+    U(B,t) = UB(t)
+
+  and time interval T0 <= T <= T1 with initial condition
+
+    U(X,T0) = U0(X).
+
+  To compute an approximate solution:
+    the interval [A,B] is replace by a discretized mesh Xi
+    a set of finite element functions PSI(X) are determined,
+    the solution U is written as a weighted sum of the basis functions,
+    the weak form of the differential equation is written,
+    a time grid Tj is imposed, and time derivatives replaced by
+    an explicit forward Euler first difference,
+
+    The continuous PDE has now been transformed into a set of algebraic
+    equations for the coefficients C(Xi,Tj).
+
+  Number of X nodes = 21
+  X interval = [ 0.000000, 1.000000 ]
+  X step size = 0.050000
+  Number of T steps = 401
+  T interval = [ 0.000000, 80.000000 ]
+  T step size = 0.200000
+  Number of elements = 20
+  Number of quadrature points = 3

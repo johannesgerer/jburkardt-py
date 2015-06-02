@@ -15,13 +15,65 @@
     <hr>
 
     <p>
-      <b>SPARSE_GRID</b> is a library of PYTHON classes and functions
+      <b>SPARSE_GRID</b> 
+      is a Python library
       useful for sparse grid calculations.
     </p>
 
+    <h3 align = "center">
+      Languages:
+    </h3>
+
     <p>
-      The code as presented here is incomplete.  In particular,
-      the test routine does not have enough information to be used.
+      <b>SPARSE_GRID</b> is available in
+      <a href = "../../py_src/sparse_grid/sparse_grid.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/smolpack/smolpack.html">
+      SMOLPACK</a>,
+      a C library which
+      estimates the integral of a function
+      over a M-dimensional hypercube using a sparse grid,
+      by Knut Petras;
+    </p>
+
+    <p>
+      <a href = "../../m_src/sparse_grid_cc/sparse_grid_cc.html">
+      SPARSE_GRID_CC</a>,
+      a MATLAB library which
+      creates sparse grids based on Clenshaw-Curtis rules.
+    </p>
+
+    <p>
+      <a href = "../../m_src/sparse_grid_hw/sparse_grid_hw.html">
+      SPARSE_GRID_HW</a>,
+      a MATLAB library which
+      creates sparse grids based on Gauss-Legendre, Gauss-Hermite,
+      Gauss-Patterson, or a nested variation of Gauss-Hermite rules,
+      by Florian Heiss and Viktor Winschel.
+    </p>
+
+    <p>
+      <a href = "../../m_src/spinterp/spinterp.html">
+      SPINTERP</a>,
+      a MATLAB library which
+      carries out piecewise multilinear hierarchical sparse grid interpolation;
+      an earlier version of this software is ACM TOMS Algorithm 847,
+      by Andreas Klimke;
+    </p>
+
+    <p>
+      <a href = "../../m_src/spquad/spquad.html">
+      SPQUAD</a>,
+      a MATLAB library which
+      computes the points and weights of a sparse grid quadrature rule
+      for a multidimensional integral, based on the Clenshaw-Curtis quadrature rule,
+      by Greg von Winckel.
     </p>
 
     <h3 align = "center">
@@ -30,81 +82,6 @@
 
     <p>
       Jochen Garcke
-    </p>
-
-    <h3 align = "center">
-      Related Data and Programs:
-    </h3>
-
-    <p>
-      <a href = "../../datasets/quadrature_rules/quadrature_rules.html">
-      QUADRATURE_RULES</a>
-      is a dataset directory of files that define quadrature rules;  
-      a number of examples of sparse grid quadrature rules are included.
-    </p>
-
-    <p>
-      <a href = "../../c_src/smolpack/smolpack.html">
-      SMOLPACK</a> 
-      is a C library of routines which
-      implements Novak and Ritter's method for estimating the integral
-      of a function over a multidimensional hypercube using sparse grids.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_cc/sparse_grid_cc.html">
-      SPARSE_GRID_CC</a>
-      some sample sparse grids from the Clenshaw Curtis rule.
-    </p>
-
-    <p>
-      <a href = "../../m_src/sparse_grid_display/sparse_grid_display.html">
-      SPARSE_GRID_DISPLAY</a> 
-      is a library of MATLAB routines which
-      can display a sparse grid in 2D or 3D.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_f1/sparse_grid_f1.html">
-      SPARSE_GRID_F1</a>
-      some sample sparse grids from the Fejer Type 1 rule.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_f2/sparse_grid_f2.html">
-      SPARSE_GRID_F2</a>
-      some sample sparse grids from the Fejer Type 2 rule.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_gp/sparse_grid_gp.html">
-      SPARSE_GRID_GP</a>
-      some sample sparse grids from the Gauss Patterson rule.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_ncc/sparse_grid_ncc.html">
-      SPARSE_GRID_NCC</a>
-      some sample sparse grids from the Newton Cotes Closed rule.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_nco/sparse_grid_nco.html">
-      SPARSE_GRID_NCO</a>
-      some sample sparse grids from the Newton Cotes Open rule.
-    </p>
-
-    <p>
-      <a href = "../../datasets/sparse_grid_ncoh/sparse_grid_ncoh.html">
-      SPARSE_GRID_NCOH</a>
-      some sample sparse grids from the Newton Cotes Open Half rule.
-    </p>
-
-    <p>
-      <a href = "../../m_src/spinterp/spinterp.html">
-      SPINTERP</a> 
-      is a MATLAB library of routines by Andreas Klimke which use
-      a sparse grid to perform multilinear hierarchical interpolation.
     </p>
 
     <h3 align = "center">
@@ -134,10 +111,8 @@
     <p>
       <ul>
         <li>
-          <a href = "pysg.boa">pysg.boa</a>,
+          <a href = "pysg.py">pysg.py</a>,
           defines the sparse grid classes and functions.
-          The extension of BOA is used because of
-          yet another layer of obstructive security measures.
         </li>
       </ul>
     </p>
@@ -149,10 +124,16 @@
     <p>
       <ul>
         <li>
-          <a href = "pysg_test.boa">pysg_test.boa</a>,
+          <a href = "pysg_test.py">pysg_test.py</a>,
           runs a test of the sparse grid routines.
-          The extension of BOA is used because of
-          yet another layer of obstructive security measures.
+        </li>
+        <li>
+          <a href = "pysg_test.sh">pysg_test.sh</a>,
+          commands to run the test.
+        </li>
+        <li>
+          <a href = "pysg_test_output.txt">pysg_test_output.txt</a>,
+          the output file.
         </li>
       </ul>
     </p>
@@ -165,7 +146,7 @@
     <hr>
 
     <i>
-      Last revised on 25 May 2011.
+      Last revised on 09 March 2013.
     </i>
 
     <!-- John Burkardt -->

@@ -1,148 +1,99 @@
-<html>
+Python Source
+=============
 
-  <head>
-    <title>
-      PYTHON Source
-    </title>
-  </head>
+------------------------------------------------------------------------
 
-  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055" >
+-   [args](args/args.html), a script which reports the command line arguments with which it was invoked;
+-   [ball\_grid](ball_grid/ball_grid.html), a library which computes grid points inside a 3D ball.
+-   [bellman\_ford](bellman_ford/bellman_ford.html), a library which implements the Bellman-Ford algorithm for finding the shortest distance from a given node to all other nodes in a directed graph whose edges have been assigned real-valued lengths.
+-   [bvec](bvec/bvec.html), a library which demonstrates how signed integers can be stored as binary vectors, and arithmetic can be performed on them.
+-   [c4lib](c4lib/c4lib.html), a library which implements certain elementary functions for single precision complex (C4) variables;
+-   [c8lib](c8lib/c8lib.html), a library which implements certain elementary functions for double precision complex (C8) variables;
+-   [cauchy\_principal\_value](cauchy_principal_value/cauchy_principal_value.html), a library which uses Gauss-Legendre quadrature to estimate the Cauchy Principal Value (CPV) of certain singular integrals.
+-   [circle\_arc\_grid](circle_arc_grid/circle_arc_grid.html), a program which computes grid points along a circular arc.
+-   [cube\_grid](cube_grid/cube_grid.html), a library which computes a grid of points over the interior of a cube in 3D.
+-   [cycle\_brent](cycle_brent/cycle_brent.html), a library which carries out an iterated function evaluation, and seeks to determine the nearest element of a cycle, and the cycle's length, using Brent's method.
+-   [cycle\_floyd](cycle_floyd/cycle_floyd.html), a library which carries out an iterated function evaluation, and seeks to determine the nearest element of a cycle, and the cycle's length, using Floyd's method.
+-   [disk\_grid](disk_grid/disk_grid.html), a library which computes grid points within the interior of a disk of user specified radius and center in 2D, using matplotlib to create an image of the grid.
+-   [dolfin](dolfin/dolfin.html), scripts which are used with the DOLFIN library to set up and solve a wide variety of problems using the finite element method.
+-   [dolfin-convert](dolfin-convert/dolfin-convert.html), a program which can convert mesh file from Gmsh, MEDIT, METIS or SCOTCH format to an XML format suitable for use by DOLFIN or FENICS, by Anders Logg.
+-   [ellipse\_grid](ellipse_grid/ellipse_grid.html), a library which computes grid points over the interior of an ellipse in 2D.
+-   [ellipsoid\_grid](ellipsoid_grid/ellipsoid_grid.html), a library which computes a grid of points over the interior of an ellipsoid in 3D.
+-   [fd1d\_advection\_lax\_wendroff](fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html), a program which applies the finite difference method (FDM) to solve the time-dependent advection equation ut = - c \* ux in one spatial dimension, with a constant velocity, using the Lax-Wendroff method to approximate the time derivative, creating a graphics file with matplotlib.
+-   [fd1d\_heat\_explicit](fd1d_heat_explicit/fd1d_heat_explicit.html), a library which implements a finite difference method (FDM), explicit in time, to solve the time dependent 1D heat equation;
+-   [fd1d\_heat\_implicit](fd1d_heat_implicit/fd1d_heat_implicit.html), a program which implements a finite difference method (FDM), implicit in time, to solve the time dependent 1D heat equation;
+-   [fem\_to\_xml](fem_to_xml/fem_to_xml.html), reads a pair of FEM files defining node coordinates and elements, of a 1D, 2D or 3D mesh, namely a file of node coordinates and a file of elements defined by node indices, and creates a corresponding XML file for input to DOLFIN or FENICS.
+-   [fem1d](fem1d/fem1d.html), a program which applies the finite element method (FEM) to a boundary value problem (BVP) in one spatial dimension, using a procedural approach.
+-   [fem1d\_bvp\_linear](fem1d_bvp_linear/fem1d_bvp_linear.html), a program which applies the finite element method (FEM), with piecewise linear elements, to a two point boundary value problem (BVP) in one spatial dimension, and compares the computed and exact solutions with the L2 and seminorm errors.
+-   [fem1d\_bvp\_quadratic](fem1d_bvp_quadratic/fem1d_bvp_quadratic.html), a program which applies the finite element method (FEM), with piecewise quadratic elements, to a two point boundary value problem (BVP) in one spatial dimension, and compares the computed and exact solutions with the L2 and seminorm errors.
+-   [fem1d\_classes](fem1d_classes/fem1d_classes.html), a library which defines classes useful for solving a boundary value problem (BVP) of the form u''+2u'+u=f in 1 spatial dimension, using the finite element method (FEM), by Mike Sussman.
+-   [fem2d\_bvp\_linear](fem2d_bvp_linear/fem2d_bvp_linear.html), a program which applies the finite element method (FEM), with piecewise bilinear elements, to a 2D boundary value problem (BVP) in a rectangle.
+-   [fem1d\_heat\_explicit](fem1d_heat_explicit/fem1d_heat_explicit.html), a program which uses the finite element method (FEM) and explicit time stepping to solve the time dependent heat equation in 1D.
+-   [filum](filum/filum.html), a library which performs various operations on files;
+-   [four\_fifths](four_fifths/four_fifths.html), a library which searches for a solution to the problem of finding four fifth powers that sum to a fifth power, that is, integers a, b, c, d and e such that a^5+b^5+c^5+d^5=e^5. Euler conjectured that no solution was possible. The code is by Brian Hayes.
+-   [freefem++\_msh\_io](freefem++_msh_io/freefem++_msh_io.html), a library which can read and write files used by the FreeFem++ finite element program to store mesh information.
+-   [hello](hello/hello.html), a script which prints "Hello, world!".
+-   [hello\_mpi](hello_mpi/hello_mpi.html), a script which prints out "Hello, world!", carried out in parallel using MPI and MPI4PY.
+-   [hypercube\_grid](hypercube_grid/hypercube_grid.html), a library which computes a grid of points over the interior of a hypercube in M dimensions.
+-   [i4lib](i4lib/i4lib.html), a library which contains many utility routines, using single precision integer (I4) arithmetic.
+-   [kronrod](kronrod/kronrod.html), a library which can compute a Gauss and Gauss-Kronrod pair of quadrature rules of arbitrary order, by Robert Piessens, Maria Branders.
+-   [latin\_random](latin_random/latin_random.html), a library which computes Latin Random Squares of N points in M dimensions;
+-   [legendre\_product\_polynomial](legendre_product_polynomial/legendre_product_polynomial.html), a library which defines Legendre product polynomials, creating a multivariate polynomial as the product of univariate Legendre polynomials.
+-   [line\_grid](line_grid/line_grid.html), a library which computes a grid of points over the interior of a line segment in 1D.
+-   [machine](machine/machine.html), a library which returns tabulated values of the constants associated with computer arithmetic;
+-   [md](md/md.html), a program which carries out a molecular dynamics simulation, and is intended as a starting point for implementing a parallel version.
+-   [monomial](monomial/monomial.html), a library which enumerates, lists, ranks, unranks and randomizes multivariate monomials in a space of M dimensions, with total degree less than N, equal to N, or in a given range.
+-   [monomial\_value](monomial_value/monomial_value.html), a library which evaluates a monomial in M dimensions.
+-   [navier\_stokes\_2d\_exact](navier_stokes_2d_exact/navier_stokes_2d_exact.html), a library which evaluates an exact solution to the incompressible time-dependent Navier-Stokes equations over an arbitrary domain in 2D.
+-   [navier\_stokes\_3d\_exact](navier_stokes_3d_exact/navier_stokes_3d_exact.html), a library which evaluates an exact solution to the incompressible time-dependent Navier-Stokes equations over an arbitrary domain in 3D.
+-   [normal](normal/normal.html), a library which implements a random number generator (RNG) for normally distributed values;
+-   [polpak](polpak/polpak.html), a library which evaluates a variety of mathematical functions, including Chebyshev, Gegenbauer, Hermite, Jacobi, Laguerre, Legendre polynomials, and the Collatz sequence.
+-   [polygon\_grid](polygon_grid/polygon_grid.html), a library which generates a grid of points over the interior of a polygon in 2D.
+-   [polynomial](polynomial/polynomial.html), a library which adds, multiplies, differentiates, evaluates and prints multivariate polynomials in a space of M dimensions.
+-   [prime\_mpi](prime_mpi/prime_mpi.html), a script which counts the number of primes between 1 and N, carried out in parallel using MPI and MPI4PY.
+-   [prime\_serial](prime_serial/prime_serial.html), a script which counts the number of primes between 1 and N, and is intended as a starting point for a parallel version.
+-   [py](py/py.html), a directory of example Python scripts.
+-   [pyramid\_grid](pyramid_grid/pyramid_grid.html), a library which computes a grid of points over the interior of the unit pyramid in 3D;
+-   [quad\_mpi](quad_mpi/quad_mpi.html), a script which approximates an integral using a quadrature rule, carried out in parallel using MPI and MPI4PY.
+-   [quad\_serial](quad_serial/quad_serial.html), a script which applies a quadrature rule to estimate an integral, intended as a starting point for parallelization exercises.
+-   [quadrule](quadrule/quadrule.html), a library which implements rules for approximate integration (quadrature) in one dimension;
+-   [r4lib](r4lib/r4lib.html), a library which contains many utility routines, using single precision real (R4) arithmetic.
+-   [r8lib](r8lib/r8lib.html), a library which contains many utility routines, using double precision real (R8) arithmetic.
+-   [rkf45](rkf45/rkf45.html), a script which implements the Runge-Kutta-Fehlberg (RKF) solver for the approximate solution of an ordinary differential equation (ODE) system.
+-   [rnglib](rnglib/rnglib.html), a library which implements a random number generator (RNG) with splitting facilities, allowing multiple independent streams to be computed, by L'Ecuyer and Cote.
+-   [search\_mpi](search_mpi/search_mpi.html), a script which searches integers between A and B for a solution J such that F(J)=C, carried out in parallel using MPI and MPI4PY.
+-   [search\_serial](search_serial/search_serial.html), a script which searches integers between A and B for a solution J such that F(J)=C, intended as a starting point for parallelization exercises.
+-   [simplex\_grid](simplex_grid/simplex_grid.html), a library which generates a regular grid of points over the interior of an arbitrary simplex in M dimensions.
+-   [snakes\_and\_ladders](snakes_and_ladders/snakes_and_ladders.html), a library which simulates the game of Snakes and Ladders, and estimates the average number of moves in a one-player game.
+-   [sobol](sobol/sobol.html), a library which computes elements of a Sobol quasirandom sequence.
+-   [sort\_rc](sort_rc/sort_rc.html), a library which can sort a list of any kind of objects, using reverse communication (RC).
+-   [sparse\_grid](sparse_grid/sparse_grid.html), some classes and functions defining sparse grids.
+-   [sphere\_fibonacci\_grid](sphere_fibonacci_grid/sphere_fibonacci_grid.html), a library which uses a Fibonacci spiral to create a grid of points on the surface of the unit sphere in 3D.
+-   [sphere\_llq\_grid](sphere_llq_grid/sphere_llq_grid.html), a library which uses longitudes and latitudes to create grids of points, lines, and quadrilaterals on the surface of the unit sphere in 3D.
+-   [sphere\_llt\_grid](sphere_llt_grid/sphere_llt_grid.html), a library which uses longitudes and latitudes to create grids of points, lines, and triangles on the surface of the unit sphere in 3D.
+-   [spiral\_data](spiral_data/spiral_data.html), a library which computes a velocity vector field that satisfies the continuity equation, writing the data to a file that can be plotted by gnuplot.
+-   [square\_grid](square_grid/square_grid.html), a library which computes a grid of points over the interior of a square in 2D.
+-   [stokes\_2d\_exact](stokes_2d_exact/stokes_2d_exact.html), a library which evaluates exact solutions to the incompressible steady Stokes equations over the unit square in 2D.
+-   [subset](subset/subset.html), a library which enumerates, generates, randomizes, ranks and unranks combinatorial objects including combinations, compositions, Gray codes, index sets, partitions, permutations, polynomials, subsets, and Young tables. Backtracking routines are included to solve some combinatorial problems.
+-   [table\_io](table_io/table_io.html), functions which read and write files (not very much here yet.)
+-   [test\_mat](test_mat/test_mat.html), a library which defines test matrices for which some of the determinant, eigenvalues, inverse, null vectors, P\*L\*U factorization or linear system solution are already known, including the Vandermonde and Wathen matrix.
+-   [test\_values](test_values/test_values.html), a library which returns selected values of some special functions;
+-   [tetrahedron\_grid](tetrahedron_grid/tetrahedron_grid.html), a library which computes a grid of points over the interior of a tetrahedron in 3D.
+-   [timer](timer/timer.html), a library which implements various real time and CPU time tests.
+-   [timestamp](timestamp/timestamp.html), a script which prints the current YMDHMS date as a timestamp.
+-   [triangle\_grid](triangle_grid/triangle_grid.html), a library which computes a grid of points over the interior of a triangle in 2D.
+-   [triangle\_integrals](triangle_integrals/triangle_integrals.html), a library which returns the exact value of the integral of any polynomial over the interior of an arbitrary triangle in 2D.
+-   [triangle01\_integrals](triangle01_integrals/triangle01_integrals.html), a library which returns the integral of any monomial over the interior of the unit triangle in 2D.
+-   [truncated\_normal](truncated_normal/truncated_normal.html), a library which works with the truncated normal distribution over \[A,B\], or \[A,+oo) or (-oo,B\], returning the probability density function (PDF), the cumulative density function (CDF), the inverse CDF, the mean, the variance, and sample values.
+-   [truncated\_normal\_rule](truncated_normal_rule/truncated_normal_rule.html), a program which computes a quadrature rule for a normal probability density function (PDF), sometimes called a Gaussian distribution, that has been truncated to \[A,+oo), (-oo,B\] or \[A,B\].
+-   [uniform](uniform/uniform.html), a library which contains uniform random number generators (RNG's) for several arithmetic types.
+-   [wathen](wathen/wathen.html), a library which compares storage schemes (full, banded, sparse triplet, sparse) and solution strategies (A\\x, Linpack, conjugate gradient) for linear systems involving the Wathen matrix, which can arise when solving a problem using the finite element method (FEM).
+-   [wedge\_grid](wedge_grid/wedge_grid.html), a library which computes a grid of points over the interior of the unit wedge in 3D.
+-   [wtime](wtime/wtime.html), a library which shows how to return a reading of the wall clock time.
+-   [xml\_to\_fem](xml_to_fem/xml_to_fem.html), a script which reads an XML file created by FENICS or DOLFIN, describing a mesh in 1D, 2D, or 3D, and extracts two sets of information, namely, the coordinates of nodes, and the indices of nodes that form each element, which constitute an FEM model of the mesh.
 
-    <h1 align = "center">
-      PYTHON Source
-    </h1>
+You can go up one level to [the main web page.](../index.html)
 
-    <hr>
+------------------------------------------------------------------------
 
-    <p>
-      <ul>
-        <li>
-          <a href = "args/args.html">
-          args</a>,
-          a script which
-          reports the command line arguments with which it was invoked;
-        </li>
-        <li>
-          <a href = "dolfin/dolfin.html">
-          dolfin</a>,
-          scripts which
-          are used with the DOLFIN library to set up and solve
-          a wide variety of problems using the finite element method.
-        </li>
-        <li>
-          <a href = "hello/hello.html">
-          hello</a>,
-          a script which
-          prints "Hello, world!".
-        </li>
-        <li>
-          <a href = "hello_mpi/hello_mpi.html">
-          hello_mpi</a>,
-          a script which
-          prints out "Hello, world!",
-          carried out in parallel using MPI and MPI4PY.
-        </li>
-        <li>
-          <a href = "hump/hump.html">
-          hump</a>,
-          a script which 
-          defines the data for a simple ice sheet
-          experiment called "hump", and writes that data to a
-          NETCDF file that can be used as input by a solver.
-        </li>
-        <li>
-          <a href = "prime_mpi/prime_mpi.html">
-          prime_mpi</a>,
-          a script which
-          counts the number of primes between 1 and N, 
-          carried out in parallel using MPI and MPI4PY.
-        </li>
-        <li>
-          <a href = "prime_serial/prime_serial.html">
-          prime_serial</a>,
-          a script which  
-          counts the number of primes between 1 and N,
-          and is intended as a starting point for a parallel version.
-        </li>
-        <li>
-          <a href = "py/py.html">
-          py</a>,
-          a directory of example Python scripts.
-        </li>
-        <li>
-          <a href = "quad_mpi/quad_mpi.html">
-          quad_mpi</a>,
-          a script which
-          approximates an integral using a quadrature rule, 
-          carried out in parallel using MPI and MPI4PY.
-        </li>
-        <li>
-          <a href = "quad_serial/quad_serial.html">
-          quad_serial</a>,
-          a script which applies a quadrature rule to estimate an integral,
-          intended as a starting point for parallelization exercises.
-        </li>
-        <li>
-          <a href = "rkf45/rkf45.html">
-          rkf45</a>,
-          a script which
-          implements the Runge-Kutta-Fehlberg (RKF) solver 
-          for the approximate solution of an ordinary differential equation (ODE) system.
-        </li>
-        <li>
-          <a href = "search_mpi/search_mpi.html">
-          search_mpi</a>,
-          a script which  
-          searches integers between A and B for a solution J such that F(J)=C,
-          carried out in parallel using MPI and MPI4PY.
-        </li>
-        <li>
-          <a href = "search_serial/search_serial.html">
-          search_serial</a>,
-          a script which  
-          searches integers between A and B for a solution J such that F(J)=C,
-          intended as a starting point for parallelization exercises.
-        </li>
-        <li>
-          <a href = "sobol/sobol.html">
-          sobol</a>,
-          a library which
-          computes elements of a Sobol quasirandom sequence.
-        </li>
-        <li>
-          <a href = "sparse_grid/sparse_grid.html">
-          sparse_grid</a>,
-          some classes and functions defining sparse grids.
-        </li>
-        <li>
-          <a href = "table_io/table_io.html">
-          table_io</a>,
-          functions which read and write files (not very much here yet, and
-          it doesn't work.)
-        </li>
-        <li>
-          <a href = "timestamp/timestamp.html">
-          timestamp</a>,
-          a script which
-          prints the current YMDHMS date as a timestamp.
-        </li>
-      </ul>
-    </p>
-
-    <p>
-      You can go up one level to
-      <a href = "../index.html">the main web page.</a>
-    </p>
-
-    <hr>
-
-    <i>
-      Last revised on 30 October 2012.
-    </i>
-
-    <!-- John Burkardt -->
-
-  </body>
-
-</html>
-
+*Last revised on 18 May 2015.*

@@ -17,8 +17,7 @@
     <p>
       <b>SOBOL</b>
       is a Python library which
-      computes elements of the Sobol
-      quasirandom sequence.
+      computes elements of the Sobol quasirandom sequence.
     </p>
 
     <p>
@@ -51,8 +50,8 @@
       and ACM TOMS Algorithm 659
       are available in the TOMS subdirectory of
       <a href = "http://www.netlib.org/">the NETLIB web site</a>.
-      The version displayed here has been converted to FORTRAN90,
-      and other internal changes have been made to suit me.
+      The version displayed here has been converted to Python,
+      and other internal changes have been made.
     </p>
 
     <h3 align = "center">
@@ -62,7 +61,7 @@
     <p>
       The computer code and data files described and made available on this web page
       are distributed under
-      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+      <a href = "../../txt/mit_license.txt">the MIT license.</a>
     </p>
 
     <h3 align = "center">
@@ -82,72 +81,10 @@
     </h3>
 
     <p>
-      <a href = "../../f_src/faure/faure.html">
-      FAURE</a>,
-      a FORTRAN90 library which
-      computes elements of a Faure quasirandom sequence.
-    </p>
-
-    <p>
-      <a href = "../../cpp_src/gsl/gsl.html">
-      GSL</a>,
-      a C++ library which 
-      includes routines to compute
-      elements of the Sobol sequence.
-    </p>
-
-    <p>
-      <a href = "../../f_src/halton/halton.html">
-      HALTON</a>,
-      a FORTRAN90 library which
-      computes elements of a Halton quasirandom sequence.
-    </p>
-
-    <p>
-      <a href = "../../f_src/hammersley/hammersley.html">
-      HAMMERSLEY</a>,
-      a FORTRAN90 library which 
-      computes elements of a Hammersley
-      quasirandom sequence.
-    </p>
-
-    <p>
-      <a href = "../../f_src/latin_center/latin_center.html">
-      LATIN_CENTER</a>,
-      a FORTRAN90 library which
-      computes elements of a Latin Hypercube
-      dataset, choosing center points.
-    </p>
-
-    <p>
-      <a href = "../../f_src/niederreiter2/niederreiter2.html">
-      NIEDERREITER2</a>,
-      a FORTRAN90 library which
-      computes elements of a Niederreiter
-      quasirandom sequence with base 2.
-    </p>
-
-    <p>
-      <a href = "../../f_src/toms647/toms647.html">
-      TOMS647</a>,
-      a FORTRAN90 library which
-      is a version of ACM TOMS algorithm 647,
-      for evaluating Faure, Halton and Sobol sequences.
-    </p>
-
-    <p>
-      <a href = "../../f77_src/toms659/toms659.html">
-      TOMS659</a>,
-      a FORTRAN77 library which
-      evaluates Sobol sequences.
-    </p>
-
-    <p>
-      <a href = "../../f_src/van_der_corput/van_der_corput.html">
-      VAN_DER_CORPUT</a>,
-      a FORTRAN90 library which
-      computes elements of a van der Corput
-      quasirandom sequence.
+      <a href = "../../py_src/normal/normal.html">
+      NORMAL</a>,
+      a Python library which
+      contains random number generators (RNG's) for normally distributed values.
     </p>
 
     <h3 align = "center">
@@ -245,15 +182,11 @@
     <p>
       <ul>
         <li>
-          <a href = "sobol_lib.boa">sobol_lib.boa</a>, the source code;
-          The extension of BOA is used because of
-          yet another layer of obstructive security measures.
+          <a href = "sobol_lib.py">sobol_lib.py</a>, the source code;
         </li>
         <li>
-          <a href = "sobol_lib-not_tested.boa">sobol_lib-not_tested.boa</a>,
-          the source code for routines not tested by the example code.
-          The extension of BOA is used because of
-          yet another layer of obstructive security measures.
+          <a href = "sobol_lib_untested.py">sobol_lib_untested.py</a>,
+          untested source code.
         </li>
       </ul>
     </p>
@@ -265,10 +198,12 @@
     <p>
       <ul>
         <li>
-          <a href = "sobol_test.boa">sobol_test.boa</a>,
-          the sample test code;
-          The extension of BOA is used because of
-          yet another layer of obstructive security measures.
+          <a href = "sobol_test.py">sobol_test.py</a>,
+          calls all the tests.
+        </li>
+        <li>
+          <a href = "sobol_test.sh">sobol_test.sh</a>,
+          runs all the tests.
         </li>
         <li>
           <a href = "sobol_test_output.txt">sobol_test_output.txt</a>,
@@ -285,7 +220,7 @@
     <hr>
 
     <i>
-      Last revised on 25 May 2011.
+      Last revised on 14 December 2014.
     </i>
 
     <!-- John Burkardt -->

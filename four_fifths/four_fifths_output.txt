@@ -1,0 +1,13 @@
+Sat Dec 20 21:59:42 2014
+
+FOUR_FIFTHS_TEST
+  FOUR_FIFTHS seeks a solution of the four fifths problem:
+  find integers a, b, c, d and e such that
+    a^5 + b^5 + c^5 + d^5 = e^5.
+
+  Result:
+  27^5  + 84^5  + 110^5  + 133^5  = 144^5
+
+FOUR_FIFTHS_TEST:
+  Normal end of execution.
+Sat Dec 20 22:00:27 2014

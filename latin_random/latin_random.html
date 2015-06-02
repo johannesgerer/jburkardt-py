@@ -1,0 +1,212 @@
+<html>
+
+  <head>
+    <title>
+      LATIN_RANDOM - Latin Random Squares in M dimensions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      LATIN_RANDOM <br> Latin Random Squares in M dimensions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>LATIN_RANDOM</b>
+      is a Python library which
+      makes Latin random squares.
+    </p>
+
+    <p>
+      A Latin square is a selection of one point from each row and
+      column of a square matrix or table.  In <b>M</b> dimensions, the
+      corresponding item is a set of <b>N</b> points, where, in each dimension,
+      there is exactly one point whose coordinates are in a given
+      "column" or range of values.  To emphasize the
+      use of higher dimensions, these objects are sometimes called
+      Latin hypersquares.
+    </p>
+
+    <p>
+      A Latin Random Square (I just made up this name) is a set of
+      <b>N</b> points, where one point is taken at random from each of the
+      subsquares of a Latin Square.  These points may be regarded as
+      an <b>M</b> dimensional quasirandom pointset.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>LATIN_RANDOM</b> is available in
+      <a href = "../../c_src/latin_random/latin_random.html">a C version</a> and
+      <a href = "../../cpp_src/latin_random/latin_random.html">a C++ version</a> and
+      <a href = "../../f77_src/latin_random/latin_random.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/latin_random/latin_random.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/latin_random/latin_random.html">a MATLAB version</a> and
+      <a href = "../../py_src/latin_random/latin_random.html">a Python version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a Python library which
+      computes elements of a uniform pseudorandom sequence.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Springer Verlag, pages 201-202, 1983.
+        </li>
+        <li>
+          C J Colbourn and J H Dinitz,<br>
+          CRC Handbook of Combinatorial Design,<br>
+          CRC, 1996.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:<br>
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, pages 362-376, 1986.
+        </li>
+        <li>
+          Michael McKay, William Conover, Richard Beckman,<br>
+          A Comparison of Three Methods for Selecting Values of Input
+          Variables in the Analysis of Output From a Computer Code,<br>
+          Technometrics,<br>
+          Volume 21, pages 239-245, 1979.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms,<br>
+          Academic Press, 1978, second edition,<br>
+          ISBN 0-12-519260-6.
+        </li>
+        <li>
+          Herbert Ryser,<br>
+          Combinatorial Mathematics,<br>
+          Mathematical Association of America, 1963.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>,
+          returns a scaled uniform I4 between A and B.
+        </li>
+        <li>
+          <a href = "latin_random.py">latin_random.py</a>, the source code.
+        </li>
+        <li>
+          <a href = "perm_uniform.py">perm_uniform.py</a>,
+          randomly selects a permutation of the integers 0 through N-1.
+        </li>
+        <li>
+          <a href = "r8mat_transpose_print.py">r8mat_transpose_print.py</a>,
+          prints an R8MAT, transposed.
+        </li>
+        <li>
+          <a href = "r8mat_transpose_print_some.py">r8mat_transpose_print_some.py</a>,
+          prints some of an R8MAT, transposed.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_01.py">r8mat_uniform_01.py</a>,
+          returns a unit pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_write.py">r8mat_write.py</a>, 
+          writes an R8MAT to a file.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the current YMDHMS date as a timestamp;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "latin_random_test.sh">latin_random__test.sh</a>,
+          calls the test.
+        </li>
+        <li>
+          <a href = "latin_random_test_output.txt">latin_random_test_output.txt</a>,
+          the output from a run of the sample program.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      List of Routines:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <b>GET_SEED</b> returns a seed for the random number generator.
+        </li>
+        <li>
+          <b>GET_UNIT</b> returns a free FORTRAN unit number.
+        </li>
+        <li>
+          <b>I4_UNIFORM</b> returns a scaled pseudorandom I4.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 November 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

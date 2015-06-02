@@ -1,0 +1,249 @@
+Fri Apr 24 09:40:50 2015
+
+LINE_GRID_TEST
+  Python version:
+  Test the LINE_GRID library.
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0       123.456
+     1         5e-06
+     2        -1e+06
+     3       3.14159
+
+R8VEC_PRINT_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Fri Apr 24 09:40:50 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+LINE_GRID_TEST01
+  Create a grid using LINE_GRID.
+  Use simple parameters.
+  Number of grid points N = 11
+
+     N     C      A         B
+
+    11     1   -1.0000    1.0000
+
+  Grid points:
+
+     0            -1
+     1          -0.8
+     2          -0.6
+     3          -0.4
+     4          -0.2
+     5             0
+     6           0.2
+     7           0.4
+     8           0.6
+     9           0.8
+    10             1
+
+LINE_GRID_TEST01:
+  Normal end of execution.
+
+LINE_GRID_TEST02
+  Create a grid using LINE_GRID.
+  Try an increasing number of points.
+
+     N     C      A         B
+
+     9     2    0.0000    1.0000
+
+  Grid points:
+
+     0           0.1
+     1           0.2
+     2           0.3
+     3           0.4
+     4           0.5
+     5           0.6
+     6           0.7
+     7           0.8
+     8           0.9
+
+     N     C      A         B
+
+    19     2    0.0000    1.0000
+
+  Grid points:
+
+     0          0.05
+     1           0.1
+     2          0.15
+     3           0.2
+     4          0.25
+     5           0.3
+     6          0.35
+     7           0.4
+     8          0.45
+     9           0.5
+    10          0.55
+    11           0.6
+    12          0.65
+    13           0.7
+    14          0.75
+    15           0.8
+    16          0.85
+    17           0.9
+    18          0.95
+
+     N     C      A         B
+
+    39     2    0.0000    1.0000
+
+  Grid points:
+
+     0         0.025
+     1          0.05
+     2         0.075
+     3           0.1
+     4         0.125
+     5          0.15
+     6         0.175
+     7           0.2
+     8         0.225
+     9          0.25
+    10         0.275
+    11           0.3
+    12         0.325
+    13          0.35
+    14         0.375
+    15           0.4
+    16         0.425
+    17          0.45
+    18         0.475
+    19           0.5
+    20         0.525
+    21          0.55
+    22         0.575
+    23           0.6
+    24         0.625
+    25          0.65
+    26         0.675
+    27           0.7
+    28         0.725
+    29          0.75
+    30         0.775
+    31           0.8
+    32         0.825
+    33          0.85
+    34         0.875
+    35           0.9
+    36         0.925
+    37          0.95
+    38         0.975
+
+LINE_GRID_TEST02:
+  Normal end of execution.
+
+LINE_GRID_TEST03
+  Try the different centering options.
+  Number of grid points N = 11
+
+     N     C      A         B
+
+    11     1    0.0000  100.0000
+
+  Grid points:
+
+     0             0
+     1            10
+     2            20
+     3            30
+     4            40
+     5            50
+     6            60
+     7            70
+     8            80
+     9            90
+    10           100
+
+     N     C      A         B
+
+    11     2    0.0000  100.0000
+
+  Grid points:
+
+     0       8.33333
+     1       16.6667
+     2            25
+     3       33.3333
+     4       41.6667
+     5            50
+     6       58.3333
+     7       66.6667
+     8            75
+     9       83.3333
+    10       91.6667
+
+     N     C      A         B
+
+    11     3    0.0000  100.0000
+
+  Grid points:
+
+     0             0
+     1       9.09091
+     2       18.1818
+     3       27.2727
+     4       36.3636
+     5       45.4545
+     6       54.5455
+     7       63.6364
+     8       72.7273
+     9       81.8182
+    10       90.9091
+
+     N     C      A         B
+
+    11     4    0.0000  100.0000
+
+  Grid points:
+
+     0       9.09091
+     1       18.1818
+     2       27.2727
+     3       36.3636
+     4       45.4545
+     5       54.5455
+     6       63.6364
+     7       72.7273
+     8       81.8182
+     9       90.9091
+    10           100
+
+     N     C      A         B
+
+    11     5    0.0000  100.0000
+
+  Grid points:
+
+     0       4.54545
+     1       13.6364
+     2       22.7273
+     3       31.8182
+     4       40.9091
+     5            50
+     6       59.0909
+     7       68.1818
+     8       77.2727
+     9       86.3636
+    10       95.4545
+
+LINE_GRID_TEST03:
+  Normal end of execution.
+
+LINE_GRID_TEST:
+  Normal end of execution.
+Fri Apr 24 09:40:50 2015

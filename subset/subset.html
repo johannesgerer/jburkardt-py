@@ -1,0 +1,1562 @@
+<html>
+
+  <head>
+    <title>
+      SUBSET - Combinatorial Routines
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SUBSET <br> Combinatorial Routines
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SUBSET</b>
+      is a Python library which
+      enumerates, generates, randomizes, ranks and unranks combinatorial objects
+      including combinations, compositions, Gray codes, index sets, partitions, 
+      permutations, polynomials, subsets, and Young tables.  Backtracking 
+      routines are included to solve some combinatorial problems.
+    </p>
+
+    <p>
+      Combinatorial operations include the enumeration, generation, random
+      selection, ranking and unranking of
+      <ul>
+        <li>
+          <b>COMP</b>, compositions of an integer;
+        </li>
+        <li>
+          <b>COMPNZ</b>, compositions of an integer with no zero parts;
+        </li>
+        <li>
+          <b>EQUIV</b>'s, partitions of a set of N objects;
+        </li>
+        <li>
+          <b>I4_PARTITION</b>'s, partitions of an integer;
+        </li>
+        <li>
+          <b>I4POLY</b>'s, integer polynomials in factorial, Newton,
+          power sum, or Taylor form;
+        </li>
+        <li>
+          <b>I4VEC</b>'s, integer vectors;
+        </li>
+        <li>
+          <b>KSUB</b>'s, subsets of size K, from a set of N objects;
+        </li>
+        <li>
+          <b>MULTIPERM</b>'s, permutations of the N objects, some of which
+          are indistinguishable.
+        </li>
+        <li>
+          <b>PERM</b>'s, permutations of the first N integers;
+        </li>
+        <li>
+          <b>R8POLY</b>'s, real polynomials in factorial, Newton,
+          power sum, or Taylor form;
+        </li>
+        <li>
+          subsets of a set of N objects;
+        </li>
+        <li>
+          vectors whose entries range from 1 to N;
+        </li>
+        <li>
+          <b>YTB</b>'s, Young tables;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Other objects considered include
+      <ul>
+        <li>
+          the Bell numbers,
+        </li>
+        <li>
+          Catalan numbers,
+        </li>
+        <li>
+          congruence equations.
+        </li>
+        <li>
+          continued fractions,
+        </li>
+        <li>
+          <b>DEC</b>'s, decimal numbers represented as a mantissa and a power of 10;
+        </li>
+        <li>
+          <b>DERANGE</b>'s, derangements (permutations that leave no element in place),
+        </li>
+        <li>
+          <b>DVEC</b>'s, decimal numbers represented as a vector of digits;
+        </li>
+        <li>
+          falling factorials (20*19*18...),
+        </li>
+        <li>
+          <b>GRAY</b>, Gray codes,
+        </li>
+        <li>
+          matrix permanents (similar to determinants, but harder to compute,
+          if you can believe that),
+        </li>
+        <li>
+          Morse-Thue numbers,
+        </li>
+        <li>
+          pentagonal numbers,
+        </li>
+        <li>
+          Pythagorean triples,
+        </li>
+        <li>
+          <b>RAT</b>'s, rational numbers represented as a pair of integers;
+        </li>
+        <li>
+          rising factorials (7*8*9...).
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SUBSET</b> is available in
+      <a href = "../../c_src/subset/subset.html">a C version</a> and
+      <a href = "../../cpp_src/subset/subset.html">a C++ version</a> and
+      <a href = "../../f77_src/subset/subset.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/subset/subset.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/subset/subset.html">a MATLAB version</a> and
+      <a href = "../../py_src/subset/subset.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/monomial/monomial.html">
+      MONOMIAL</a>,
+      a Python library which
+      enumerates, lists, ranks, unranks and randomizes multivariate monomials 
+      in a space of M dimensions, with total degree less than N,
+      equal to N, or lying within a given range.
+    </p>
+
+    <p>
+      <a href = "../../py_src/polynomial/polynomial.html">
+      POLYNOMIAL</a>,
+      a Python library which
+      adds, multiplies, differentiates, evaluates and prints multivariate 
+      polynomials in a space of M dimensions.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "agm_values.py">
+          agm_values.py</a>,
+          returns selected values of the arithmetic geometric mean function.
+        </li>
+        <li>
+          <a href = "asm_enum.py">asm_enum.py</a>,
+          returns the number of alternating sign matrices of a given order.
+        </li>
+        <li>
+          <a href = "asm_triangle.py">asm_triangle.py</a>,
+          returns a row of the alternating sign matrix triangle.
+        </li>
+        <li>
+          <a href = "bell.py">bell.py</a>,
+          computes the Bell numbers.
+        </li>
+        <li>
+          <a href = "bell_values.py">bell_values.py</a>,
+          returns some values of the Bell numbers.
+        </li>
+        <li>
+          <a href = "catalan.py">catalan.py</a>,
+          computes the Catalan numbers.
+        </li>
+        <li>
+          <a href = "catalan_row_next.py">catalan_row_next.py</a>,
+          returns the next row of the Catalan matrix.
+        </li>
+        <li>
+          <a href = "catalan_values.py">catalan_values.py</a>,
+          returns some values of the Catalan numbers.
+        </li>
+        <li>
+          <a href = "cfrac_to_rat.py">cfrac_to_rat.py</a>,
+          converts a continued fraction to a rational.
+        </li>
+        <li>
+          <a href = "change_greedy.py">change_greedy.py</a>,
+          makes change using a greedy algorithm.
+        </li>
+        <li>
+          <a href = "change_next.py">change_next.py</a>,
+          computes the next set of change for a given total.
+        </li>
+        <li>
+          <a href = "chinese_check.py">chinese_check.py</a>,
+          checks a set of Chinese remainder moduluses.
+        </li>
+        <li>
+          <a href = "chinese_to_i4.py">chinese_to_i4.py</a>,
+          converts a set of Chinese remainders to an equivalent integer.
+        </li>
+        <li>
+          <a href = "comb_next.py">comb_next.py</a>,
+          returns the next combination of K things out of N.
+        </li>
+        <li>
+          <a href = "comb_row.py">comb_row.py</a>,
+          computes row N of Pascal's triangle.
+        </li>
+        <li>
+          <a href = "comb_unrank.py">comb_unrank.py</a>,
+          returns the RANK-th combination of N things out of M things.
+        </li>
+        <li>
+          <a href = "comp_enum.py">comp_enum.py</a>,
+          enumerates the compositions of an integer into K parts.
+        </li>
+        <li>
+          <a href = "comp_next.py">comp_next.py</a>,
+          returns the next composition of an integer into K parts.
+        </li>
+        <li>
+          <a href = "comp_next_grlex.py">comp_next_grlex.py</a>,
+          returns the next composition of an integer into K parts,
+          using grlex order.
+        </li>
+        <li>
+          <a href = "comp_random.py">comp_random.py</a>,
+          returns a random composition of an integer into K parts.
+        </li>
+        <li>
+          <a href = "comp_random_grlex.py">comp_random_grlex.py</a>,
+          returns a random composition of an integer into K parts,
+          with the integer between 0 and N.
+        </li>
+        <li>
+          <a href = "comp_rank_grlex.py">comp_rank_grlex.py</a>,
+          ranks a composition of an integer into K parts,
+          using grlex order.
+        </li>
+        <li>
+          <a href = "comp_to_ksub.py">comp_to_ksub.py</a>,
+          returns the K-subset corresponding to a composition.
+        </li>
+        <li>
+          <a href = "comp_unrank_grlex.py">comp_unrank_grlex.py</a>,
+          returns the composition of an integer into K parts of
+          a given rank, using grlex order.
+        </li>
+        <li>
+          <a href = "compnz_enum.py">compnz_enum.py</a>,
+          enumerates the compositions of an integer into K nonzero parts.
+        </li>
+        <li>
+          <a href = "compnz_next.py">compnz_next.py</a>,
+          returns the next composition of an integer into K nonzero parts.
+        </li>
+        <li>
+          <a href = "compnz_random.py">compnz_random.py</a>,
+          returns a random composition of an integer into K nonzero parts.
+        </li>
+        <li>
+          <a href = "compnz_to_ksub.py">compnz_to_ksub.py</a>,
+          returns the K-subset corresponding to a composition into K 
+          nonzero parts.
+        </li>
+        <li>
+          <a href = "congruence.py">congruence.py</a>,
+          solves a congruence of the form A * X = C (mod B).
+        </li>
+        <li>
+          <a href = "count_pose_random.py">count_pose_random.py</a>,
+          poses a random problem for the game "The Count is Good".
+        </li>
+        <li>
+          <a href = "derange_enum.py">derange_enum.py</a>,
+          returns the number of derangements of N objects.
+        </li>
+        <li>
+          <a href = "derange_enum2.py">derange_enum2.py</a>,
+          returns the number of derangements of 0 through N objects.
+        </li>
+        <li>
+          <a href = "derange_enum3.py">derange_enum3.py</a>,
+          returns the number of derangements of N objects.
+        </li>
+        <li>
+          <a href = "digraph_arc_print.py">digraph_arc_print.py</a>,
+          prints out a digraph from an edge list.
+        </li>
+        <li>
+          <a href = "dvec_add.py">dvec_add.py</a>,
+          adds two decimal vectors.
+        </li>
+        <li>
+          <a href = "dvec_complementx.py">dvec_complementx.py</a>,
+          returns the complement of a decimal vector.
+        </li>
+        <li>
+          <a href = "dvec_mul.py">dvec_mul.py</a>,
+          multiplies two decimal vectors.
+        </li>
+        <li>
+          <a href = "dvec_print.py">dvec_print.py</a>,
+          prints a decimal vector.
+        </li>
+        <li>
+          <a href = "dvec_sub.py">dvec_sub.py</a>,
+          subtracts two decimal vectors.
+        </li>
+        <li>
+          <a href = "dvec_to_i4.py">dvec_to_i4.py</a>,
+          converts a (signed) decimal vector to an integer.
+        </li>
+        <li>
+          <a href = "equiv_print.py">equiv_print.py</a>,
+          prints a partition of a set.
+        </li>
+        <li>
+          <a href = "equiv_print2.py">equiv_print2.py</a>,
+          prints a partition of a set using parentheses for grouping.
+        </li>
+        <li>
+          <a href = "equiv_random.py">equiv_random.py</a>,
+          returns a random partition of a set.
+        </li>
+        <li>
+          <a href = "euler.py">euler.py</a>,
+          returns the N-th row of Euler's triangle.
+        </li>
+        <li>
+          <a href = "frobenius_number_order2.py">frobenius_number_order2.py</a>,
+          computes the Frobenius number for the order 2 case.
+        </li>
+        <li>
+          <a href = "frobenius_number_order2_values.py">
+          frobenius_number_order2_values.py</a>,
+          returns some values of the Frobenius number for the order 2 case.
+        </li>
+        <li>
+          <a href = "gamma_values.py">gamma_values.py</a>,
+          returns selected values of the gamma function;
+        </li>
+        <li>
+          <a href = "gamma_log_values.py">gamma_log_values.py</a>,
+          returns some values of the logarithm of the Gamma function.
+        </li>
+        <li>
+          <a href = "gray_rank2.py">gray_rank2.py</a>,
+          returns the rank of a given Gray code.
+        </li>
+        <li>
+          <a href = "gray_unrank2.py">gray_unrank2.py</a>,
+          returns the Gray code of a given rank.
+        </li>
+        <li>
+          <a href = "i4_choose.py">i4_choose.py</a>,
+          computes the binomial coefficient C(N,K).
+        </li>
+        <li>
+          <a href = "i4_factorial.py">i4_factorial.py</a>,
+          computes the factorial function.
+        </li>
+        <li>
+          <a href = "i4_factorial_values.py">i4_factorial_values.py</a>,
+          returns selected values of the factorial function.
+        </li>
+        <li>
+          <a href = "i4_fall.py">i4_fall.py</a>,
+          computes the falling factorial.
+        </li>
+        <li>
+          <a href = "i4_fall_values.py">i4_fall_values.py</a>,
+          returns selected values of the falling factorial.
+        </li>
+        <li>
+          <a href = "i4_gcd.py">i4_gcd.py</a>,
+          finds the greatest common divisor of I and J.
+        </li>
+        <li>
+          <a href = "i4_huge.py">i4_huge.py</a>,
+          returns a "huge" I4.
+        </li>
+        <li>
+          <a href = "i4_log_10.py">i4_log_10.py</a>,
+          returns the integer part of the logarithm of an I4.
+        </li>
+        <li>
+          <a href = "i4_modp.py">i4_modp.py</a>,
+          returns the nonnegative remainder of integer division.
+        </li>
+        <li>
+          <a href = "i4_partition_conj.py">i4_partition_conj.py</a>,
+          computes the conjugate of a partition of an integer.
+        </li>
+        <li>
+          <a href = "i4_partition_count.py">i4_partition_count.py</a>,
+          returns the number of partitions of an integer.
+        </li>
+        <li>
+          <a href = "i4_partition_count2.py">i4_partition_count2.py</a>,
+          returns the number of partitions of an integer.
+        </li>
+        <li>
+          <a href = "i4_partition_count_values.py">i4_partition_count_values.py</a>,
+          returns some values of the partition count function.
+        </li>
+        <li>
+          <a href = "i4_partition_print.py">i4_partition_print.py</a>,
+          prints a partition of an integer.
+        </li>
+        <li>
+          <a href = "i4_rise.py">i4_rise.py</a>,
+          computes the rising factorial.
+        </li>
+        <li>
+          <a href = "i4_rise_values.py">i4_rise_values.py</a>,
+          returns selected values of the rising factorial.
+        </li>
+        <li>
+          <a href = "i4_sign.py">i4_sign.py</a>,
+          returns the sign of an I4.
+        </li>
+        <li>
+          <a href = "i4_sqrt.py">i4_sqrt.py</a>,
+          returns the square root of an I4 with integer remainder.
+        </li>
+        <li>
+          <a href = "i4_sqrt_cf.py">i4_sqrt_cf.py</a>,
+          finds the continued fraction square root of an integer.
+        </li>
+        <li>
+          <a href = "i4_to_chinese.py">i4_to_chinese.py</a>,
+          converts an integer to its Chinese remainder form.
+        </li>
+        <li>
+          <a href = "i4_to_dvec.py">i4_to_dvec.py</a>,
+          converts an integer to a (signed) decimal vector.
+        </li>
+        <li>
+          <a href = "i4_to_i4poly.m">i4_to_ipoly.m</a>,
+          converts an integer to an integer polynomial in a given base.
+        </li>
+        <li>
+          <a href = "i4_to_van_der_corput.py">i4_to_van_der_corput.py</a>,
+          computes an element of a van der Corput sequence.
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>,
+          returns a random I4 in a given range.
+        </li>
+        <li>
+          <a href = "i4mat_mm.py">i4mat_mm.py</a>,
+          computes the product of two I4MAT's.
+        </li>
+        <li>
+          <a href = "i4mat_print.py">i4mat_print.py</a>,
+          prints an I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_print_some.py">i4mat_print_some.py</a>,
+          prints some of an I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_u1_inverse.py">i4mat_u1_inverse.py</a>,
+          computes the inverse of a unit upper triangular I4MAT.
+        </li>
+        <li>
+          <a href = "i4poly_add.py">i4poly_add.py</a>,
+          adds two I4POLY's.
+        </li>
+        <li>
+          <a href = "i4poly_degree.py">i4poly_degree.py</a>,
+          returns the degree of an I4POLY.
+        </li>
+        <li>
+          <a href = "i4poly_dif.py">i4poly_dif.py</a>,
+          differentiates an I4POLY.
+        </li>
+        <li>
+          <a href = "i4poly_mul.py">i4poly_mul.py</a>,
+          multiplies two I4POLY's.
+        </li>
+        <li>
+          <a href = "i4poly_print.py">i4poly_print.py</a>,
+          prints an I4POLY.
+        </li>
+        <li>
+          <a href = "i4poly_to_i4.py">i4poly_to_i4.py</a>,
+          converts an I4POLY to an I4.
+        </li>
+        <li>
+          <a href = "i4vec_ascends.py">i4vec_ascends.py</a>,
+          is TRUE if an I4VEC is increasing.
+        </li>
+        <li>
+          <a href = "i4vec_descends.py">i4vec_descends.py</a>,
+          is TRUE if an I4VEC is decreasing.
+        </li>
+        <li>
+          <a href = "i4vec_frac.py">i4vec_frac.py</a>,
+          searches for the K-th smallest entry in an N vector.
+        </li>
+        <li>
+          <a href = "i4vec_index.py">i4vec_index.py</a>,
+          returns the location of the first occurrence of a given value.
+        </li>
+        <li>
+          <a href = "i4vec_indicator0.py">i4vec_indicator0.py</a>,
+          sets an integer vector to the indicator0 vector.
+        </li>
+        <li>
+          <a href = "i4vec_indicator1.py">i4vec_indicator1.py</a>,
+          sets an integer vector to the indicator1 vector.
+        </li>
+        <li>
+          <a href = "i4vec_max_index_last.m">i4vec_max_index_last.m</a>,
+          returns the index of the last maximal element of an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_pairwise_prime.py">i4vec_pairwise_prime.py</a>,
+          returns TRUE if the elements of an integer vector are pairwise prime.
+        </li>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>,
+          prints an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_product.py">i4vec_product.py</a>,
+          computes the product of the entries of an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_reverse.py">i4vec_reverse.py</a>,
+          reverses the order of the entries of an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_sort_bubble_a.py">i4vec_sort_bubble_a.py</a>,
+          ascending sorts an integer vector using bubble sort.
+        </li>
+        <li>
+          <a href = "i4vec_sort_heap_index_d.py">i4vec_sort_heap_index_d.py</a>,
+          produces an index vector that descending sorts an integer array,
+          using heapsort.
+        </li>
+        <li>
+          <a href = "i4vec_sum.py">i4vec_sum.py</a>,
+          sums the entries of an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_transpose_print.py">i4vec_transpose_print.py</a>,
+          prints the "transpose" of an integer vector.
+        </li>
+        <li>
+          <a href = "i4vec_uniform_ab.py">i4vec_uniform_ab.py</a>,
+          returns a random I4VEC with values between A and B.
+        </li>
+        <li>
+          <a href = "index_box_next_2d.py">index_box_next_2d.py</a>,
+          produces index vectors on the surface of a box in 2D.
+        </li>
+        <li>
+          <a href = "index_box_next_3d.py">index_box_next_3d.py</a>,
+          produces index vectors on the surface of a box in 3D.
+        </li>
+        <li>
+          <a href = "inverse_mod_n.py">inverse_mod_n.py</a>,
+          computes the inverse of B mod N.
+        </li>
+        <li>
+          <a href = "involute_enum.py">involute_enum.py</a>,
+          returns the number of involutions of N objects.
+        </li>
+        <li>
+          <a href = "josephus.py">josephus.py</a>,
+          returns the position of the K-th man to be executed.
+        </li>
+        <li>
+          <a href = "ksub_random.py">ksub_random.py</a>,
+          selects a random subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_random2.py">ksub_random2.py</a>,
+          selects a random subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_random3.py">ksub_random3.py</a>,
+          selects a random subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_random4.py">ksub_random4.py</a>,
+          selects a random subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_random5.py">ksub_random5.py</a>,
+          selects a random subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_rank.py">ksub_rank.py</a>,
+          returns the rank of a subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_to_comp.py">ksub_to_comp.py</a>,
+          returns the composition corresponding to a given K-subset.
+        </li>
+        <li>
+          <a href = "ksub_to_compnz.py">ksub_to_compnz.py</a>,
+          returns the composition into K nonzero parts corresponding 
+          to a given K-subset.
+        </li>
+        <li>
+          <a href = "ksub_unrank.py">ksub_unrank.py</a>,
+          returns a subset of size K from a set of size N, of given rank.
+        </li>
+        <li>
+          <a href = "lvec_next.py">lvec_next.py</a>,
+          returns the next logical vector.
+        </li>
+        <li>
+          <a href = "moebius_values.py">moebius_values.py</a>,
+          returns values of the Moebius function.
+        </li>
+        <li>
+          <a href = "monomial_count.py">monomial_count.py</a>,
+          counts the number of monomials up to a given degree.
+        </li>
+        <li>
+          <a href = "monomial_counts.py">monomial_counts.py</a>,
+          counts the number of monomials up to a given degree.
+        </li>
+        <li>
+          <a href = "multinomial_coef1.py">multinomial_coef1.py</a>,
+          computes a multinomial coefficient.
+        </li>
+        <li>
+          <a href = "multinomial_coef2.py">multinomial_coef2.py</a>,
+          computes a multinomial coefficient.
+        </li>
+        <li>
+          <a href = "multiperm_enum.py">multiperm_enum.py</a>,
+          enumerates multipermutations.
+        </li>
+        <li>
+          <a href = "nim_sum.py">nim_sum.py</a>,
+          computes the Nim sum of two integers.
+        </li>
+        <li>
+          <a href = "padovan.py">padovan.py</a>,
+          computes the Padovan numbers.
+        </li>
+        <li>
+          <a href = "pent_enum.py">pent_enum.py</a>,
+          computes the N-th pentagonal number.
+        </li>
+        <li>
+          <a href = "perm_fixed_enum.py">perm_fixed_enum.py</a>,
+          enumerates the permutations of N objects with M of them unchanged.
+        </li>
+        <li>
+          <a href = "perm_print.py">perm_print.py</a>,
+          prints a permutation.
+        </li>
+        <li>
+          <a href = "perm0_check.py">perm0_check.py</a>,
+          checks a permutation of (0,...,N-1).
+        </li>
+        <li>
+          <a href = "perm0_lex_next.py">perm0_lex_next.py</a>,
+          generates the next permutation of (0,...,N-1), in lexical order.
+        </li>
+        <li>
+          <a href = "perm0_random.py">perm0_random.py</a>,
+          returns a random permutation of (0,...,N-1).
+        </li>
+        <li>
+          <a href = "perm0_random2.py">perm0_random2.py</a>,
+          returns a random permutation of (0,...,N-1).
+        </li>
+        <li>
+          <a href = "perm0_sign.py">perm0_sign.py</a>,
+          returns the sign of a permutation of (0,...,N-1).
+        </li>
+        <li>
+          <a href = "perm1_check.py">perm1_check.py</a>,
+          checks a permutation of (1,...,N).
+        </li>
+        <li>
+          <a href = "perrin.py">perrin.py</a>,
+          computes the Perrin numbers.
+        </li>
+        <li>
+          <a href = "pord_check.py">pord_check.py</a>,
+          checks a matrix representing a partial ordering.
+        </li>
+        <li>
+          <a href = "power_mod.py">power_mod.py</a>,
+          computes mod ( A^N, M ).
+        </li>
+        <li>
+          <a href = "prime.py">prime.py</a>,
+          returns a prime number from a stored table.
+        </li>
+        <li>
+          <a href = "pythag_triple_next.py">pythag_triple_next.py</a>,
+          computes the next Pythagorean triple.
+        </li>
+        <li>
+          <a href = "r8_agm.py">r8_agm.py</a>, 
+          computes the arithmetic geometric mean of two numbers;
+        </li>
+        <li>
+          <a href = "r8_choose.py">r8_choose.py</a>,
+          computes the binomial coefficient C(N,K).
+        </li>
+        <li>
+          <a href = "r8_fall.py">r8_fall.py</a>,
+          computes the falling factorial.
+        </li>
+        <li>
+          <a href = "r8_fall_values.py">r8_fall_values.py</a>,
+          returns selected values of the falling factorial.
+        </li>
+        <li>
+          <a href = "r8_gamma.py">r8_gamma.py</a>,
+          evaluates the gamma function.
+        </li>
+        <li>
+          <a href = "r8_print.py">r8_print.py</a>,
+          prints an R8.
+        </li>
+        <li>
+          <a href = "r8_rise.py">r8_rise.py</a>,
+          computes the rising factorial.
+        </li>
+        <li>
+          <a href = "r8_rise_values.py">r8_rise_values.py</a>,
+          returns selected values of the rising factorial.
+        </li>
+        <li>
+          <a href = "r8_to_dec.py">r8_to_dec.py</a>,
+          converts an R8 to a decimal value;
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_01.py</a>,
+          is a uniform random number generator.
+        </li>
+        <li>
+          <a href = "r8_uniform_ab.py">r8_uniform_ab.py</a>,
+          returns a random real in a given range.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>,
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>,
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8poly_add.py">r8poly_add.py</a>,
+          adds two R8POLY's.
+        </li>
+        <li>
+          <a href = "r8poly_degree.py">r8poly_degree.py</a>,
+          returns the degree of an R8POLY.
+        </li>
+        <li>
+          <a href = "r8poly_dif.py">r8poly_dif.py</a>,
+          differentiates an R8POLY.
+        </li>
+        <li>
+          <a href = "r8poly_div.py">r8poly_div.py</a>,
+          computes the quotient and remainder of two R8POLY's.
+        </li>
+        <li>
+          <a href = "r8poly_mul.py">r8poly_mul.py</a>,
+          computes the product of two R8POLY's.
+        </li>
+        <li>
+          <a href = "r8poly_print.py">r8poly_print.py</a>,
+          prints an R8POLY.
+        </li>
+        <li>
+          <a href = "r8vec_frac.py">r8vec_frac.py</a>,
+          searches for the K-th smallest entry in an N vector.
+        </li>
+        <li>
+          <a href = "r8vec_indicator.py">r8vec_indicator.py</a>,
+          sets a real vector to the indicator vector.
+        </li>
+        <li>
+          <a href = "r8vec_mirror_next.py">r8vec_mirror_next.py</a>,
+          steps through all sign variations of a real vector.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints a real vector.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_01.py">r8vec_uniform_01.py</a>,
+          returns a unit pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_ab.py">r8vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "rat_to_cfrac.py">rat_to_cfrac.py</a>,
+          converts a rational to a continued fraction.
+        </li>
+        <li>
+          <a href = "regro_next.py">regro_next.py</a>,
+          computes the next restricted growth function.
+        </li>
+        <li>
+          <a href = "schroeder.py">schroeder.py</a>,
+          generates the Schroeder numbers.
+        </li>
+        <li>
+          <a href = "subset_gray_rank.py">subset_gray_rank.py</a>,
+          ranks a subset of an N set using the Gray ordering.
+        </li>
+        <li>
+          <a href = "subset_gray_unrank.py">subset_gray_unrank.py</a>,
+          returns a subset of an N set with the given Gray ranking.
+        </li>
+        <li>
+          <a href = "subset_lex_next.py">subset_lex_next.py</a>,
+          returns the next subset of an N set, in lexicographic order.
+        </li>
+        <li>
+          <a href = "subset_random.py">subset_random.py</a>,
+          selects a random subset of an N set.
+        </li>
+        <li>
+          <a href = "subtriangle_next.py">subtriangle_next.py</a>,
+          returns the next subtriangle in a triangle whose edges have
+          each been subdivided into N parts.
+        </li>
+        <li>
+          <a href = "thue_binary_next.py">thue_binary_next.py</a>,
+          returns the next element in a binary Thue sequence.
+        </li>
+        <li>
+          <a href = "thue_ternary_next.py">thue_ternary_next.py</a>,
+          returns the next element in a ternary Thue sequence.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          returns the current YMDHMS date as a timestamp.
+        </li>
+        <li>
+          <a href = "tuple_next.py">tuple_next.py</a>,
+          computes the next element of a tuple space.
+        </li>
+        <li>
+          <a href = "tuple_next2.py">tuple2_next.py</a>,
+          computes the next element of a tuple space.
+        </li>
+        <li>
+          <a href = "tuple_next_ge.py">tuple_next_ge.py</a>,
+          computes the next "nondecreasing" element of a tuple space.
+        </li>
+        <li>
+          <a href = "ubvec_add.py">ubvec_add.py</a>,
+          adds two unsigned binary vectors.
+        </li>
+        <li>
+          <a href = "ubvec_print.py">ubvec_print.py</a>,
+          prints an unsigned binary vector.
+        </li>
+        <li>
+          <a href = "ubvec_to_ui4.py">ubvec_to_ui4.py</a>,
+          converts an unsigned binary vector to an unsigned integer.
+        </li>
+        <li>
+          <a href = "ubvec_xor.py">ubvec_xor.py</a>,
+          computes the exclusive OR of two unsigned binary vectors.
+        </li>
+        <li>
+          <a href = "ui4_to_ubvec.py">ui4_to_ubvec.py</a>,
+          converts an integer to an unsigned binary vector.
+        </li>
+        <li>
+          <a href = "vec_colex_next.py">vec_colex_next.py</a>,
+          generates vectors in colex order.
+        </li>
+        <li>
+          <a href = "vec_colex_next2.py">vec_colex_next2.py</a>,
+          generates vectors in colex order.
+        </li>
+        <li>
+          <a href = "vec_colex_next3.py">vec_colex_next3.py</a>,
+          generates vectors in colex order.
+        </li>
+        <li>
+          <a href = "vec_gray_next.py">vec_gray_next.py</a>,
+          generates the elements of a product space.
+        </li>
+        <li>
+          <a href = "vec_gray_rank.py">vec_gray_rank.py</a>,
+          returns the rank of an N-vectors of integers modulo a given base.
+        </li>
+        <li>
+          <a href = "vec_gray_unrank.py">vec_gray_unrank.py</a>,
+          computes the product space element of a given rank.
+        </li>
+        <li>
+          <a href = "vec_lex_next.py">vec_lex_next.py</a>,
+          generates all N-vectors of integers modulo a given base.
+        </li>
+        <li>
+          <a href = "vec_random.py">vec_random.py</a>,
+          selects a random N-vectors of integers modulo a given base.
+        </li>
+        <li>
+          <a href = "vector_constrained_next.py">vector_constrained_next.py</a>,
+          computes the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+        <li>
+          <a href = "vector_constrained_next2.py">vector_constrained_next2.py</a>,
+          computes the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+        <li>
+          <a href = "vector_constrained_next3.py">vector_constrained_next3.py</a>,
+          computes the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+        <li>
+          <a href = "vector_next.py">vector_next.py</a>,
+          returns the "next" integer vector between two ranges.
+        </li>
+        <li>
+          <a href = "ytb_enum.py">ytb_enum.py</a>,
+          enumerates the Young tableaus of size N.
+        </li>
+        <li>
+          <a href = "ytb_next.py">ytb_next.py</a>,
+          returns the next Young tableau of size N.
+        </li>
+        <li>
+          <a href = "ytb_print.py">ytb_print.py</a>,
+          prints a Young tableau.
+        </li>
+        <li>
+          <a href = "ytb_random.py">ytb_random.py</a>,
+          returns a random Young tableau.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Not converted yet:
+      <ul>
+
+        <li>
+          <a href = "cfrac_to_rfrac.py">cfrac_to_rfrac.py</a>,
+          converts a continued polynomial fraction to a rational
+          polynomial fraction.
+        </li>
+        <li>
+          <a href = "debruijn.py">debruijn.py</a>,
+          constructs a de Bruijn string.
+        </li>
+        <li>
+          <a href = "dec_add.py">dec_add.py</a>,
+          adds two decimal values.
+        </li>
+        <li>
+          <a href = "dec_div.py">dec_div.py</a>,
+          divides two decimal values.
+        </li>
+        <li>
+          <a href = "dec_mul.py">dec_mul.py</a>,
+          multiplies two decimal values.
+        </li>
+        <li>
+          <a href = "dec_round.py">dec_round.py</a>,
+          rounds a decimal value to a given number of digits.
+        </li>
+        <li>
+          <a href = "dec_to_r8.py">dec_to_r8.py</a>,
+          converts a decimal to a real value.
+        </li>
+        <li>
+          <a href = "dec_to_rat.py">dec_to_rat.py</a>,
+          converts a decimal to a rational value.
+        </li>
+        <li>
+          <a href = "dec_to_s.py">dec_to_s.py</a>,
+          returns a string representation of a decimal.
+        </li>
+        <li>
+          <a href = "dec_width.py">dec_width.py</a>,
+          returns the "width" of a decimal.
+        </li>
+        <li>
+          <a href = "decmat_det.py">decmat_det.py</a>,
+          computes the determinant of a decimal matrix.
+        </li>
+        <li>
+          <a href = "decmat_print.py">decmat_print.py</a>,
+          prints a decimal matrix.
+        </li>
+        <li>
+          <a href = "derange_back_candidate.py">derange_back_candidate.py</a>,
+          finds possible values for the K-th entry of a derangement.
+        </li>
+        <li>
+          <a href = "derange_back_next.py">derange_back_next.py</a>,
+          returns the next derangement of N items.
+        </li>
+        <li>
+          <a href = "derange_check.py">derange_check.py</a>,
+          checks whether a permutation is a derangement.
+        </li>
+        <li>
+          <a href = "derange_weed_next.py">derange_weed_next.py</a>,
+          returns next derangements of N objects.
+        </li>
+        <li>
+          <a href = "digraph_arc_euler.py">digraph_arc_euler.py</a>,
+          returns an Euler circuit in a directed graph.
+        </li>
+        <li>
+          <a href = "diophantine.py">diophantine.py</a>,
+          solves a Diophantine equation A * X + B * Y = C.
+        </li>
+        <li>
+          <a href = "diophantine_solution_minimize.py">
+          diophantine_solution_minimize.py</a>,
+          seeks a minimal solution of a Diophantine equation.
+        </li>
+        <li>
+          <a href = "equiv_next.py">equiv_next.py</a>,
+          returns the next partition of a set.
+        </li>
+        <li>
+          <a href = "equiv_next2.py">equiv_next2.py</a>,
+          returns the next partition of a set.
+        </li>
+
+        <li>
+          <a href = "gray_next.py">gray_next.py</a>,
+          returns the next Gray code by switching one item at a time.
+        </li>
+        <li>
+          <a href = "i4_bclr.py">i4_bclr.py</a>,
+          sets a given bit of an I4 to 0.
+        </li>
+        <li>
+          <a href = "i4_bset.py">i4_bset.py</a>,
+          sets a given bit of an I4 to 1.
+        </li>
+        <li>
+          <a href = "i4_btest.py">i4_btest.py</a>,
+          returns TRUE if bit POS of I is a 1.
+        </li>
+        <li>
+          <a href = "i4_factor.py">i4_factor.py</a>,
+          factors an I4 into a product of primes.
+        </li>
+        <li>
+          <a href = "i4_moebius.py">i4_moebius.py</a>,
+          evaluates the Moebius function.
+        </li>
+        <li>
+          <a href = "i4_partition_next.py">i4_partition_next.py</a>,
+          computes the next partition of an integer.
+        </li>
+        <li>
+          <a href = "i4_partition_next2.py">i4_partition_next2.py</a>,
+          computes the next partition of an integer.
+        </li>
+        <li>
+          <a href = "i4_partition_random.py">i4_partition_random.py</a>,
+          returns a random partition of an integer.
+        </li>
+        <li>
+          <a href = "i4_partitions_next.py">
+          i4_partitions_next.py</a>,
+          returns the next partition of an integer, and
+          when there are no more, it increases the integer and continues.
+        </li>
+        <li>
+          <a href = "i4mat_01_rowcolsum.py">i4mat_01_rowcolsum.py</a>,
+          creates a 0/1 matrix with given row and column sums.
+        </li>
+        <li>
+          <a href = "i4mat_perm.py">i4mat_perm.py</a>,
+          applies a permutation to the rows and columns of a square I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_perm2.py">i4mat_perm2.py</a>,
+          applies permutations to the rows and columns of a rectangular I4MAT.
+        </li>
+        <li>
+          <a href = "i4poly.py">i4poly.py</a>,
+          performs operations on an I4POLY.
+        </li>
+        <li>
+          <a href = "i4poly_cyclo.py">i4poly_cyclo.py</a>,
+          computes a cyclotomic polynomial.
+        </li>
+        <li>
+          <a href = "i4poly_div.py">i4poly_div.py</a>,
+          divides one I4POLY by another.
+        </li>
+        <li>
+          <a href = "i4vec_backtrack.py">i4vec_backtrack.py</a>,
+          supervises a backtrack search for an I4VEC.
+        </li>
+        <li>
+          <a href = "index_box2_next_2d.py">index_box2_next_2d.py</a>,
+          produces index vectors on the surface of a box in 2D.
+        </li>
+        <li>
+          <a href = "index_box2_next_3d.py">index_box2_next_3d.py</a>,
+          produces index vectors on the surface of a box in 3D.
+        </li>
+        <li>
+          <a href = "index_next0.py">index_next0.py</a>,
+          generates all index vectors with given upper limits.
+        </li>
+        <li>
+          <a href = "index_next1.py">index_next1.py</a>,
+          generates all index vectors with given upper limits.
+        </li>
+        <li>
+          <a href = "index_next2.py">index_next2.py</a>,
+          generates all index vectors with given lower and upper limits.
+        </li>
+        <li>
+          <a href = "index_rank0.py">index_rank0.py</a>,
+          ranks an index vector with given upper limits.
+        </li>
+        <li>
+          <a href = "index_rank1.py">index_rank1.py</a>,
+          ranks an index vector with given upper limits.
+        </li>
+        <li>
+          <a href = "index_rank2.py">index_rank2.py</a>,
+          ranks an index vector with given lower and upper limits.
+        </li>
+        <li>
+          <a href = "index_unrank0.py">index_unrank0.py</a>,
+          unranks an index vector with given upper limits.
+        </li>
+        <li>
+          <a href = "index_unrank1.py">index_unrank1.py</a>,
+          unranks an index vector with given upper limits.
+        </li>
+        <li>
+          <a href = "index_unrank2.py">index_unrank2.py</a>,
+          unranks an index vector with given upper and lower limits.
+        </li>
+        <li>
+          <a href = "ins_perm.py">ins_perm.py</a>,
+          computes a permutation from its inversion sequence.
+        </li>
+        <li>
+          <a href = "jfrac_to_rfrac.py">jfrac_to_rfrac.py</a>,
+          converts a J-fraction to a rational polynomial fraction.
+        </li>
+        <li>
+          <a href = "ksub_next.py">ksub_next.py</a>,
+          selects the next subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_next2.py">ksub_next2.py</a>,
+          selects the next subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_next3.py">ksub_next3.py</a>,
+          selects the next subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "ksub_next4.py">ksub_next4.py</a>,
+          selects the next subset of size K from a set of size N.
+        </li>
+        <li>
+          <a href = "matrix_product_opt.py">matrix_product_opt.py</a>,
+          determines the optimal cost of a matrix product.
+        </li>
+        <li>
+          <a href = "moebius_matrix.py">moebius_matrix.py</a>,
+          finds the Moebius matrix from a covering relation.
+        </li>
+        <li>
+          <a href = "morse_thue.py">morse_thue.py</a>,
+          generates a Morse-Thue number.
+        </li>
+        <li>
+          <a href = "multiperm_next.py">multiperm_next.py</a>,
+          computes the next multipermutation.
+        </li>
+        <li>
+          <a href = "pell_basic.py">pell_basic.py</a>,
+          returns the basic solution of Pell's equation.
+        </li>
+        <li>
+          <a href = "pell_next.py">pell_next.py</a>,
+          returns the next solution of Pell's equation.
+        </li>
+        <li>
+          <a href = "perm_ascend.py">perm_ascend.py</a>,
+          returns the longest ascending subsequence of a permutation.
+        </li>
+        <li>
+          <a href = "perm_canon_to_cycle.py">perm_canon_to_cycle.py</a>,
+          converts a permutation from canonical to cycle form.
+        </li>
+        <li>
+          <a href = "perm_cycle.py">perm_cycle.py</a>,
+          analyzes a permutation.
+        </li>
+        <li>
+          <a href = "perm_cycle_to_canon.py">perm_cycle_to_canon.py</a>,
+          converts a permutation from cycle to canonical format.
+        </li>
+        <li>
+          <a href = "perm_cycle_to_index.py">perm_cycle_to_index.py</a>,
+          converts a permutation from cycle to standard index format.
+        </li>
+        <li>
+          <a href = "perm_distance.py">perm_distance.py</a>,
+          computes the Ulam metric distance of two permutations.
+        </li>
+        <li>
+          <a href = "perm_free.py">perm_free.py</a>,
+          reports the unused items in a partial permutation.
+        </li>
+        <li>
+          <a href = "perm_index_to_cycle.py">perm_index_to_cycle.py</a>,
+          converts a permutation from standard index to cycle form.
+        </li>
+        <li>
+          <a href = "perm_ins.py">perm_ins.py</a>,
+          returns the inversion sequence of a permutation.
+        </li>
+        <li>
+          <a href = "perm_inverse.py">perm_inverse.py</a>,
+          inverts a permutation.
+        </li>
+        <li>
+          <a href = "perm_inverse2.py">perm_inverse2.py</a>,
+          inverts a permutation.
+        </li>
+        <li>
+          <a href = "perm_inverse3.py">perm_inverse3.py</a>,
+          inverts a permutation.
+        </li>
+
+        <li>
+          <a href = "perm_mul.py">perm_mul.py</a>,
+          multiplies two permutations.
+        </li>
+        <li>
+          <a href = "perm_next.py">perm_next.py</a>,
+          computes the next permutation of N objects.
+        </li>
+        <li>
+          <a href = "perm_next2.py">perm_next2.py</a>,
+          computes the next permutation of N objects.
+        </li>
+        <li>
+          <a href = "perm_next3.py">perm_next3.py</a>,
+          computes the next permutation of N objects.
+        </li>
+        <li>
+          <a href = "perm_rank.py">perm_rank.py</a>,
+          returns the rank of a permutation.
+        </li>
+
+        <li>
+          <a href = "perm_to_equiv.py">perm_to_equiv.py</a>,
+          converts a permutation to an equivalence relation.
+        </li>
+        <li>
+          <a href = "perm_to_ytb.py">perm_to_ytb.py</a>,
+          converts a permutation to a Young tableau.
+        </li>
+        <li>
+          <a href = "perm_unrank.py">perm_unrank.py</a>,
+          produces the permutation of given rank.
+        </li>
+        <li>
+          <a href = "power_series1.py">power_series1.py</a>,
+          computes the power series for (1+F(Z))^ALPHA.
+        </li>
+        <li>
+          <a href = "power_series2.py">power_series2.py</a>,
+          computes the power series for exp(F(Z))-1.
+        </li>
+        <li>
+          <a href = "power_series3.py">power_series3.py</a>,
+          computes the power series for G(F(Z)).
+        </li>
+        <li>
+          <a href = "power_series4.py">power_series4.py</a>,
+          computes the power series for G(1/F(Z)).
+        </li>
+        <li>
+          <a href = "r8_to_cfrac.py">r8_to_cfrac.py</a>,
+          converts an R8value to a continued fraction.
+        </li>
+        <li>
+          <a href = "r8_to_rat.py">r8_to_rat.py</a>,
+          converts an R8 to a rational value.
+        </li>
+        <li>
+          <a href = "r8mat_det.py">r8mat_det.py</a>,
+          computes the determinant of a real array.
+        </li>
+        <li>
+          <a href = "r8mat_perm.py">r8mat_perm.py</a>,
+          applies a permutation to the rows and columns of a square matrix.
+        </li>
+        <li>
+          <a href = "r8mat_perm2.py">r8mat_perm2.py</a>,
+          applies a permutation to the rows and columns of a rectangular matrix.
+        </li>
+        <li>
+          <a href = "r8mat_permanent.py">r8mat_permanent.py</a>,
+          computes the permanent of a square matrix.
+        </li>
+        <li>
+          <a href = "r8poly.py">r8poly.py</a>,
+          performs operations on an R8POLY.
+        </li>
+
+        <li>
+          <a href = "r8poly_f2p.py">r8poly_f2p.py</a>,
+          converts an R8POLY from factorial to standard form.
+        </li>
+        <li>
+          <a href = "r8poly_fval.py">r8poly_fval.py</a>,
+          evaluates an R8POLY in factorial form.
+        </li>
+        <li>
+          <a href = "r8poly_n2p.py">r8poly_n2p.py</a>,
+          converts an R8POLY from Newton to standard form.
+        </li>
+        <li>
+          <a href = "r8poly_nval.py">r8poly_nval.py</a>,
+          evaluates an R8POLY in Newton form.
+        </li>
+        <li>
+          <a href = "r8poly_nx.py">r8poly_nx.py</a>,
+          replaces one of the base points in the Newton form of a polynomial.
+        </li>
+        <li>
+          <a href = "r8poly_p2f.py">r8poly_p2f.py</a>,
+          converts an R8POLY from standard to factorial form.
+        </li>
+        <li>
+          <a href = "r8poly_p2n.py">r8poly_p2n.py</a>,
+          converts an R8POLY from standard to Newton form.
+        </li>
+        <li>
+          <a href = "r8poly_p2t.py">r8poly_p2t.py</a>,
+          converts an R8POLY from standard to Taylor form.
+        </li>
+        <li>
+          <a href = "r8poly_power.py">r8poly_power.py</a>,
+          computes a power of an R8POLY.
+        </li>
+        <li>
+          <a href = "r8poly_pval.py">r8poly_pval.py</a>,
+          evaluates an R8POLY.
+        </li>
+        <li>
+          <a href = "r8poly_t2p.py">r8poly_t2p.py</a>,
+          converts an R8POLY from Taylor to standard form.
+        </li>
+        <li>
+          <a href = "r8vec_backtrack.py">r8vec_backtrack.py</a>,
+          supervises a backtrack search for a real vector.
+        </li>
+        <li>
+          <a href = "rat_add.py">rat_add.py</a>,
+          adds two rational values.
+        </li>
+        <li>
+          <a href = "rat_div.py">rat_div.py</a>,
+          carries out division of rational values.
+        </li>
+        <li>
+          <a href = "rat_farey.py">rat_farey.py</a>,
+          returns a row of the Farey fraction table.
+        </li>
+        <li>
+          <a href = "rat_farey2.py">rat_farey2.py</a>,
+          returns the next row of the Farey fraction table.
+        </li>
+        <li>
+          <a href = "rat_mul.py">rat_mul.py</a>,
+          multiplies two rational values.
+        </li>
+        <li>
+          <a href = "rat_normalize.py">rat_normalize.py</a>,
+          normalizes a rational value.
+        </li>
+        <li>
+          <a href = "rat_sum_formula.py">rat_sum_formula.py</a>,
+          computes the formulas for sums of powers of integers.
+        </li>
+        <li>
+          <a href = "rat_to_dec.py">rat_to_dec.py</a>,
+          converts a rational to a decimal value.
+        </li>
+        <li>
+          <a href = "rat_to_r8.py">rat_to_r8.py</a>,
+          converts a rational to a real value.
+        </li>
+        <li>
+          <a href = "rat_to_s_left.py">rat_to_s_left.py</a>,
+          converts a rational to a left-justified string.
+        </li>
+        <li>
+          <a href = "rat_width.py">rat_width.py</a>,
+          returns the "width" of a rational number.
+        </li>
+        <li>
+          <a href = "ratmat_det.py">ratmat_det.py</a>,
+          computes the determinant of a rational matrix.
+        </li>
+        <li>
+          <a href = "ratmat_print.py">ratmat_print.py</a>,
+          prints a rational matrix.
+        </li>
+        <li>
+          <a href = "rfrac_to_cfrac.py">rfrac_to_cfrac.py</a>,
+          converts a rational polynomial fraction to continued fraction form.
+        </li>
+        <li>
+          <a href = "rfrac_to_jfrac.py">rfrac_to_jfrac.py</a>,
+          converts a rational polynomial fraction to a J fraction.
+        </li>
+        <li>
+          <a href = "sort_heap_external.py">sort_heap_external.py</a>,
+          externally sorts a list of items into ascending order.
+        </li>
+        <li>
+          <a href = "subcomp_next.py">subcomp_next.py</a>,
+          computes the next subcomposition of N into K parts;
+        </li>
+        <li>
+          <a href = "subcompnz_next.py">subcompnz_next.py</a>,
+          computes the next subcomposition of N into K nonzero parts;
+        </li>
+        <li>
+          <a href = "subcompnz2_next.py">subcompnz2_next.py</a>,
+          computes the next composition of N into K nonzero parts
+          for N between N_LO and N_HI;
+        </li>
+        <li>
+          <a href = "subset_by_size_next.py">subset_by_size_next.py</a>,
+          returns all the subsets of an N set, in decreasing order of size.
+        </li>
+        <li>
+          <a href = "subset_gray_next.py">subset_gray_next.py</a>,
+          generates the next subset of an N set.
+        </li>
+        <li>
+          <a href = "triang.py">triang.py</a>,
+          renumbers items in accordance with a partial ordering.
+        </li>
+        <li>
+          <a href = "tuple_next_fast.py">tuple_next_fast.py</a>,
+          computes the next element of a tuple space, "fast".
+        </li>
+        <li>
+          <a href = "vector_constrained_next4.py">vector_constrained_next4.py</a>,
+          computes the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+        <li>
+          <a href = "vector_constrained_next5.py">vector_constrained_next5.py</a>,
+          computes the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+        <li>
+          <a href = "vector_constrained_next6.py">vector_constrained_next6.py</a>,
+          computes the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+        <li>
+          <a href = "vector_constrained_next7.py">vector_constrained_next7.py</a>,
+          returns the "next" vector that lies in a given range and satisfies
+          a particular constraint.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "subset_test.py">subset_test.py</a>,
+          calls all the tests;
+        </li>
+        <li>
+          <a href = "subset_test.sh">subset_test.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "subset_test_output.txt">subset_test_output.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 30 May 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

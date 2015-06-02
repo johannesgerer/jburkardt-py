@@ -1,0 +1,141 @@
+<html>
+
+  <head>
+    <title>
+      WTIME - Compute Elapsed Wallclock Time
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      WTIME <br> Compute Elapsed Wallclock Time
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>WTIME</b> 
+      is a PYTHON library which
+      shows how to obtain readings of the wall clock time.
+    </p>
+
+    <p>
+      For parallel programming, the important thing to measure is the elapsed
+      wallclock time.  This can be found by subtracting an initial reading of
+      the wallclock time from a final one.
+    </p>
+
+    <p>
+      In PYTHON, wallclock time can be read using the time() function
+      from the time module:
+      <pre>
+        from time import time
+
+        t1 = time ( )
+        carry out operations to be timed
+        t2 = time ( ) - t1
+        print 'Operations completed after %g seconds' % ( t2 )
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>WTIME</b> is available in
+      <a href = "../../c_src/wtime/wtime.html">a C version</a> and
+      <a href = "../../cpp_src/wtime/wtime.html">a C++ version</a> and
+      <a href = "../../f77_src/wtime/wtime.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/wtime/wtime.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/wtime/wtime.html">a MATLAB version</a> and
+      <a href = "../../py_src/wtime/wtime.html">a PYTHON version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/timer/timer.html">
+      TIMER</a>,
+      PYTHON programs which
+      demonstrate how to compute CPU time or elapsed time.
+    </p>
+
+    <p>
+      <a href = "../../py_src/timestamp/timestamp.html">
+      TIMESTAMP</a>,
+      a PYTHON library which
+      displays the current wall clock time.  
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the current YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "wtime_test.py">wtime_test.py</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "wtime_test.sh">wtime_test.sh</a>,
+          BASH commands to run the sample calling program.
+        </li>
+        <li>
+          <a href = "wtime_test_output.txt">wtime_test_output.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "wtime_test01.py">wtime_test01.py</a>,
+          times the numpy.random.random_sample() function using time().
+        </li>
+        <li>
+          <a href = "wtime_test02.py">wtime_test02.py</a>,
+          times the numpy.random.random_sample() function using clock().
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 12 May 2013.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,89 @@
+
+
+FEM1D_CLASSES
+
+  Built-in test case with dx =  1.0
+mesh.coordinates()= [ 0.  1.  2.  3.  4.  5.]
+mesh.cells()= [[0 1 2 3 4]
+ [1 2 3 4 5]]
+sfns.size()-3= 0
+eltno= 0
+n= [0 1]
+elt integral() err= 2.77555756156e-17
+integral(deriv) err= 0.0
+integral(x) err= 2.77555756156e-17
+integral(x**2) err= 2.77555756156e-17
+integral(x**2) err= 2.77555756156e-17
+integral(x,phi') err= 1.11022302463e-16
+integral(x**2,phi') err= 1.11022302463e-16
+
+eltno= 0
+n= [0 1]
+eltno= 1
+n= [1 2]
+eltno= 2
+n= [2 3]
+eltno= 3
+n= [3 4]
+eltno= 4
+n= [4 5]
+
+V.Ndofs()-correct= 0
+V.size()-correct= 0
+
+error in integral x over [ 0.0 , 5.0 ]= 0.0
+error in integral 1 over [ 0.0 , 5.0 ]= 8.881784197e-16
+error in integral x**2 over [ 0.0 , 5.0 ]= 0.0
+error in integral x**3 over [ 0.0 , 5.0 ]= 2.84217094304e-14
+error in integral x**4 over [ 0.0 , 5.0 ]= 0.0416666666667  (should be nonzero.)
+
+norm(V.dofpts()-correct)= 0.0
+error A00= 2.77555756156e-17
+error A01= 1.38777878078e-17
+error A02= 0.0
+error A11= 0.0
+error A12= 0.0
+
+error A22= 5.55111512313e-17
+error A23= 1.38777878078e-17
+error A24= 0.0
+error A33= 0.0
+error A34= 0.0
+
+norm(A*f-b)= 4.44305997371e-17
+Norm difference matrices= 5.6371840561e-17
+
+error B00= 5.55111512313e-17
+error B01= 2.77555756156e-17
+error B02= -6.93889390391e-18
+error B11= -1.11022302463e-16
+error B12= 0.0
+
+error B22= 1.11022302463e-16
+error B23= 5.55111512313e-17
+error B24= 0.0
+error B33= 0.0
+error B34= -2.77555756156e-17
+
+
+Laplace Matrix
+error C00*3= 0.0
+error C01*3= -4.4408920985e-16
+error C02*3= 1.66533453694e-16
+error C11*3= 8.881784197e-16
+error C12*3= -4.4408920985e-16
+
+error C22*3= 0.0
+error C23*3= -4.4408920985e-16
+error C24*3= 1.66533453694e-16
+error C33*3= 8.881784197e-16
+error C34*3= -4.4408920985e-16
+
+const soln Laplace, norm check= 0.0
+soln=x Laplace, norm check= 0.0
+soln=x**2 Laplace, norm check= 8.5997505699e-16
+norm check (rhs d/dx+Neumann, const soln)= 1.32542961742e-16
+norm check (d/dx+Dirichlet soln=x)= 3.6821932063e-16
+
+FEM1D_CLASSES
+  Normal end of execution.

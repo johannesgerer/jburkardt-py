@@ -1,0 +1,298 @@
+<html>
+
+  <head>
+    <title>
+      TRUNCATED_NORMAL_RULE - Quadrature Rule for Truncated Normal Distribution
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRUNCATED_NORMAL_RULE <br> Quadrature Rule for Truncated Normal Distribution
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRUNCATED_NORMAL_RULE</b>,
+      a Python program which 
+      computes a quadrature rule for a normal probability density function (PDF),
+      sometimes called a Gaussian distribution, that has been
+      truncated to [A,+oo), (-oo,B] or [A,B].
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRUNCATED_NORMAL_RULE</b> is available in
+      <a href = "../../c_src/truncated_normal_rule/truncated_normal_rule.html">a C version</a> and
+      <a href = "../../cpp_src/truncated_normal_rule/truncated_normal_rule.html">a C++ version</a> and
+      <a href = "../../f77_src/truncated_normal_rule/truncated_normal_rule.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/truncated_normal_rule/truncated_normal_rule.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/truncated_normal_rule/truncated_normal_rule.html">a MATLAB version</a> and
+      <a href = "../../py_src/truncated_normal_rule/truncated_normal_rule.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/truncated_normal/truncated_normal.html">
+      TRUNCATED_NORMAL</a>,
+      a Python library which 
+      works with the truncated normal distribution over [A,B], or
+      [A,+oo) or (-oo,B], returning the probability density function (PDF),
+      the cumulative density function (CDF), the inverse CDF, the mean,
+      the variance, and sample values.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gene Golub, John Welsch,<br>
+          Calculation of Gaussian Quadrature Rules,<br>
+          Mathematics of Computation,<br>
+          Volume 23, Number 106, April 1969, pages 221-230.
+        </li>
+        <li>
+          Norman Johnson, Samuel Kotz, Narayanaswamy Balakrishnan,<br>
+          Continuous Univariate Distributions,<br>
+          Second edition,<br>
+          Wiley, 1994,<br>
+          ISBN: 0471584940,<br>
+          LC: QA273.6.J6.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "truncated_normal_rule.py">truncated_normal_rule.py</a>, 
+          the main program, which can interact with the user to compute a
+          quadrature rule for the truncated normal distribution.
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>, 
+          returns a randomly selected integer between A and B.
+        </li>
+        <li>
+          <a href = "moment_method.py">moment_method.py</a>, 
+          computes a quadrature rule by the method of moments.
+        </li>
+        <li>
+          <a href = "normal_01_cdf.py">normal_01_cdf.py</a>, 
+          evaluates the Normal 01 CDF.
+        </li>
+        <li>
+          <a href = "normal_01_moment.py">normal_01_moment.py</a>, 
+          evaluates a moment of the Normal 01 distribution.
+        </li>
+        <li>
+          <a href = "normal_01_pdf.py">normal_01_pdf.py</a>, 
+          evaluates the Normal 01 PDF.
+        </li>
+        <li>
+          <a href = "normal_ms_moment.py">normal_MS_moment.py</a>, 
+          evaluates a moment of the Normal MS distribution.
+        </li>
+        <li>
+          <a href = "r8_choose.py">r8_choose.py</a>, 
+          computes the binomial coefficient C(N,K) as an R8.
+        </li>
+        <li>
+          <a href = "r8_factorial.py">r8_factorial.py</a>, 
+          computes the factorial of N.
+        </li>
+        <li>
+          <a href = "r8_factorial2.py">r8_factorial2.py</a>, 
+          computes the double factorial function.
+        </li>
+        <li>
+          <a href = "r8_huge.py">r8_huge.py</a>, 
+          returns a very large R8.
+        </li>
+        <li>
+          <a href = "r8_mop.py">r8_mop.py</a>, 
+          returns the I-th power of -1 as an R8.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>, 
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>, 
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_write.py">r8mat_write.py</a>, 
+          writes an R8MAT file.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>, 
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "rule_write.py">rule_write.py</a>, 
+          writes a quadrature rule to a file.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>, 
+          prints the current YMDHMS date as a time stamp.
+        </li>
+        <li>
+          <a href = "truncated_normal_a_moment.py">truncated_normal_a_moment.py</a>, 
+          moments of the lower truncated Normal PDF.
+        </li>
+        <li>
+          <a href = "truncated_normal_ab_moment.py">truncated_normal_ab_moment.py</a>, 
+          moments of the truncated Normal PDF.
+        </li>
+        <li>
+          <a href = "truncated_normal_b_moment.py">truncated_normal_b_moment.py</a>, 
+          moments of the upper truncated Normal PDF.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "truncated_normal_rule_test.py">truncated_normal_rule_test.py</a>,
+          a program that calls all the tests.
+        </li>
+        <li>
+          <a href = "truncated_normal_rule_test.sh">truncated_normal_rule_test.sh</a>,
+          a BASH shell script that executes the test program.
+        </li>
+        <li>
+          <a href = "truncated_normal_rule_test_output.txt">truncated_normal_rule_test_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      OPTION0_TEST is a test included within the text of truncated_normal_rule.py
+      which computes a quadrature rule for the normal distribution,
+      n = 5, mu = 1.0, sigma = 2.0;
+      <ul>
+        <li>
+          <a href = "option0_r.txt">option0_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option0_w.txt">option0_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option0_x.txt">option0_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      OPTION1_TEST is a test included within the text of truncated_normal_rule.py
+      which computes a quadrature rule for the lower truncated normal distribution,
+      n = 9, mu = 2.0, sigma = 0.5, a = 0.0;
+      <ul>
+        <li>
+          <a href = "option1_r.txt">option1_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option1_w.txt">option1_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option1_x.txt">option1_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      OPTION2_TEST is a test included within the text of truncated_normal_rule.py
+      which computes a quadrature rule for the upper truncated normal distribution,
+      n = 9, mu = 2.0, sigma = 0.5, b = 3.0;
+      <ul>
+        <li>
+          <a href = "option2_r.txt">option2_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option2_w.txt">option2_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option2_x.txt">option2_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      OPTION3_TEST is a test included within the text of truncated_normal_rule.py
+      which computes a quadrature rule for the doubly truncated normal distribution,
+      n = 5, mu = 100.0, sigma = 25.0, a = 50.0, b = 100.0;
+      <ul>
+        <li>
+          <a href = "option3_r.txt">option3_r.txt</a>,
+          the output "region" file.
+        </li>
+        <li>
+          <a href = "option3_w.txt">option3_w.txt</a>,
+          the output "weight" file.
+        </li>
+        <li>
+          <a href = "option3_x.txt">option3_x.txt</a>,
+          the output "point" file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 March 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

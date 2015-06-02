@@ -1,0 +1,220 @@
+<html>
+
+  <head>
+    <title>
+      FEM1D - Piecewise Linear Finite Element Method for 1D problem.
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FEM1D <br> Piecewise Linear Finite Element Method for 1D problem.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FEM1D</b> 
+      is a Python program which 
+      applies the finite element method (FEM) to a 1D linear two point
+      boundary value problem (BVP), using piecewise linear basis functions.
+    </p>
+
+    <p>
+      The BVP to be solved is:
+      <pre>
+        -u'' = x * ( x + 3 ) * exp ( x )  over the interval 0 < x < 1
+        u(0) = 0.0
+        u(1) = 0.0
+      </pre>
+    </p>
+
+    <p>
+      The exact solution is:
+      <pre>
+        u(x) = x * ( 1 - x ) * exp ( x )
+      </pre>
+    </p>
+
+    <p>
+      A version of the finite element method is used.  Six equally spaced
+      nodes are defined, from 0.0 to 1.0, dividing the interval into 5
+      elements.  At node I, we associate a "hat" function, or piecewise
+      linear basis function, PSI(I)(X), which has the value 1 at that node, 
+      is 0 at all other nodes.  
+    </p>
+
+    <p>
+      We look for an approximate solution to our problem of the form
+      <pre>
+        UH(X) = sum ( 1 <= I <= 6 ) C(I) * PSI(I,X)
+      </pre>
+      so that now the problem becomes the determination of the unknown
+      coefficients C.
+    </p>
+
+    <p>
+      We take the original BVP, multiply by test function PSI(J,X), integrate
+      over the region, and apply integration by parts, to obtain a linear system
+      of the form
+      <pre>
+        A * C = F
+      </pre>
+      We modify the first and last rows of the linear system to enforce the
+      boundary conditions, then solve to determine the values of C.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FEM1D</b> is available in
+      <a href = "../../c_src/fem1d/fem1d.html">a C version</a> and
+      <a href = "../../cpp_src/fem1d/fem1d.html">a C++ version</a> and
+      <a href = "../../f77_src/fem1d/fem1d.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/fem1d/fem1d.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fem1d/fem1d.html">a MATLAB version</a> and
+      <a href = "../../py_src/fem1d/fem1d.html">a Python version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">
+      FEM1D_BVP_LINEAR</a>,
+      a Python program which
+      applies the finite element method (FEM), with piecewise linear elements,
+      to a two point boundary value problem (BVP) in one spatial dimension,
+      and compares the computed and exact solutions 
+      with the L2 and seminorm errors.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">
+      FD1D_HEAT_EXPLICIT</a>,
+      a Python library which
+      uses the finite difference method (FDM) and explicit time stepping
+      to solve the time dependent heat equation in 1D.
+    </p>
+
+    <p>
+      <a href = "../../data/fem1d/fem1d.html">
+      FEM1D</a>, 
+      a data directory which
+      contains examples of 1D FEM files, 
+      three text files that describe a 1D finite element model;
+    </p>
+
+    <p>
+      <a href = "../../py_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">
+      FEM1D_BVP_QUADRATIC</a>,
+      a Python program which
+      applies the finite element method (FEM), with piecewise quadratic elements,
+      to a two point boundary value problem (BVP) in one spatial dimension.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fem1d_classes/fem1d_classes.html">
+      FEM1D_CLASSES</a>,
+      a Python library which
+      defines classes useful for solving a boundary value problem (BVP)
+      of the form u''+2u'+u=f in 1 spatial dimension, 
+      using the finite element method (FEM),
+      by Mike Sussman.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gilbert Strang, George Fix,<br>
+          An Analysis of the Finite Element Method,<br>
+          Cambridge, 1973,<br>
+          ISBN: 096140888X,<br>
+          LC: TA335.S77.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <b>FEM1D</b> solves -u''=x*(1-x)*exp(x).
+      <ul>
+        <li>
+          <a href = "fem1d.py">fem1d.py</a>, the source code.
+        </li>
+        <li>
+          <a href = "fem1d.sh">fem1d.sh</a>,
+          commands to compile the source code.
+        </li>
+        <li>
+          <a href = "fem1d_output.txt">fem1d_output.txt</a>, the printed output
+          from a run of the program.
+        </li>
+        <li>
+          <a href = "fem1d.png">fem1d.png</a>, 
+          a plot comparing the computed and exact solutions.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>FEM1D_MODEL</b> solves -u'' + u = x.  It differs from FEM1D in using
+      a more intuitive approach to assembling the system matrix.
+      <ul>
+        <li>
+          <a href = "fem1d_model.py">fem1d_model.py</a>, the source code.
+        </li>
+        <li>
+          <a href = "fem1d_model.sh">fem1d_model.sh</a>,
+          commands to compile the source code.
+        </li>
+        <li>
+          <a href = "fem1d_model_output.txt">fem1d_model_output.txt</a>, the printed output
+          from a run of the program.
+        </li>
+        <li>
+          <a href = "fem1d_model.png">fem1d_model.png</a>, 
+          a plot comparing the computed and exact solutions.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 September 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

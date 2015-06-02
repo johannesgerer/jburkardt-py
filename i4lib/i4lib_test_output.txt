@@ -1,0 +1,2194 @@
+Sun May 24 12:40:25 2015
+
+I4LIB_TEST
+  Python version:
+  Test the I4LIB library.
+
+I4_ABS_TEST
+  I4_ABS computes the absolute value of an I4.
+
+         A         B=I4_ABS(A)
+
+       -57        57
+        92        92
+        66        66
+        12        12
+       -17        17
+       -87        87
+       -49        49
+       -78        78
+       -92        92
+        27        27
+
+I4_ABS_TEST:
+  Normal end of execution.
+
+I4_BIT_HI1_TEST
+  I4_BIT_HI1 returns the location of the high 1 bit.
+
+       I  I4_BIT_HI1(I)
+
+        22         5
+        96         7
+        83         7
+        56         6
+        41         6
+         6         3
+        26         5
+        11         4
+         4         3
+        64         7
+
+I4_BIT_HI1_TEST
+  Normal end of execution.
+
+I4_BIT_LO0_TEST
+  I4_BIT_LO0 returns the location of the low 0 bit.
+
+       I  I4_BIT_LO0(I)
+
+        22         1
+        96         1
+        83         3
+        56         1
+        41         2
+         6         1
+        26         1
+        11         3
+         4         1
+        64         1
+
+I4_BIT_LO0_TEST
+  Normal end of execution.
+
+I4_BIT_LO1_TEST
+  I4_BIT_LO1 returns the location of the low 1 bit.
+
+       I  I4_BIT_LO1(I)
+
+        22         2
+        96         6
+        83         1
+        56         4
+        41         1
+         6         2
+        26         2
+        11         1
+         4         3
+        64         7
+
+I4_BIT_LO1_TEST
+  Normal end of execution.
+
+I4_BIT_REVERSE_TEST
+  I4_BIT_REVERSE bit reverses I with respect to 2^J.
+
+         I         J  I4_BIT_REVERSE(I,J)
+
+         0         0         0
+         0         1         0
+         1         1         1
+         0         2         0
+         1         2         2
+         2         2         1
+         3         2         3
+         0         3         0
+         1         3         4
+         2         3         2
+         3         3         6
+         4         3         1
+         5         3         5
+         6         3         3
+         7         3         7
+         0         4         0
+         1         4         8
+         2         4         4
+         3         4        12
+         4         4         2
+         5         4        10
+         6         4         6
+         7         4        14
+         8         4         1
+         9         4         9
+        10         4         5
+        11         4        13
+        12         4         3
+        13         4        11
+        14         4         7
+        15         4        15
+
+I4_BIT_REVERSE_TEST
+  Normal end of execution.
+ 
+I4_CEILING_TEST
+  I4_CEILING evaluates the "ceiling" of a real number.
+ 
+      R8    I4_CEILING(R8)
+ 
+  -56.3163             -56
+   91.2635              92
+   65.9018              66
+   12.3391              13
+  -16.9386             -16
+  -86.7763             -86
+  -48.4844             -48
+  -78.0086             -78
+  -91.2342             -91
+   26.7931              27
+ 
+I4_CEILING_TEST
+  Normal end of execution.
+
+I4_CHARACTERISTIC_TEST
+  I4_CHARACTERISTIC computes the characteristic
+  of an integer Q, which is  
+    Q if Q is prime;
+    P, if Q = P^N for some prime P;
+    0, if Q is negative, 0, 1, or the product of 
+      more than 1 distinct prime.
+ 
+   I  I4_CHARACTERISTIC
+ 
+   1                0
+   2                2
+   3                3
+   4                2
+   5                5
+   6                0
+   7                7
+   8                2
+   9                3
+  10                0
+  11               11
+  12                0
+  13               13
+  14                0
+  15                0
+  16                2
+  17               17
+  18                0
+  19               19
+  20                0
+  21                0
+  22                0
+  23               23
+  24                0
+  25                5
+  26                0
+  27                3
+  28                0
+  29               29
+  30                0
+  31               31
+  32                2
+  33                0
+  34                0
+  35                0
+  36                0
+  37               37
+  38                0
+  39                0
+  40                0
+  41               41
+  42                0
+  43               43
+  44                0
+  45                0
+  46                0
+  47               47
+  48                0
+  49                7
+  50                0
+
+I4_CHARACTERISTIC_TEST
+  Normal end of execution.
+
+I4_CHOOSE_TEST
+  I4_CHOOSE evaluates C(N,K).
+
+       N       K     CNK
+
+       0       0       1
+
+       1       0       1
+       1       1       1
+
+       2       0       1
+       2       1       2
+       2       2       1
+
+       3       0       1
+       3       1       3
+       3       2       3
+       3       3       1
+
+       4       0       1
+       4       1       4
+       4       2       6
+       4       3       4
+       4       4       1
+
+I4_CHOOSE_TEST:
+  Normal end of execution.
+ 
+I4_DIV_ROUNDED_TEST
+  I4_DIV_ROUNDED performs rounded integer division.
+ 
+  C0 = real ( a ) / real ( b )
+  C1 = I4_DIV_ROUNDED ( A, B )
+  C2 = nint ( real ( a ) / real ( b ) )
+  C3 = int ( A / B )
+  C4 = floor ( real ( a ) / real ( b ) )
+  C5 = a // b
+ 
+  C1 and C2 should be equal;
+  C3 and C4 should be equal.
+ 
+     A     B           C0         C1    C2      C3    C4      C5
+ 
+   -57    10         -5.700000    -6    -6      -6    -6      -6
+    66     1         66.000000    66    66      66    66      66
+   -17    -9          1.888889     2     2       1     1       1
+   -49    -8          6.125000     6     6       6     6       6
+   -92     3        -30.666667   -31   -31     -31   -31     -31
+   -88    -1         88.000000    88    88      88    88      88
+   -20     5         -4.000000    -4    -4      -4    -4      -4
+    60   -10         -6.000000    -6    -6      -6    -6      -6
+    80    -3        -26.666667   -27   -27     -27   -27     -27
+   -81   -10          8.100000     8     8       8     8       8
+    72     7         10.285714    10    10      10    10      10
+   -76   -10          7.600000     8     8       7     7       7
+   -48     9         -5.333333    -5    -5      -6    -6      -6
+   -78    -3         26.000000    26    26      26    26      26
+    65    -5        -13.000000   -13   -13     -13   -13     -13
+    39     1         39.000000    39    39      39    39      39
+    73    -1        -73.000000   -73   -73     -73   -73     -73
+    83     2         41.500000    41    42      41    41      41
+   -63     5        -12.600000   -13   -13     -13   -13     -13
+ 
+I4_DIV_ROUNDED_TEST
+  Normal end of execution.
+ 
+I4_DIVISION_TEST
+  I4_DIVISION performs integer division.
+ 
+  C0 = real ( a ) / real ( b )
+  C1 = I4_DIVISION ( A, B )
+  C2 = nint ( real ( a ) / real ( b ) )
+  C3 = int ( A / B )
+  C4 = floor ( real ( a ) / real ( b ) )
+  C5 = a // b
+ 
+  C1 and C3 and C4 and C5 should be equal.
+  (They are not, for some negative cases!)
+  C2 may differ;
+ 
+     A     B           C0         C1    C2      C3    C4      C5
+ 
+   -57    10         -5.700000    -5    -6      -6    -6      -6
+    66     1         66.000000    66    66      66    66      66
+   -17    -9          1.888889     1     2       1     1       1
+   -49    -8          6.125000     6     6       6     6       6
+   -92     3        -30.666667   -30   -31     -31   -31     -31
+   -88    -1         88.000000    88    88      88    88      88
+   -20     5         -4.000000    -4    -4      -4    -4      -4
+    60   -10         -6.000000    -6    -6      -6    -6      -6
+    80    -3        -26.666667   -26   -27     -27   -27     -27
+   -81   -10          8.100000     8     8       8     8       8
+    72     7         10.285714    10    10      10    10      10
+   -76   -10          7.600000     7     8       7     7       7
+   -48     9         -5.333333    -5    -5      -6    -6      -6
+   -78    -3         26.000000    26    26      26    26      26
+    65    -5        -13.000000   -13   -13     -13   -13     -13
+    39     1         39.000000    39    39      39    39      39
+    73    -1        -73.000000   -73   -73     -73   -73     -73
+    83     2         41.500000    41    42      41    41      41
+   -63     5        -12.600000   -12   -13     -13   -13     -13
+ 
+I4_DIVISION_TEST
+  Normal end of execution.
+
+I4_DIVP_TEST
+  I4_DIVP(A,B) returns the smallest multiplier of J
+  that is less than I
+
+     A     B     C     D
+
+   -57    10    -5   -50
+    66     1    66    66
+   -17    -9     3   -27
+   -49    -8     7   -56
+   -92     3   -30   -90
+   -88    -1    90   -90
+   -20     5    -4   -20
+    60   -10    -5    50
+    80    -3   -26    78
+   -81   -10     9   -90
+    72     7    11    77
+   -76   -10     8   -80
+   -48     9    -5   -45
+   -78    -3    27   -81
+    65    -5   -12    60
+    39     1    39    39
+    73    -1   -71    71
+    83     2    42    84
+   -63     5   -12   -60
+   -21    -7     4   -28
+
+I4_DIVP_TEST
+  Normal end of execution.
+
+I4_FACTORIAL_TEST
+  I4_FACTORIAL evaluates the factorial function.
+
+         N      Exact         I4_FACTORIAL(N)
+
+         0             1             1
+         1             1             1
+         2             2             2
+         3             6             6
+         4            24            24
+         5           120           120
+         6           720           720
+         7          5040          5040
+         8         40320         40320
+         9        362880        362880
+        10       3628800       3628800
+        11      39916800      39916800
+        12     479001600     479001600
+
+I4_FACTORIAL_TEST
+  Normal end of execution.
+
+I4_FACTORIAL2_TEST
+  I4_FACTORIAL2 evaluates the double factorial function.
+
+         N      Exact         I4_FACTORIAL2(N)
+
+         0             1             1
+         1             1             1
+         2             2             2
+         3             3             3
+         4             8             8
+         5            15            15
+         6            48            48
+         7           105           105
+         8           384           384
+         9           945           945
+        10          3840          3840
+        11         10395         10395
+        12         46080         46080
+        13        135135        135135
+        14        645120        645120
+        15       2027025       2027025
+
+I4_FACTORIAL2_TEST
+  Normal end of execution.
+
+I4_FALL_TEST
+  I4_FALL evaluates the falling factorial Fall(I,N).
+
+         M         N      Exact         I4_FALL(M,N)
+
+         5         0             1             1
+         5         1             5             5
+         5         2            20            20
+         5         3            60            60
+         5         4           120           120
+         5         5           120           120
+         5         6             0             0
+        50         0             1             1
+        10         1            10            10
+      4000         1          4000          4000
+        10         2            90            90
+        18         3          4896          4896
+         4         4            24            24
+        98         3        912576        912576
+         1         7             0             0
+
+I4_FALL_TEST:
+  Normal end of execution.
+
+I4_FLOOR_TEST
+  I4_FLOOR evaluates the "floor" of a real number.
+ 
+      R8       I4_FLOOR(R8)
+
+  -56.3163             -57
+   91.2635              91
+   65.9018              65
+   12.3391              12
+  -16.9386             -17
+  -86.7763             -87
+  -48.4844             -49
+  -78.0086             -79
+  -91.2342             -92
+   26.7931              26
+
+I4_FLOOR_TEST
+  Normal end of execution.
+
+I4_GCD_TEST
+  I4_GCD computes the greatest common factor
+
+     I     J   I4_GCD
+
+      36      30       6
+      49      -7       7
+       0      71      71
+      12      12      12
+      36      49       1
+       1      42       1
+      91      28       7
+
+I4_GCD_TEST
+  Normal end of execution
+
+I4_GCDB_TEST
+  I4_GCDB computes the greatest common factor
+  of the form K^N.
+
+       I       J       K    I4_GCDB
+
+     288    2880       2      32
+     288    2880       3       9
+     288    2880       4      16
+     288    2880       5       1
+
+I4_GCDB_TEST
+  Normal end of execution
+
+I4_HUGE_TEST
+  I4_HUGE returns a huge integer.
+
+  I4_HUGE() = 2147483647
+
+I4_HUGE_TEST
+  Normal end of execution.
+
+I4_HUGE_NORMALIZER_TEST
+  I4_HUGE_NORMALIZER returns 1/(I4_HUGE+1).
+
+  I4_HUGE() = 2147483647
+  I4_HUGE_NORMALIZER() = 4.65661e-10
+
+  I4_HUGE * I4_HUGE_NORMALIZER = 1
+
+I4_HUGE_NORMALIZER_TEST
+  Normal end of execution.
+
+I4_IS_EVEN_TEST
+  I4_IS_EVEN reports whether an I4 is even.
+ 
+         I  I4_IS_EVEN(I)
+ 
+        -2  True
+        -1  False
+         0  True
+         1  False
+         2  True
+         3  False
+         4  True
+         5  False
+         6  True
+         7  False
+         8  True
+         9  False
+        10  True
+        11  False
+        12  True
+        13  False
+        14  True
+        15  False
+        16  True
+        17  False
+        18  True
+        19  False
+        20  True
+        21  False
+        22  True
+        23  False
+        24  True
+        25  False
+
+I4_IS_EVEN_TEST
+  Normal end of execution.
+
+I4_IS_ODD_TEST
+  I4_IS_ODD reports whether an I4 is odd.
+ 
+         I  I4_IS_ODD(I)
+ 
+        -2  False
+        -1  True
+         0  False
+         1  True
+         2  False
+         3  True
+         4  False
+         5  True
+         6  False
+         7  True
+         8  False
+         9  True
+        10  False
+        11  True
+        12  False
+        13  True
+        14  False
+        15  True
+        16  False
+        17  True
+        18  False
+        19  True
+        20  False
+        21  True
+        22  False
+        23  True
+        24  False
+        25  True
+
+I4_IS_ODD_TEST
+  Normal end of execution.
+
+I4_IS_PRIME_TEST
+  I4_IS_PRIME reports whether an I4 is prime.
+ 
+         I  I4_IS_PRIME(I)
+ 
+        -2  False
+        -1  False
+         0  False
+         1  False
+         2  True
+         3  True
+         4  False
+         5  True
+         6  False
+         7  True
+         8  False
+         9  False
+        10  False
+        11  True
+        12  False
+        13  True
+        14  False
+        15  False
+        16  False
+        17  True
+        18  False
+        19  True
+        20  False
+        21  False
+        22  False
+        23  True
+        24  False
+        25  False
+
+I4_IS_PRIME_TEST
+  Normal end of execution.
+
+I4_LCM_TEST
+  I4_LCM computes the least common multiple.
+
+       I       J  I4_LCM
+
+      36      30     180
+      49      -7      49
+       0      71       0
+      12      12      12
+      36      49    1764
+       1      42      42
+      91      28     364
+
+I4_LCM_TEST
+  Normal end of execution.
+
+I4_LOG_10_TEST
+  I4_LOG_10: whole part of log base 10,
+
+  X, I4_LOG_10
+
+     0             0
+     1             0
+     2             0
+     3             0
+     9             0
+    10             1
+    11             1
+    99             1
+   101             2
+    -1             0
+    -2             0
+    -3             0
+    -9             0
+
+I4_LOG_10_TEST
+  Normal end of execution.
+
+I4_LOG_2_TEST
+  I4_LOG_2: whole part of log base 2.
+
+       X     I4_LOG_2
+
+       0             0
+       1             0
+       2             1
+       3             1
+       9             3
+      10             3
+      11             3
+      99             6
+     101             6
+      -1             0
+      -2             1
+      -3             1
+      -9             3
+    1000             9
+    1023             9
+    1024            10
+    1025            10
+
+I4_LOG_2_TEST
+  Normal end of execution.
+
+I4_LOG_I4_TEST
+  I4_LOG_I4: logarithm of I4 base J4,
+
+        I4        J4 I4_LOG_I4
+
+         0         2         0
+         1         2         0
+         2         2         1
+         3         2         1
+         4         2         2
+         5         2         2
+         6         2         2
+         7         2         2
+         8         2         3
+         9         2         3
+        10         2         3
+
+         0         3         0
+         1         3         0
+         2         3         0
+         3         3         1
+         4         3         1
+         5         3         1
+         6         3         1
+         7         3         1
+         8         3         1
+         9         3         2
+        10         3         2
+
+         0         4         0
+         1         4         0
+         2         4         0
+         3         4         0
+         4         4         1
+         5         4         1
+         6         4         1
+         7         4         1
+         8         4         1
+         9         4         1
+        10         4         1
+
+         0         5         0
+         1         5         0
+         2         5         0
+         3         5         0
+         4         5         0
+         5         5         1
+         6         5         1
+         7         5         1
+         8         5         1
+         9         5         1
+        10         5         1
+
+
+I4_LOG_I4_TEST
+  Normal end of execution,
+
+I4_LOG_R8_TEST
+  I4_LOG_R8: whole part of log base B,
+
+  X    B   I4_LOG_R8
+
+      16      2.000000             3
+      16      3.000000             2
+      16      4.000000             1
+      16      5.000000             1
+      16      6.000000             1
+      16      7.000000             1
+      16      8.000000             1
+      16     16.000000             0
+      16     32.000000             0
+      16    256.000000             0
+
+I4_LOG_R8_TEST
+  Normal end of execution.
+
+I4_MANT_TEST
+  I4_MANT decomposes an integer.
+
+  Number to be decomposed is X = -314.159000
+
+  X = -1 * ( 2763371787763843 / 2251799813685248 ) * 2 ^ (8)
+
+I4_MANT_TEST
+  Normal end of execution.
+
+I4_MAX_TEST
+  I4_MAX computes the maximum of two I4's.
+
+         A         B     C=I4_MAX(A,B)
+
+       -57        92        92
+        66        12        66
+       -17       -87       -17
+       -49       -78       -49
+       -92        27        27
+       -88       -10       -10
+       -20        51        51
+        60      -100        60
+        80       -30        80
+       -81       -98       -81
+
+I4_MAX_TEST:
+  Normal end of execution.
+
+I4_MIN_TEST
+  I4_MIN computes the minimum of two I4's.
+
+         A         B     C=I4_MIN(A,B)
+
+       -57        92       -57
+        66        12        12
+       -17       -87       -87
+       -49       -78       -78
+       -92        27       -92
+       -88       -10       -88
+       -20        51       -20
+        60      -100      -100
+        80       -30       -30
+       -81       -98       -98
+
+I4_MIN_TEST:
+  Normal end of execution.
+
+I4_MODDIV_TEST
+  I4_MODDIV factors a number
+  into a multiple M and a remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+I4_MODDIV_TEST
+  Normal end of execution.
+
+I4_MODP_TEST
+  I4_MODP factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+I4_MODP_TEST
+  Normal end of execution.
+
+I4_MOP_TEST
+  I4_MOP computes a minus-one-power (-1)^I.
+ 
+        I4  I4_MOP(I4)
+ 
+   -563164           1
+    912636           1
+    659019          -1
+    123391          -1
+   -169386           1
+   -867763          -1
+   -484845          -1
+   -780087          -1
+   -912342           1
+    267932           1
+
+I4_MOP_TEST:
+  Normal end of execution.
+
+I4_POWER_TEST
+  I4_POWER computes I^J
+
+         I       J  I4_POWER(I,J)
+
+         0         1         0
+         1         2         1
+         2         3         8
+         3         3        27
+        10         3      1000
+        -1         4         1
+        -2         5       -32
+
+I4_POWER_TEST
+  Normal end of execution.
+
+I4_RISE_TEST
+  I4_RISE evaluates the rising factorial Fall(I,N).
+
+         M         N      Exact         I4_RISE(M,N)
+
+         5         0             1             1
+         5         1             5             5
+         5         2            30            30
+         5         3           210           210
+         5         4          1680          1680
+         5         5         15120         15120
+         5         6        151200        151200
+        50         0             1             1
+        10         1            10            10
+      4000         1          4000          4000
+        10         2           110           110
+        18         3          6840          6840
+         4         4           840           840
+        98         3        970200        970200
+         1         7          5040          5040
+
+I4_RISE_TEST
+  Normal end of execution.
+
+I4_SIGN_TEST
+  I4_SIGN returns the sign of an I4.
+
+    I4  I4_SIGN(I4)
+
+   -10           -1
+    -7           -1
+     0            1
+     5            1
+     9            1
+
+I4_SIGN_TEST
+  Normal end of execution.
+
+I4_SIGN3_TEST
+  I4_SIGN3 returns the three-way sign of an I4.
+
+    I4  I4_SIGN3(I4)
+
+   -10           -1
+    -7           -1
+     0            0
+     5            1
+     9            1
+
+I4_SIGN3_TEST
+  Normal end of execution.
+
+I4_SWAP_TEST
+  I4_SWAP swaps two I4s.
+
+  Before swapping: 
+
+  I = 1
+  J = 202
+
+  After swapping: 
+
+  I = 202
+  J = 1
+
+I4_SWAP_TEST
+  Normal end of execution.
+
+I4_SWAP3_TEST
+  I4_SWAP3 swaps three I4s.
+
+  Starting with (I,J,K), swap 3 times.
+
+         1       202   3003003
+       202   3003003         1
+   3003003         1       202
+         1       202   3003003
+
+I4_SWAP3_TEST
+  Normal end of execution.
+
+I4_TO_ANGLE_TEST
+  I4_TO_ANGLE converts an I4 to an angle in degrees.
+  The angles sample the circle at finer levels.
+
+  I4   ANGLE
+
+   0               0
+   1             120
+   2             240
+   3              60
+   4             180
+   5             300
+   6              30
+   7              90
+   8             150
+   9             210
+  10             270
+  11             330
+  12              15
+  13              45
+  14              75
+  15             105
+
+I4_TO_ANGLE_TEST
+  Normal end of execution.
+
+I4_TO_HALTON_TEST
+  I4_TO_HALTON computes a Halton sequence.
+  The user specifies all data explicitly.
+ 
+  In this test, we call I4_TO_HALTON repeatedly.
+  We use distinct primes as bases.
+ 
+   I    R(0)      R(1)      R(2)
+ 
+   0    0.0000    0.0000    0.0000
+   1    0.5000    0.3333    0.2000
+   2    0.2500    0.6667    0.4000
+   3    0.7500    0.1111    0.6000
+   4    0.1250    0.4444    0.8000
+   5    0.6250    0.7778    0.0400
+   6    0.3750    0.2222    0.2400
+   7    0.8750    0.5556    0.4400
+   8    0.0625    0.8889    0.6400
+   9    0.5625    0.0370    0.8400
+  10    0.3125    0.3704    0.0800
+
+I4_TO_HALTON_TEST
+  Normal end of execution.
+
+I4_TO_ISBN_TEST
+  I4_TO_ISBN converts an I4 digit to an ISBN symbol.
+
+  I4   S
+
+   0   0
+   1   1
+   2   2
+   3   3
+   4   4
+   5   5
+   6   6
+   7   7
+   8   8
+   9   9
+  10   X
+
+I4_TO_ISBN_TEST
+  Normal end of execution.
+
+I4_TO_L4_TEST
+  I4_TO_L4 converts an I4 to an L4.
+
+  I4   L4
+
+  -5  True
+  -4  True
+  -3  True
+  -2  True
+  -1  True
+   0  False
+   1  True
+   2  True
+   3  True
+   4  True
+   5  True
+
+I4_TO_L4_TEST
+  Normal end of execution.
+
+I4_TO_PASCAL_TEST
+  I4_TO_PASCAL converts a linear index to
+  Pascal triangle indices.
+
+     K  =>   I     J
+
+     1       0     0
+     2       1     0
+     3       0     1
+     4       2     0
+     5       1     1
+     6       0     2
+     7       3     0
+     8       2     1
+     9       1     2
+    10       0     3
+    11       4     0
+    12       3     1
+    13       2     2
+    14       1     3
+    15       0     4
+    16       5     0
+    17       4     1
+    18       3     2
+    19       2     3
+    20       1     4
+
+I4_TO_PASCAL_TEST:
+  Normal end of execution.
+
+I4_TO_PASCAL_DEGREE_TEST
+  I4_TO_PASCAL_DEGREE converts a linear index to
+  the degree of the corresponding Pascal triangle indices.
+
+     K  =>   D
+
+     1       0
+     2       1
+     3       1
+     4       2
+     5       2
+     6       2
+     7       3
+     8       3
+     9       3
+    10       3
+    11       4
+    12       4
+    13       4
+    14       4
+    15       4
+    16       5
+    17       5
+    18       5
+    19       5
+    20       5
+
+I4_TO_PASCAL_DEGREE_TEST:
+  Normal end of execution.
+
+I4_TO_TRIANGLE_TEST
+  I4_TO_TRIANGLE converts a linear index to a triangular one.
+
+     K  ==>  ( I  J )
+
+     1       1     1
+     2       2     1
+     3       2     2
+     4       3     1
+     5       3     2
+     6       3     3
+     7       4     1
+     8       4     2
+     9       4     3
+    10       4     4
+    11       5     1
+    12       5     2
+    13       5     3
+    14       5     4
+    15       5     5
+    16       6     1
+    17       6     2
+    18       6     3
+    19       6     4
+    20       6     5
+
+I4_TO_TRIANGLE_TEST
+  Normal end of execution.
+
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values
+  in an interval [A,B].
+
+  The lower endpoint A = -100
+  The upper endpoint B = 200
+  The initial seed is 123456789
+
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+I4_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+I4_UNSWAP3_TEST
+  I4_UNSWAP3 swaps three I4s.
+  It can also reverse the effect of I4_SWAP3.
+
+  Starting with (I,J,K), unswap 3 times.
+
+         1       202   3003003
+   3003003         1       202
+       202   3003003         1
+         1       202   3003003
+
+  Start with (I,J,K), swap, then unswap.
+
+         1       202   3003003
+       202   3003003         1
+         1       202   3003003
+
+I4_UNSWAP3_TEST
+  Normal end of execution.
+
+I4_WALSH_1D_TEST
+  I4_WALSH_1D evaluates 1D Walsh functions.
+
+      X       +2  +1   0  -1  -2  -3
+
+    0.000000   0   0   0   0   0   0
+    0.250000   0   0   0   0   1   0
+    0.500000   0   0   0   1   0   0
+    0.750000   0   0   0   1   1   0
+    1.000000   0   0   1   0   0   0
+    1.250000   0   0   1   0   1   0
+    1.500000   0   0   1   1   0   0
+    1.750000   0   0   1   1   1   0
+    2.000000   0   1   0   0   0   0
+    2.250000   0   1   0   0   1   0
+    2.500000   0   1   0   1   0   0
+    2.750000   0   1   0   1   1   0
+    3.000000   0   1   1   0   0   0
+    3.250000   0   1   1   0   1   0
+    3.500000   0   1   1   1   0   0
+    3.750000   0   1   1   1   1   0
+    4.000000   1   0   0   0   0   0
+    4.250000   1   0   0   0   1   0
+    4.500000   1   0   0   1   0   0
+    4.750000   1   0   0   1   1   0
+    5.000000   1   0   1   0   0   0
+    5.250000   1   0   1   0   1   0
+    5.500000   1   0   1   1   0   0
+    5.750000   1   0   1   1   1   0
+    6.000000   1   1   0   0   0   0
+    6.250000   1   1   0   0   1   0
+    6.500000   1   1   0   1   0   0
+    6.750000   1   1   0   1   1   0
+    7.000000   1   1   1   0   0   0
+    7.250000   1   1   1   0   1   0
+    7.500000   1   1   1   1   0   0
+    7.750000   1   1   1   1   1   0
+    8.000000   0   0   0   0   0   0
+
+I4_WALSH_1D_TEST
+  Normal end of execution.
+
+I4_WIDTH_TEST
+  I4_WIDTH determines the printing "width" of an I4.
+ 
+            I4      I4_WIDTH
+
+             0             1
+             1             1
+             2             1
+             3             1
+             9             1
+            10             2
+            11             2
+            99             2
+           101             3
+            -1             2
+            -2             2
+            -3             2
+            -9             2
+
+I4_WIDTH_TEST
+  Normal end of execution.
+
+I4_WRAP_TEST
+  I4_WRAP forces an integer to lie within given limits.
+
+  ILO = 4
+  IHI = 8
+
+     I  I4_WRAP(I)
+
+     -10       5
+      -9       6
+      -8       7
+      -7       8
+      -6       4
+      -5       5
+      -4       6
+      -3       7
+      -2       8
+      -1       4
+       0       5
+       1       6
+       2       7
+       3       8
+       4       4
+       5       5
+       6       6
+       7       7
+       8       8
+       9       4
+      10       5
+      11       6
+      12       7
+      13       8
+      14       4
+      15       5
+      16       6
+      17       7
+      18       8
+      19       4
+      20       5
+
+I4_WRAP_TEST
+  Normal end of execution.
+
+I4_XOR_TEST
+  I4_XOR returns the bitwise exclusive OR of two I4s.
+
+         I         J    I4_XOR       I^J
+
+        22        96       118       118
+        83        56       107       107
+        41         6        47        47
+        26        11        17        17
+         4        64        68        68
+         6        45        43        43
+        40        76       100       100
+        80         0        80        80
+        90        35       121       121
+         9         1         8         8
+
+I4_XOR_TEST
+  Normal end of execution.
+
+I4MAT_INDICATOR_TEST
+  I4MAT_INDICATOR creates an "indicator" I4MAT.
+
+  The indicator matrix:
+
+  Col:        0         1         2         3   
+  Row
+    0:       11        12        13        14   
+    1:       21        22        23        24   
+    2:       31        32        33        34   
+    3:       41        42        43        44   
+    4:       51        52        53        54   
+
+I4MAT_INDICATOR_TEST
+  Normal end of execution.
+
+I4MAT_MAX_TEST
+  For an I4MAT:
+  I4MAT_MAX returns the maximum entry.
+
+  The matrix:
+
+  Col:        0         1         2         3         4   
+  Row
+    0:        2         0         0         0         9   
+    1:       10         2         4         9         9   
+    2:        9         1         4         3         1   
+    3:        6         0         8         1         0   
+    4:        4         6         8         0         2   
+
+  Col:        5         6   
+  Row
+    0:       10         7   
+    1:        1         6   
+    2:        3         9   
+    3:        9         4   
+    4:        2        10   
+
+  Maximum entry = 10
+
+I4MAT_MAX_TEST
+  Normal_end of execution.
+
+I4MAT_MIN_TEST
+  For an I4MAT:
+  I4MAT_MIN returns the minimum entry.
+
+  The matrix:
+
+  Col:        0         1         2         3         4   
+  Row
+    0:        2         0         0         0         9   
+    1:       10         2         4         9         9   
+    2:        9         1         4         3         1   
+    3:        6         0         8         1         0   
+    4:        4         6         8         0         2   
+
+  Col:        5         6   
+  Row
+    0:       10         7   
+    1:        1         6   
+    2:        3         9   
+    3:        9         4   
+    4:        2        10   
+
+  Minimum entry = 0
+
+I4MAT_MIN_TEST
+  Normal_end of execution.
+
+I4MAT_PRINT_TEST:
+  Test I4MAT_PRINT, which prints an I4MAT.
+
+  A 5 x 3 integer matrix:
+
+  Col:        0         1         2   
+  Row
+    0:       11        12        13   
+    1:       21        22        23   
+    2:       31        32        33   
+    3:       41        42        43   
+    4:       51        52        53   
+
+I4MAT_PRINT_TEST:
+  Normal end of execution.
+
+I4MAT_PRINT_SOME_TEST
+  I4MAT_PRINT_SOME prints some of an I4MAT.
+
+  Here is I4MAT, rows 0:2, cols 3:5:
+
+  Col:        3         4         5   
+  Row
+    0:       14        15        16   
+    1:       24        25        26   
+    2:       34        35        36   
+
+I4MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+I4MAT_TRANSPOSE_PRINT_TEST:
+  Test I4MAT_TRANSPOSE_PRINT, which prints an I4MAT, tranposed.
+
+  A 5 x 3 integer matrix:
+
+  Row:        0         1         2         3         4   
+  Col
+    0:       11        21        31        41        51   
+    1:       12        22        32        42        52   
+    2:       13        23        33        43        53   
+
+I4MAT_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+I4MAT_TRANSPOSE_PRINT_SOME_TEST
+  I4MAT_TRANSPOSE_PRINT_SOME prints some of an I4MAT, transposed.
+
+  Here is I4MAT, rows 0:2, cols 3:5:
+
+  Row:        0         1         2   
+  Col
+    3:       14        24        34   
+    4:       15        25        35   
+    5:       16        26        36   
+
+I4MAT_TRANSPOSE_PRINT_SOME_TEST:
+  Normal end of execution.
+
+I4MAT_UNIFORM_AB_TEST
+  I4MAT_UNIFORM_AB computes a random R8MAT.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random I4MAT:
+
+  Col:        0         1         2         3   
+  Row
+    0:        0        -1        -1        -1   
+    1:        5         0         2         5   
+    2:        4        -1         1         1   
+    3:        2        -1         4        -1   
+    4:        1         3         4        -1   
+
+I4MAT_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+I4VEC_ADD_TEST
+  I4VEC_ADD adds two I4VECs.
+
+     I     A     B     C
+
+     0    -6    -9   -15
+     1    10    -1     9
+     2     7    -2     5
+     3     1     5     6
+     4    -2     6     4
+     5    -9   -10   -19
+     6    -5     8     3
+     7    -8    -3   -11
+     8   -10    -9   -19
+     9     3   -10    -7
+
+I4VEC_ADD_TEST
+  Normal end of execution.
+
+I4VEC_AMAX_TEST
+  I4VEC_AMAX computes the largest of the magnitudes of the
+  entries of an I4VEC.
+
+  Vector A:
+
+     0      -7
+     1       5
+     2       3
+     3      -2
+     4      -4
+     5      -9
+     6      -6
+     7      -9
+     8     -10
+     9       0
+
+  Largest magnitude of entries of A = 10
+
+I4VEC_AMAX_TEST
+  Normal end of execution.
+
+I4VEC_AMIN_TEST
+  I4VEC_AMIN computes the smallest of the magnitudes of the
+  entries of an I4VEC.
+
+  Vector A:
+
+     0      -7
+     1       5
+     2       3
+     3      -2
+     4      -4
+     5      -9
+     6      -6
+     7      -9
+     8     -10
+     9       0
+
+  Smallest magnitude of entries of A = 0
+
+I4VEC_AMIN_TEST
+  Normal end of execution.
+
+I4VEC_CONCATENATE_TEST
+  I4VEC_CONCATENATE concatenates two I4VECs
+
+  Array 1:
+
+     0      91
+     1      31
+     2      71
+     3      51
+     4      31
+
+  Array 2:
+
+     0      42
+     1      22
+     2      12
+
+  Array 3 = Array 1 + Array 2:
+
+     0      91
+     1      31
+     2      71
+     3      51
+     4      31
+     5      42
+     6      22
+     7      12
+
+I4VEC_CONCATENATE_TEST
+  Normal end of execution.
+
+I4VEC_COPY_TEST
+  I4VEC_COPY copies an I4VEC.
+
+  Array 1:
+
+     0      91
+     1      31
+     2      71
+     3      51
+     4      31
+
+  Array 2:
+
+     0      91
+     1      31
+     2      71
+     3      51
+     4      31
+
+I4VEC_COPY_TEST
+  Normal end of execution.
+
+I4VEC_CUM_TEST
+  I4VEC_CUM:  cumulative sum of I4VEC entries;
+
+  Input vector:
+
+     0       2
+     1      10
+     2       9
+     3       6
+     4       4
+     5       0
+     6       2
+     7       1
+     8       0
+     9       6
+
+  Cumulative sums:
+
+     0       2
+     1      12
+     2      21
+     3      27
+     4      31
+     5      31
+     6      33
+     7      34
+     8      34
+     9      40
+
+I4VEC_CUM_TEST
+  Normal end of execution.
+
+I4VEC_CUM0_TEST
+  I4VEC_CUM0:  zero-based cumulative sum of I4VEC entries;
+
+  Input vector:
+
+     0       2
+     1      10
+     2       9
+     3       6
+     4       4
+     5       0
+     6       2
+     7       1
+     8       0
+     9       6
+
+  Cumulative sums:
+
+     0       0
+     1       2
+     2      12
+     3      21
+     4      27
+     5      31
+     6      31
+     7      33
+     8      34
+     9      34
+    10      40
+
+I4VEC_CUM0_TEST
+  Normal end of execution.
+
+I4VEC_DECREMENT_TEST
+  I4VEC_DECREMENT decrements an I4VEC.
+
+  The I4VEC:
+
+     0      -2
+     1      10
+     2       8
+     3       3
+
+  The I4VEC after decrementing:
+
+     0      -3
+     1       9
+     2       7
+     3       2
+
+I4VEC_DECREMENT_TEST:
+  Normal end of execution.
+
+I4VEC_INCREMENT_TEST
+  I4VEC_INCREMENT increments an I4VEC.
+
+  The I4VEC:
+
+     0      -2
+     1      10
+     2       8
+     3       3
+
+  The I4VEC after incrementing:
+
+     0      -1
+     1      11
+     2       9
+     3       4
+
+I4VEC_INCREMENT_TEST:
+  Normal end of execution.
+
+I4VEC_INDICATOR0_TEST
+  I4VEC_INDICATOR0 returns an indicator vector.
+
+  The indicator0 vector:
+
+     0       0
+     1       1
+     2       2
+     3       3
+     4       4
+     5       5
+     6       6
+     7       7
+     8       8
+     9       9
+
+I4VEC_INDICATOR0_TEST
+  Normal end of execution.
+
+I4VEC_INDICATOR1_TEST
+  I4VEC_INDICATOR1 returns an indicator vector.
+
+  The indicator1 vector:
+
+     0       1
+     1       2
+     2       3
+     3       4
+     4       5
+     5       6
+     6       7
+     7       8
+     8       9
+     9      10
+
+I4VEC_INDICATOR1_TEST
+  Normal end of execution.
+
+I4VEC_MAX_TEST
+  I4VEC_MAX returns the maximum entry in an I4VEC.
+
+  The vector:
+
+     0       7
+     1      29
+     2      25
+     3      17
+     4      13
+     5       2
+     6       8
+     7       4
+     8       2
+     9      20
+
+  Maximum entry = 29
+
+I4VEC_MAX_TEST
+  Normal end of execution.
+
+I4VEC_MIN_TEST
+  I4VEC_MIN returns the minimum entry in an I4VEC.
+
+  The vector:
+
+     0       7
+     1      29
+     2      25
+     3      17
+     4      13
+     5       2
+     6       8
+     7       4
+     8       2
+     9      20
+
+  Minimum entry = 2
+
+I4VEC_MIN_TEST
+  Normal end of execution.
+
+I4VEC_PERMUTE_TEST
+  I4VEC_PERMUTE reorders an I4VEC
+  according to a given permutation.
+
+  A[*], before rearrangement:
+
+     0       2
+     1      12
+     2      10
+     3       7
+     4       5
+     5       0
+     6       3
+     7       1
+     8       0
+     9       8
+    10       0
+    11       5
+
+  Permutation vector P[*]:
+
+     0       4
+     1       9
+     2       1
+     3       3
+     4      11
+     5       7
+     6       6
+     7       5
+     8       0
+     9       8
+    10      10
+    11       2
+
+  A[P[*]]:
+
+     0       5
+     1       8
+     2      12
+     3       7
+     4       5
+     5       1
+     6       3
+     7       0
+     8       2
+     9       0
+    10       0
+    11      10
+
+I4VEC_PERMUTE_TEST:
+  Normal end of execution.
+
+I4VEC_PERMUTE_UNIFORM_TEST
+  I4VEC_PERMUTE_UNIFORM randomly reorders an I4VEC.
+
+  A, before rearrangement:
+
+     0     101
+     1     102
+     2     103
+     3     104
+     4     105
+     5     106
+     6     107
+     7     108
+     8     109
+     9     110
+    10     111
+    11     112
+
+  A, after rearrangement:
+
+     0     103
+     1     112
+     2     111
+     3     109
+     4     108
+     5     106
+     6     105
+     7     107
+     8     104
+     9     101
+    10     110
+    11     102
+
+I4VEC_PERMUTE_UNIFORM_TEST:
+  Normal end of execution.
+
+I4VEC_PRINT_TEST
+  I4VEC_PRINT prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+I4VEC_PRINT_TEST:
+  Normal end of execution.
+
+I4VEC_REVERSE_TEST
+  I4VEC_REVERSE reverses a list of integers.
+
+  Original vector:
+
+     0       6
+     1      29
+     2      25
+     3      17
+     4      12
+     5       2
+     6       7
+     7       3
+     8       1
+     9      19
+
+  Reversed:
+
+     0      19
+     1       1
+     2       3
+     3       7
+     4       2
+     5      12
+     6      17
+     7      25
+     8      29
+     9       6
+
+I4VEC_REVERSE_TEST:
+  Normal end of execution.
+
+I4VEC_SORT_HEAP_INDEX_A_TEST
+  I4VEC_SORT_HEAP_INDEX_A creates an ascending
+  sort index for an I4VEC.
+
+  Unsorted array A:
+
+     0      13
+     1      58
+     2      50
+     3      34
+     4      25
+     5       4
+     6      15
+     7       6
+     8       2
+     9      38
+    10       3
+    11      27
+    12      24
+    13      46
+    14      48
+    15       0
+    16      54
+    17      21
+    18       5
+    19       0
+
+  Sort vector INDX:
+
+     0      15
+     1      19
+     2       8
+     3      10
+     4       5
+     5      18
+     6       7
+     7       0
+     8       6
+     9      17
+    10      12
+    11       4
+    12      11
+    13       3
+    14       9
+    15      13
+    16      14
+    17       2
+    18      16
+    19       1
+
+       I   INDX(I)  A(INDX(I))
+
+         0        15         0
+         1        19         0
+         2         8         2
+         3        10         3
+         4         5         4
+         5        18         5
+         6         7         6
+         7         0        13
+         8         6        15
+         9        17        21
+        10        12        24
+        11         4        25
+        12        11        27
+        13         3        34
+        14         9        38
+        15        13        46
+        16        14        48
+        17         2        50
+        18        16        54
+        19         1        58
+
+I4VEC_SORT_HEAP_INDEX_A_TEST:
+  Normal end of execution.
+
+I4VEC_SUM_TEST
+  I4VEC_SUM sums the entries of an I4VEC.
+
+  The vector:
+
+     0       2
+     1      10
+     2       9
+     3       6
+     4       4
+
+  The vector entries sum to 31
+
+I4VEC_SUM_TEST:
+  Normal end of execution.
+
+I4VEC_TRANSPOSE_PRINT_TEST
+  I4VEC_TRANSPOSE_PRINT prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:  
+       1        2        3        4        5        6        7        8        9       10 
+      11       12 
+
+I4VEC_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+I4VEC_UNIFORM_AB_TEST
+  I4VEC_UNIFORM_AB computes pseudorandom values
+  in an interval [A,B].
+
+  The lower endpoint A = -100
+  The upper endpoint B = 200
+  The initial seed is 123456789
+
+
+  The random vector:
+
+     0     -35
+     1     187
+     2     149
+     3      69
+     4      25
+     5     -81
+     6     -23
+     7     -67
+     8     -87
+     9      90
+    10     -82
+    11      35
+    12      20
+    13     127
+    14     139
+    15    -100
+    16     170
+    17       5
+    18     -72
+    19     -96
+
+I4VEC_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+PASCAL_TO_I4_TEST
+  PASCAL_TO_I4 converts Pascal triangle indices to a
+  linear index.
+
+     I     J =>    K
+
+     0     0       1
+
+     1     0       2
+     0     1       3
+
+     2     0       4
+     1     1       5
+     0     2       6
+
+     3     0       7
+     2     1       8
+     1     2       9
+     0     3      10
+
+     4     0      11
+     3     1      12
+     2     2      13
+     1     3      14
+     0     4      15
+
+
+PASCAL_TO_I4_TEST:
+  Normal end of execution.
+
+PERM0_CHECK_TEST
+  PERM0_CHECK checks a permutation of 0,...,N-1.
+
+  Permutation 1:
+       5        2        3        4        1 
+
+PERM0_CHECK - Warning!
+  Permutation is missing the value 0.
+
+  Permutation 2:
+       4        1        3        0        2 
+
+  Permutation 3:
+       0        2        1        3        2 
+
+PERM0_CHECK - Warning!
+  Permutation is missing the value 4.
+
+PERM0_CHECK_TEST:
+  Normal end of execution.
+
+PERM0_UNIFORM_TEST
+  PERM0_UNIFORM randomly selects a permutation of 0, ..., N-1.
+
+      2    9    8    6    3    5    7    4    0    1 
+      6    1    5    2    8    4    0    9    3    7 
+      0    1    8    2    4    5    7    9    3    6 
+      3    8    4    7    0    9    2    5    6    1 
+      1    7    5    4    0    6    8    2    3    9 
+
+PERM0_UNIFORM_TEST
+  Normal end of execution.
+
+PERM1_CHECK_TEST
+  PERM1_CHECK checks a permutation of 1,...,N.
+
+  Permutation 1:
+       5        2        3        4        1 
+
+  Permutation 2:
+       4        1        3        0        2 
+
+PERM1_CHECK - Warning!
+  Permutation is missing the value 5.
+
+  Permutation 3:
+       0        2        1        3        2 
+
+PERM1_CHECK - Warning!
+  Permutation is missing the value 4.
+
+PERM1_CHECK_TEST:
+  Normal end of execution.
+
+PERM1_UNIFORM_TEST
+  PERM1_UNIFORM randomly selects a permutation of 1, ..., N.
+
+      3   10    9    7    4    6    8    5    1    2 
+      7    2    6    3    9    5    1   10    4    8 
+      1    2    9    3    5    6    8   10    4    7 
+      4    9    5    8    1   10    3    6    7    2 
+      2    8    6    5    1    7    9    3    4   10 
+
+PERM1_UNIFORM_TEST
+  Normal end of execution.
+
+PRIME_TEST
+  PRIME returns primes from a table.
+
+  Number of primes stored is 1600
+
+     I    Prime(I)
+
+       1       2
+       2       3
+       3       5
+       4       7
+       5      11
+       6      13
+       7      17
+       8      19
+       9      23
+      10      29
+
+    1590   13411
+    1591   13417
+    1592   13421
+    1593   13441
+    1594   13451
+    1595   13457
+    1596   13463
+    1597   13469
+    1598   13477
+    1599   13487
+    1600   13499
+
+PRIME_TEST
+  Normal end of execution.
+
+R8_UNIFORM_AB_TEST
+  R8_UNIFORM_AB returns random values in a given range:
+  [ A, B ]
+
+  For this problem:
+  A = 10.000000
+  B = 20.000000
+
+  12.184183
+  19.563176
+  18.295092
+  15.616954
+  14.153071
+  10.661187
+  12.575778
+  11.099568
+  10.438290
+  16.339657
+
+R8_UNIFORM_AB_TEST
+  Normal end of execution
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Sun May 24 12:40:25 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+TRIANGLE_TO_I4_TEST
+  TRIANGLE_TO_I4 converts a triangular index to a linear one.
+
+   ( I,    J ) ==> K
+
+     1     1       1
+     2     1       2
+     2     2       3
+     3     1       4
+     3     2       5
+     3     3       6
+     4     1       7
+     4     2       8
+     4     3       9
+     4     4      10
+
+TRIANGLE_TO_I4_TEST:
+  Normal end of execution.
+
+I4LIB_TEST:
+  Normal end of execution.
+Sun May 24 12:40:25 2015

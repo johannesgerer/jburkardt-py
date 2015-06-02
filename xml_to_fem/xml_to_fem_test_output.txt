@@ -1,0 +1,119 @@
+
+XML_TO_FEM_TEST.
+  Python version
+  Read a DOLFIN/FENICS XML mesh file.
+  Extract the coordinate and element information.
+
+  Read the XML file "cheby9.xml"
+  Spatial dimension = 1
+  Number of nodes = 9
+  Element order = 2
+  Number of elements = 8
+
+  NODE_X array of node coordinates:
+
+  -1 
+  -0.92388 
+  -0.707107 
+  -0.382683 
+  0 
+  0.382683 
+  0.707107 
+  0.92388 
+  1 
+
+  ELEM_NODE array of node indices:
+
+  0   1 
+  1   2 
+  2   3 
+  3   4 
+  4   5 
+  5   6 
+  6   7 
+  7   8 
+
+  Read the XML file "rectangle.xml"
+  Spatial dimension = 2
+  Number of nodes = 20
+  Element order = 3
+  Number of elements = 24
+
+  NODE_X array of node coordinates:
+
+  0   0 
+  1   0 
+  2   0 
+  3   0 
+  4   0 
+  0   1 
+  1   1 
+  2   1 
+  3   1 
+  4   1 
+  0   2 
+  1   2 
+  2   2 
+  3   2 
+  4   2 
+  0   3 
+  1   3 
+  2   3 
+  3   3 
+  4   3 
+
+  ELEM_NODE array of node indices:
+
+  5   0   1 
+  6   5   1 
+  6   10   5 
+  11   10   6 
+  15   10   11 
+  15   11   16 
+  6   1   2 
+  7   6   2 
+  7   11   6 
+  12   11   7 
+  16   11   12 
+  16   12   17 
+  7   2   3 
+  8   7   3 
+  8   12   7 
+  13   12   8 
+  17   12   13 
+  17   13   18 
+  8   3   4 
+  9   8   4 
+  9   13   8 
+  14   13   9 
+  18   13   14 
+  18   14   19 
+
+  Read the XML file "tet_mesh.xml"
+  Spatial dimension = 3
+  Number of nodes = 8
+  Element order = 4
+  Number of elements = 6
+
+  NODE_X array of node coordinates:
+
+  0   0   0 
+  0   0   1 
+  0   1   0 
+  0   1   1 
+  1   0   0 
+  1   0   1 
+  1   1   0 
+  1   1   1 
+
+  ELEM_NODE array of node indices:
+
+  3   2   4   0 
+  3   1   4   0 
+  3   6   2   4 
+  3   6   7   4 
+  3   5   1   4 
+  3   5   7   4 
+
+XML_TO_FEM_TEST.
+  Normal end of execution

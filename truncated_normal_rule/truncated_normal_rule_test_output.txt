@@ -1,0 +1,927 @@
+Mon Mar 23 13:42:37 2015
+
+TRUNCATED_NORMAL_RULE_TEST:
+  Test the functions used by TRUNCATED_NORMAL_RULE.
+
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values
+  in an interval [A,B].
+
+  The lower endpoint A = -100
+  The upper endpoint B = 200
+  The initial seed is 123456789
+
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+I4_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+R8_CHOOSE_TEST
+  R8_CHOOSE evaluates C(N,K).
+
+         N         K       CNK
+
+         0         0               1
+
+         1         0               1
+         1         1               1
+
+         2         0               1
+         2         1               2
+         2         2               1
+
+         3         0               1
+         3         1               3
+         3         2               3
+         3         3               1
+
+         4         0               1
+         4         1               4
+         4         2               6
+         4         3               4
+         4         4               1
+
+         5         0               1
+         5         1               5
+         5         2              10
+         5         3              10
+         5         4               5
+         5         5               1
+
+R8_CHOOSE_TEST
+  Normal end of execution.
+
+R8_FACTORIAL_TEST
+  R8_FACTORIAL evaluates the factorial function.
+
+      N                     Exact                   Computed
+     0                         1                         1
+     1                         1                         1
+     2                         2                         2
+     3                         6                         6
+     4                        24                        24
+     5                       120                       120
+     6                       720                       720
+     7                      5040                      5040
+     8                     40320                     40320
+     9                    362880                    362880
+    10                   3628800                   3628800
+    11                  39916800                  39916800
+    12                 479001600                 479001600
+    13                6227020800                6227020800
+    14               87178291200               87178291200
+    15             1307674368000             1307674368000
+    16            20922789888000            20922789888000
+    17           355687428096000           355687428096000
+    18          6402373705728000          6402373705728000
+    19      1.21645100408832e+17      1.21645100408832e+17
+    20      2.43290200817664e+18      2.43290200817664e+18
+    25     1.551121004333099e+25     1.551121004333099e+25
+    50     3.041409320171338e+64     3.041409320171338e+64
+   100    9.332621544394415e+157     9.33262154439441e+157
+   150    5.713383956445855e+262     5.71338395644585e+262
+
+R8_FACTORIAL_TEST
+  Normal end of execution.
+
+R8_FACTORIAL2_TEST
+  R8_FACTORIAL2 evaluates the double factorial function.
+
+      N                     Exact                   Computed
+     0                         1                         1
+     1                         1                         1
+     2                         2                         2
+     3                         3                         3
+     4                         8                         8
+     5                        15                        15
+     6                        48                        48
+     7                       105                       105
+     8                       384                       384
+     9                       945                       945
+    10                      3840                      3840
+    11                     10395                     10395
+    12                     46080                     46080
+    13                    135135                    135135
+    14                    645120                    645120
+    15                   2027025                   2027025
+
+R8_FACTORIAL2_TEST
+  Normal end of execution.
+
+R8_HUGE_TEST
+  R8_HUGE returns a "huge" R8;
+
+    R8_HUGE = 1.79769e+308
+
+R8_HUGE_TEST
+  Normal end of execution.
+
+R8_MOP_TEST
+  R8_MOP evaluates (-1.0)^I4 as an R8.
+
+    I4  R8_MOP(I4)
+
+   -57  -1.0
+    92   1.0
+    66   1.0
+    12   1.0
+   -17  -1.0
+   -87  -1.0
+   -49  -1.0
+   -78   1.0
+   -92   1.0
+    27  -1.0
+
+R8_MOP_TEST
+  Normal end of execution.
+
+R8MAT_PRINT_TEST
+  R8MAT_PRINT prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :           11             12             13             14             15   
+      1 :           21             22             23             24             25   
+      2 :           31             32             33             34             35   
+      3 :           41             42             43             44             45   
+
+  Col:        5        
+  Row
+      0 :           16   
+      1 :           26   
+      2 :           36   
+      3 :           46   
+
+R8MAT_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_SOME_TEST
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        3              4              5        
+  Row
+      0 :           14             15             16   
+      1 :           24             25             26   
+      2 :           34             35             36   
+
+R8MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0       123.456
+     1         5e-06
+     2        -1e+06
+     3       3.14159
+
+R8VEC_PRINT_TEST:
+  Normal end of execution.
+
+R8VEC_WRITE_TEST:
+  Test R8VEC_WRITE, which writes an R8VEC to a file.
+
+  Created file "r8vec_write_test.txt".
+
+R8VEC_WRITE_TEST:
+  Normal end of execution.
+
+RULE_WRITE_TEST:
+  RULE_WRITE writes a quadrature rule to three files.
+
+  Creating quadrature files.
+
+  Common header is      "rule_write_test".
+
+  Weight file will be   "rule_write_test_w.txt".
+  Abscissa file will be "rule_write_test_x.txt".
+  Region file will be   "rule_write_test_r.txt".
+
+  The quadrature rule has been written to files.
+
+RULE_WRITE_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Mon Mar 23 13:42:37 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+NORMAL_01_CDF_TEST
+  NORMAL_01_CDF evaluates the CDF;
+
+       X              CDF                       CDF
+                     (exact)                   (computed)
+
+               0                       0.5                       0.5
+             0.1         0.539827837277029        0.5398278372805048
+             0.2         0.579259709439103        0.5792597094424672
+             0.3        0.6179114221889526        0.6179114221891665
+             0.4        0.6554217416103242        0.6554217416083834
+             0.5        0.6914624612740131        0.6914624612735877
+             0.6         0.725746882249927        0.7257468822526401
+             0.7         0.758036347776927        0.7580363477802913
+             0.8        0.7881446014166033        0.7881446014178579
+             0.9        0.8159398746532405        0.8159398746539517
+               1        0.8413447460685429        0.8413447460717163
+             1.5        0.9331927987311419        0.9331927987330156
+               2        0.9772498680518208        0.9772498680509744
+             2.5         0.993790334674224        0.9937903346744605
+               3        0.9986501019683699        0.9986501019683744
+             3.5        0.9997673709209645        0.9997673709209559
+               4        0.9999683287581669        0.9999683287581664
+
+NORMAL_01_CDF_TEST:
+  Normal end of execution.
+
+NORMAL_01_MOMENT_TEST
+  NORMAL_01_MOMENT evaluates moments of the Normal 01 PDF;
+
+   Order     Moment
+
+       0               1
+       1               0
+       2               1
+       3               0
+       4               3
+       5               0
+       6              15
+       7               0
+       8             105
+       9               0
+      10             945
+
+NORMAL_01_MOMENT_TEST:
+  Normal end of execution.
+
+NORMAL_01_PDF_TEST
+  NORMAL_01_PDF evaluates the PDF;
+
+       X              PDF
+
+              -2       0.05399096651318806
+            -1.9        0.0656158147746766
+            -1.8       0.07895015830089415
+            -1.7       0.09404907737688695
+            -1.6        0.1109208346794555
+            -1.5        0.1295175956658917
+            -1.4        0.1497274656357449
+            -1.3        0.1713685920478074
+            -1.2         0.194186054983213
+            -1.1        0.2178521770325506
+              -1        0.2419707245191434
+            -0.9        0.2660852498987548
+            -0.8        0.2896915527614827
+            -0.7        0.3122539333667613
+            -0.6        0.3332246028917997
+            -0.5        0.3520653267642995
+            -0.4        0.3682701403033233
+            -0.3        0.3813878154605241
+            -0.2        0.3910426939754559
+            -0.1        0.3969525474770118
+               0        0.3989422804014327
+             0.1        0.3969525474770118
+             0.2        0.3910426939754559
+             0.3        0.3813878154605241
+             0.4        0.3682701403033233
+             0.5        0.3520653267642995
+             0.6        0.3332246028917997
+             0.7        0.3122539333667613
+             0.8        0.2896915527614827
+             0.9        0.2660852498987548
+               1        0.2419707245191434
+             1.1        0.2178521770325506
+             1.2         0.194186054983213
+             1.3        0.1713685920478074
+             1.4        0.1497274656357449
+             1.5        0.1295175956658917
+             1.6        0.1109208346794555
+             1.7       0.09404907737688695
+             1.8       0.07895015830089415
+             1.9        0.0656158147746766
+               2       0.05399096651318806
+
+NORMAL_01_PDF_TEST:
+  Normal end of execution.
+
+NORMAL_MS_MOMENT_TEST
+  NORMAL_MS_MOMENT evaluates moments of the Normal MS distribution.
+
+  Mu = 0, Sigma = 1
+ Order  Moment
+
+
+   0             1             1
+   1             0             0
+   2             1             1
+   3             0             0
+   4             3             3
+   5             0             0
+   6            15            15
+   7             0             0
+   8           105           105
+
+  Mu = 2, Sigma = 1
+ Order  Moment
+
+
+   0             1             1
+   1             2             2
+   2             5             5
+   3            14            14
+   4            43            43
+   5           142           142
+   6           499           499
+   7          1850          1850
+   8          7193          7193
+
+  Mu = 10, Sigma = 2
+ Order  Moment
+
+
+   0             1             1
+   1            10            10
+   2           104           104
+   3          1120          1120
+   4         12448         12448
+   5        142400        142400
+   6   1.67296e+06   1.67296e+06
+   7   2.01472e+07   2.01472e+07
+   8   2.48315e+08   2.48315e+08
+
+  Mu = 0, Sigma = 2
+ Order  Moment
+
+
+   0             1             1
+   1             0             0
+   2             4             4
+   3             0             0
+   4            48            48
+   5             0             0
+   6           960           960
+   7             0             0
+   8         26880         26880
+
+NORMAL_MS_MOMENT_TEST:
+  Normal end of execution.
+
+TRUNCATED_NORMAL_A_MOMENT_TEST
+  TRUNCATED_NORMAL_A_MOMENT evaluates moments
+  of the lower Truncated Normal distribution.
+
+  Test = 0, Mu = 0, Sigma = 1, A = 0
+ Order  Moment
+
+
+   0             1
+   1      0.797885
+   2             1
+   3       1.59577
+   4             3
+   5       6.38308
+   6            15
+   7       38.2985
+   8           105
+
+  Test = 1, Mu = 0, Sigma = 1, A = -10
+ Order  Moment
+
+
+   0             1
+   1    7.6946e-23
+   2             1
+   3   7.84849e-21
+   4             3
+   5   8.00854e-19
+   6            15
+   7   8.17511e-17
+   8           105
+
+  Test = 2, Mu = 0, Sigma = 1, A = 10
+ Order  Moment
+
+
+   0             1
+   1       10.0981
+   2       101.981
+   3       1030.01
+   4         10404
+   5        105101
+   6   1.06183e+06
+   7   1.07287e+07
+   8   1.08414e+08
+
+  Test = 3, Mu = 0, Sigma = 2, A = -10
+ Order  Moment
+
+
+   0             1
+   1   2.97344e-06
+   2       3.99997
+   3   0.000321132
+   4       47.9967
+   5     0.0348725
+   6       959.636
+   7       3.81038
+   8       26840.1
+
+  Test = 4, Mu = 0, Sigma = 2, A = 10
+ Order  Moment
+
+
+   0             1
+   1        10.373
+   2        107.73
+   3       1120.28
+   4       11665.8
+   5        121655
+   6   1.27062e+06
+   7   1.32927e+07
+   8   1.39307e+08
+
+  Test = 5, Mu = -5, Sigma = 1, A = -10
+ Order  Moment
+
+
+   0             1
+   1            -5
+   2            26
+   3          -140
+   4       777.997
+   5      -4449.97
+   6       26139.7
+   7       -157397
+   8        969947
+
+TRUNCATED_NORMAL_A_MOMENT_TEST:
+  Normal end of execution.
+
+TRUNCATED_NORMAL_AB_MOMENT_TEST
+  TRUNCATED_NORMAL_AB_MOMENT evaluates moments
+  of the Truncated Normal distribution.
+
+  Test = 0, Mu = 0, Sigma = 1, A = -1, B = 1
+ Order  Moment
+
+
+   0             1
+   1             0
+   2      0.291125
+   3             0
+   4        0.1645
+   5             0
+   6      0.113627
+   7             0
+   8      0.086514
+
+  Test = 1, Mu = 0, Sigma = 1, A = 0, B = 1
+ Order  Moment
+
+
+   0             1
+   1      0.459862
+   2      0.291125
+   3       0.21085
+   4        0.1645
+   5      0.134523
+   6      0.113627
+   7     0.0982649
+   8      0.086514
+
+  Test = 2, Mu = 0, Sigma = 1, A = -1, B = 0
+ Order  Moment
+
+
+   0             1
+   1     -0.459862
+   2      0.291125
+   3      -0.21085
+   4        0.1645
+   5     -0.134523
+   6      0.113627
+   7    -0.0982649
+   8      0.086514
+
+  Test = 3, Mu = 0, Sigma = 2, A = -1, B = 1
+ Order  Moment
+
+
+   0             1
+   1             0
+   2      0.322357
+   3             0
+   4      0.190636
+   5             0
+   6      0.135077
+   7             0
+   8      0.104524
+
+  Test = 4, Mu = 1, Sigma = 1, A = 0, B = 2
+ Order  Moment
+
+
+   0             1
+   1             1
+   2       1.29113
+   3       1.87338
+   4       2.91125
+   5       4.73375
+   6       7.94801
+   7       13.6665
+   8       23.9346
+
+  Test = 5, Mu = 0, Sigma = 1, A = 0.5, B = 2
+ Order  Moment
+
+
+   0             1
+   1       1.04299
+   2       1.23812
+   3       1.63828
+   4       2.35698
+   5       3.60741
+   6       5.77795
+   7       9.57285
+   8       16.2735
+
+  Test = 6, Mu = 0, Sigma = 1, A = -2, B = 2
+ Order  Moment
+
+
+   0             1
+   1             0
+   2      0.773741
+   3             0
+   4       1.41619
+   5             0
+   6       3.46081
+   7             0
+   8       9.74509
+
+  Test = 7, Mu = 0, Sigma = 1, A = -4, B = 4
+ Order  Moment
+
+
+   0             1
+   1             0
+   2      0.998929
+   3             0
+   4       2.97966
+   5             0
+   6       14.6242
+   7             0
+   8       97.9836
+
+  Test = 8, Mu = 5, Sigma = 0.5, A = 4, B = 7
+ Order  Moment
+
+
+   0             1
+   1       5.02756
+   2       25.4978
+   3       130.441
+   4       673.075
+   5       3502.72
+   6       18382.1
+   7       97269.7
+   8        518913
+
+TRUNCATED_NORMAL_AB_MOMENT_TEST:
+  Normal end of execution.
+
+TRUNCATED_NORMAL_B_MOMENT_TEST
+  TRUNCATED_NORMAL_B_MOMENT evaluates moments
+  of the upper Truncated Normal distribution.
+
+  Test = 0, Mu = 0, Sigma = 1, B = 0
+ Order  Moment
+
+
+   0             1
+   1     -0.797885
+   2             1
+   3      -1.59577
+   4             3
+   5      -6.38308
+   6            15
+   7      -38.2985
+   8           105
+
+  Test = 1, Mu = 0, Sigma = 1, B = 10
+ Order  Moment
+
+
+   0             1
+   1   -7.6946e-23
+   2             1
+   3  -7.84849e-21
+   4             3
+   5  -8.00854e-19
+   6            15
+   7  -8.17511e-17
+   8           105
+
+  Test = 2, Mu = 0, Sigma = 1, B = -10
+ Order  Moment
+
+
+   0             1
+   1      -10.0981
+   2       101.981
+   3      -1030.01
+   4         10404
+   5       -105101
+   6   1.06183e+06
+   7  -1.07287e+07
+   8   1.08414e+08
+
+  Test = 3, Mu = 0, Sigma = 2, B = 10
+ Order  Moment
+
+
+   0             1
+   1  -2.97344e-06
+   2       3.99997
+   3  -0.000321132
+   4       47.9967
+   5    -0.0348725
+   6       959.636
+   7      -3.81038
+   8       26840.1
+
+  Test = 4, Mu = 0, Sigma = 2, B = -10
+ Order  Moment
+
+
+   0             1
+   1       -10.373
+   2        107.73
+   3      -1120.28
+   4       11665.8
+   5       -121655
+   6   1.27062e+06
+   7  -1.32927e+07
+   8   1.39307e+08
+
+  Test = 5, Mu = 5, Sigma = 1, B = 10
+ Order  Moment
+
+
+   0             1
+   1             5
+   2            26
+   3           140
+   4       777.997
+   5       4449.97
+   6       26139.7
+   7        157397
+   8        969947
+
+TRUNCATED_NORMAL_B_MOMENT_TEST:
+  Normal end of execution.
+
+MOMENT_METHOD_TEST
+  MOMENT_METHOD uses the method of moments for a quadrature rule.
+
+           Computed        Correct
+   I           X              X
+
+   0        -2.85697        -2.85697
+   1        -1.35563        -1.35563
+   2    -4.25837e-16               0
+   3         1.35563         1.35563
+   4         2.85697         2.85697
+
+           Computed        Correct
+   I           W              W
+
+   0       0.0112574       0.0112574
+   1        0.222076        0.222076
+   2        0.533333        0.533333
+   3        0.222076        0.222076
+   4       0.0112574       0.0112574
+
+MOMENT_METHOD_TEST:
+  Normal end of execution.
+
+OPTION0_TEST:
+  Get a quadrature rule for the untruncated normal distribution.
+
+TRUNCATED_NORMAL_RULE
+  Python version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  HEADER is used to generate 3 files:
+
+    header_w.txt - the weight file
+    header_x.txt - the abscissa file.
+    header_r.txt - the region file, listing A and B.
+
+  OPTION = 0
+  N = 5
+  MU = 1
+  SIGMA = 2
+  A = -oo
+  B = +oo
+  HEADER = "option0"
+
+  Creating quadrature files.
+
+  Common header is      "option0".
+
+  Weight file will be   "option0_w.txt".
+  Abscissa file will be "option0_x.txt".
+  Region file will be   "option0_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+OPTION0_TEST:
+  Normal end of execution.
+
+OPTION1_TEST:
+  Get a quadrature rule for the lower truncated normal distribution.
+
+TRUNCATED_NORMAL_RULE
+  Python version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  HEADER is used to generate 3 files:
+
+    header_w.txt - the weight file
+    header_x.txt - the abscissa file.
+    header_r.txt - the region file, listing A and B.
+
+  OPTION = 1
+  N = 9
+  MU = 2
+  SIGMA = 0.5
+  A = 0
+  B = +oo
+  HEADER = "option1"
+
+  Creating quadrature files.
+
+  Common header is      "option1".
+
+  Weight file will be   "option1_w.txt".
+  Abscissa file will be "option1_x.txt".
+  Region file will be   "option1_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+OPTION1_TEST:
+  Normal end of execution.
+
+OPTION2_TEST:
+  Get a quadrature rule for the upper truncated normal distribution.
+
+TRUNCATED_NORMAL_RULE
+  Python version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  HEADER is used to generate 3 files:
+
+    header_w.txt - the weight file
+    header_x.txt - the abscissa file.
+    header_r.txt - the region file, listing A and B.
+
+  OPTION = 2
+  N = 9
+  MU = 2
+  SIGMA = 0.5
+  A = -oo
+  B = 3
+  HEADER = "option2"
+
+  Creating quadrature files.
+
+  Common header is      "option2".
+
+  Weight file will be   "option2_w.txt".
+  Abscissa file will be "option2_x.txt".
+  Region file will be   "option2_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+OPTION2_TEST:
+  Normal end of execution.
+
+OPTION3_TEST:
+  Get a quadrature rule for the truncated normal distribution.
+
+TRUNCATED_NORMAL_RULE
+  Python version
+
+  For the (truncated) Gaussian probability density function
+    pdf(x) = exp(-0.5*((x-MU)/SIGMA)^2) / SIGMA / sqrt ( 2 * pi )
+  compute an N-point quadrature rule for approximating
+    Integral ( A <= x <= B ) f(x) pdf(x) dx
+
+  The value of OPTION determines the truncation interval [A,B]:
+  0: (-oo,+oo)
+  1: [A,+oo)
+  2: (-oo,B]
+  3: [A,B]
+
+  The user specifies OPTION, N, MU, SIGMA, A, B and FILENAME.
+
+  HEADER is used to generate 3 files:
+
+    header_w.txt - the weight file
+    header_x.txt - the abscissa file.
+    header_r.txt - the region file, listing A and B.
+
+  OPTION = 3
+  N = 5
+  MU = 100
+  SIGMA = 25
+  A = 50
+  B = 150
+  HEADER = "option3"
+
+  Creating quadrature files.
+
+  Common header is      "option3".
+
+  Weight file will be   "option3_w.txt".
+  Abscissa file will be "option3_x.txt".
+  Region file will be   "option3_r.txt".
+
+TRUNCATED_NORMAL_RULE:
+  Normal end of execution.
+
+OPTION3_TEST:
+  Normal end of execution.
+
+TRUNCATED_NORMAL_RULE_TEST:
+  Normal end of execution.
+Mon Mar 23 13:42:37 2015

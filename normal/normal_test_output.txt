@@ -1,0 +1,142 @@
+Tue Mar  3 21:52:58 2015
+
+R8MAT_PRINT_TEST
+  R8MAT_PRINT prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :           11             12             13             14             15   
+      1 :           21             22             23             24             25   
+      2 :           31             32             33             34             35   
+      3 :           41             42             43             44             45   
+
+  Col:        5        
+  Row
+      0 :           16   
+      1 :           26   
+      2 :           36   
+      3 :           46   
+
+R8MAT_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_SOME_TEST
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        3              4              5        
+  Row
+      0 :           14             15             16   
+      1 :           24             25             26   
+      2 :           34             35             36   
+
+R8MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0       123.456
+     1         5e-06
+     2        -1e+06
+     3       3.14159
+
+R8VEC_PRINT_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Tue Mar  3 21:52:58 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+R8_NORMAL_01_TEST
+  R8_NORMAL_01 computes pseudonormal values with
+  mean 0.0 and standard deviation 1.0.
+
+  SEED = 123456789
+
+   0        1.679040
+   1       -0.566060
+   2        1.212934
+   3        1.269381
+   4       -1.666087
+   5       -2.242464
+   6        0.039675
+   7        0.673068
+   8       -0.275127
+   9        2.164005
+
+R8_NORMAL_01_TEST
+  Normal end of execution.
+
+R8_UNIFORM_01_TEST
+  R8_UNIFORM_01 produces a sequence of random values.
+
+  Using random seed 123456789
+
+  SEED  R8_UNIFORM_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+  Verify that the sequence can be restarted.
+  Set the seed back to its original value, and see that
+  we generate the same sequence.
+
+  SEED  R8_UNIFORM_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+R8_UNIFORM_01_TEST
+  Normal end of execution.
+
+R8VEC_UNIFORM_01_TEST
+  R8VEC_UNIFORM_01 computes a random R8VEC.
+
+  Initial seed is 123456789
+
+  Random R8VEC:
+
+     0      0.218418
+     1      0.956318
+     2      0.829509
+     3      0.561695
+     4      0.415307
+     5     0.0661187
+     6      0.257578
+     7      0.109957
+     8      0.043829
+     9      0.633966
+
+R8VEC_UNIFORM_01_TEST:
+  Normal end of execution.
+
+NORMAL_TEST:
+  Normal end of execution.
+Tue Mar  3 21:52:58 2015

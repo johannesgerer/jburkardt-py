@@ -1,0 +1,9 @@
+
+MAIN_DEMO:
+  Quick demonstration for I4_POWER.
+  which computes K = I ^ J for integers I and J.
+
+   I   J     K
+ 
+   4   3    64
+  -2   7  -128

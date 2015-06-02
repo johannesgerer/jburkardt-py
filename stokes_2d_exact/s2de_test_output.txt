@@ -1,0 +1,351 @@
+Thu Feb 12 09:51:52 2015
+
+S2DE_TEST
+  Python version
+  Test the S2DE library.
+
+R8VEC_AMAX_TEST
+  R8VEC_AMAX computes the maximum absolute value entry in an R8VEC.
+
+  Input vector:
+
+     0      -5.63163
+     1       9.12635
+     2       6.59018
+     3       1.23391
+     4      -1.69386
+     5      -8.67763
+     6      -4.84844
+     7      -7.80086
+     8      -9.12342
+     9       2.67931
+
+  Max Abs = 9.12635
+
+R8VEC_AMAX_TEST:
+  Normal end of execution.
+
+R8VEC_AMIN_TEST
+  R8VEC_AMIN computes the minimum absolute entry in an R8VEC.
+
+  Input vector:
+
+     0      -5.63163
+     1       9.12635
+     2       6.59018
+     3       1.23391
+     4      -1.69386
+     5      -8.67763
+     6      -4.84844
+     7      -7.80086
+     8      -9.12342
+     9       2.67931
+
+  Min Abs = 1.23391
+
+R8VEC_AMIN_TEST:
+  Normal end of execution.
+
+R8VEC_MAX_TEST
+  R8VEC_MAX computes the maximum entry in an R8VEC.
+
+  Input vector:
+
+     0      -5.63163
+     1       9.12635
+     2       6.59018
+     3       1.23391
+     4      -1.69386
+     5      -8.67763
+     6      -4.84844
+     7      -7.80086
+     8      -9.12342
+     9       2.67931
+
+  Max = 9.12635
+
+R8VEC_MAX_TEST:
+  Normal end of execution.
+
+R8VEC_MIN_TEST
+  R8VEC_MIN computes the minimum entry in an R8VEC.
+
+  Input vector:
+
+     0      -5.63163
+     1       9.12635
+     2       6.59018
+     3       1.23391
+     4      -1.69386
+     5      -8.67763
+     6      -4.84844
+     7      -7.80086
+     8      -9.12342
+     9       2.67931
+
+  Min = -9.12342
+
+R8VEC_MIN_TEST:
+  Normal end of execution.
+
+R8VEC_NORM_L2_TEST
+  R8VEC_NORM_L2 computes the L2 norm of an R8VEC.
+
+  Input vector:
+
+     0      -5.63163
+     1       9.12635
+     2       6.59018
+     3       1.23391
+     4      -1.69386
+     5      -8.67763
+     6      -4.84844
+     7      -7.80086
+     8      -9.12342
+     9       2.67931
+
+  L2 norm = 20.3201
+
+R8VEC_NORM_L2_TEST:
+  Normal end of execution.
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0       123.456
+     1         5e-06
+     2        -1e+06
+     3       3.14159
+
+R8VEC_PRINT_TEST:
+  Normal end of execution.
+
+R8VEC_UNIFORM_AB_TEST
+  R8VEC_UNIFORM_AB computes a random R8VEC.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random R8VEC:
+
+     0       0.31051
+     1       4.73791
+     2       3.97706
+     3       2.37017
+     4       1.49184
+     5     -0.603288
+     6      0.545467
+     7     -0.340259
+     8     -0.737026
+     9       2.80379
+
+R8VEC_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+GRID_2D_TEST:
+  Generate a regular grid.
+
+   0   0   0       10.000000        5.000000
+   1   1   0       12.500000        5.000000
+   2   2   0       15.000000        5.000000
+   3   3   0       17.500000        5.000000
+   4   4   0       20.000000        5.000000
+   5   0   1       10.000000        5.500000
+   6   1   1       12.500000        5.500000
+   7   2   1       15.000000        5.500000
+   8   3   1       17.500000        5.500000
+   9   4   1       20.000000        5.500000
+  10   0   2       10.000000        6.000000
+  11   1   2       12.500000        6.000000
+  12   2   2       15.000000        6.000000
+  13   3   2       17.500000        6.000000
+  14   4   2       20.000000        6.000000
+
+GRID_2D_TEST:
+  Normal end of execution.
+
+UVP_STOKES1_TEST
+  Exact Stokes solution #1.
+  Estimate the range of velocity and pressure
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:      -0.0119905       0.0119441
+  V:       -0.011991       0.0120032
+  P:               0               0
+
+UVP_STOKES1_TEST:
+  Normal end of execution.
+
+RHS_STOKES1_TEST
+  Exact Stokes solution #1.
+  Estimate the range of the right hand side functions
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:       -0.759791        0.755809
+  V:       -0.758088         0.75836
+  P:               0               0
+
+RHS_STOKES1_TEST:
+  Normal end of execution.
+
+RESID_STOKES1_TEST
+  Exact Stokes solution #1.
+  Sample the Stokes residuals.
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0      2.8727e-15
+  Pr:               0     1.80411e-16
+
+RESID_STOKES1_TEST:
+  Normal end of execution.
+
+STOKES1_GNUPLOT_TEST:
+  Exact solution #1.
+  Generate a Stokes velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "stokes1_data.txt".
+  Commands written to "stokes1_commands.txt".
+
+STOKES1_GNUPLOT_TEST:
+  Normal end of execution.
+
+STOKES1_MATPLOTLIB_TEST:
+  Exact flow #1.
+  Generate a Stokes velocity field on a regular grid.
+  Display it using MATPLOTLIB
+
+STOKES1_MATPLOTLIB_TEST:
+  Normal end of execution.
+
+UVP_STOKES2_TEST
+  Exact Stokes solution #2.
+  Estimate the range of velocity and pressure
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:        -1.99485         1.98591
+  V:        -1.99754         1.99662
+  P:     0.000301972         1.95553
+
+UVP_STOKES2_TEST:
+  Normal end of execution.
+
+RHS_STOKES2_TEST
+  Exact Stokes solution #2.
+  Estimate the range of the right hand side functions
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:        -156.013         158.264
+  V:        -157.218          159.13
+  P:               0               0
+
+RHS_STOKES2_TEST:
+  Normal end of execution.
+
+RESID_STOKES2_TEST
+  Exact Stokes solution #2.
+  Sample the Stokes residuals.
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+RESID_STOKES2_TEST:
+  Normal end of execution.
+
+STOKES2_GNUPLOT_TEST:
+  Exact solution #2.
+  Generate a Stokes velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "stokes2_data.txt".
+  Commands written to "stokes2_commands.txt".
+
+STOKES2_GNUPLOT_TEST:
+  Normal end of execution.
+
+STOKES2_MATPLOTLIB_TEST:
+  Exact flow #2.
+  Generate a Stokes velocity field on a regular grid.
+  Display it using MATPLOTLIB
+
+STOKES2_MATPLOTLIB_TEST:
+  Normal end of execution.
+
+UVP_STOKES3_TEST
+  Exact Stokes solution #3.
+  Estimate the range of velocity and pressure
+  using a region that is [-1,+1]x[-1,+1].
+
+           Minimum       Maximum
+
+  U:        -18.9476         18.3862
+  V:        -4.87497          4.8969
+  P:        -44.5447         66.6661
+
+UVP_STOKES1_TEST:
+  Normal end of execution.
+
+RHS_STOKES3_TEST
+  Exact Stokes solution #3.
+  Estimate the range of the right hand side functions
+  using a region that is [-1,+1]x[-1,+1].
+
+           Minimum       Maximum
+
+  U:               0               0
+  V:               0               0
+  P:               0               0
+
+RHS_STOKES3_TEST:
+  Normal end of execution.
+
+RESID_STOKES3_TEST
+  Exact Stokes solution #3.
+  Sample the Stokes residuals.
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+RESID_STOKES3_TEST:
+  Normal end of execution.
+
+STOKES3_GNUPLOT_TEST:
+  Exact solution #3.
+  Generate a Stokes velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "stokes3_data.txt".
+  Commands written to "stokes3_commands.txt".
+
+STOKES3_GNUPLOT_TEST:
+  Normal end of execution.
+
+STOKES3_MATPLOTLIB_TEST:
+  Exact flow #3.
+  Generate a Stokes velocity field on a regular grid.
+  Display it using MATPLOTLIB
+
+STOKES3_MATPLOTLIB_TEST:
+  Normal end of execution.
+
+S2DE_TEST:
+  Normal end of execution.
+Thu Feb 12 09:52:02 2015

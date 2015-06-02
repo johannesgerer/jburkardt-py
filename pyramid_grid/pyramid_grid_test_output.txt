@@ -1,0 +1,123 @@
+Tue Apr 14 20:25:19 2015
+
+PYRAMID_GRID_TEST
+  Python version:
+  Test the PYRAMID_GRID library.
+
+R83COL_PRINT_PART_TEST
+  R83COL_PRINT_PART prints part of an R83COL.
+
+  Output with MAX_PRINT = 2
+
+     0              11              12              13
+     1              21              22              23  ...more entries...
+
+  Output with MAX_PRINT = 5
+
+     0              11              12              13
+     1              21              22              23
+     2              31              32              33
+  ....  ..............  ..............  ..............
+     9             101             102             103
+
+  Output with MAX_PRINT = 25
+
+     0              11              12              13
+     1              21              22              23
+     2              31              32              33
+     3              41              42              43
+     4              51              52              53
+     5              61              62              63
+     6              71              72              73
+     7              81              82              83
+     8              91              92              93
+     9             101             102             103
+
+R82COL_PRINT_PART_TEST:
+  Normal end of execution.
+
+R8MAT_WRITE_TEST:
+  Test R8MAT_WRITE, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+R8MAT_WRITE_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Tue Apr 14 20:25:19 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+PYRAMID_GRID_COUNT_TEST:
+  PYRAMID_GRID_COUNT can count the grid points in a pyramid
+  with N+1 points on a side.
+
+     N        NG
+
+     1         5
+     2        14
+     3        30
+     4        55
+     5        91
+    10       506
+    15      1496
+    20      3311
+    25      6201
+    50     45526
+   100    348551
+
+PYRAMID_GRID_COUNT_TEST:
+  Normal end of execution.
+
+PYRAMID_GRID_DISPLAY_TEST:
+  PYRAMID_GRID_DISPLAY can display a grid of points in the unit pyramid.
+
+PYRAMID_GRID_DISPLAY_TEST:
+  Normal end of execution.
+
+PYRAMID_GRID_POINTS_TEST
+  PYRAMID_GRID_POINTS determines a unit pyramid
+  grid with N+1 points along each edge.
+
+  Grid parameter N = 4
+
+  Grid size NG = 55
+
+  Pyramid grid points:
+
+     0               0               0               1
+     1           -0.25           -0.25            0.75
+     2            0.25           -0.25            0.75
+     3           -0.25            0.25            0.75
+     4            0.25            0.25            0.75
+     5            -0.5            -0.5             0.5
+     6               0            -0.5             0.5
+     7             0.5            -0.5             0.5
+     8            -0.5               0             0.5
+     9               0               0             0.5
+    10             0.5               0             0.5
+    11            -0.5             0.5             0.5
+    12               0             0.5             0.5
+    13             0.5             0.5             0.5
+    14           -0.75           -0.75            0.25
+    15           -0.25           -0.75            0.25
+    16            0.25           -0.75            0.25
+    17            0.75           -0.75            0.25
+  ....  ..............  ..............  ..............
+    54               1               1               0
+
+  Data written to the file "pyramid_grid_points.xyz".
+
+  Plot written to the file "pyramid_grid_points.png".
+
+PYRAMID_GRID_POINTS_TEST:
+  Normal end of execution.
+
+PYRAMID_GRID_TEST:
+  Normal end of execution.
+Tue Apr 14 20:25:20 2015

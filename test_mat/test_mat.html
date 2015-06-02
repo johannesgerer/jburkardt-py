@@ -1,0 +1,1096 @@
+<html>
+
+  <head>
+    <title>
+      TEST_MAT - Test Matrices
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TEST_MAT <br> Test Matrices
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TEST_MAT</b> 
+      is a Python library which 
+      defines test matrices for which some of the determinant, eigenvalues, 
+      inverse, null vectors, P*L*U factorization or linear system solution 
+      are already known, including the Vandermonde and Wathen matrix.
+    </p>
+
+    <p> 
+      A wide range of matrix 
+      dimensions, forms and properties are available.  These matrices may be 
+      useful in testing an algorithm for correctness on a variety of problems.
+    </p>
+
+    <p>
+      Many of the matrices can be rectangular, with the user specifying
+      the number of rows and columns.  Almost all the matrices can be
+      made of arbitrary size, with the user specifying the dimension.
+    </p>
+
+    <p>
+      Many different matrix zero structures are available, including diagonal,
+      bidiagonal, tridiagonal, pentadiagonal, banded, upper and lower
+      triangular, and Hessenberg.
+    </p>
+
+    <p>
+      Many different matrix symmetry patterns are available, including
+      symmetric, antisymmetric, persymmetric, circulant, Toeplitz, and
+      Hankel.
+    </p>
+
+    <p>
+      Matrices are available with known inverses, condition numbers, 
+      determinants, rank,
+      eigenvalues, and characteristic polynomials.  Other matrix properties
+      include positive definiteness, positivity, zero/one, and
+      adjacency matrices.
+    </p>
+
+    <p>
+      Many of the matrices come from a MATLAB M file collection developed by 
+      Nicholas Higham, Department of Mathematics, University of Manchester.
+    </p>
+
+    <p>
+      An earlier version of the collection is available, again as MATLAB 
+      M files, in ACM TOMS Algorithm 694, in the TOMS directory of
+      <a href = "http://www.netlib.org/">the NETLIB web site</a>.
+    </p>
+
+    <p>
+      Many of these matrices, and many other matrices, are available at
+      <a href = "http://math.nist.gov/">
+                 http://math.nist.gov</a>,
+      the Matrix Market web site.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TEST_MAT</b> is available in
+      <a href = "../../c_src/test_mat/test_mat.html">a C version</a> and
+      <a href = "../../cpp_src/test_mat/test_mat.html">a C++ version</a> and
+      <a href = "../../f77_src/test_mat/test_mat.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/test_mat/test_mat.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_mat/test_mat.html">a MATLAB version</a> and
+      <a href = "../../py_src/test_mat/test_mat.html">a Python version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/wathen/wathen.html">
+      WATHEN</a>,
+      a Python library which
+      compares storage schemes (full, banded, sparse triplet, sparse) and 
+      solution strategies (A\x, Linpack, conjugate gradient) for linear systems
+      involving the Wathen matrix, which can arise when solving a 
+      problem using the finite element method (FEM).
+    </p>
+    
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "a123.py">a123.py</a>
+          the A123 matrix.
+        </li>
+        <li>
+          <a href = "aegerter.py">aegerter.py</a>
+          the AEGERTER matrix.
+        </li>
+        <li>
+          <a href = "archimedes.py">archimedes.py</a>
+          the ARCHIMEDES matrix.
+        </li>
+        <li>
+          <a href = "bab.py">bab.py</a>
+          the BAB matrix.
+        </li>
+        <li>
+          <a href = "bauer.py">bauer.py</a>
+          the BAUER matrix.
+        </li>
+        <li>
+          <a href = "bernstein.py">bernstein.py</a>, 
+          the BERNSTEIN matrix.
+        </li>
+        <li>
+          <a href = "bis.py">bis.py</a>
+          the BIS matrix.
+        </li>
+        <li>
+          <a href = "biw.py">biw.py</a>
+          the BIW matrix.
+        </li>
+        <li>
+          <a href = "bodewig.py">bodewig.py</a>
+          the BODEWIG matrix.
+        </li>
+        <li>
+          <a href = "boothroyd.py">boothroyd.py</a>
+          the BOOTHROYD matrix.
+        </li>
+        <li>
+          <a href = "borderband.py">borderband.py</a>
+          the BORDERBAND matrix.
+        </li>
+        <li>
+          <a href = "carry.py">carry.py</a>
+          the CARRY matrix.
+        </li>
+        <li>
+          <a href = "cauchy.py">cauchy.py</a>
+          the CAUCHY matrix.
+        </li>
+        <li>
+          <a href = "cheby_diff1.py">cheby_diff1.py</a>
+          the CHEBY_DIFF1 matrix.
+        </li>
+        <li>
+          <a href = "cheby_t.py">cheby_t.py</a>
+          the CHEBY_T matrix.
+        </li>
+        <li>
+          <a href = "cheby_u.py">cheby_u.py</a>
+          the CHEBY_U matrix.
+        </li>
+        <li>
+          <a href = "cheby_van1.py">cheby_van1.py</a>
+          the CHEBY_VAN1 matrix.
+        </li>
+        <li>
+          <a href = "cheby_van2.py">cheby_van2.py</a>
+          the CHEBY_VAN2 matrix.
+        </li>
+        <li>
+          <a href = "cheby_van3.py">cheby_van3.py</a>
+          the CHEBY_VAN3 matrix.
+        </li>
+        <li>
+          <a href = "chow.py">chow.py</a>
+          the CHOW matrix.
+        </li>
+        <li>
+          <a href = "clement1.py">clement1.py</a>
+          the CLEMENT1 matrix.
+        </li>
+        <li>
+          <a href = "clement2.py">clement2.py</a>
+          the CLEMENT2 matrix.
+        </li>
+        <li>
+          <a href = "colleague.py">colleague.py</a>
+          the COLLEAGUE matrix.
+        </li>
+        <li>
+          <a href = "combin.py">combin.py</a>
+          the COMBIN matrix.
+        </li>
+        <li>
+          <a href = "companion.py">companion.py</a>
+          the COMPANION matrix.
+        </li>
+        <li>
+          <a href = "complex_i.py">complex_i.py</a>
+          the COMPLEX_I matrix.
+        </li>
+        <li>
+          <a href = "conex1.py">conex1.py</a>
+          the CONEX1 matrix.
+        </li>
+        <li>
+          <a href = "conex2.py">conex2.py</a>
+          the CONEX2 matrix.
+        </li>
+        <li>
+          <a href = "conex3.py">conex3.py</a>
+          the CONEX3 matrix.
+        </li>
+        <li>
+          <a href = "conex4.py">conex4.py</a>
+          the CONEX4 matrix.
+        </li>
+        <li>
+          <a href = "conference.py">conference.py</a>
+          the CONFERENCE matrix.
+        </li>
+        <li>
+          <a href = "creation.py">creation.py</a>
+          the CREATION matrix.
+        </li>
+        <li>
+          <a href = "daub2.py">daub2.py</a>
+          the DAUB2 matrix.
+        </li>
+        <li>
+          <a href = "daub4.py">daub4.py</a>
+          the DAUB4 matrix.
+        </li>
+        <li>
+          <a href = "daub6.py">daub6.py</a>
+          the DAUB6 matrix.
+        </li>
+        <li>
+          <a href = "daub8.py">daub8.py</a>
+          the DAUB8 matrix.
+        </li>
+        <li>
+          <a href = "daub10.py">daub10.py</a>
+          the DAUB10 matrix.
+        </li>
+        <li>
+          <a href = "daub12.py">daub12.py</a>
+          the DAUB12 matrix.
+        </li>
+        <li>
+          <a href = "diagonal.py">diagonal.py</a> 
+          the DIAGONAL matrix.
+        </li>
+        <li>
+          <a href = "dif1.py">dif1.py</a> 
+          the DIF1 matrix.
+        </li>
+        <li>
+          <a href = "dif1cyclic.py">dif1cyclic.py</a>
+          the DIF1CYCLIC matrix.
+        </li>
+        <li>
+          <a href = "dif2.py">dif2.py</a>
+          the DIF2 matrix.
+        </li>
+        <li>
+          <a href = "dif2cyclic.py">dif2cyclic.py</a>
+          the DIF2FCYCLIC matrix.
+        </li>
+        <li>
+          <a href = "dorr.py">dorr.py</a>
+          the DORR matrix.
+        </li>
+        <li>
+          <a href = "downshift.py">downshift.py</a>
+          the DOWNSHIFT matrix.
+        </li>
+        <li>
+          <a href = "eberlein.py">eberlein.py</a>
+          the EBERLEIN matrix.
+        </li>
+        <li>
+          <a href = "eulerian.py">eulerian.py</a>
+          the EULERIAN matrix.
+        </li>
+        <li>
+          <a href = "exchange.py">exchange.py</a>
+          the EXCHANGE matrix.
+        </li>
+        <li>
+          <a href = "fibonacci1.py">fibonacci1.py</a>
+          the FIBONACCI1 matrix.
+        </li>
+        <li>
+          <a href = "fibonacci2.py">fibonacci2.py</a>
+          the FIBONACCI2 matrix.
+        </li>
+        <li>
+          <a href = "fibonacci3.py">fibonacci3.py</a>
+          the FIBONACCI3 matrix.
+        </li>
+        <li>
+          <a href = "fiedler.py">fiedler.py</a>
+          the FIEDLER matrix.
+        </li>
+        <li>
+          <a href = "forsythe.py">forsythe.py</a>
+          the FORSYTHE matrix.
+        </li>
+        <li>
+          <a href = "fourier_cosine.py">fourier_cosine.py</a>
+          the FOURIER COSINE matrix.
+        </li>
+        <li>
+          <a href = "fourier_sine.py">fourier_sine.py</a>
+          the FOURIER_SINE matrix.
+        </li>
+        <li>
+          <a href = "frank.py">frank.py</a>
+          the FRANK matrix.
+        </li>
+        <li>
+          <a href = "gear.py">gear.py</a>
+          the GEAR matrix.
+        </li>
+        <li>
+          <a href = "gfpp.py">gfpp.py</a>
+          the GFPP matrix.
+        </li>
+        <li>
+          <a href = "givens.py">givens.py</a>
+          the GIVENS matrix.
+        </li>
+        <li>
+          <a href = "gk316.py">gk316.py</a>
+          the GK316 matrix.
+        </li>
+        <li>
+          <a href = "gk323.py">gk323.py</a>
+          the GK323 matrix.
+        </li>
+        <li>
+          <a href = "gk324.py">gk324.py</a>
+          the GK324 matrix.
+        </li>
+        <li>
+          <a href = "hamming.py">hamming.py</a>
+          the HAMMING matrix.
+        </li>
+        <li>
+          <a href = "hankel_n.py">hankel_n.py</a>
+          the HANKEL_N matrix.
+        </li>
+        <li>
+          <a href = "hanowa.py">hanowa.py</a>
+          the HANOWA matrix.
+        </li>
+        <li>
+          <a href = "harman.py">harman.py</a>
+          the HARMAN matrix.
+        </li>
+        <li>
+          <a href = "hartley.py">hartley.py</a>
+          the HARTLEY matrix.
+        </li>
+        <li>
+          <a href = "helmert.py">helmert.py</a>
+          the HELMERT matrix.
+        </li>
+        <li>
+          <a href = "helmert2.py">helmert2.py</a>
+          the HELMERT2 matrix.
+        </li>
+        <li>
+          <a href = "hermite.py">hermite.py</a>
+          the HERMITE matrix.
+        </li>
+        <li>
+          <a href = "herndon.py">herndon.py</a>
+          the HERNDON matrix.
+        </li>
+        <li>
+          <a href = "hilbert.py">hilbert.py</a>
+          the HILBERT matrix.
+        </li>
+        <li>
+          <a href = "householder.py">householder.py</a>
+          the HOUSEHOLDER matrix.
+        </li>
+        <li>
+          <a href = "idem_random.py">idem_random.py</a>
+          the IDEM_RANDOM matrix.
+        </li>
+        <li>
+          <a href = "identity.py">identity.py</a>
+          the IDENTITY matrix.
+        </li>
+        <li>
+          <a href = "ijfact1.py">ijfact1.py</a>
+          the IJFACT1 matrix.
+        </li>
+        <li>
+          <a href = "ijfact2.py">ijfact2.py</a>
+          the IFJACT2 matrix.
+        </li>
+        <li>
+          <a href = "ill3.py">ill3.py</a>
+          the ILL3 matrix.
+        </li>
+        <li>
+          <a href = "integration.py">integration.py</a>
+          the INTEGRATION matrix.
+        </li>
+        <li>
+          <a href = "invol.py">invol.py</a>
+          the INVOL matrix.
+        </li>
+        <li>
+          <a href = "jacobi.py">jacobi.py</a>
+          the JACOBI matrix.
+        </li>
+        <li>
+          <a href = "jordan.py">jordan.py</a>
+          the JORDAN matrix.
+        </li>
+        <li>
+          <a href = "kahan.py">kahan.py</a>
+          the KAHAN matrix.
+        </li>
+        <li>
+          <a href = "kershaw.py">kershaw.py</a>
+          the KERSHAW matrix.
+        </li>
+        <li>
+          <a href = "kershawtri.py">kershawtri.py</a>
+          the KERSHAWTRI matrix.
+        </li>
+        <li>
+          <a href = "kms.py">kms.py</a>
+          the KMS matrix.
+        </li>
+        <li>
+          <a href = "laguerre.py">laguerre.py</a>
+          the LAGUERRE matrix.
+        </li>
+        <li>
+          <a href = "lauchli.py">lauchli.py</a>
+          the LAUCHLI matrix.
+        </li>
+        <li>
+          <a href = "legendre.py">legendre.py</a>
+          the LEGENDRE matrix.
+        </li>
+        <li>
+          <a href = "lehmer.py">lehmer.py</a>
+          the LEHMER matrix.
+        </li>
+        <li>
+          <a href = "leslie.py">leslie.py</a>
+          the LESLIE matrix.
+        </li>
+        <li>
+          <a href = "lesp.py">lesp.py</a>
+          the LESP matrix.
+        </li>
+        <li>
+          <a href = "lietzke.py">lietzke.py</a>
+          the LIETZKE matrix.
+        </li>
+        <li>
+          <a href = "line_adj.py">line_adj.py</a>
+          the LINE_ADJ matrix.
+        </li>
+        <li>
+          <a href = "line_loop_adj.py">line_loop_adj.py</a>
+          the LINE_LOOP_ADJ matrix.
+        </li>
+        <li>
+          <a href = "lotkin.py">lotkin.py</a>
+          the LOTKIN matrix.
+        </li>
+        <li>
+          <a href = "maxij.py">maxij.py</a>
+          the MAXIJ matrix.
+        </li>
+        <li>
+          <a href = "milnes.py">milnes.py</a>
+          the MILNES matrix.
+        </li>
+        <li>
+          <a href = "minij.py">minij.py</a>
+          the MINIJ matrix.
+        </li>
+        <li>
+          <a href = "moler1.py">moler1.py</a>
+          the MOLER1 matrix.
+        </li>
+        <li>
+          <a href = "moler2.py">moler2.py</a>
+          the MOLER2 matrix.
+        </li>
+        <li>
+          <a href = "moler3.py">moler3.py</a>
+          the MOLER3 matrix.
+        </li>
+        <li>
+          <a href = "moler4.py">moler4.py</a>
+          the MOLER4 matrix.
+        </li>
+        <li>
+          <a href = "neumann.py">neumann.py</a>
+          the NEUMANN matrix.
+        </li>
+        <li>
+          <a href = "one.py">one.py</a>
+          the ONE matrix.
+        </li>
+        <li>
+          <a href = "ortega.py">ortega.py</a>
+          the ORTEGA matrix.
+        </li>
+        <li>
+          <a href = "orth_random.py">orth_random.py</a>
+          the ORTH_RANDOM matrix.
+        </li>
+        <li>
+          <a href = "orth_symm.py">orth_symm.py</a>
+          the ORTH_SYMM matrix.
+        </li>
+        <li>
+          <a href = "oto.py">oto.py</a>
+          the OTO matrix.
+        </li>
+        <li>
+          <a href = "parter.py">parter.py</a>
+          the PARTER matrix.
+        </li>
+        <li>
+          <a href = "pascal1.py">pascal1.py</a>
+          the PASCAL1 matrix.
+        </li>
+        <li>
+          <a href = "pascal2.py">pascal2.py</a>
+          the PASCAL2 matrix.
+        </li>
+        <li>
+          <a href = "pascal3.py">pascal3.py</a>
+          the PASCAL3 matrix.
+        </li>
+        <li>
+          <a href = "pds_random.py">pds_random.py</a>
+          the PDS_RANDOM matrix.
+        </li>
+        <li>
+          <a href = "pei.py">pei.py</a>
+          the PEI matrix.
+        </li>
+        <li>
+          <a href = "permutation_random.py">permutation_random.py</a>
+          the PERMUTATION_RANDOM matrix.
+        </li>
+        <li>
+          <a href = "poisson.py">poisson.py</a>
+          the POISSON matrix.
+        </li>
+        <li>
+          <a href = "redheffer.py">redheffer.py</a>,
+          the REDHEFFER matrix.
+        </li>
+        <li>
+          <a href = "ring_adj.py">ring_adj.py</a>,
+          the RING_ADJ matrix.
+        </li>
+        <li>
+          <a href = "ris.py">ris.py</a>,
+          the RIS matrix.
+        </li>
+        <li>
+          <a href = "rodman.py">rodman.py</a>,
+          the RODMAN matrix.
+        </li>
+        <li>
+          <a href = "rosser1.py">rosser1.py</a>,
+          the ROSSER1 matrix.
+        </li>
+        <li>
+          <a href = "routh.py">routh.py</a>,
+          the ROUTH matrix.
+        </li>
+        <li>
+          <a href = "rutis1.py">rutis1.py</a>,
+          the RUTIS1 matrix.
+        </li>
+        <li>
+          <a href = "rutis2.py">rutis2.py</a>,
+          the RUTIS2 matrix.
+        </li>
+        <li>
+          <a href = "rutis3.py">rutis3.py</a>,
+          the RUTIS3 matrix.
+        </li>
+        <li>
+          <a href = "rutis5.py">rutis5.py</a>,
+          the RUTIS5 matrix.
+        </li>
+        <li>
+          <a href = "schur_block.py">schur_block.py</a>
+          the SCHUR_BLOCK matrix.
+        </li>
+        <li>
+          <a href = "spline.py">spline.py</a>
+          the SPLINE matrix.
+        </li>
+        <li>
+          <a href = "stirling.py">stirling.py</a>
+          the STIRLING matrix.
+        </li>
+        <li>
+          <a href = "summation.py">summation.py</a>
+          the SUMMATION matrix.
+        </li>
+        <li>
+          <a href = "sweet1.py">sweet1.py</a>
+          the SWEET1 matrix.
+        </li>
+        <li>
+          <a href = "sweet2.py">sweet2.py</a>
+          the SWEET2 matrix.
+        </li>
+        <li>
+          <a href = "sweet3.py">sweet3.py</a>
+          the SWEET3 matrix.
+        </li>
+        <li>
+          <a href = "sweet4.py">sweet4.py</a>
+          the SWEET4 matrix.
+        </li>
+        <li>
+          <a href = "sylvester_kac.py">sylvester_kac.py</a>
+          the SYLVESTER_KAC matrix.
+        </li>
+        <li>
+          <a href = "symm_random.py">symm_random.py</a>
+          the SYMM_RANDOM matrix.
+        </li>
+        <li>
+          <a href = "tri_upper.py">tri_upper.py</a>
+          the TRI_UPPER matrix.
+        </li>
+        <li>
+          <a href = "tris.py">tris.py</a>
+          the TRIS matrix.
+        </li>
+        <li>
+          <a href = "triv.py">triv.py</a>
+          the TRIV matrix.
+        </li>
+        <li>
+          <a href = "triw.py">triw.py</a>
+          the TRIW matrix.
+        </li>
+        <li>
+          <a href = "upshift.py">upshift.py</a>
+          the UPSHIFT matrix.
+        </li>
+        <li>
+          <a href = "vand1.py">vand1.py</a>
+          the VAND1 matrix.
+        </li>
+        <li>
+          <a href = "vand2.py">vand2.py</a>
+          the VAND2 matrix.
+        </li>
+        <li>
+          <a href = "wilk03.py">wilk03.py</a>
+          the WILK03 matrix.
+        </li>
+        <li>
+          <a href = "wilk04.py">wilk04.py</a>
+          the WILK04 matrix.
+        </li>
+        <li>
+          <a href = "wilk05.py">wilk05.py</a>
+          the WILK05 matrix.
+        </li>
+        <li>
+          <a href = "wilk12.py">wilk12.py</a>
+          the WILK12 matrix.
+        </li>
+        <li>
+          <a href = "wilk21.py">wilk21.py</a>
+          the WILK21 matrix.
+        </li>
+        <li>
+          <a href = "wilson.py">wilson.py</a>
+          the WILSON matrix.
+        </li>
+        <li>
+          <a href = "zero.py">zero.py</a>
+          the ZERO matrix.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Utilities:
+      <ul>
+        <li>
+          <a href = "bvec_next_grlex.py">bvec_next_grlex.py</a>
+          returns the next binary vector in GRLEX order.
+        </li>
+        <li>
+          <a href = "c8_i.py">c8_i.py</a>
+          returns the value of the imaginary unit, i.
+        </li>
+        <li>
+          <a href = "c8_normal_01.py">c8_normal_01.py</a>
+          returns a unit pseudonormal C8.
+        </li>
+        <li>
+          <a href = "c8_uniform_01.py">c8_uniform_01.py</a>
+          returns a unit pseudorandom C8.
+        </li>
+        <li>
+          <a href = "c8mat_identity.py">c8mat_identity.py</a>
+          sets the square matrix A to the identity.
+        </li>
+        <li>
+          <a href = "c8mat_indicator.py">c8mat_indicator.py</a>, 
+          returns the C8MAT indicator matrix.
+        </li>
+        <li>
+          <a href = "c8mat_uniform_01.py">c8mat_uniform_01.py</a>
+          returns a unit pseudorandom C8MAT.
+        </li>
+        <li>
+          <a href = "c8vec_print.py">c8vec_print.py</a>
+          prints a complex vector, with an optional title.
+        </li>
+        <li>
+          <a href = "c8vec_uniform_01.py">c8vec_uniform_01.py</a>
+          returns a unit pseudorandom C8VEC.
+        </li>
+        <li>
+          <a href = "c8vec_unity.py">c8vec_unity.py</a>
+          returns the N roots of unity.
+        </li>
+        <li>
+          <a href = "cheby_u_polynomial.py">cheby_u_polynomial.py</a>
+          evaluates the Chebyshev polynomials of the second kind.
+        </li>
+        <li>
+          <a href = "complete_symmetric_poly.py">complete_symmetric_poly.py</a>, 
+          evaluates the complete symmetric polynomial tau(n,r).
+        </li>
+        <li>
+          <a href = "i4_factor.py">i4_factor.py</a>
+          factors an integer into prime factors.
+        </li>
+        <li>
+          <a href = "i4_log_10.py">i4_log_10.py</a>
+          returns the integer part of the logarithm base 10 of abs ( X ).
+        </li>
+        <li>
+          <a href = "i4_is_even.py">i4_is_even.py</a>
+          returns TRUE if I is even.
+        </li>
+        <li>
+          <a href = "i4_is_odd.py">i4_is_odd.py</a>
+          returns TRUE if I is odd.
+        </li>
+        <li>
+          <a href = "i4_is_prime.py">i4_is_prime.py</a>
+          reports whether an integer is prime.
+        </li>
+        <li>
+          <a href = "i4_modp.py">i4_modp.py</a>
+          returns the nonnegative remainder of integer division.
+        </li>
+        <li>
+          <a href = "i4_rise.py">i4_rise.py</a>
+          computes the integer rising factorial function.
+        </li>
+        <li>
+          <a href = "i4_rise_values.py">i4_rise_values.py</a>
+          returns selected values of the integer rising factorial function.
+        </li>
+        <li>
+          <a href = "i4_sign.py">i4_sign.py</a>
+          returns the sign of an I4.
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>
+          returns a scaled pseudorandom I4.
+        </li>
+        <li>
+          <a href = "i4_wrap.py">i4_wrap.py</a>,
+          forces an I4 to lie between given limits by wrapping.
+        </li>
+        <li>
+          <a href = "i4mat_print.py">i4mat_print.py</a>
+          prints an I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_print_some.py">i4mat_print_some.py</a>
+          prints some of an I4MAT.
+        </li>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>
+          prints an integer vector, with an optional title.
+        </li>
+        <li>
+          <a href = "legendre_symbol.py">legendre_symbol.py</a>, 
+          evaluates the Legendre symbol (Q/P);
+        </li>
+        <li>
+          <a href = "legendre_zeros.py">legendre_zeros.py</a>
+          computes the zeros of the Legendre polynomial.
+        </li>
+        <li>
+          <a href = "mertens.py">mertens.py</a>
+          evaluates the Mertens function.
+        </li>
+        <li>
+          <a href = "mertens_values.py">mertens_values.py</a>
+          returns some values of the Mertens function.
+        </li>
+        <li>
+          <a href = "moebius.py">moebius.py</a>
+          returns the value of MU(N), the Moebius function of N.
+        </li>
+        <li>
+          <a href = "moebius_values.py">moebius_values.py</a>
+          returns some values of the Moebius function.
+        </li>
+        <li>
+          <a href = "prime.py">prime.py</a>
+          returns any of the first PRIME_MAX prime numbers.
+        </li>
+        <li>
+          <a href = "r8_choose.py">r8_choose.py</a>, 
+          returns Choose(N,K) as an R8;
+        </li>
+        <li>
+          <a href = "r8_factorial.py">r8_factorial.py</a>,
+          evaluates the factorial function.
+        </li>
+        <li>
+          <a href = "r8_factorial_values.py">r8_factorial_values.py</a>
+          returns values of the real factorial function.
+        </li>
+        <li>
+          <a href = "r8_mop.py">r8_mop.py</a>, 
+          returns a minus-one-power as an R8;
+        </li>
+        <li>
+          <a href = "r8_normal_01.py">r8_normal_01.py</a>, 
+          returns a unit pseudonormal R8;
+        </li>
+        <li>
+          <a href = "r8_rise.py">r8_rise.py</a>, 
+          returns the rising factorial function as an R8.
+        </li>
+        <li>
+          <a href = "r8_sign.py">r8_sign.py</a>, 
+          returns the sign of an R8.
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_01.py</a>, 
+          returns a unit pseudorandom R8;
+        </li>
+        <li>
+          <a href = "r8_uniform_ab.py">r8_uniform_ab.py</a>, 
+          returns a scaled pseudorandom R8;
+        </li>
+        <li>
+          <a href = "r8col_swap.py">
+          r8col_swap.py</a>, 
+          swaps two columns of an R8COL;
+        </li>
+        <li>
+          <a href = "r8mat_house_form.py">
+          r8mat_house_form.py</a>, 
+          constructs a Householder matrix from its compact form;
+        </li>
+        <li>
+          <a href = "r8mat_indicator.py">r8mat_indicator.py</a>, 
+          returns the indicator matrix as an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_is_eigen_left.py">
+          r8mat_is_eigen_left.py</a>, 
+          determines the error in a left eigen system ||A'*X-X*LAMBDA||.
+        </li>
+        <li>
+          <a href = "r8mat_is_eigen_right.py">
+          r8mat_is_eigen_right.py</a>, 
+          determines the error in a right eigen system ||A*X-X*LAMBDA||.
+        </li>
+        <li>
+          <a href = "r8mat_is_inverse.py">r8mat_is_inverse.py</a>, 
+          returns the error in an inverse, ||A*B-I|| + ||B*A-I||.
+        </li>
+        <li>
+          <a href = "r8mat_is_null_left.py">r8mat_is_null_left.py</a>, 
+          returns the error in a left null vector ||A'*x||.
+        </li>
+        <li>
+          <a href = "r8mat_is_null_right.py">r8mat_is_null_right.py</a>, 
+          returns the error in a right null vector ||A'*x||.
+        </li>
+        <li>
+          <a href = "r8mat_is_plu.py">r8mat_is_plu.py</a>, 
+          returns the Frobenius norm of the error in a PLU factorization A=P*L*U.
+        </li>
+        <li>
+          <a href = "r8mat_is_solution.py">r8mat_is_solution.py</a>, 
+          returns the Frobenius norm of the error of the equation A*X=B.
+        </li>
+        <li>
+          <a href = "r8mat_mm.py">r8mat_mm.py</a>, 
+          computes a matrix-matrix product.
+        </li>
+        <li>
+          <a href = "r8mat_mmt.py">r8mat_mmt.py</a>, 
+          computes a matrix-transpose(matrix) product.
+        </li>
+        <li>
+          <a href = "r8mat_mtm.py">r8mat_mtm.py</a>, 
+          computes a (transposed matrix)-matrix product.
+        </li>
+        <li>
+          <a href = "r8mat_mv.py">r8mat_mv.py</a>, 
+          computes a matrix-vector product.
+        </li>
+        <li>
+          <a href = "r8mat_norm_fro.py">r8mat_norm_fro.py</a>, 
+          computes the Frobenius norm of a R8MAT;
+        </li>
+        <li>
+          <a href = "r8mat_norm_l1.py">r8mat_norm_l1.py</a>,
+          returns the L1 norm of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>,
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>,
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_sub.py">r8mat_sub.py</a>,
+          subtracts one R8MAT from another.
+        </li>
+        <li>
+          <a href = "r8mat_transpose.py">r8mat_transpose.py</a>,
+          transposes an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_01.py">r8mat_uniform_01.py</a>,
+          returns a unit pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_ab.py">r8mat_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8poly_print.py">r8poly_print.py</a>, 
+          prints a polynomial;
+        </li>
+        <li>
+          <a href = "r8vec_asum.py">r8vec_asum.py</a>,
+          sums the absolute values of the entries in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_house_column.py">r8vec_house_column.py</a>,
+          defines a Householder premultiplier that packs a column.
+        </li>
+        <li>
+          <a href = "r8vec_nint.py">r8vec_nint.py</a>,
+          rounds the entries of an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_norm_l2.py">r8vec_norm_l2.py</a>, 
+          returns the L2 norm of a R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_01.py">r8vec_uniform_01.py</a>,
+          returns a unit pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_ab.py">r8vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>
+          returns the YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_mat_test.py">test_mat_test.py</a>, 
+          calls the tests.
+        </li>
+        <li>
+          <a href = "test_mat_test.sh">test_mat_test.sh</a>, 
+          runs the tests.
+        </li>
+        <li>
+          <a href = "test_mat_test_output.txt">test_mat_test_output.txt</a>, 
+          the output file.
+        </li>
+        <li>
+          <a href = "test_condition.py">test_condition.py</a>, 
+          tests L1 condition numbers.
+        </li>
+        <li>
+          <a href = "test_determinant.py">test_determinant.py</a>, 
+          tests determinants.
+        </li>
+        <li>
+          <a href = "test_inverse.py">test_inverse.py</a>, 
+          tests matrix inverses.
+        </li>
+        <li>
+          <a href = "test_llt.py">test_llt.py</a>, 
+          tests lower triangular Cholesky factorizations.
+        </li>
+        <li>
+          <a href = "test_null_left.py">test_null_left.py</a>, 
+          tests left null vectors by evaluating ||x'*A||.
+        </li>
+        <li>
+          <a href = "test_null_right.py">test_null_right.py</a>, 
+          tests right null vectors by evaluating ||A*x||.
+        </li>
+        <li>
+          <a href = "test_plu.py">test_plu.py</a>, 
+          tests P*L*U factorizations.
+        </li>
+        <li>
+          <a href = "test_solution.py">test_solution.py</a>, 
+          tests linear solutions.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 19 April 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

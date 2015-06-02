@@ -1,71 +1,158 @@
-SEARCH_SERIAL:
-  PYTHON version
-  Search the integers from A to B
-  for a value J such that F(J) = C.
+#!/usr/bin/env python
+#
 
-  A        =  1
-  B        =  10000
-  C        =  45
+#*****************************************************************************80
 
-  No solution was found.
-  Time     =  0.125355958939
+def search_serial ( a, b, c ):
 
-SEARCH_SERIAL:
-  Normal end of execution.
+#*****************************************************************************80
+#
+## SEARCH_SERIAL searches for a solution to an integer equation.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    22 October 2012
+#
+#  Author:
+#
+#    John Burkardt
+#
+#  Parameters:
+#
+#    Input, integer A, the lower limit of the search.
+#
+#    Input, integer B, the upper limit of the search.
+#
+#    Input, integer C, the desired value.
+#
+#    Output, integer J, is:
+#    -1, if no solution could be found.
+#    otherwise, F(J) = C and A <= J <= B.
+#
+  from time import time, ctime
 
-Sun Dec  2 12:48:00 2012
-Sun Dec  2 12:48:00 2012
+  print ctime ( time ( ) )
+  print ""
+  print "SEARCH_SERIAL:"
+  print "  PYTHON version"
+  print "  Search the integers from A to B"
+  print "  for a value J such that F(J) = C."
+  print ""
+  print "  A        = ", a
+  print "  B        = ", b
+  print "  C        = ", c
 
-SEARCH_SERIAL:
-  PYTHON version
-  Search the integers from A to B
-  for a value J such that F(J) = C.
+  wtime = time ( )
 
-  A        =  1
-  B        =  100000
-  C        =  45
+  j = search ( a, b, c )
 
-  No solution was found.
-  Time     =  1.24470901489
+  wtime = time ( ) - wtime
+ 
+  print ""
+  if j == -1:
+    print "  No solution was found."
+  else:
+    print "  Found J = ", j
+    print "  Verify F(J) = ", f ( j )
+  
+  print "  Time     = ", wtime
+#
+#  Terminate.
+#
+  print ""
+  print "SEARCH_SERIAL:"
+  print "  Normal end of execution."
+  print ""
+  print ( ctime ( time ( ) ) )
 
-SEARCH_SERIAL:
-  Normal end of execution.
+  return j
 
-Sun Dec  2 12:48:01 2012
-Sun Dec  2 12:48:01 2012
+#*****************************************************************************80
 
-SEARCH_SERIAL:
-  PYTHON version
-  Search the integers from A to B
-  for a value J such that F(J) = C.
+def search ( a, b, c ):
 
-  A        =  1
-  B        =  1000000
-  C        =  45
+#*****************************************************************************80
+#
+## SEARCH searches integers in [A,B] for a J so that F(J) = C.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    29 October 2012
+#
+#  Author:
+#
+#    John Burkardt
+#
+#  Parameters:
+#
+#    Input, integer A, B, the search range.
+#
+#    Input, integer C, the desired function value.
+#
+#    Output, integer J, the computed solution, or -1
+#    if no solution was found.
+#
+  for i in range ( a, b + 1 ):
 
-  No solution was found.
-  Time     =  12.3601441383
+    if ( f ( i ) == c ):
+      return i
 
-SEARCH_SERIAL:
-  Normal end of execution.
+  return ( - 1 )
 
-Sun Dec  2 12:48:13 2012
-Sun Dec  2 12:48:13 2012
+#*****************************************************************************80
 
-SEARCH_SERIAL:
-  PYTHON version
-  Search the integers from A to B
-  for a value J such that F(J) = C.
+def f ( i ):
 
-  A        =  1674924000
-  B        =  1674924999
-  C        =  45
+#*****************************************************************************80
+#
+## F is the function we are analyzing.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    29 October 2012
+#
+#  Author:
+#
+#    John Burkardt
+#
+#  Parameters:
+#
+#    Input, integer I, the argument.
+#
+#    Input, integer VALUE, the value.
+#
+  from math import floor
 
-  Found J =  1674924981
-  Verify F(J) =  45.0
-  Time     =  0.0122578144073
+  i4_huge = 2147483647;
 
-SEARCH_SERIAL:
-  Normal end of execution.
+  value = i;
 
-Sun Dec  2 12:48:13 2012
+  for j in range ( 0, 5 ):
+
+    k = floor ( value / 127773 )
+
+    value = 16807 * ( value - k * 127773 ) - k * 2836
+
+    if ( value <= 0 ):
+      value = value + i4_huge
+
+  return value
+
+#*****************************************************************************80
+
+search_serial ( 1,               10000, 45 )
+search_serial ( 1,              100000, 45 )
+search_serial ( 1,             1000000, 45 )
+search_serial ( 1674924000, 1674924999, 45 )

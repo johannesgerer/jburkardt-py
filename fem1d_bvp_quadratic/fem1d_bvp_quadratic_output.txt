@@ -1,0 +1,55 @@
+
+FEM1D_BVP_QUADRATIC
+  Python version
+  Given the two point boundary value problem:
+    -u'' = x * ( x + 3 ) * exp ( x ), 0 < x < 1
+  with boundary conditions
+    u(0) = 0, u(1) = 0,
+  demonstrate how the finite element method can be used to
+  define and compute a discrete approximation to the solution.
+  This program uses piecewise quadratic elements.
+
+  Nodes:
+
+  0  0.000000
+  1  0.100000
+  2  0.200000
+  3  0.300000
+  4  0.400000
+  5  0.500000
+  6  0.600000
+  7  0.700000
+  8  0.800000
+  9  0.900000
+  10  1.000000
+
+  RHS
+
+  0  0.000000
+  1  0.046966
+  2  0.050563
+  3  0.180018
+  4  0.133062
+  5  0.387288
+  6  0.259311
+  7  0.699015
+  8  0.446788
+  9  1.156055
+  10  0.000000
+
+  Node          Ucomp           Uexact          Error
+
+     0     -1.9984e-15               0      1.9984e-15
+     1       0.0994734       0.0994654     8.05308e-06
+     2        0.195424        0.195424     1.06371e-09
+     3        0.283482         0.28347      1.1505e-05
+     4        0.358038        0.358038     1.73068e-09
+     5        0.412197         0.41218     1.62001e-05
+     6        0.437309        0.437309     1.88347e-09
+     7        0.422911        0.422888     2.25438e-05
+     8        0.356087        0.356087     1.37113e-09
+     9        0.221395        0.221364     3.10661e-05
+    10               0               0               0
+
+FEM1D_BVP_QUADRATIC:
+  Normal end of execution.

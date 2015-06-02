@@ -1,0 +1,136 @@
+<html>
+
+  <head>
+    <title>
+      TIMER - Compute Elapsed Time
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TIMER <br> Compute Elapsed Time
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>WTIME</b> 
+      is a PYTHON library which
+      examines methods for computing
+      the elapsed CPU time of a part of a calculation.
+    </p>
+
+    <p>
+      In PYTHON, CPU time can be read using the clock() function
+      from the time module:
+      <pre>
+        from time import clock
+
+        t1 = clock ( )
+        carry out operations to be timed
+        t2 = clock ( ) - t1
+        print 'Operations completed after %g seconds' % ( t2 )
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TIMER</b> is available in
+      <a href = "../../c_src/timer/timer.html">a C version</a> and
+      <a href = "../../cpp_src/timer/timer.html">a C++ version</a> and
+      <a href = "../../f77_src/timer/timer.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/timer/timer.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/timer/timer.html">a MATLAB version</a> and
+      <a href = "../../py_src/timer/timer.html">a PYTHON version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/timestamp/timestamp.html">
+      TIMESTAMP</a>,
+      a PYTHON library which
+      displays the current wall clock time.  
+    </p>
+
+    <p>
+      <a href = "../../py_src/wtime/wtime.html">
+      WTIME</a>,
+      a PYTHON library which
+      returns a reading of the wall clock time in seconds.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the current YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "timer_test.py">timer_test.py</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "timer_test.sh">timer_test.sh</a>,
+          BASH commands to run the sample calling program.
+        </li>
+        <li>
+          <a href = "timer_test_output.txt">timer_test_output.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "timer_test01.py">timer_test01.py</a>,
+          uses clock() to time the numpy.random.random_sample() function.
+        </li>
+        <li>
+          <a href = "timer_test02.py">timer_test02.py</a>,
+          uses time() to time the numpy.random.random_sample() function.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 May 2013.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

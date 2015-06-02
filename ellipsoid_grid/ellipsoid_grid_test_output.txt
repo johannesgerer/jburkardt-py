@@ -1,0 +1,119 @@
+Mon Apr 13 23:59:46 2015
+
+ELLIPSOID_GRID_TEST
+  Python version:
+  Test the ELLIPSOID_GRID library.
+
+R83COL_PRINT_PART_TEST
+  R83COL_PRINT_PART prints part of an R83COL.
+
+  Output with MAX_PRINT = 2
+
+     0              11              12              13
+     1              21              22              23  ...more entries...
+
+  Output with MAX_PRINT = 5
+
+     0              11              12              13
+     1              21              22              23
+     2              31              32              33
+  ....  ..............  ..............  ..............
+     9             101             102             103
+
+  Output with MAX_PRINT = 25
+
+     0              11              12              13
+     1              21              22              23
+     2              31              32              33
+     3              41              42              43
+     4              51              52              53
+     5              61              62              63
+     6              71              72              73
+     7              81              82              83
+     8              91              92              93
+     9             101             102             103
+
+R82COL_PRINT_PART_TEST:
+  Normal end of execution.
+
+R8MAT_WRITE_TEST:
+  Test R8MAT_WRITE, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+R8MAT_WRITE_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Mon Apr 13 23:59:46 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+ELLIPSOID_GRID_COUNT_TEST:
+  ELLIPSOID_GRID_COUNT can count the points in a grid,
+  with N+1 points on the most minor half axis,
+  based on any ellipsoid.
+
+  We use N = 4
+  Radius R = (2,1,1.5)
+  Center C = (1,2,1.5)
+
+  Number of grid points will be 1163
+
+ELLIPSOID_GRID_COUNT_TEST:
+  Normal end of execution.
+
+ELLIPSOID_GRID_DISPLAY_TEST:
+  ELLIPSOID_GRID_DISPLAY can display a grid of points in a ellipsoid.
+
+ELLIPSOID_GRID_DISPLAY_TEST:
+  Normal end of execution.
+
+ELLIPSOID_GRID_POINTS_TEST:
+  ELLIPSOID_GRID_POINTS can define a grid of points
+  with N+1 points on the minor half axis,
+  based on any ellipsoid.
+
+  We use N = 4
+  Radius R = (2,1,1.5)
+  Center C = (1,2,1.5)
+
+  Number of grid points will be 1163
+
+  Part of the grid point array:
+
+     0               1               2             1.5
+     1         1.22222               2             1.5
+     2        0.777778               2             1.5
+     3         1.44444               2             1.5
+     4        0.555556               2             1.5
+     5         1.66667               2             1.5
+     6        0.333333               2             1.5
+     7         1.88889               2             1.5
+     8        0.111111               2             1.5
+     9         2.11111               2             1.5
+    10       -0.111111               2             1.5
+    11         2.33333               2             1.5
+    12       -0.333333               2             1.5
+    13         2.55556               2             1.5
+    14       -0.555556               2             1.5
+    15         2.77778               2             1.5
+    16       -0.777778               2             1.5
+    17               3               2             1.5
+  ....  ..............  ..............  ..............
+  1162        0.777778         1.55556        0.166667
+
+  Data written to the file "ellipsoid_grid_points.xyz".
+
+  Plot stored in the file "ellipsoid_grid_points.png".
+
+ELLIPSOID_GRID_POINTS_TEST:
+  Normal end of execution.
+
+ELLIPSOID_GRID_TEST:
+  Normal end of execution.
+Mon Apr 13 23:59:47 2015

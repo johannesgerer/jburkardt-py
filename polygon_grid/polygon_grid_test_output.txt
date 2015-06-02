@@ -1,0 +1,446 @@
+Sun May 10 09:16:56 2015
+
+POLYGON_GRID_TEST:
+  Python version
+  Test the POLYGON_GRID library.
+
+R8MAT_PRINT_TEST
+  R8MAT_PRINT prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :           11             12             13             14             15   
+      1 :           21             22             23             24             25   
+      2 :           31             32             33             34             35   
+      3 :           41             42             43             44             45   
+
+  Col:        5        
+  Row
+      0 :           16   
+      1 :           26   
+      2 :           36   
+      3 :           46   
+
+R8MAT_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_SOME_TEST
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        3              4              5        
+  Row
+      0 :           14             15             16   
+      1 :           24             25             26   
+      2 :           34             35             36   
+
+R8MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8MAT_WRITE_TEST:
+  Test R8MAT_WRITE, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+R8MAT_WRITE_TEST:
+  Normal end of execution.
+
+POLYGON_GRID_COUNT_TEST:
+  POLYGON_GRID_COUNT counts NG, the number of points in
+  a grid defined with N+1 points on each side of a
+  polygon of NV vertices.
+
+  Polygonal vertex count NV = 3
+
+   N     NG
+
+   0      1
+   1      4
+   2     10
+   3     19
+   4     31
+   5     46
+
+  Polygonal vertex count NV = 4
+
+   N     NG
+
+   0      1
+   1      5
+   2     13
+   3     25
+   4     41
+   5     61
+
+  Polygonal vertex count NV = 5
+
+   N     NG
+
+   0      1
+   1      6
+   2     16
+   3     31
+   4     51
+   5     76
+
+POLYGON_GRID_COUNT_TEST:
+  Normal end of execution.
+
+POLYGON_GRID_DISPLAY_TEST:
+  POLYGON_GRID_DISPLAY displays a grid of points in a polygon.
+
+  Graphics data saved in file "polygon_grid_display_test.png"
+
+POLYGON_GRID_DISPLAY_TEST:
+  Normal end of execution.
+
+POLYGON_GRID_POINTS_TEST01:
+  POLYGON_GRID_POINTS returns grid points for a polygon
+  of NV vertices, with N+1 points on a side
+
+  For this test, the polygon is a triangle.
+
+  Polygon vertices:
+
+  Col:        0              1        
+  Row
+      0 :            0              0   
+      1 :            1              0   
+      2 :          0.5       0.866025   
+
+  N = 5
+  Number of grid points will be NG = 46
+
+  The grid point array:
+
+  Col:        0              1        
+  Row
+      0 :          0.5       0.288675   
+      1 :          0.4        0.23094   
+      2 :          0.3       0.173205   
+      3 :          0.2        0.11547   
+      4 :          0.1       0.057735   
+      5 :            0              0   
+      6 :          0.3       0.173205   
+      7 :          0.2        0.11547   
+      8 :          0.1       0.057735   
+      9 :            0              0   
+     10 :          0.2        0.11547   
+     11 :          0.1       0.057735   
+     12 :            0              0   
+     13 :          0.1       0.057735   
+     14 :            0              0   
+     15 :            0              0   
+     16 :          0.6        0.23094   
+     17 :          0.7       0.173205   
+     18 :          0.8        0.11547   
+     19 :          0.9       0.057735   
+     20 :            1              0   
+     21 :          0.7       0.173205   
+     22 :          0.8        0.11547   
+     23 :          0.9       0.057735   
+     24 :            1              0   
+     25 :          0.8        0.11547   
+     26 :          0.9       0.057735   
+     27 :            1              0   
+     28 :          0.9       0.057735   
+     29 :            1              0   
+     30 :            1              0   
+     31 :          0.5       0.404145   
+     32 :          0.5       0.519615   
+     33 :          0.5       0.635085   
+     34 :          0.5       0.750555   
+     35 :          0.5       0.866025   
+     36 :          0.5       0.519615   
+     37 :          0.5       0.635085   
+     38 :          0.5       0.750555   
+     39 :          0.5       0.866025   
+     40 :          0.5       0.635085   
+     41 :          0.5       0.750555   
+     42 :          0.5       0.866025   
+     43 :          0.5       0.750555   
+     44 :          0.5       0.866025   
+     45 :          0.5       0.866025   
+
+  Graphics data saved in file "triangle.png"
+
+  Data written to the file "triangle.xy"
+
+POLYGON_GRID_POINTS_TEST01:
+  Normal end of execution.
+
+POLYGON_GRID_POINTS_TEST02:
+  POLYGON_GRID_POINTS returns grid points for a polygon
+  of NV vertices, with N+1 points on a side
+
+  For this test, the polygon is a convex quadrilateral
+  with sides of varying length.
+
+  Polygon vertices:
+
+  Col:        0              1        
+  Row
+      0 :            1              1   
+      1 :            2              0   
+      2 :            4              3   
+      3 :            0              5   
+
+  N = 7
+  Number of grid points will be NG = 113
+
+  The grid point array:
+
+  Col:        0              1        
+  Row
+      0 :         1.75           2.25   
+      1 :      1.64286        2.07143   
+      2 :      1.53571        1.89286   
+      3 :      1.42857        1.71429   
+      4 :      1.32143        1.53571   
+      5 :      1.21429        1.35714   
+      6 :      1.10714        1.17857   
+      7 :            1              1   
+      8 :      1.53571        1.89286   
+      9 :      1.42857        1.71429   
+     10 :      1.32143        1.53571   
+     11 :      1.21429        1.35714   
+     12 :      1.10714        1.17857   
+     13 :            1              1   
+     14 :      1.42857        1.71429   
+     15 :      1.32143        1.53571   
+     16 :      1.21429        1.35714   
+     17 :      1.10714        1.17857   
+     18 :            1              1   
+     19 :      1.32143        1.53571   
+     20 :      1.21429        1.35714   
+     21 :      1.10714        1.17857   
+     22 :            1              1   
+     23 :      1.21429        1.35714   
+     24 :      1.10714        1.17857   
+     25 :            1              1   
+     26 :      1.10714        1.17857   
+     27 :            1              1   
+     28 :            1              1   
+     29 :      1.78571        1.92857   
+     30 :      1.82143        1.60714   
+     31 :      1.85714        1.28571   
+     32 :      1.89286       0.964286   
+     33 :      1.92857       0.642857   
+     34 :      1.96429       0.321429   
+     35 :            2              0   
+     36 :      1.82143        1.60714   
+     37 :      1.85714        1.28571   
+     38 :      1.89286       0.964286   
+     39 :      1.92857       0.642857   
+     40 :      1.96429       0.321429   
+     41 :            2              0   
+     42 :      1.85714        1.28571   
+     43 :      1.89286       0.964286   
+     44 :      1.92857       0.642857   
+     45 :      1.96429       0.321429   
+     46 :            2              0   
+     47 :      1.89286       0.964286   
+     48 :      1.92857       0.642857   
+     49 :      1.96429       0.321429   
+     50 :            2              0   
+     51 :      1.92857       0.642857   
+     52 :      1.96429       0.321429   
+     53 :            2              0   
+     54 :      1.96429       0.321429   
+     55 :            2              0   
+     56 :            2              0   
+     57 :      2.07143        2.35714   
+     58 :      2.39286        2.46429   
+     59 :      2.71429        2.57143   
+     60 :      3.03571        2.67857   
+     61 :      3.35714        2.78571   
+     62 :      3.67857        2.89286   
+     63 :            4              3   
+     64 :      2.39286        2.46429   
+     65 :      2.71429        2.57143   
+     66 :      3.03571        2.67857   
+     67 :      3.35714        2.78571   
+     68 :      3.67857        2.89286   
+     69 :            4              3   
+     70 :      2.71429        2.57143   
+     71 :      3.03571        2.67857   
+     72 :      3.35714        2.78571   
+     73 :      3.67857        2.89286   
+     74 :            4              3   
+     75 :      3.03571        2.67857   
+     76 :      3.35714        2.78571   
+     77 :      3.67857        2.89286   
+     78 :            4              3   
+     79 :      3.35714        2.78571   
+     80 :      3.67857        2.89286   
+     81 :            4              3   
+     82 :      3.67857        2.89286   
+     83 :            4              3   
+     84 :            4              3   
+     85 :          1.5        2.64286   
+     86 :         1.25        3.03571   
+     87 :            1        3.42857   
+     88 :         0.75        3.82143   
+     89 :          0.5        4.21429   
+     90 :         0.25        4.60714   
+     91 :            0              5   
+     92 :         1.25        3.03571   
+     93 :            1        3.42857   
+     94 :         0.75        3.82143   
+     95 :          0.5        4.21429   
+     96 :         0.25        4.60714   
+     97 :            0              5   
+     98 :            1        3.42857   
+     99 :         0.75        3.82143   
+    100 :          0.5        4.21429   
+    101 :         0.25        4.60714   
+    102 :            0              5   
+    103 :         0.75        3.82143   
+    104 :          0.5        4.21429   
+    105 :         0.25        4.60714   
+    106 :            0              5   
+    107 :          0.5        4.21429   
+    108 :         0.25        4.60714   
+    109 :            0              5   
+    110 :         0.25        4.60714   
+    111 :            0              5   
+    112 :            0              5   
+
+  Graphics data saved in file "quad.png"
+
+  Data written to the file "quad.xy"
+
+POLYGON_GRID_POINTS_TEST02:
+  Normal end of execution.
+
+POLYGON_GRID_POINTS_TEST03:
+  POLYGON_GRID_POINTS returns grid points for a polygon
+  of NV vertices, with N+1 points on a side
+
+  For this test, the polygon is nonconvex and six sided.
+  Two degenerate triangles are created, and some grid points
+  are generated several times.
+
+  Polygon vertices:
+
+  Col:        0              1        
+  Row
+      0 :            0              0   
+      1 :            2              0   
+      2 :            2              1   
+      3 :            1              1   
+      4 :            1              2   
+      5 :            0              2   
+
+  N = 5
+  Number of grid points will be NG = 91
+
+  The grid point array:
+
+  Col:        0              1        
+  Row
+      0 :            1              1   
+      1 :          0.8            0.8   
+      2 :          0.6            0.6   
+      3 :          0.4            0.4   
+      4 :          0.2            0.2   
+      5 :            0              0   
+      6 :          0.6            0.6   
+      7 :          0.4            0.4   
+      8 :          0.2            0.2   
+      9 :            0              0   
+     10 :          0.4            0.4   
+     11 :          0.2            0.2   
+     12 :            0              0   
+     13 :          0.2            0.2   
+     14 :            0              0   
+     15 :            0              0   
+     16 :          1.2            0.8   
+     17 :          1.4            0.6   
+     18 :          1.6            0.4   
+     19 :          1.8            0.2   
+     20 :            2              0   
+     21 :          1.4            0.6   
+     22 :          1.6            0.4   
+     23 :          1.8            0.2   
+     24 :            2              0   
+     25 :          1.6            0.4   
+     26 :          1.8            0.2   
+     27 :            2              0   
+     28 :          1.8            0.2   
+     29 :            2              0   
+     30 :            2              0   
+     31 :          1.2              1   
+     32 :          1.4              1   
+     33 :          1.6              1   
+     34 :          1.8              1   
+     35 :            2              1   
+     36 :          1.4              1   
+     37 :          1.6              1   
+     38 :          1.8              1   
+     39 :            2              1   
+     40 :          1.6              1   
+     41 :          1.8              1   
+     42 :            2              1   
+     43 :          1.8              1   
+     44 :            2              1   
+     45 :            2              1   
+     46 :            1              1   
+     47 :            1              1   
+     48 :            1              1   
+     49 :            1              1   
+     50 :            1              1   
+     51 :            1              1   
+     52 :            1              1   
+     53 :            1              1   
+     54 :            1              1   
+     55 :            1              1   
+     56 :            1              1   
+     57 :            1              1   
+     58 :            1              1   
+     59 :            1              1   
+     60 :            1              1   
+     61 :            1            1.2   
+     62 :            1            1.4   
+     63 :            1            1.6   
+     64 :            1            1.8   
+     65 :            1              2   
+     66 :            1            1.4   
+     67 :            1            1.6   
+     68 :            1            1.8   
+     69 :            1              2   
+     70 :            1            1.6   
+     71 :            1            1.8   
+     72 :            1              2   
+     73 :            1            1.8   
+     74 :            1              2   
+     75 :            1              2   
+     76 :          0.8            1.2   
+     77 :          0.6            1.4   
+     78 :          0.4            1.6   
+     79 :          0.2            1.8   
+     80 :            0              2   
+     81 :          0.6            1.4   
+     82 :          0.4            1.6   
+     83 :          0.2            1.8   
+     84 :            0              2   
+     85 :          0.4            1.6   
+     86 :          0.2            1.8   
+     87 :            0              2   
+     88 :          0.2            1.8   
+     89 :            0              2   
+     90 :            0              2   
+
+  Graphics data saved in file "ell.png"
+
+  Data written to the file "ell.xy"
+
+POLYGON_GRID_POINTS_TEST03:
+  Normal end of execution.
+
+POLYGON_GRID_TEST:
+  Normal end of execution.
+Sun May 10 09:16:57 2015

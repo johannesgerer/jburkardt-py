@@ -1,0 +1,154 @@
+<html>
+
+  <head>
+    <title>
+      MONOMIAL_VALUE - Evaluate a Monomial in M dimensions
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      MONOMIAL_VALUE <br> Evaluate a Monomial in M dimensions
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>MONOMIAL_VALUE</b>
+      is a Python library which
+      evaluates a monomial in M dimensions.
+    </p>
+
+    <p>
+      Let X represent a point in M dimensional space, and let E be a vector
+      of M integers.  The value of the monomial with exponents E at the point X 
+      is
+      <pre>
+        V(X) = X(1)^E(1) * X(2)^E(2) * ... * X(M)^E(M)
+      </pre>
+      This library supplies a convenient method of evaluating V(X) at 
+      multiple points X.
+    </p>
+
+    <p>
+      The factor 0.0^0 might occur if, for some I, we have X(I) = 0.0
+      and E(I) = 0.  In this case, we take the corresponding value to be 1.
+    </p>
+
+    <p>
+      The factor 0.0^E(I) will cause problems if E(I) is negative.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this
+      web page are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>MONOMIAL_VALUE</b> is available in
+      <a href = "../../c_src/monomial_value/monomial_value.html">a C version</a> and
+      <a href = "../../cpp_src/monomial_value/monomial_value.html">a C++ version</a> and
+      <a href = "../../f77_src/monomial_value/monomial_value.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/monomial_value/monomial_value.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/monomial_value/monomial_value.html">a MATLAB version</a> and
+      <a href = "../../py_src/monomial_value/monomial_value.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>,
+          prints an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_transpose_print.py">i4vec_transpose_print.py</a>,
+          prints an I4VEC "transposed", that is, 5 entries to a line.
+        </li>
+        <li>
+          <a href = "i4vec_uniform_ab.py">i4vec_uniform_ab.py</a>,
+          returns an I4VEC whose entries are uniformly random between A and B.
+        </li>
+        <li>
+          <a href = "monomial_value.py">monomial_value.py</a>,
+          evaluates a monomial.
+        </li>
+        <li>
+          <a href = "r8mat_nint.py">r8mat_nint.py</a>,
+          rounds the entries of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>,
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>,
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_ab.py">r8mat_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the current YMDHMS date as a timestamp;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "monomial_value_test.py">monomial_value_test.py</a>,
+          calls all the tests.
+        </li>
+        <li>
+          <a href = "monomial_value_test.sh">monomial_value_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "monomial_value_test_output.txt">monomial_value_test_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 April 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

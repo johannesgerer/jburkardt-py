@@ -1,0 +1,167 @@
+<html>
+
+  <head>
+    <title>
+      FEM1D_BVP_QUADRATIC - Finite Element Method, 1D, Boundary Value Problem, Piecewise Quadratic Elements
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FEM1D_BVP_QUADRATIC <br> Finite Element Method, 1D, Boundary Value Problem, Piecewise Quadratic Elements
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FEM1D_BVP_QUADRATIC</b>
+      is a Python program which
+      applies the finite element method, with piecewise quadratic elements,
+      to a two point boundary value problem in one spatial dimension.
+    </p>
+
+    <p>
+      The BVP to be solved is:
+      <pre>
+        -u'' = x * ( x + 3 ) * exp ( x )  over the interval 0 < x < 1
+        u(0) = 0.0
+        u(1) = 0.0
+      </pre>
+    </p>
+
+    <p>
+      The exact solution is:
+      <pre>
+        u(x) = x * ( 1 - x ) * exp ( x )
+      </pre>
+    </p>
+
+    <p>
+      To compute a finite element approximation, a set of n equally spaced
+      nodes is defined from 0.0 to 1.0, a set of piecewise quadratic basis functions
+      is set up, with one basis function associated with each node,
+      and then an integral form of the BVP is used, in which the differential
+      equation is multiplied by each basis function, and integration by parts is
+      used to simplify the integrand.
+    </p>
+
+    <p>
+      A simple three point Gauss quadrature formula is used to estimate the
+      resulting integrals over each interval.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FEM1D_BVP_QUADRATIC</b> is available in
+      <a href = "../../c_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">a C version</a> and
+      <a href = "../../cpp_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">a C++ version</a> and
+      <a href = "../../f77_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">a MATLAB version</a> and
+      <a href = "../../py_src/fem1d_bvp_quadratic/fem1d_bvp_quadratic.html">a Python version</a>..
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">
+      FEM1D_BVP_LINEAR</a>,
+      a Python program which
+      applies the finite element method (FEM), with piecewise linear elements,
+      to a two point boundary value problem (BVP) in one spatial dimension,
+      and compares the computed and exact solutions 
+      with the L2 and seminorm errors.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fem1d/fem1d.html">
+      FEM1D</a>, 
+      a Python program which
+      applies the finite element method (FEM) to a 1D linear two point
+      boundary value problem (BVP) using piecewise linear basis functions.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fem1d_classes/fem1d_classes.html">
+      FEM1D_CLASSES</a>,
+      a Python library which
+      defines classes useful for solving a boundary value problem (BVP)
+      of the form u''+2u'+u=f in 1 spatial dimension, 
+      using the finite element method (FEM),
+      by Mike Sussman.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gilbert Strang, George Fix,<br>
+          An Analysis of the Finite Element Method,<br>
+          Cambridge, 1973,<br>
+          ISBN: 096140888X,<br>
+          LC: TA335.S77.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem1d_bvp_quadratic.py">fem1d_bvp_quadratic.py</a>, the source code.
+        </li>
+        <li>
+          <a href = "fem1d_bvp_quadratic.sh">fem1d_bvp_quadratic.sh</a>,
+          commands to compile the source code.
+        </li>
+        <li>
+          <a href = "fem1d_bvp_quadratic_output.txt">fem1d_bvp_quadratic_output.txt</a>, the printed output
+          from a run of the program.
+        </li>
+        <li>
+          <a href = "fem1d_bvp_quadratic.png">fem1d_bvp_quadratic.png</a>, 
+          a plot comparing the computed and exact solutions.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 17 September 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

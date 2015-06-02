@@ -1,0 +1,43 @@
+Linux> md.py
+Fri Dec 26 11:31:45 2014
+
+MD_TEST
+  Test the MD molecular dynamics program.
+
+MD
+  Python version
+  A molecular dynamics program.
+
+  D_NUM, the spatial dimension, is 3
+  P_NUM, the number of particles in the simulation is 500.
+  STEP_NUM, the number of time steps, is 500.
+  DT, the time step size, is 0.1 seconds.
+
+  At each step, we report the potential and kinetic energies.
+  The sum of these energies should be a constant.
+  As an accuracy check, we also print the relative error
+  in the total energy.
+
+      Step      Potential       Kinetic        (P+K-E0)/E0
+                Energy P        Energy K       Relative Energy Error
+
+         0   124433.847243        0.000000               0
+        50   124620.809533     1361.660522       0.0124454
+       100   124731.781595     1374.648255       0.0134415
+       150   124747.480913     1370.055876       0.0135308
+       200   124749.545621     1371.804833       0.0135614
+       250   124749.956884     1371.964335        0.013566
+       300   124749.982752     1372.758320       0.0135726
+       350   124750.000000     1372.960786       0.0135744
+       400   124750.000000     1373.210025       0.0135764
+       450   124750.000000     1373.210025       0.0135764
+       500   124750.000000     1373.210025       0.0135764
+
+    Elapsed wall clock time = 3241.55 seconds.
+
+MD_TEST
+  Normal end of execution.
+
+Fri Dec 26 12:25:51 2014
+Linux> 
+

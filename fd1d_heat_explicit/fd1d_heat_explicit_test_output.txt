@@ -1,0 +1,106 @@
+Thu Nov  6 20:05:09 2014
+
+FD1D_HEAT_EXPLICIT_TEST:
+  Python version.
+  Test the FD1D_HEAT_EXPLICIT library.
+
+FD1D_HEAT_EXPLICIT_TEST01:
+  Compute an approximate solution to the time-dependent
+  one dimensional heat equation:
+
+    dH/dt - K * d2H/dx2 = f(x,t)
+
+  Run a simple test case.
+
+  Number of X nodes = 21
+  X interval is [0.000000,1.000000]
+  X spacing is 0.050000
+  Number of T values = 201
+  T interval is [0.000000,80.000000]
+  T spacing is 0.400000
+  Constant K = 0.002
+  CFL coefficient = 0.32
+
+  H(X,T) written to "h_test01.txt"
+  T values written to "t_test01.txt"
+  X values written to "x_test01.txt"
+
+FD1D_HEAT_EXPLICIT_TEST01:
+  Normal end of execution.
+
+FD1D_HEAT_EXPLICIT_TEST02:
+  Compute an approximate solution to the time-dependent
+  one dimensional heat equation for a problem where we
+  know the exact solution.
+
+    dH/dt - K * d2H/dx2 = f(x,t)
+
+  Run a simple test case.
+
+  Number of X nodes = 21
+  X interval is [0.000000,1.000000]
+  X spacing is 0.050000
+  Number of T values = 26
+  T interval is [0.000000,10.000000]
+  T spacing is 0.400000
+  Constant K = 0.002
+  CFL coefficient = 0.32
+
+  Step            Time       RMS Error
+
+     0               0       0.0242461
+     1             0.4       0.0162526
+     2             0.8       0.0108945
+     3             1.2      0.00730278
+     4             1.6       0.0048952
+     5               2      0.00328135
+     6             2.4      0.00219955
+     7             2.8      0.00147441
+     8             3.2     0.000988323
+     9             3.6     0.000662493
+    10               4     0.000444082
+    11             4.4     0.000297677
+    12             4.8     0.000199539
+    13             5.2     0.000133755
+    14             5.6     8.96587e-05
+    15               6        6.01e-05
+    16             6.4     4.02862e-05
+    17             6.8     2.70047e-05
+    18             7.2     1.81018e-05
+    19             7.6      1.2134e-05
+    20               8     8.13365e-06
+    21             8.4     5.45215e-06
+    22             8.8     3.65468e-06
+    23             9.2     2.44981e-06
+    24             9.6     1.64216e-06
+    25              10     1.10077e-06
+
+  G(X,T) written to "g_test02.txt"
+  H(X,T) written to "h_test02.txt"
+  T values written to "t_test02.txt"
+  X values written to "x_test02.txt"
+
+FD1D_HEAT_EXPLICIT_TEST03:
+  Compute an approximate solution to the time-dependent
+  one dimensional heat equation:
+
+    dH/dt - K * d2H/dx2 = f(x,t)
+
+  Run a simple test case.
+
+  Number of X nodes = 21
+  X interval is [-5.000000,5.000000]
+  X spacing is 0.500000
+  Number of T values = 81
+  T interval is [0.000000,4.000000]
+  T spacing is 0.050000
+  Constant K = 2
+  CFL coefficient = 0.4
+
+  H(X,T) written to "h_test03.txt"
+  T values written to "t_test03.txt"
+  X values written to "x_test3.txt"
+
+FD1D_HEAT_EXPLICIT_TEST:
+  Normal end of execution.
+Thu Nov  6 20:05:16 2014

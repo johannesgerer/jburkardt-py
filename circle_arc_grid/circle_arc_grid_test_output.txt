@@ -1,0 +1,99 @@
+Fri Apr 17 21:44:58 2015
+
+CIRCLE_ARC_GRID_TEST
+  Python version:
+  Test the CIRCLE_ARC_GRID library.
+
+R82COL_PRINT_PART_TEST
+  R82COL_PRINT_PART prints an R82COL.
+
+  Output with MAX_PRINT = 2
+
+     0              11              12
+     1              21              22  ...more entries...
+
+  Output with MAX_PRINT = 5
+
+     0              11              12
+     1              21              22
+     2              31              32
+  ....  ..............  ..............
+     9             101             102
+
+  Output with MAX_PRINT = 25
+
+     0              11              12
+     1              21              22
+     2              31              32
+     3              41              42
+     4              51              52
+     5              61              62
+     6              71              72
+     7              81              82
+     8              91              92
+     9             101             102
+
+R82COL_PRINT_PART_TEST:
+  Normal end of execution.
+
+R8MAT_WRITE_TEST:
+  Test R8MAT_WRITE, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+R8MAT_WRITE_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Fri Apr 17 21:44:58 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+CIRCLE_ARC_GRID_DISPLAY_TEST:
+  CIRCLE_ARC_GRID_DISPLAY can display a grid of points along a circular arc.
+
+  Graphics data saved in file "circle_arc_grid_display.png"
+
+CIRCLE_ARC_GRID_DISPLAY_TEST:
+  Normal end of execution.
+
+CIRCLE_ARC_GRID_POINTS_TEST
+  CIRCLE_ARC_GRID_POINTS returns points along a circular arc.
+  In this example, we compute points on a 90 degree arc.
+
+  Radius =           2
+  Center =           5  5
+
+  Angle 1 =          0
+  Angle 2 =          90
+  Number of points = 20
+
+  Some points on the arc:
+
+     0               7               5
+     1         6.99317         5.16516
+     2         6.97272         5.32919
+     3          6.9388         5.49097
+     4         6.89163          5.6494
+     5         6.83155         5.80339
+     6         6.75895         5.95189
+     7         6.67433          6.0939
+  ....  ..............  ..............
+    19               5               7
+
+  Data written to "circle_arc_grid_points.xy"
+
+  Graphics data saved in file "circle_arc_grid_points.png"
+
+  Plot saved in file "circle_arc_grid_points.png"
+
+CIRCLE_ARC_GRID_POINTS_TEST:
+  Normal end of execution.
+
+CIRCLE_ARC_GRID_TEST:
+  Normal end of execution.
+Fri Apr 17 21:44:58 2015

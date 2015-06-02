@@ -1,0 +1,278 @@
+<html>
+
+  <head>
+    <title>
+      RNGLIB - A Package of Random Number Generators (RNG's) with Splitting Facilities
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      RNGLIB <br> A Package of Random Number Generators (RNG's) with Splitting Facilities
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>RNGLIB</b>
+      is a PYTHON library which
+      implements random number generators (RNG's) which can generate one 
+      or more streams of random numbers.
+    </p>
+
+    <p>
+      <b>RNGLIB</b> is a portable set of software tools for uniform random
+      variate generation.  It provides for multiple generators running simultaneously,
+      and each generator has its sequence of numbers partitioned into many long
+      disjoint substreams.  Simple procedure calls allow the user to make any
+      generator jump ahead to the beginning of its next substream.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this
+      web page are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>RNGLIB</b> is available in
+      <a href = "../../c_src/rnglib/rnglib.html">a C version</a> and
+      <a href = "../../cpp_src/rnglib/rnglib.html">a C++ version</a> and
+      <a href = "../../f77_src/rnglib/rnglib.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/rnglib/rnglib.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/rnglib/rnglib.html">a MATLAB version</a> and
+      <a href = "../../py_src/rnglib/rnglib.html">a PYTHON version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/normal/normal.html">
+      NORMAL</a>,
+      a Python library which
+      contains random number generators (RNG's) for normally distributed values.
+    </p>
+
+    <p>
+      <a href = "../../py_src/sobol/sobol.html">
+      SOBOL</a>,
+      a PYTHON library which
+      computes elements of a Sobol quasirandom sequence.
+    </p>
+
+    <p>
+      <a href = "../../py_src/uniform/uniform.html">
+      UNIFORM</a>, 
+      a PYTHON library which
+      implements random number generators (RNG's) 
+      for a variety of arithmetic types. 
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Pierre LEcuyer, Serge Cote,<br>
+          Implementing a Random Number Package with Splitting Facilities,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 17, Number 1, March 1991, pages 98-111.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "advance_state.py">advance_state.py</a>
+          advances the state of a generator.
+        </li>
+        <li>
+          <a href = "antithetic_get.py">antithetic_get.py</a>
+          queries the antithetic value for a given generator.
+        </li>
+        <li>
+          <a href = "antithetic_memory.py">antithetic_memory.py</a>
+          stores the antithetic value for all generators.
+        </li>
+        <li>
+          <a href = "antithetic_set.py">antithetic_set.py</a>
+          sets the antithetic value for a given generator.
+        </li>
+        <li>
+          <a href = "cg_get.py">cg_get.py</a>
+          queries the CG values for a given generator.
+        </li>
+        <li>
+          <a href = "cg_memory.py">cg_memory.py</a>
+          stores the CG values for all generators.
+        </li>
+        <li>
+          <a href = "cg_set.py">cg_set.py</a>
+          sets the CG values for a given generator.
+        </li>
+        <li>
+          <a href = "cgn_get.py">cgn_get.py</a>
+          gets the current generator index.
+        </li>
+        <li>
+          <a href = "cgn_memory.py">cgn_memory.py</a>
+          stores the current generator index.
+        </li>
+        <li>
+          <a href = "cgn_set.py">cgn_set.py</a>
+          sets the current generator index.
+        </li>
+        <li>
+          <a href = "get_state.py">get_state.py</a>
+          returns the state of generator G.
+        </li>
+        <li>
+          <a href = "i4_uniform.py">i4_uniform.py</a>
+          generates a random positive integer.
+        </li>
+        <li>
+          <a href = "ig_get.py">ig_get.py</a>
+          queries the IG values for a given generator.
+        </li>
+        <li>
+          <a href = "ig_memory.py">ig_memory.py</a>
+          stores the IG values for all generators.
+        </li>
+        <li>
+          <a href = "ig_set.py">ig_set.py</a>
+          sets the IG values for a given generator.
+        </li>
+        <li>
+          <a href = "init_generator.py">init_generator.py</a>
+          sets the state of generator G to initial, last or new seed.
+        </li>
+        <li>
+          <a href = "initialize.py">initialize.py</a>
+          initializes the random number library.
+        </li>
+        <li>
+          <a href = "initialized_get.py">initialized_get.py</a>
+          queries the INITIALIZED value.
+        </li>
+        <li>
+          <a href = "initialized_memory.py">initialized_memory.py</a>
+          stores the INITIALIZED value.
+        </li>
+        <li>
+          <a href = "initialized_set.py">initialized_set.py</a>
+          sets the INITIALIZED value.
+        </li>
+        <li>
+          <a href = "lg_get.py">lg_get.py</a>
+          queries the LG values for a given generator.
+        </li>
+        <li>
+          <a href = "lg_memory.py">lg_memory.py</a>
+          stores the LG values for all generators.
+        </li>
+        <li>
+          <a href = "lg_set.py">lg_set.py</a>
+          sets the LG values for a given generator.
+        </li>
+        <li>
+          <a href = "multmod.py">multmod.py</a>
+          carries out modular multiplication.
+        </li>
+        <li>
+          <a href = "r4_uniform_01.py">r4_uniform_02.py</a>
+          returns a uniform random real number in [0,1].
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_02.py</a>
+          returns a uniform random real number in [0,1].
+        </li>
+        <li>
+          <a href = "set_initial_seed.py">set_initial_seed.py</a>
+          resets the initial seed and state for all generators.
+        </li>
+        <li>
+          <a href = "set_seed.py">set_seed.py</a>
+          resets the initial seed and the state of generator G.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>
+          prints the current YMDHMS date as a time stamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "rnglib_test.py">rnglib_test.py</a>,
+          a sample calling program.
+        </li>
+        <li>
+          <a href = "rnglib_test01.py">rnglib_test01.py</a>,
+          calls i4_random() several times.
+        </li>
+        <li>
+          <a href = "rnglib_test02.py">rnglib_test02.py</a>,
+          calls r4_uniform_01() several times.
+        </li>
+        <li>
+          <a href = "rnglib_test03.py">rnglib_test03.py</a>,
+          shows how the output of r4_uniform_01() can be controlled
+          by resetting the seed.
+        </li>
+        <li>
+          <a href = "rnglib_test04.py">rnglib_test04.py</a>,
+          shows how multiple random number generators can be used
+          to create independent streams of data.
+        </li>
+        <li>
+          <a href = "rnglib_test.sh">rnglib_test.sh</a>,
+          a BASH shell script that runs the tests.
+        </li>
+        <li>
+          <a href = "rnglib_test_output.txt">rnglib_test_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 27 May 2013.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

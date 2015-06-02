@@ -1,0 +1,163 @@
+Wed Apr  8 08:18:20 2015
+
+DISK_GRID_TEST
+  Python version:
+  Test the DISK_GRID library.
+
+R82VEC_PRINT_PART_TEST
+  R82VEC_PRINT_PART prints an R8VEC.
+
+  Output with MAX_PRINT = 2
+
+     0       11.000000       21.000000
+     1       12.000000       22.000000  ...more entries...
+
+  Output with MAX_PRINT = 5
+
+     0       11.000000       21.000000
+     1       12.000000       22.000000
+     2       13.000000       23.000000
+  ....  ..............  ..............
+     9       20.000000       30.000000
+
+  Output with MAX_PRINT = 25
+
+     0       11.000000       21.000000
+     1       12.000000       22.000000
+     2       13.000000       23.000000
+     3       14.000000       24.000000
+     4       15.000000       25.000000
+     5       16.000000       26.000000
+     6       17.000000       27.000000
+     7       18.000000       28.000000
+     8       19.000000       29.000000
+     9       20.000000       30.000000
+
+R82VEC_PRINT_PART_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_WRITE_TEST:
+  Test R8MAT_TRANSPOSE_WRITE, which writes the transpose of an R8MAT to a file.
+
+  Created file "r8mat_transpose_write_test.txt".
+
+R8MAT_TRANSPOSE_WRITE_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Wed Apr  8 08:18:20 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+DISK_GRID_DISPLAY_TEST:
+  DISK_GRID_DISPLAY can display a grid of points in a disk.
+
+  Graphics data saved in file "disk_grid_display.png"
+
+DISK_GRID_DISPLAY_TEST:
+  Normal end of execution.
+
+DISK_GRID_REGULAR_COUNT_TEST:
+  DISK_GRID_REGULAR_COUNT counts the number of grid points needed
+  for a regular grid of points in a disk.
+
+  N = number of subintervals of the horizontal radius.
+  NG = resulting number of grid points.
+
+     N        NG
+
+     1         9
+     2        21
+     4        69
+     8       225
+    16       861
+
+DISK_GRID_REGULAR_COUNT_TEST:
+  Normal end of execution.
+
+DISK_GRID_REGULAR_TEST:
+  DISK_GRID_REGULAR can define a grid of points
+  with N+1 points on a horizontal or vertical radius,
+  based on any disk.
+
+  We use N = 20
+  Radius R = 2
+  Center C = (1,5)
+
+  Number of grid points will be 1313
+
+  Part of the grid point array:
+
+     0        1.000000        5.000000
+     1        1.097561        5.000000
+     2        0.902439        5.000000
+     3        1.195122        5.000000
+     4        0.804878        5.000000
+     5        1.292683        5.000000
+     6        0.707317        5.000000
+     7        1.390244        5.000000
+     8        0.609756        5.000000
+     9        1.487805        5.000000
+    10        0.512195        5.000000
+    11        1.585366        5.000000
+    12        0.414634        5.000000
+    13        1.682927        5.000000
+    14        0.317073        5.000000
+    15        1.780488        5.000000
+    16        0.219512        5.000000
+    17        1.878049        5.000000
+  ....  ..............  ..............
+  1312        0.609756        3.048780
+
+  Data written to the file "disk_grid_regular.xy".
+
+  Graphics data saved in file "disk_grid_regular.png"
+
+DISK_GRID_REGULAR_TEST:
+  Normal end of execution.
+
+DISK_GRID_FIBONACCI_TEST:
+  DISK_GRID_FIBONACCI can define a grid of N points
+
+
+  We use N = 1000
+  Radius R = 2
+  Center C = (1,5)
+
+  Part of the grid point array:
+
+     0        0.967016        4.969784
+     1        1.006774        5.077182
+     2        1.060859        4.920620
+     3        0.883458        5.020615
+     4        1.113230        5.072028
+     5        0.961485        4.856725
+     6        0.925662        5.143133
+     7        1.162736        4.940569
+     8        0.829516        4.929627
+     9        1.082643        5.176604
+    10        1.061350        4.804406
+    11        0.814386        5.107567
+    12        1.218446        5.048025
+    13        0.866319        4.809852
+    14        0.969043        5.238895
+    15        1.190444        4.839494
+    16        0.743251        4.989383
+    17        1.187586        5.186673
+  ....  ..............  ..............
+   999        2.954566        5.423876
+
+  Data written to the file "disk_grid_fibonacci.xy".
+
+  Graphics data saved in file "disk_grid_fibonacci.png"
+
+DISK_GRID_FIBONACCI_TEST:
+  Normal end of execution.
+
+DISK_GRID_TEST:
+  Normal end of execution.
+Wed Apr  8 08:18:22 2015

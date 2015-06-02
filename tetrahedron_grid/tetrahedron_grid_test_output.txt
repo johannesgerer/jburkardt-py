@@ -1,0 +1,127 @@
+Wed Apr 15 21:23:48 2015
+
+TETRAHEDRON_GRID_TEST
+  Python version:
+  Test the TETRAHEDRON_GRID library.
+
+R83COL_PRINT_PART_TEST
+  R83COL_PRINT_PART prints part of an R83COL.
+
+  Output with MAX_PRINT = 2
+
+     0              11              12              13
+     1              21              22              23  ...more entries...
+
+  Output with MAX_PRINT = 5
+
+     0              11              12              13
+     1              21              22              23
+     2              31              32              33
+  ....  ..............  ..............  ..............
+     9             101             102             103
+
+  Output with MAX_PRINT = 25
+
+     0              11              12              13
+     1              21              22              23
+     2              31              32              33
+     3              41              42              43
+     4              51              52              53
+     5              61              62              63
+     6              71              72              73
+     7              81              82              83
+     8              91              92              93
+     9             101             102             103
+
+R82COL_PRINT_PART_TEST:
+  Normal end of execution.
+
+R8MAT_WRITE_TEST:
+  Test R8MAT_WRITE, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+R8MAT_WRITE_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Wed Apr 15 21:23:49 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+TETRAHEDRON_GRID_COUNT_TEST:
+  TETRAHEDRON_GRID_COUNT can count the points in a grid
+  with N+1 points on a side, based on any tetrahedron.
+
+     N        NG
+
+     1         4
+     2        10
+     3        20
+     4        35
+     5        56
+    10       286
+    15       816
+    20      1771
+    25      3276
+    50     23426
+   100    176851
+
+TETRAHEDRON_GRID_COUNT_TEST:
+  Normal end of execution.
+
+TETRAHEDRON_GRID_DISPLAY_TEST:
+  TETRAHEDRON_GRID_DISPLAY can display a grid of points in a tetrahedron.
+
+TETRAHEDRON_GRID_DISPLAY_TEST:
+  Normal end of execution.
+
+TETRAHEDRON_GRID_POINTS_TEST:
+  TETRAHEDRON_GRID_POINTS can define a tetrahedral grid
+  with N+1 points on a side, based on any tetrahedron.
+  N = 5
+
+  Tetrahedron vertices:
+
+     0               0               0               0
+     1               2               1               0
+     2               1               4               0
+     3               3               3               3
+
+  Tetrahedron grid points:
+
+     0               3               3               3
+     1             2.6             3.2             2.4
+     2             2.2             3.4             1.8
+     3             1.8             3.6             1.2
+     4             1.4             3.8             0.6
+     5               1               4               0
+     6             2.8             2.6             2.4
+     7             2.4             2.8             1.8
+     8               2               3             1.2
+     9             1.6             3.2             0.6
+    10             1.2             3.4               0
+    11             2.6             2.2             1.8
+    12             2.2             2.4             1.2
+    13             1.8             2.6             0.6
+    14             1.4             2.8               0
+    15             2.4             1.8             1.2
+    16               2               2             0.6
+    17             1.6             2.2               0
+  ....  ..............  ..............  ..............
+    55               0               0               0
+
+  Data written to the file "tetrahedron_grid_points.xyz".
+
+  Plot written to the file "tetrahedron_grid_points.png".
+
+TETRAHEDRON_GRID_POINTS_TEST:
+  Normal end of execution.
+
+TETRAHEDRON_GRID_TEST:
+  Normal end of execution.
+Wed Apr 15 21:23:49 2015

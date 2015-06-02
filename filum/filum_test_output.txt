@@ -1,0 +1,22 @@
+Mon Oct 13 09:09:57 2014
+
+FILUM_TEST
+  PYTHON version:
+  Test the FILUM library.
+
+FILE_COLUMN_COUNT_TEST:
+  Python version
+  Count the number of columns in a typical text file line.
+
+  Number of columns in "filum_prb_4by5.txt" is 5
+
+FILE_ROW_COUNT_TEST:
+  Python version
+  Count the number of rows in a text file.
+
+  Number of rows in "filum_prb_4by5.txt" is 4
+
+FILUM_TEST:
+  Normal end of execution.
+
+Mon Oct 13 09:09:57 2014

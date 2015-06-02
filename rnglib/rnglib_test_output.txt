@@ -1,0 +1,185 @@
+Mon May 27 10:57:10 2013
+
+RNGLIB_TEST
+  PYTHON version
+  Test the RNGLIB library.
+
+RNGLIB_TEST01
+  I4_UNIFORM ( ) returns a random positive integer
+  using the current generator.
+
+  INITIALIZE initializes the random number generator.
+  It only needs to be called once before using the package.
+
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+
+  Current generator index = 1
+
+   I     I4_UNIFORM ( )
+
+   1     695163044
+   2     696626468
+   3    1059541850
+   4     620042603
+   5     758075822
+   6     330628445
+   7    1215929140
+   8    1762482382
+   9     698994348
+  10     730315574
+
+RNGLIB_TEST02
+  R4_UNIFORM_01 ( ) returns a random real number
+  in [0,1] using the current generator.
+
+  INITIALIZE initializes the random number generator.
+  It only needs to be called once before using the package.
+
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+
+  Current generator index = 2
+
+   I     R4_UNIFORM_01 ( )
+
+   1        0.421258
+   2        0.371873
+   3        0.876048
+   4        0.852024
+   5        0.202679
+   6        0.168365
+   7        0.393083
+   8         0.10989
+   9       0.0460303
+  10        0.536729
+
+RNGLIB_TEST03
+  R4_UNIFORM_01 ( ) returns a random real number
+  in [0,1] using the current generator.
+
+  INITIALIZE initializes the random number generator.
+  It only needs to be called once before using the package.
+
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+
+  INIT_GENERATOR can reset the seed to the initial value,
+  the last (previous) value, or a new seed.
+
+  Current generator index = 17
+
+  INIT_GENERATOR ( 0 ) starts at the initial seed.
+
+   I    R4_UNIFORM_01 ( )
+
+   1        0.088214
+   2        0.657037
+   3        0.539546
+   4        0.601055
+   5        0.903791
+   6        0.536099
+   7        0.540644
+   8       0.0690313
+   9        0.725607
+
+  Calling INIT_GENERATOR ( 0 ) again restarts
+  at the initial seed.
+
+   I    R4_UNIFORM_01 ( )
+
+   1        0.088214
+   2        0.657037
+   3        0.539546
+   4        0.601055
+   5        0.903791
+   6        0.536099
+   7        0.540644
+   8       0.0690313
+   9        0.725607
+
+  Calling INIT_GENERATOR ( 2 ) restarts
+  at a new "far ahead" seed.
+
+   I    R4_UNIFORM_01 ( )
+
+   1        0.154887
+   2        0.437351
+   3        0.288705
+   4        0.761692
+   5        0.598874
+   6        0.677101
+   7        0.187499
+   8        0.399729
+   9        0.316604
+
+  Calling INIT_GENERATOR ( 1 ) restarts
+  at the last seed (in this case, the "far ahead"
+  seed specified on the previous call.)
+
+   I    R4_UNIFORM_01 ( )
+
+   1         0.23759
+   2        0.287315
+   3        0.326637
+  (Reset to last seed)
+   4        0.154887
+   5        0.437351
+   6        0.288705
+  (Reset to last seed)
+   7        0.154887
+   8        0.437351
+   9        0.288705
+  (Reset to last seed)
+  10        0.154887
+
+RNGLIB_TEST04
+  R4_UNIFORM_01 ( ) returns a random real number
+  in [0,1] using the current generator.
+
+  INITIALIZE initializes the random number generator.
+  It only needs to be called once before using the package.
+
+INITIALIZE - Note:
+  The RNGLIB package has been initialized.
+
+  Let us call generators #3, #6 and #9.
+
+  Initialize generator 3
+  Initialize generator 6
+  Initialize generator 9
+
+   I    R4_UNIFORM_01 ( 3 )  R4_UNIFORM_01 ( 6 )  R4_UNIFORM_01 ( 9 )
+
+   1         0.545589         0.580718         0.178429 
+   2         0.607802          0.77121         0.558254 
+   3          0.26652          0.31139         0.102241 
+   4        0.0562018         0.995434         0.395244 
+   5         0.881036         0.511026          0.83224 
+   6         0.767427         0.450787         0.459968 
+   7         0.405501         0.320508        0.0270091 
+   8          0.37931         0.106053        0.0279301 
+   9         0.520144         0.655542       0.00773636 
+  10         0.358031         0.289157         0.586721 
+
+  Reinitialize generator 6
+  Reinitialize generator 9
+  Reinitialize generator 3
+
+   I    R4_UNIFORM_01 ( 6 )  R4_UNIFORM_01 ( 9 )  R4_UNIFORM_01 ( 3 )
+
+   1         0.580718         0.178429         0.545589 
+   2          0.77121         0.558254         0.607802 
+   3          0.31139         0.102241          0.26652 
+   4         0.995434         0.395244        0.0562018 
+   5         0.511026          0.83224         0.881036 
+   6         0.450787         0.459968         0.767427 
+   7         0.320508        0.0270091         0.405501 
+   8         0.106053        0.0279301          0.37931 
+   9         0.655542       0.00773636         0.520144 
+  10         0.289157         0.586721         0.358031 
+
+RNGLIB_TEST
+  Normal end of execution.
+
+Mon May 27 10:57:11 2013

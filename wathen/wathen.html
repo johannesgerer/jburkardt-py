@@ -1,0 +1,267 @@
+<html>
+
+  <head>
+    <title>
+      WATHEN - Assemble, Factor, Solve a Finite Element System
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      WATHEN <br> Assemble, Factor, Solve a Finite Element System
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>WATHEN</b>
+      is a Python library which
+      compares storage schemes (full, banded, sparse triplet, sparse) and 
+      solution strategies (A\x, Linpack, conjugate gradient (CG)) 
+      for linear systems involving the Wathen matrix, 
+      which can arise when solving a problem using the 
+      finite element method (FEM).
+    </p>
+
+    <p>
+      The Wathen matrix is a typical example of a matrix that arises during
+      finite element computations.  The parameters NX and NY specify how many
+      elements are to be set up in the X and Y directions.  The number of
+      variables N is then
+      <pre>
+        N = 3 NX NY + 2 NX + 2 NY + 1
+      </pre>
+      and the full linear system will require N * N storage for the matrix.
+    </p>
+
+    <p>
+      However, the matrix is sparse, and a banded or sparse storage scheme
+      can be used to save storage.  However, even if storage is saved, a
+      revised program may eat up too much time because MATLAB's sparse storage
+      scheme is not efficiently used by inserting nonzero elements one at a time.
+      Moreover, if banded storage is employed, the user must provide a
+      suitable fast solver.  Simply "translating" a banded solver from another
+      language will probably not provide an efficient routine.
+    </p>
+
+    <p>
+      This library looks at how the complexity of the problem grows with
+      increasing NX and NY; how the computing time increases; how the
+      various full, banded and sparse approaches perform.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>WATHEN</b> is available in
+      <a href = "../../c_src/wathen/wathen.html">a C version</a> and
+      <a href = "../../cpp_src/wathen/wathen.html">a C++ version</a> and
+      <a href = "../../f77_src/wathen/wathen.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/wathen/wathen.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/wathen/wathen.html">a MATLAB version</a> and
+      <a href = "../../py_src/wathen/wathen.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a Python library which
+      contains many utility routines 
+      using double precision real (R8) arithmetic.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Nicholas Higham,<br>
+          Algorithm 694: 
+          A Collection of Test Matrices in MATLAB,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 17, Number 3, September 1991, pages 289-305.
+        </li>
+        <li>
+          Andrew Wathen,<br>
+          Realistic eigenvalue bounds for the Galerkin mass matrix,<br>
+          IMA Journal of Numerical Analysis,<br>
+          Volume 7, Number 4, October 1987, pages 449-457.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cg_csc.py">cg_csc.py</a>,
+          solves A*x=b using the conjugate gradient method, with A
+          a positive definite symmetric matrix stored in Python's
+          Compressed Sparse Column (CSC) format.
+        </li>
+        <li>
+          <a href = "cg_ge.py">cg_ge.py</a>,
+          solves A*x=b using the conjugate gradient method, with A
+          a positive definite symmetric matrix using general (GE) storage.
+        </li>
+        <li>
+          <a href = "cg_st.py">cg_st.py</a>,
+          solves A*x=b using the conjugate gradient method, with A
+          a positive definite symmetric matrix using sparse triplet (ST) storage.
+        </li>
+        <li>
+          <a href = "mv_st.py">mv_st.py</a>,
+          multiplies a sparse triplet matrix times a vector.
+        </li>
+        <li>
+          <a href = "nonzeros.py">nonzeros.py</a>,
+          counts nonzeros in a matrix.
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_01.py</a>,
+          returns a unit random R8.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_01.py">r8mat_uniform_01.py</a>,
+          returns a unit random R8MAT.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_01.py">r8vec_uniform_01.py</a>,
+          returns a unit random R8VEC.
+        </li>
+        <li>
+          <a href = "st_to_ge.py">st_to_ge.py</a>,
+          converts a sparse triplet (ST) matrix to general (GE) format.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the YMDHMS date as a timestamp.
+        </li>
+        <li>
+          <a href = "wathen_bandwidth.py">wathen_bandwidth.py</a>,
+          returns the bandwidth of the Wathen matrix.
+        </li>
+        <li>
+          <a href = "wathen_csc.py">wathen_csc.py</a>,
+          sets up the Wathen matrix using Python's Compressed Sparse Column (CSC)
+          format.
+        </li>
+        <li>
+          <a href = "wathen_ge.py">wathen_ge.py</a>,
+          sets up the Wathen matrix using general (GE) storage.
+        </li>
+        <li>
+          <a href = "wathen_order.py">wathen_order.py</a>,
+          returns the number of unknowns associated with a given Wathen matrix.
+        </li>
+        <li>
+          <a href = "wathen_st.py">wathen_st.py</a>,
+          sets up the Wathen matrix using sparse triplet storage.
+        </li>
+        <li>
+          <a href = "wathen_st_size.py">wathen_st_size.py</a>,
+          returns the size of the Wathen matrix when using sparse triplet storage.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "wathen_test.py">wathen_test.py</a>, calls all the tests;
+        </li>
+        <li>
+          <a href = "wathen_test_output.txt">wathen_test_output.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "wathen_test01.py">wathen_test01.py</a>,
+          sets up and solves a system with wathen_ge();
+        </li>
+        <li>
+          <a href = "wathen_test02.m">wathen_test02.m</a>,
+          sets up and solves a system with wathen_csc();
+        </li>
+        <li>
+          <a href = "wathen_test03.py">wathen_test03.py</a>,
+          times wathen_ge() for various problem sizes;
+        </li>
+        <li>
+          <a href = "wathen_test04.py">wathen_test04.py</a>,
+          times wathen_csc() for various problem sizes;
+        </li>
+        <li>
+          <a href = "wathen_test05.m">wathen_test05.m</a>,
+          compares timings for wathen_ge() and wathen_csc() on small problems;
+        </li>
+        <li>
+          <a href = "wathen_test06.py">wathen_test06.py</a>,
+          uses wathen_ge() + cg_ge() for an iterative solution;
+        </li>
+        <li>
+          <a href = "wathen_test07.py">wathen_test07.py</a>,
+          uses wathen_csc() + cg_csc() for an iterative solution;
+        </li>
+        <li>
+          <a href = "wathen_test08.py">wathen_test08.py</a>,
+          uses wathen_st() + cg_st() for an iterative solution;
+        </li>
+        <li>
+          <a href = "wathen_test09.py">wathen_test09.py</a>,
+          uses spy() to display the sparsity of Wathen matrices 
+          of various sizes;
+        </li>
+        <li>
+          <a href = "wathen_spy.png">wathen_spy.png</a>,
+          spy plots for wathen(1,1) through wathen(6,6).
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 04 September 2014
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

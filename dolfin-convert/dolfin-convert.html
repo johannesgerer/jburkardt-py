@@ -1,0 +1,349 @@
+<html>
+
+  <head>
+    <title>
+      DOLFIN-CONVERT - Convert Meshes to DOLFIN Format
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      DOLFIN-CONVERT <br> Convert Meshes to DOLFIN Format
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>DOLFIN-CONVERT</b> is a PYTHON script which
+      can convert a mesh file from Gmsh, MEDIT, METIS or SCOTCH format to an
+      XML format suitable for use by DOLFIN or FENICS,
+      by Anders Logg.
+    </p>
+
+    <p>
+      The conversions carried out by this function include:
+      <ul>
+        <li>
+          Medit mesh to DOLFIN XML;
+        </li>
+        <li>
+          Gmsh msh to DOLFIN XML; (The Gmsh file can only contain
+          linear 3-node triangles or linear 4-node tetrahedrons)
+        </li>
+        <li>
+          Old DOLFIN XML to DOLFIN XML;
+        </li>
+        <li>
+          METIS Graph to DOLFIN Graph XML;
+        </li>
+        <li>
+          SCOTCH Graph to DOLFIN Graph XML.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer codes made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>DOLFIN-CONVERT</b> is available in
+      <a href = "../../py_src/dolfin-convert/dolfin-convert.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Software:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/dolfin/dolfin.html">
+      DOLFIN</a>,
+      Python programs which
+      are used with the DOLFIN library to set up and solve
+      a wide variety of problems using the finite element method.
+    </p>
+
+    <p>
+      <a href = "../../data/dolfin_xml/dolfin_xml.html">
+      DOLFIN_XML</a>
+      is a data directory which
+      contains examples of XML files that describe 3D finite element meshes
+      as used by DOLFIN and FENICS.
+    </p>
+
+    <p>
+      <a href = "../../examples/fenics/fenics.html">
+      FENICS</a>, 
+      examples which
+      illustrate the use of FENICS, a collection of free software 
+      with an extensive list of features for 
+      automated, efficient solution of differential equations. 
+    </p>
+
+    <p>
+      <a href = "../../examples/gmsh/gmsh.html">
+      GMSH</a>,
+      examples which
+      illustrate the use of the Gmsh program,
+      a 3D mesh generator for the finite element method (FEM).
+    </p>
+
+    <p>
+      <a href = "../../f_src/gmsh_to_fem/gmsh_to_fem.html">
+      GMSH_TO_FEM</a>,
+      a FORTRAN90 program which
+      reads a mesh data file created by the GMSH program
+      and writes a pair of node and element files that correspond
+      to the FEM format.
+    </p>
+
+    <p>
+      <a href = "../../examples/medit/medit.html">
+      MEDIT</a>,
+      examples which
+      illustrate the use of medit, an interactive graphics program developed 
+      to visualize numerical simulation results on unstructured meshes in
+      two and three dimensions.  Scalar, vector and tensor fields can be 
+      easily associated and displayed with meshes.
+      The program is by Pascal Frey.
+    </p>
+
+    <p>
+      <a href = "../../examples/mitchell_fenics/mitchell_fenics.html">
+      MITCHELL_FENICS</a>,
+      examples which
+      illustrate the implementation of the Mitchell elliptic test problems
+      using FENICS.
+    </p>
+
+    <p>
+      <a href = "../../data/msh/msh.html">
+      MSH</a>,
+      a data directory of examples of MSH files,
+      the native 3D mesh format used by Gmsh.
+    </p>
+
+    <p>
+      <a href = "../../c_src/tet_mesh_to_xml/tet_mesh_to_xml.html">
+      TET_MESH_TO_XML</a>,
+      a C program which
+      reads information defining a tet mesh, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding DOLFIN XML mesh file.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangulation_to_xml/triangulation_to_xml.html">
+      TRIANGULATION_TO_XML</a>,
+      a C program which
+      reads information defining a trinagulation, namely
+      a file of node coordinates and a file of elements defined by
+      node indices, and creates a corresponding DOLFIN XML mesh file.
+    </p>
+
+    <p>
+      <a href = "../../data/xml/xml.html">
+      XML</a>,
+      a data directory which
+      contains examples of XML files,
+      a standard, general datafile format.
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Anders Logg
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          Anders Logg, Garth Wells,<br>
+          DOLFIN: Automated finite element computing,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 37, Number 2, Article 20, April 2010.
+        </li>
+        <li>
+          Anders Logg, Kent-Andre Mardal, Garth Wells,<br>
+          Automated Solution of Differential Equations by the Finite Element
+          Method:
+          The FEniCS Book,<br>
+          Lecture Notes in Computational Science and Engineering,<br>
+          Springer, 2011,<br>
+          ISBN13: 978-3642230981,<br>
+          LC:
+        </li>
+        <li>
+          <a href = "http://www.fenics.org">http://www.fenics.org</a>,
+          the web site for the FEniCS project.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "dolfin-convert.py">dolfin-convert.py</a>,
+          a Python script for converting mesh files.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <b>CYLINDER_2D</b> is a 2D mesh for a cylinder.
+      <ul>
+        <li>
+          <a href = "cylinder_2d.msh">cylinder_2d.msh</a>,
+          the mesh in GMSH format.
+        </li>
+        <li>
+          <a href = "cylinder_2d.xml">cylinder_2d.xml</a>,
+          the mesh converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CYLINDER_3D</b> is a 3D mesh for a cylinder.
+      <ul>
+        <li>
+          <a href = "cylinder_3d.msh">cylinder_3d.msh</a>,
+          the mesh in GMSH format.
+        </li>
+        <li>
+          <a href = "cylinder_3d.xml">cylinder_3d.xml</a>,
+          the mesh converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ELL_2D</b> is a 2D mesh for the L-shaped region.
+      <ul>
+        <li>
+          <a href = "ell_2d.msh">ell_2d.msh</a>,
+          the mesh in GMSH format.
+        </li>
+        <li>
+          <a href = "ell_2d.xml">ell_2d.xml</a>,
+          the mesh converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>PINCH</b> is a 2D channel formed by starting with a long rectangular
+      channel and creating a narrow neck by removing elliptical portions
+      from the top and bottom.  The resulting mesh has 4,325 nodes and
+      8,656 elements.
+      <ul>
+        <li>
+          <a href = "pinch.msh">pinch.msh</a>, 
+          the GMSH mesh file created from the geometry file.
+        </li>
+        <li>
+          <a href = "pinch.xml">pinch.xml</a>, 
+          the XML mesh file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>STEP_2D</b> is a 2D mesh for a step.
+      <ul>
+        <li>
+          <a href = "step_2d.msh">step_2d.msh</a>,
+          the mesh in GMSH format.
+        </li>
+        <li>
+          <a href = "step_2d.xml">step_2d.xml</a>,
+          the mesh converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>STEP_3D</b> is a 3D mesh for a step.
+      <ul>
+        <li>
+          <a href = "step_3d.msh">step_3d.msh</a>,
+          the mesh in GMSH format.
+        </li>
+        <li>
+          <a href = "step_3d.xml">step_3d.xml</a>,
+          the mesh converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST02</b> is the upside down L-shaped region,
+      for the Mitchell test problem #2.
+      <ul>
+        <li>
+          <a href = "test02.msh">test02.msh</a>, 
+          the GMSH mesh file.
+        </li>
+        <li>
+          <a href = "test02.xml">test02.xml</a>,
+          the mesh, converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST03</b> is the square [-1,+1]x[-1,+1] with a slit from (0,0)
+      to (1,0), for the Mitchell test problem #3.
+      <ul>
+        <li>
+          <a href = "test03.msh">test03.msh</a>, 
+          the GMSH mesh file.
+        </li>
+        <li>
+          <a href = "test03.xml">test03.xml</a>,
+          the mesh, converted by dolfin-convert to XML format.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 20 August 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,39 @@
+You rolled 6 and moved to 6 .
+You rolled 5 and moved to 11 .
+You rolled 3 and moved to 14 .
+You rolled 5 and moved to 19 .
+You rolled 6 and moved to 25 .
+You rolled 4 and moved to 29 .
+You rolled 2 and moved to 31 .
+You rolled 1 and moved to 32 .
+You rolled 1 and moved to 33 .
+You rolled 3 and moved to 36 and took a ladder to 44 .
+You rolled 2 and moved to 46 .
+You rolled 1 and moved to 47 .
+You rolled 2 and moved to 49 and took a snake to 11 .
+You rolled 1 and moved to 12 .
+You rolled 5 and moved to 17 .
+You rolled 6 and moved to 23 .
+You rolled 6 and moved to 29 .
+You rolled 3 and moved to 32 .
+You rolled 6 and moved to 38 .
+You rolled 6 and moved to 44 .
+You rolled 5 and moved to 49 and took a snake to 11 .
+You rolled 3 and moved to 14 .
+You rolled 6 and moved to 20 .
+You rolled 1 and moved to 21 and took a ladder to 42 .
+You rolled 4 and moved to 46 .
+You rolled 4 and moved to 50 .
+You rolled 5 and moved to 55 .
+You rolled 5 and moved to 60 .
+You rolled 4 and moved to 64 and took a snake to 60 .
+You rolled 5 and moved to 65 .
+You rolled 3 and moved to 68 .
+You rolled 3 and moved to 71 and took a ladder to 91 .
+You rolled 2 and moved to 93 and took a snake to 73 .
+You rolled 4 and moved to 77 .
+You rolled 5 and moved to 82 .
+You rolled 2 and moved to 84 .
+You rolled 4 and moved to 88 .
+You rolled 6 and moved to 94 .
+You rolled 6 and moved to 100 and you won!

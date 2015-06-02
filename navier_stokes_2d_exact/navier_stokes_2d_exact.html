@@ -1,0 +1,330 @@
+<html>
+
+  <head>
+    <title>
+      NAVIER_STOKES_2D_EXACT - Exact solutions to the 2D Incompressible Time-Dependent Navier Stokes Equations
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      NAVIER_STOKES_2D_EXACT<br> 
+      Exact solutions to the <br>
+      2D Incompressible Time-Dependent Navier Stokes Equations
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>NAVIER_STOKES_2D_EXACT</b>,
+      a Python library which
+      evaluates exact solutions to the incompressible time-dependent
+      Navier-Stokes equations over an arbitrary domain in 2D.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <b>Lucas</b>: steady flow, pressure is zero everywhere;
+        </li>
+        <li>
+          <b>Spiral</b>: velocity is zero on the boundary of the unit square;
+        </li>
+        <li>
+          <b>Taylor</b>: source term is zero everywhere.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>NAVIER_STOKES_2D_EXACT</b> is available in
+      <a href = "../../c_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a C version</a> and
+      <a href = "../../cpp_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a C++ version</a> and
+      <a href = "../../f77_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a MATLAB version</a> and
+      <a href = "../../py_src/navier_stokes_2d_exact/navier_stokes_2d_exact.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/navier_stokes_3d_exact/navier_stokes_3d_exact.html">
+      NAVIER_STOKES_3D_EXACT</a>,
+      a Python library which
+      evaluates exact solutions to the incompressible time-dependent
+      Navier-Stokes equations over an arbitrary domain in 3D.
+    </p>
+
+    <p>
+      <a href = "../../m_src/navier_stokes_mesh2d/navier_stokes_mesh2d.html">
+      NAVIER_STOKES_MESH2D</a>,
+      MATLAB data files defining meshes for several
+      2D test problems involving the Navier Stokes equations
+      for fluid flow, provided by Leo Rebholz.
+    </p>
+
+    <p>
+      <a href = "../../py_src/stokes_2d_exact/stokes_2d_exact.html">
+      STOKES_2D_EXACT</a>,
+      a Python library which
+      evaluates exact solutions to the incompressible steady
+      Stokes equations over the unit square in 2D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Maxim Olshanskii, Leo Rebholz,<br>
+          Application of barycenter refined meshes in linear elasticity
+          and incompressible fluid dynamics,<br>
+          ETNA: Electronic Transactions in Numerical Analysis,<br>
+          Volume 38, pages 258-274, 2011.
+        </li>
+        <li>
+          Geoffrey Taylor,<br>
+          On the decay of vortices in a viscous fluid,<br>
+          Philosophical Magazine,<br>
+          Volume 46, 1923, pages 671-674.
+        </li>
+        <li>
+          Geoffrey Taylor, A E Green,<br>
+          Mechanism for the production of small eddies from large ones,<br>
+          Proceedings of the Royal Society of London, <br>
+          Series A, Volume 158, 1937, pages 499-521.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "grid_2d.py">grid_2d.py</a>, 
+          returns a regular 2D grid.
+        </li>
+        <li>
+          <a href = "ns2de_gnuplot.py">ns2de_gnuplot.py</a>,
+          writes files to create a GNUPLOT image of the flow.
+        </li>
+        <li>
+          <a href = "ns2de_matplotlib.py">ns2de_matplotlib.py</a>,
+          writes files to create a MATPLOTLIB image of the flow.
+        </li>
+        <li>
+          <a href = "parameter_spiral_test.py">parameter_spiral_test.py</a>,
+          monitors the Spiral FLow solution norm for various values of the parameters.
+        </li>
+        <li>
+          <a href = "parameter_taylor_test.py">parameter_taylor_test.py</a>,
+          monitors the Taylor Vortex solution norm for various values of the parameters.
+        </li>
+        <li>
+          <a href = "r8vec_amax.py">r8vec_amax.py</a>,
+          returns the maximum absolute value entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_amin.py">r8vec_amin.py</a>,
+          returns the minimum absolute value entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_max.py">r8vec_max.py</a>,
+          returns the maximum entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_min.py">r8vec_min.py</a>,
+          returns the minimum entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_norm_l2.py">r8vec_norm_l2.py</a>,
+          returns the L2 norm of an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_ab.py">r8vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "resid_lucas.py">resid_lucas.py</a>,
+          evaluates the Lucas Bystricky Flow residual at any point (x,y) and
+          time t.
+        </li>
+        <li>
+          <a href = "resid_spiral.py">resid_spiral.py</a>,
+          evaluates the Spiral Flow residual at any point (x,y) and
+          time t.
+        </li>
+        <li>
+          <a href = "resid_taylor.py">resid_taylor.py</a>,
+          evaluates the Taylor Vortex residual at any point (x,y) and
+          time t.
+        </li>
+        <li>
+          <a href = "rhs_lucas.py">rhs_lucas.py</a>,
+          evaluates the Lucas Bystricky Flow right hand sides at any point (x,y) and
+          time t.
+        </li>
+        <li>
+          <a href = "rhs_spiral.py">rhs_spiral.py</a>,
+          evaluates the Spiral Flow right hand sides at any point (x,y) and
+          time t.
+        </li>
+        <li>
+          <a href = "rhs_taylor.py">rhs_taylor.py</a>,
+          evaluates the Taylor Vortex right hand sides at any point (x,y) and
+          time t.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>
+          prints the YMDHMS date as a timestamp.
+        </li>
+        <li>
+          <a href = "uvp_lucas.py">uvp_lucas.py</a>,
+          evaluates the Lucas Bystricky Flow velocity and pressure field 
+          at any point (x,y) and time t.
+        </li>
+        <li>
+          <a href = "uvp_spiral.py">uvp_spiral.py</a>,
+          evaluates the Spiral Flow velocity and pressure field 
+          at any point (x,y) and time t.
+        </li>
+        <li>
+          <a href = "uvp_taylor.py">uvp_taylor.py</a>,
+          evaluates the Taylor Vortex velocity and pressure field
+          at any point (x,y) and time t.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "ns2de_test.py">ns2de_test.py</a>,
+          calls all the tests.
+        </li>
+        <li>
+          <a href = "ns2de_test.sh">ns2de_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "ns2de_test_output.txt">ns2de_test_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Lucas Bystricky flow:
+      <ul>
+        <li>
+          <a href = "lucas_commands.txt">lucas_commands.txt</a>,
+          commands to draw the velocity field.
+        </li>
+        <li>
+          <a href = "lucas_data.txt">lucas_data.txt</a>,
+          velocity field data.
+        </li>
+        <li>
+          <a href = "lucas.png">lucas.png</a>,
+          a PNG plot of the velocity field.
+        </li>
+        <li>
+          <a href = "lucas_matplotlib.png">lucas_matplotlib.png</a>,
+          a PNG plot of the velocity field created by MATPLOTLIB.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Spiral flow:
+      <ul>
+        <li>
+          <a href = "spiral_commands.txt">spiral_commands.txt</a>,
+          commands to draw the velocity field.
+        </li>
+        <li>
+          <a href = "spiral_data.txt">spiral_data.txt</a>,
+          velocity field data.
+        </li>
+        <li>
+          <a href = "spiral.png">spiral.png</a>,
+          a PNG plot of the velocity field.
+        </li>
+        <li>
+          <a href = "spiral_matplotlib.png">spiral_matplotlib.png</a>,
+          a PNG plot of the velocity field created by MATPLOTLIB.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Taylor flow:
+      <ul>
+        <li>
+          <a href = "taylor_commands.txt">taylor_commands.txt</a>,
+          commands to draw the velocity field.
+        </li>
+        <li>
+          <a href = "taylor_data.txt">taylor_data.txt</a>,
+          velocity field data.
+        </li>
+        <li>
+          <a href = "taylor.png">taylor.png</a>,
+          a PNG plot of the velocity field.
+        </li>
+        <li>
+          <a href = "taylor_matplotlib.png">taylor_matplotlib.png</a>,
+          a PNG plot of the velocity field created by MATPLOTLIB.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 March 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

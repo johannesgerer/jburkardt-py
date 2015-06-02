@@ -1,0 +1,531 @@
+<html>
+
+  <head>
+    <title>
+      UNIFORM - A Uniform Random Number Generator
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      UNIFORM <br> A Uniform Random Number Generator
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>UNIFORM</b>
+      is a Python library which
+      returns a sequence of uniformly distributed pseudorandom numbers.
+    </p>
+
+    <p>
+      The fundamental underlying random number generator
+      is based on a simple, old, and limited linear congruential random
+      number generator originally used in the IBM System 360.  If you want
+      state of the art random number generation, look elsewhere!
+    </p>
+
+    <p>
+      Python has the <b>Random.random()</b> function, which
+      returns a random real number in the unit interval.
+    </p>
+
+    <p>
+      However, the <b>UNIFORM</b> library makes it possible to compare 
+      certain computations that use uniform random numbers, written in C, C++, 
+      FORTRAN77, FORTRAN90, Mathematica, MATLAB or Python.
+    </p>
+
+    <p>
+      Various types of random data can be computed.  The routine names
+      are chosen to indicate the corresponding type:
+      <ul>
+        <li>
+          <b>B</b>, an integer binary value of 0 or 1.
+        </li>
+        <li>
+          <b>C4</b>, complex ( single precision )
+        </li>
+        <li>
+          <b>C8</b>, complex ( double precision )
+        </li>
+        <li>
+          <b>CH</b>, character
+        </li>
+        <li>
+          <b>I4</b>, integer ( single precision )
+        </li>
+        <li>
+          <b>L4</b>, logical
+        </li>
+        <li>
+          <b>R4</b>, real ( single precision )
+        </li>
+        <li>
+          <b>R8</b>, real ( double precision )
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      In some cases, a one dimension vector or two dimensional
+      array of values is to be generated, and part of the name
+      will therefore include:
+      <ul>
+        <li>
+          <b>VEC</b>, vector;
+        </li>
+        <li>
+          <b>MAT</b>, a matrix of data;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The underlying random numbers are generally defined over some
+      unit interval or region.  Routines are available which return
+      these "unit" values, while other routines allow the user to
+      specify limits between which the unit values are rescaled.
+      The name of a routine will usually include a tag
+      suggestig which is the case:
+      <ul>
+        <li>
+          <b>01</b>, the data lies in a nit interval or region;
+        </li>
+        <li>
+          <b>AB</b>, the data  lies in a scaled interval or region;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The random number generator embodied here is not very sophisticated.
+      It will not have the best properties of distribution, noncorrelation
+      and long period.  It is not the purpose of this library to achieve
+      such worthy goals.  This is simply a reasonably portable library
+      that can be implemented in various languages, on various machines,
+      and for which it is possible, for instance, to regard the output
+      as a function of the seed, and moreover, to work directly with
+      the sequence of seeds, if necessary.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>UNIFORM</b> is available in
+      <a href = "../../c_src/uniform/uniform.html">a C version</a> and
+      <a href = "../../cpp_src/uniform/uniform.html">a C++ version</a> and
+      <a href = "../../f77_src/uniform/uniform.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/uniform/uniform.html">a FORTRAN90 version</a> and
+      <a href = "../../math_src/uniform/uniform.html">a Mathematica version</a> and
+      <a href = "../../m_src/uniform/uniform.html">a MATLAB version</a> and
+      <a href = "../../py_src/uniform/uniform.html">a PYTHON version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/normal/normal.html">
+      NORMAL</a>,
+      a Python library which
+      contains random number generators (RNG's) for normally distributed values.
+    </p>
+
+    <p>
+      <a href = "../../py_src/r8lib/r8lib.html">
+      R8LIB</a>,
+      a PYTHON library which
+      contains many utility routines 
+      using double precision real (R8) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../py_src/rnglib/rnglib.html">
+      RNGLIB</a>,
+      a PYTHON library which
+      implements a random number generator (RNG) with splitting facilities,
+      allowing multiple independent streams to be computed,
+      by L'Ecuyer and Cote.
+    </p>
+
+    <p>
+      <a href = "../../py_src/sobol/sobol.html">
+      SOBOL</a>,
+      a Python library which
+      computes elements of a Sobol quasirandom sequence.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Paul Bratley, Bennett Fox, Linus Schrage,<br>
+          A Guide to Simulation,<br>
+          Second Edition,<br>
+          Springer, 1987,<br>
+          ISBN: 0387964673,<br>
+          LC: QA76.9.C65.B73.
+        </li>
+        <li>
+          Bennett Fox,<br>
+          Algorithm 647:
+          Implementation and Relative Efficiency of Quasirandom
+          Sequence Generators,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 12, Number 4, December 1986, pages 362-376.
+        </li>
+        <li>
+          Donald Knuth,<br>
+          The Art of Computer Programming,<br>
+          Volume 2, Seminumerical Algorithms,<br>
+          Third Edition,<br>
+          Addison Wesley, 1997,<br>
+          ISBN: 0201896842,<br>
+          LC: QA76.6.K64.
+        </li>
+        <li>
+          Pierre LEcuyer,<br>
+          Random Number Generation,<br>
+          in Handbook of Simulation,<br>
+          edited by Jerry Banks,<br>
+          Wiley, 1998,<br>
+          ISBN: 0471134031,<br>
+          LC: T57.62.H37.
+        </li>
+        <li>
+          Peter Lewis, Allen Goodman, James Miller,<br>
+          A Pseudo-Random Number Generator for the System/360,<br>
+          IBM Systems Journal,<br>
+          Volume 8, Number 2, 1969, pages 136-143.
+        </li>
+        <li>
+          Stephen Park, Keith Miller,<br>
+          Random Number Generators: Good Ones are Hard to Find,<br>
+          Communications of the ACM,<br>
+          Volume 31, Number 10, October 1988, pages 1192-1201.
+        </li>
+        <li>
+          Eric Weisstein,<br>
+          CRC Concise Encyclopedia of Mathematics,<br>
+          CRC Press, 2002,<br>
+          Second edition,<br>
+          ISBN: 1584883472,<br>
+          LC: QA5.W45.
+        </li>
+        <li>
+          Barry Wilkinson, Michael Allen,<br>
+          Parallel Programming:
+          Techniques and Applications Using Networked Workstations and 
+          Parallel Computers,<br>
+          Prentice Hall,<br>
+          ISBN: 0-13-140563-2,<br>
+          LC: QA76.642.W54.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "c4_uniform_01.py">c4_uniform_01.py</a>,
+          returns a unit pseudorandom C4.
+        </li>
+        <li>
+          <a href = "c4mat_print.py">c4mat_print.py</a>, 
+          prints a C4MAT.
+        </li>
+        <li>
+          <a href = "c4mat_print_some.py">c4mat_print_some.py</a>, 
+          prints some of a C4MAT.
+        </li>
+        <li>
+          <a href = "c4mat_uniform_01.py">c4mat_uniform_01.py</a>,
+          returns a unit pseudorandom C4MAT.
+        </li>
+        <li>
+          <a href = "c4vec_print.py">c4vec_print.py</a>, 
+          prints a C4VEC.
+        </li>
+        <li>
+          <a href = "c4vec_uniform_01.py">c4vec_uniform_01.py</a>,
+          returns a unit pseudorandom C4VEC.
+        </li>
+        <li>
+          <a href = "c8_uniform_01.py">c8_uniform_01.py</a>,
+          returns a unit pseudorandom C8.
+        </li>
+        <li>
+          <a href = "c8mat_print.py">c8mat_print.py</a>, 
+          prints a C8MAT.
+        </li>
+        <li>
+          <a href = "c8mat_print_some.py">c8mat_print_some.py</a>, 
+          prints some of a C8MAT.
+        </li>
+        <li>
+          <a href = "c8mat_uniform_01.py">c8mat_uniform_01.py</a>,
+          returns an array of unit pseudorandom double precision
+          complex numbers.
+        </li>
+        <li>
+          <a href = "c8vec_print.py">c8vec_print.py</a>, 
+          prints a C8VEC.
+        </li>
+        <li>
+          <a href = "c8vec_uniform_01.py">c8vec_uniform_01.py</a>,
+          returns a unit pseudorandom C8VEC.
+        </li>
+        <li>
+          <a href = "ch_uniform_ab.py">ch_uniform_ab.py</a>,
+          returns a scaled pseudorandom CH.
+        </li>
+        <li>
+          <a href = "congruence.py">congruence.py</a>,
+          solves a congruence of the form A * X = C ( mod B ).
+        </li>
+        <li>
+          <a href = "get_seed.py">get_seed.py</a>,
+          returns a random seed for the random number generator.
+        </li>
+        <li>
+          <a href = "i4_gcd.py">i4_gcd.py</a>,
+          returns the greatest common divisor of two I4's.
+        </li>
+        <li>
+          <a href = "i4_huge.py">i4_huge.py</a>,
+          returns a huge I4.
+        </li>
+        <li>
+          <a href = "i4_modp.py">i4_modp.py</a>,
+          returns the nonnegative remainder of I4 division.
+        </li>
+        <li>
+          <a href = "i4_seed_advance.py">i4_seed_advance.py</a>,
+          "advances" the seed.
+        </li>
+        <li>
+          <a href = "i4_sign.py">i4_sign.py</a>,
+          returns the sign of an I4.
+        </li>
+        <li>
+          <a href = "i4_uniform_0i.py">i4_uniform_0i.py</a>,
+          returns a pseudorandom I4 between 1 and 2^(31)-1.
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>,
+          returns a scaled random I4 between A and B.
+        </li>
+        <li>
+          <a href = "i4mat_print.py">i4mat_print.py</a>,
+          prints an I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_print_some.py">i4mat_print_some.py</a>,
+          prints some of an I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_uniform_ab.py">i4mat_uniform_ab.py</a>,
+          returns a scaled pseudorangom I4MAT.
+        </li>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>,
+          prints an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_uniform_ab.py">i4vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom I4VEC.
+        </li>
+        <li>
+          <a href = "l4_uniform.py">l4_uniform.py</a>,
+          returns a scaled random L4 (a logical value).
+        </li>
+        <li>
+          <a href = "l4mat_print.py">l4mat_print.py</a>,
+          prints an L4MAT.
+        </li>
+        <li>
+          <a href = "l4mat_print_some.py">l4mat_print_some.py</a>,
+          prints some of an L4MAT.
+        </li>
+        <li>
+          <a href = "l4mat_uniform.py">l4mat_uniform.py</a>,
+          returns a random L4MAT (a logical matrix).
+        </li>
+        <li>
+          <a href = "l4vec_print.py">l4vec_print.py</a>,
+          prints an L4VEC.
+        </li>
+        <li>
+          <a href = "l4vec_uniform.py">l4vec_uniform.py</a>,
+          returns a random L4VEC (a logical vector).
+        </li>
+        <li>
+          <a href = "lcrg_anbn.py">lcrg_anbn.py</a>,
+          computes the "N-th power" of a linear congruential generator.
+        </li>
+        <li>
+          <a href = "lcrg_evaluate.py">lcrg_evaluate.py</a>,
+          evaluates an LCRG, y = ( A * x + B ) mod C.
+        </li>
+        <li>
+          <a href = "lcrg_seed.py">lcrg_seed.py</a>,
+          computes the N-th seed of a linear congruential random
+          number generator.
+        </li>
+        <li>
+          <a href = "power_mod.py">power_mod.py</a>,
+          computes mod ( A^N, M ).
+        </li>
+        <li>
+          <a href = "r4_uniform_01.py">r4_uniform_01.py</a>,
+          returns a unit pseudorandom R4.
+        </li>
+        <li>
+          <a href = "r4_uniform_ab.py">r4_uniform_ab.py</a>,
+          returns a scaled pseudorandom R4.
+        </li>
+        <li>
+          <a href = "r4mat_print.py">r4mat_print.py</a>,
+          prints an R4MAT.
+        </li>
+        <li>
+          <a href = "r4mat_print_some.py">r4mat_print_some.py</a>,
+          prints some of an R4MAT.
+        </li>
+        <li>
+          <a href = "r4mat_uniform_ab.py">r4mat_uniform_ab.py</a>,
+          returns a scaled pseudorandom R4MAT.
+        </li>
+        <li>
+          <a href = "r4mat_uniform_01.py">r4mat_uniform_01.py</a>,
+          returns a unit pseudorandom R4MAT.
+        </li>
+        <li>
+          <a href = "r4vec_print.py">r4vec_print.py</a>,
+          prints an R4VEC.
+        </li>
+        <li>
+          <a href = "r4vec_uniform_01.py">r4vec_uniform_01.py</a>,
+          returns a unit pseudorandom R4VEC.
+        </li>
+        <li>
+          <a href = "r4vec_uniform_ab.py">r4vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom R4VEC.
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_01.py</a>,
+          returns a unit pseudorandom R8.
+        </li>
+        <li>
+          <a href = "r8_uniform_ab.py">r8_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8.
+        </li>
+        <li>
+          <a href = "r8col_uniform_abvec.py">
+          r8col_uniform_abvec.py</a>,
+          fills an R8COL with scaled pseudorandom numbers.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>,
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>,
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_01.py">r8mat_uniform_01.py</a>,
+          returns a unit pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_ab.py">r8mat_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8row_uniform_abvec.py">
+          r8row_uniform_abvec.py</a>,
+          fills an R8ROW with scaled pseudorandom numbers.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_01.py">r8vec_uniform_01.py</a>,
+          returns a unit pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_ab.py">r8vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_abvec.py">r8vec_uniform_abvec.py</a>,
+          returns a scaled pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the current YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "uniform_test.py">uniform_test.py</a>,
+          calls all the tests.
+        </li>
+        <li>
+          <a href = "uniform_test.sh">uniform_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "uniform_test_output.txt">uniform_test_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 December 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

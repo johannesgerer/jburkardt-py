@@ -1,0 +1,121 @@
+Thu Sep  4 22:52:55 2014
+
+WATHEN_TEST
+  PYTHON version:
+  Test the WATHEN library.
+
+WATHEN_TEST01
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_GE.
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Norm of solution error is 5.02633e-15
+
+WATHEN_TEST02
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_CSC.
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Norm of solution error is 1.51792e-14
+
+WATHEN_TEST03
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  using the WATHEN_GE function.
+
+    NX  Elements   Nodes   Storage    Assembly       Factor      Error
+
+     1         1       8        64    3.51e-04    9.60e-05    1.26e-15
+     2         4      21       441    1.15e-03    7.90e-05    2.92e-15
+     4        16      65      4225    4.35e-03    3.90e-04    5.03e-15
+     8        64     225     50625    2.13e-02    2.54e-03    8.44e-15
+    16       256     833    693889    7.70e-02    9.08e-02    3.78e-13
+    32      1024    3201  10246401    3.42e-01    4.25e+00    4.29e-14
+
+WATHEN_TEST04
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  using the WATHEN_CSC function.
+
+    NX  Elements   Nodes    Assembly       Factor      Error
+
+     1         1       8    6.59e-04    1.05e-04    1.61e-15
+     2         4      21    9.99e-04    9.70e-05    4.82e-15
+     4        16      65    2.96e-03    2.19e-04    1.52e-14
+     8        64     225    1.04e-02    9.71e-04    6.91e-15
+    16       256     833    4.09e-02    4.33e-03    1.14e-12
+    32      1024    3201    1.66e-01    4.44e-02    3.44e-14
+    64      4096   12545    6.79e-01    2.39e-01    7.24e-14
+
+WATHEN_TEST05
+  For various problem sizes, 
+  time the assembly and factorization of a Wathen system
+  WATHEN_GE and WATHEN_CSC.
+
+                   NX  Elements   Nodes     Assembly      Factor      Error
+
+  WATHEN_GE         1         1       8    3.64e-04    1.18e-04    1.26e-15
+  WATHEN_CSC        1         1       8    5.86e-04    9.60e-05    1.76e-15
+
+  WATHEN_GE         2         4      21    1.16e-03    8.00e-05    2.92e-15
+  WATHEN_CSC        2         4      21    9.96e-04    9.20e-05    3.34e-15
+
+  WATHEN_GE         4        16      65    4.52e-03    2.93e-04    5.03e-15
+  WATHEN_CSC        4        16      65    2.89e-03    1.49e-03    1.31e-14
+
+  WATHEN_GE         8        64     225    1.73e-02    2.43e-03    8.44e-15
+  WATHEN_CSC        8        64     225    1.08e-02    1.06e-03    6.62e-15
+
+  WATHEN_GE        16       256     833    7.03e-02    9.17e-02    3.78e-13
+  WATHEN_CSC       16       256     833    4.22e-02    4.88e-03    6.34e-13
+
+  WATHEN_GE        32      1024    3201    3.37e-01    4.35e+00    4.29e-14
+  WATHEN_CSC       32      1024    3201    1.75e-01    4.03e-02    3.87e-14
+
+WATHEN_TEST06
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_GE and CG_GE.
+
+  Elements in X direction NX = 2
+  Elements in Y direction NY = 2
+  Number of elements = 4
+  Number of nodes N = 21
+  Maximum solution error is 1.26407e-05
+
+WATHEN_TEST07
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_CSC and CG_CSC.
+
+  Elements in X direction NX = 2
+  Elements in Y direction NY = 2
+  Number of elements = 4
+  Number of nodes N = 21
+  Maximum solution error is 6.16771e-06
+
+WATHEN_TEST08
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_ST and CG_ST.
+
+  Elements in X direction NX = 1
+  Elements in Y direction NY = 1
+  Number of elements = 1
+  Number of nodes N = 8
+  Number of nonzeros = 64
+
+  Maximum solution error is 1.97519e-15
+
+WATHEN_TEST09
+  Display the sparsity of the Wathen matrix.
+
+  Graphics file saved as "wathen_spy.png"
+
+WATHEN_TEST:
+  Normal end of execution.
+
+Thu Sep  4 22:53:11 2014

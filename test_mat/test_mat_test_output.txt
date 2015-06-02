@@ -1,0 +1,2395 @@
+Sat Apr 18 08:47:58 2015
+
+TEST_MAT_TEST
+  Python version:
+  Test the TEST_MAT library.
+
+BVEC_NEXT_GRLEX_TEST
+  BVEC_NEXT_GRLEX computes binary vectors in GRLEX order.
+
+   0:   0 0 0 0 
+   1:   0 0 0 1 
+   2:   0 0 1 0 
+   3:   0 1 0 0 
+   4:   1 0 0 0 
+   5:   0 0 1 1 
+   6:   0 1 0 1 
+   7:   0 1 1 0 
+   8:   1 0 0 1 
+   9:   1 0 1 0 
+  10:   1 1 0 0 
+  11:   0 1 1 1 
+  12:   1 0 1 1 
+  13:   1 1 0 1 
+  14:   1 1 1 0 
+  15:   1 1 1 1 
+  16:   0 0 0 0 
+
+BVEC_NEXT_GRLEX_TEST:
+  Normal end of execution.
+
+C8_I_TEST
+  C8_I returns the value of the imaginary unit.
+
+  C1=C8__I ( ) = (0,1)
+
+  C2= C1 * C1 = (-1,0)
+
+C8_I_TEST:
+  Normal end of execution.
+
+C8_NORMAL_01_TEST
+  C8_NORMAL_01 computes pseudonormal complex values.
+
+  The initial seed is 123456789
+
+       1  ( 1.679040, -0.472769 )
+       2  ( -0.566060, -0.231124 )
+       3  ( 1.212934, 0.535037 )
+       4  ( 1.269381, 1.049543 )
+       5  ( -1.666087, -1.865228 )
+       6  ( -2.242464, 0.735809 )
+       7  ( 0.039675, -1.350736 )
+       8  ( 0.673068, 0.007775 )
+       9  ( -0.275127, 0.374940 )
+      10  ( 2.164005, 0.185600 )
+
+C8_NORMAL_01_TEST:
+  Normal end of execution.
+
+C8_UNIFORM_01_TEST
+  C8_UNIFORM_01 computes pseudorandom complex values
+  in the unit circle.
+
+  The initial seed is 123456789
+
+       1  ( 0.449860, -0.126667 )
+       2  ( -0.843197, -0.344280 )
+       3  ( 0.589627, 0.260090 )
+       4  ( 0.391140, 0.323400 )
+       5  ( -0.139466, -0.156136 )
+       6  ( -0.236066, 0.077459 )
+       7  ( 0.018599, -0.633214 )
+       8  ( 0.892850, 0.010314 )
+       9  ( -0.560465, 0.763795 )
+      10  ( 0.306357, 0.026275 )
+
+C8_UNIFORM_01_TEST:
+  Normal end of execution.
+
+C8MAT_IDENTITY_TEST
+  C8MAT_IDENTITY returns the complex identity matrix.
+
+  Identity matrix:
+
+  Col:               0                            1                            2                            3               
+  Row
+      0 :            1             0i             0             0i             0             0i             0             0i  
+      1 :            0             0i             1             0i             0             0i             0             0i  
+      2 :            0             0i             0             0i             1             0i             0             0i  
+      3 :            0             0i             0             0i             0             0i             1             0i  
+
+C8MAT_IDENTITY_TEST:
+  Normal end of execution.
+
+C8MAT_INDICATOR_TEST
+  C8MAT_INDICATOR returns the complex indicator matrix.
+
+  Indicator matrix:
+
+  Col:               0                            1                            2               
+  Row
+      0 :            1            -1i             1            -2i             1            -3i  
+      1 :            2            -1i             2            -2i             2            -3i  
+      2 :            3            -1i             3            -2i             3            -3i  
+      3 :            4            -1i             4            -2i             4            -3i  
+      4 :            5            -1i             5            -2i             5            -3i  
+
+C8MAT_INDICATOR_TEST:
+  Normal end of execution.
+
+C8MAT_UNIFORM_01_TEST
+  C8MAT_UNIFORM_01 computes a random C8MAT.
+
+  0 <= X <= 1
+  Initial seed is 123456789
+
+  Random C8MAT:
+
+  Col:               0                            1                            2               
+  Row
+      0 :      0.44986     -0.126667i     -0.236066     0.0774593i      0.500804     -0.779931i  
+      1 :    -0.843197      -0.34428i     0.0185993     -0.633214i      0.350471     0.0165551i  
+      2 :     0.589627       0.26009i       0.89285     0.0103136i      0.434989     -0.266623i  
+      3 :      0.39114        0.3234i     -0.560465      0.763795i     -0.200947      0.270711i  
+      4 :    -0.139466     -0.156136i      0.306357     0.0262752i    -0.0974599      0.901881i  
+
+C8MAT_UNIFORM_01_TEST:
+  Normal end of execution.
+
+C8VEC_PRINT_TEST
+  C8VEC_PRINT prints an C8VEC.
+
+  Here is a C8VEC:
+
+     0             1             2
+     1             3             4
+     2             5             6
+     3             7             8
+
+C8VEC_PRINT_TEST:
+  Normal end of execution.
+
+C8VEC_UNIFORM_01_TEST
+  C8VEC_UNIFORM_01 computes pseudorandom complex values
+  in the unit circle.
+
+  The initial seed is 123456789
+
+       0  ( 0.449860, -0.126667 )
+       1  ( -0.843197, -0.344280 )
+       2  ( 0.589627, 0.260090 )
+       3  ( 0.391140, 0.323400 )
+       4  ( -0.139466, -0.156136 )
+       5  ( -0.236066, 0.077459 )
+       6  ( 0.018599, -0.633214 )
+       7  ( 0.892850, 0.010314 )
+       8  ( -0.560465, 0.763795 )
+       9  ( 0.306357, 0.026275 )
+
+C8VEC_UNIFORM_01_TEST:
+  Normal end of execution.
+
+C8VEC_UNITY_TEST
+  C8VEC_UNITY returns the N roots of unity.
+
+  The N roots of unity:
+
+     0             1             0
+     1      0.866025           0.5
+     2           0.5      0.866025
+     3   6.12323e-17             1
+     4          -0.5      0.866025
+     5     -0.866025           0.5
+     6            -1   1.22465e-16
+     7     -0.866025          -0.5
+     8          -0.5     -0.866025
+     9  -1.83697e-16            -1
+    10           0.5     -0.866025
+    11      0.866025          -0.5
+
+C8VEC_UNITY_TEST:
+  Normal end of execution.
+
+COMPLETE_SYMMETRIC_POLY_TEST
+  COMPLETE_SYMMETRIC_POLY evaluates a complete symmetric
+  polynomial in a given set of variables X.
+
+  Variable vector X:
+
+     0             1
+     1             2
+     2             3
+     3             4
+     4             5
+
+   N\R     0       1       2       3       4       5
+
+   0        1        0        0        0        0        0 
+   1        1        1        1        1        1        1 
+   2        1        3        7       15       31       63 
+   3        1        6       25       90      301      966 
+   4        1       10       65      350     1701     7770 
+   5        1       15      140     1050     6951    42525 
+
+COMPLETE_SYMMETRIC_POLY_TEST:
+  Normal end of execution.
+
+I4_FACTOR_TEST
+  I4_FACTOR tries to factor an I4.
+
+  Factors of N = 60
+    2^2
+    3^1
+    5^1
+
+  Factors of N = 664048
+    2^4
+    7^3
+    11^2
+
+  Factors of N = 8466763
+    2699^1
+    3137^1
+
+I4_FACTOR_TEST:
+  Normal end of execution.
+
+I4_IS_EVEN_TEST
+  I4_IS_EVEN reports whether an I4 is even.
+ 
+         I  I4_IS_EVEN(I)
+ 
+        -2  True
+        -1  False
+         0  True
+         1  False
+         2  True
+         3  False
+         4  True
+         5  False
+         6  True
+         7  False
+         8  True
+         9  False
+        10  True
+        11  False
+        12  True
+        13  False
+        14  True
+        15  False
+        16  True
+        17  False
+        18  True
+        19  False
+        20  True
+        21  False
+        22  True
+        23  False
+        24  True
+        25  False
+
+I4_IS_EVEN_TEST
+  Normal end of execution.
+
+I4_IS_ODD_TEST
+  I4_IS_ODD reports whether an I4 is odd.
+ 
+         I  I4_IS_ODD(I)
+ 
+        -2  False
+        -1  True
+         0  False
+         1  True
+         2  False
+         3  True
+         4  False
+         5  True
+         6  False
+         7  True
+         8  False
+         9  True
+        10  False
+        11  True
+        12  False
+        13  True
+        14  False
+        15  True
+        16  False
+        17  True
+        18  False
+        19  True
+        20  False
+        21  True
+        22  False
+        23  True
+        24  False
+        25  True
+
+I4_IS_ODD_TEST
+  Normal end of execution.
+
+I4_IS_PRIME_TEST
+  I4_IS_PRIME reports whether an I4 is prime.
+ 
+         I  I4_IS_PRIME(I)
+ 
+        -2  False
+        -1  False
+         0  False
+         1  False
+         2  True
+         3  True
+         4  False
+         5  True
+         6  False
+         7  True
+         8  False
+         9  False
+        10  False
+        11  True
+        12  False
+        13  True
+        14  False
+        15  False
+        16  False
+        17  True
+        18  False
+        19  True
+        20  False
+        21  False
+        22  False
+        23  True
+        24  False
+        25  False
+
+I4_IS_PRIME_TEST
+  Normal end of execution.
+
+I4_LOG_10_TEST
+  I4_LOG_10: whole part of log base 10,
+
+  X, I4_LOG_10
+
+     0             0
+     1             0
+     2             0
+     3             0
+     9             0
+    10             1
+    11             1
+    99             1
+   101             2
+    -1             0
+    -2             0
+    -3             0
+    -9             0
+
+I4_LOG_10_TEST
+  Normal end of execution.
+
+I4_MODP_TEST
+  I4_MODP factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+I4_MODP_TEST
+  Normal end of execution.
+
+I4_RISE_TEST
+  I4_RISE evaluates the rising factorial Fall(I,N).
+
+         M         N      Exact         I4_RISE(M,N)
+         5         0             1             1
+         5         1             5             5
+         5         2            30            30
+         5         3           210           210
+         5         4          1680          1680
+         5         5         15120         15120
+         5         6        151200        151200
+        50         0             1             1
+        10         1            10            10
+      4000         1          4000          4000
+        10         2           110           110
+        18         3          6840          6840
+         4         4           840           840
+        98         3        970200        970200
+         1         7          5040          5040
+
+I4_RISE_TEST
+  Normal end of execution.
+
+I4_RISE_VALUES_TEST:
+  I4_RISE_VALUES returns values of the integer rising factorial.
+
+          M         N          I4_RISE(M,N)
+
+         5         0         1
+         5         1         5
+         5         2        30
+         5         3       210
+         5         4      1680
+         5         5     15120
+         5         6    151200
+        50         0         1
+        10         1        10
+      4000         1      4000
+        10         2       110
+        18         3      6840
+         4         4       840
+        98         3    970200
+         1         7      5040
+
+I4_RISE_VALUES_TEST:
+  Normal end of execution.
+
+I4_SIGN_TEST
+  I4_SIGN returns the sign of an I4.
+
+    I4  I4_SIGN(I4)
+
+   -10           -1
+    -7           -1
+     0            1
+     5            1
+     9            1
+
+I4_SIGN_TEST
+  Normal end of execution.
+
+I4_UNIFORM_AB_TEST
+  I4_UNIFORM_AB computes pseudorandom values
+  in an interval [A,B].
+
+  The lower endpoint A = -100
+  The upper endpoint B = 200
+  The initial seed is 123456789
+
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+I4_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+I4_WRAP_TEST
+  I4_WRAP forces an integer to lie within given limits.
+
+  ILO = 4
+  IHI = 8
+
+     I  I4_WRAP(I)
+
+     -10       5
+      -9       6
+      -8       7
+      -7       8
+      -6       4
+      -5       5
+      -4       6
+      -3       7
+      -2       8
+      -1       4
+       0       5
+       1       6
+       2       7
+       3       8
+       4       4
+       5       5
+       6       6
+       7       7
+       8       8
+       9       4
+      10       5
+      11       6
+      12       7
+      13       8
+      14       4
+      15       5
+      16       6
+      17       7
+      18       8
+      19       4
+      20       5
+
+I4_WRAP_TEST
+  Normal end of execution.
+
+I4MAT_PRINT_TEST:
+  Test I4MAT_PRINT, which prints an I4MAT.
+
+  A 5 x 3 integer matrix:
+
+  Col:        0         1         2   
+  Row
+    0:       11        12        13   
+    1:       21        22        23   
+    2:       31        32        33   
+    3:       41        42        43   
+    4:       51        52        53   
+
+I4MAT_PRINT_TEST:
+  Normal end of execution.
+
+I4MAT_PRINT_SOME_TEST
+  I4MAT_PRINT_SOME prints some of an I4MAT.
+
+  Here is I4MAT, rows 0:2, cols 3:5:
+
+  Col:        3         4         5   
+  Row
+    0:       14        15        16   
+    1:       24        25        26   
+    2:       34        35        36   
+
+I4MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+I4VEC_INDICATOR0_TEST
+  I4VEC_INDICATOR0 returns an indicator vector.
+
+  The indicator0 vector:
+
+     0       0
+     1       1
+     2       2
+     3       3
+     4       4
+     5       5
+     6       6
+     7       7
+     8       8
+     9       9
+
+I4VEC_INDICATOR0_TEST
+  Normal end of execution.
+
+I4VEC_PRINT_TEST
+  I4VEC_PRINT prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+I4VEC_PRINT_TEST:
+  Normal end of execution.
+
+LEGENDRE_SYMBOL_TEST
+  LEGENDRE_SYMBOL computes the Legendre
+  symbol (Q/P) which records whether Q is
+  a quadratic residue modulo the prime P.
+
+  Legendre Symbols for P = 7
+
+       7       0       0
+       7       1       1
+       7       2       1
+       7       3      -1
+       7       4       1
+       7       5      -1
+       7       6      -1
+       7       7       0
+
+  Legendre Symbols for P = 11
+
+      11       0       0
+      11       1       1
+      11       2      -1
+      11       3       1
+      11       4       1
+      11       5       1
+      11       6      -1
+      11       7      -1
+      11       8      -1
+      11       9       1
+      11      10      -1
+      11      11       0
+
+  Legendre Symbols for P = 13
+
+      13       0       0
+      13       1       1
+      13       2      -1
+      13       3       1
+      13       4       1
+      13       5      -1
+      13       6      -1
+      13       7      -1
+      13       8      -1
+      13       9       1
+      13      10       1
+      13      11      -1
+      13      12       1
+      13      13       0
+
+  Legendre Symbols for P = 17
+
+      17       0       0
+      17       1       1
+      17       2       1
+      17       3      -1
+      17       4       1
+      17       5      -1
+      17       6      -1
+      17       7      -1
+      17       8       1
+      17       9       1
+      17      10      -1
+      17      11      -1
+      17      12      -1
+      17      13       1
+      17      14      -1
+      17      15       1
+      17      16       1
+      17      17       0
+
+LEGENDRE_SYMBOL_TEST_TEST
+  Normal end of execution.
+
+MERTENS_TEST
+  MERTENS computes the Mertens function.
+
+    N   Exact   MERTENS(N)
+
+     1         1         1
+     2         0         0
+     3        -1        -1
+     4        -1        -1
+     5        -2        -2
+     6        -1        -1
+     7        -2        -2
+     8        -2        -2
+     9        -2        -2
+    10        -1        -1
+    11        -2        -2
+    12        -2        -2
+   100         1         1
+  1000         2         2
+  10000       -23       -23
+
+MERTENS_TEST
+  Normal end of execution.
+
+MERTENS_VALUES_TEST:
+  MERTENS_VALUES stores values of the MERTENS function.
+
+             N    MERTENS(N)
+
+             1             1
+             2             0
+             3            -1
+             4            -1
+             5            -2
+             6            -1
+             7            -2
+             8            -2
+             9            -2
+            10            -1
+            11            -2
+            12            -2
+           100             1
+          1000             2
+         10000           -23
+
+MERTENS_VALUES_TEST:
+  Normal end of execution.
+
+MOEBIUS_TEST
+  MOEBIUS computes the Moebius function.
+
+    N   Exact   MOEBIUS(N)
+
+     1         1         1
+     2        -1        -1
+     3        -1        -1
+     4         0         0
+     5        -1        -1
+     6         1         1
+     7        -1        -1
+     8         0         0
+     9         0         0
+    10         1         1
+    11        -1        -1
+    12         0         0
+    13        -1        -1
+    14         1         1
+    15         1         1
+    16         0         0
+    17        -1        -1
+    18         0         0
+    19        -1        -1
+    20         0         0
+
+MOEBIUS_TEST
+  Normal end of execution.
+
+MOEBIUS_VALUES_TEST:
+  MOEBIUS_VALUES stores values of the MOEBIUS function.
+
+             N    MOEBIUS(N)
+
+             1             1
+             2            -1
+             3            -1
+             4             0
+             5            -1
+             6             1
+             7            -1
+             8             0
+             9             0
+            10             1
+            11            -1
+            12             0
+            13            -1
+            14             1
+            15             1
+            16             0
+            17            -1
+            18             0
+            19            -1
+            20             0
+
+MOEBIUS_VALUES_TEST:
+  Normal end of execution.
+
+PRIME_TEST
+  PRIME returns primes from a table.
+
+  Number of primes stored is 1600
+
+     I    Prime(I)
+
+       1       2
+       2       3
+       3       5
+       4       7
+       5      11
+       6      13
+       7      17
+       8      19
+       9      23
+      10      29
+
+    1590   13411
+    1591   13417
+    1592   13421
+    1593   13441
+    1594   13451
+    1595   13457
+    1596   13463
+    1597   13469
+    1598   13477
+    1599   13487
+    1600   13499
+
+PRIME_TEST
+  Normal end of execution.
+
+R8_CHOOSE_TEST
+  R8_CHOOSE evaluates C(N,K).
+
+         N         K       CNK
+
+         0         0               1
+
+         1         0               1
+         1         1               1
+
+         2         0               1
+         2         1               2
+         2         2               1
+
+         3         0               1
+         3         1               3
+         3         2               3
+         3         3               1
+
+         4         0               1
+         4         1               4
+         4         2               6
+         4         3               4
+         4         4               1
+
+         5         0               1
+         5         1               5
+         5         2              10
+         5         3              10
+         5         4               5
+         5         5               1
+
+R8_CHOOSE_TEST
+  Normal end of execution.
+
+R8_FACTORIAL_TEST
+  R8_FACTORIAL evaluates the factorial function.
+
+      N                     Exact                   Computed
+     0                         1                         1
+     1                         1                         1
+     2                         2                         2
+     3                         6                         6
+     4                        24                        24
+     5                       120                       120
+     6                       720                       720
+     7                      5040                      5040
+     8                     40320                     40320
+     9                    362880                    362880
+    10                   3628800                   3628800
+    11                  39916800                  39916800
+    12                 479001600                 479001600
+    13                6227020800                6227020800
+    14               87178291200               87178291200
+    15             1307674368000             1307674368000
+    16            20922789888000            20922789888000
+    17           355687428096000           355687428096000
+    18          6402373705728000          6402373705728000
+    19      1.21645100408832e+17      1.21645100408832e+17
+    20      2.43290200817664e+18      2.43290200817664e+18
+    25     1.551121004333099e+25     1.551121004333099e+25
+    50     3.041409320171338e+64     3.041409320171338e+64
+   100    9.332621544394415e+157     9.33262154439441e+157
+   150    5.713383956445855e+262     5.71338395644585e+262
+
+R8_FACTORIAL_TEST
+  Normal end of execution.
+
+R8_MOP_TEST
+  R8_MOP evaluates (-1.0)^I4 as an R8.
+
+    I4  R8_MOP(I4)
+
+   -57  -1.0
+    92   1.0
+    66   1.0
+    12   1.0
+   -17  -1.0
+   -87  -1.0
+   -49  -1.0
+   -78   1.0
+   -92   1.0
+    27  -1.0
+
+R8_MOP_TEST
+  Normal end of execution.
+
+R8_NORMAL_01_TEST
+  R8_NORMAL_01 generates normally distributed
+  random values.
+  Using initial random number seed = 123456789
+
+  1.679040
+  -0.566060
+  1.212934
+  1.269381
+  -1.666087
+  -2.242464
+  0.039675
+  0.673068
+  -0.275127
+  2.164005
+  0.297785
+  2.044536
+  1.398819
+  -1.242985
+  -0.067084
+  -0.794396
+  -0.523768
+  -0.350567
+  0.131700
+  0.537380
+
+R8_NORMAL_01_TEST
+  Normal end of execution.
+
+R8_RISE_TEST
+  R8_RISE evaluates the rising factorial Rise(X,N).
+
+      X        N                     Exact                   Computed
+
+         5     4                      1680                      1680
+      5.25     4             1962.59765625             1962.59765625
+       5.5     4                 2279.0625                 2279.0625
+      5.75     4             2631.97265625             2631.97265625
+         6     4                      3024                      3024
+       7.5     0                         1                         1
+       7.5     1                       7.5                       7.5
+       7.5     2                     63.75                     63.75
+       7.5     3                   605.625                   605.625
+       7.5     4                 6359.0625                 6359.0625
+       7.5     5               73129.21875               73129.21875
+       7.5     6             914115.234375             914115.234375
+       7.5     7          12340555.6640625          12340555.6640625
+       7.5     8         178938057.1289063         178938057.1289062
+       7.5     9         2773539885.498047         2773539885.498047
+
+R8_RISE_TEST
+  Normal end of execution.
+
+R8_SIGN_TEST
+  R8_SIGN returns the sign of an R8.
+
+     R8     R8_SIGN(R8)
+
+   -1.2500        -1
+   -0.2500        -1
+    0.0000         1
+    0.5000         1
+    9.0000         1
+
+R8_SIGN_TEST
+  Normal end of execution.
+
+R8_UNIFORM_01_TEST
+  R8_UNIFORM_01 produces a sequence of random values.
+
+  Using random seed 123456789
+
+  SEED  R8_UNIFORM_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+  Verify that the sequence can be restarted.
+  Set the seed back to its original value, and see that
+  we generate the same sequence.
+
+  SEED  R8_UNIFORM_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+R8_UNIFORM_01_TEST
+  Normal end of execution.
+
+R8_UNIFORM_AB_TEST
+  R8_UNIFORM_AB returns random values in a given range:
+  [ A, B ]
+
+  For this problem:
+  A = 10.000000
+  B = 20.000000
+
+  12.184183
+  19.563176
+  18.295092
+  15.616954
+  14.153071
+  10.661187
+  12.575778
+  11.099568
+  10.438290
+  16.339657
+
+R8_UNIFORM_AB_TEST
+  Normal end of execution
+
+R8COL_SWAP_TEST
+  For an R8COL, an array of column vectors;
+  R8COL_SWAP swaps two columns;
+
+  The array:
+
+  Col:        0              1              2              3        
+  Row
+      0 :           11             12             13             14   
+      1 :           21             22             23             24   
+      2 :           31             32             33             34   
+
+  Swap columns 0 and 2
+
+  The updated matrix:
+
+  Col:        0              1              2              3        
+  Row
+      0 :           13             12             11             14   
+      1 :           23             22             21             24   
+      2 :           33             32             31             34   
+
+R8COL_SWAP_TEST
+  Normal end of execution.
+
+R8MAT_HOUSE_AXH_TEST
+  R8MAT_HOUSE_AXH multiplies a matrix A times a
+  compact Householder matrix.
+
+  Matrix A:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :     -2.81582       -4.33881       -4.38273       -4.98162        3.59097   
+      1 :      4.56318       -2.42422       -0.50461        3.97504        3.40847   
+      2 :      3.29509       -3.90043      -0.986937       -1.49248       -3.76896   
+      3 :     0.616954       -4.56171        2.54673       -4.05455       -4.92488   
+      4 :    -0.846929        1.33966        2.97287       -4.86383       -2.39697   
+
+  Compact vector V so column 3 of H*A is packed:
+
+     0             0
+     1             0
+     2     -0.788819
+     3      0.399863
+     4      0.466771
+
+  Householder matrix H:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :            1              0              0              0              0   
+      1 :            0              1              0              0              0   
+      2 :            0              0      -0.244469       0.630839       0.736395   
+      3 :            0              0       0.630839       0.680219      -0.373289   
+      4 :            0              0       0.736395      -0.373289        0.56425   
+
+  Indirect product A*H:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :     -2.81582       -4.33881       0.573215       -7.49385        0.65837   
+      1 :      4.56318       -2.42422        5.14095        1.11322      0.0678026   
+      2 :      3.29509       -3.90043       -3.47568      -0.230898       -2.29629   
+      3 :     0.616954       -4.56171       -6.80702       0.686997       0.610057   
+      4 :    -0.846929        1.33966       -5.56019      -0.538306        2.65233   
+
+  Direct product A*H:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :     -2.81582       -4.33881       0.573215       -7.49385        0.65837   
+      1 :      4.56318       -2.42422        5.14095        1.11322      0.0678026   
+      2 :      3.29509       -3.90043       -3.47568      -0.230898       -2.29629   
+      3 :     0.616954       -4.56171       -6.80702       0.686997       0.610057   
+      4 :    -0.846929        1.33966       -5.56019      -0.538306        2.65233   
+
+  H*A should pack column 3:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :     -2.81582       -4.33881       -4.38273       -4.98162        3.59097   
+      1 :      4.56318       -2.42422       -0.50461        3.97504        3.40847   
+      2 :     -1.04002      -0.937652        4.03706        -5.7746       -3.95052   
+      3 :      2.81449       -6.06358   -4.44089e-16       -1.88388       -4.83284   
+      4 :      1.71831       -0.41352   -4.44089e-16       -2.32995       -2.28953   
+
+R8MAT_HOUSE_AXH_TEST
+  Normal end of execution.
+
+R8MAT_HOUSE_FORM_TEST
+  R8MAT_HOUSE_FORM forms a Householder
+  matrix from its compact form.
+
+  Compact vector form V:
+
+     0             0
+     1             0
+     2             1
+     3             2
+     4             3
+
+  Householder matrix H:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :            1              0              0              0              0   
+      1 :            0              1              0              0              0   
+      2 :            0              0       0.857143      -0.285714      -0.428571   
+      3 :            0              0      -0.285714       0.428571      -0.857143   
+      4 :            0              0      -0.428571      -0.857143      -0.285714   
+
+R8MAT_HOUSE_FORM_TEST
+  Normal end of execution.
+
+R8MAT_INDICATOR_TEST
+  R8MAT_INDICATOR creates an "indicator" R8MAT.
+
+  The indicator matrix:
+
+  Col:        0              1              2              3        
+  Row
+      0 :           11             12             13             14   
+      1 :           21             22             23             24   
+      2 :           31             32             33             34   
+      3 :           41             42             43             44   
+      4 :           51             52             53             54   
+
+R8MAT_INDICATOR_TEST
+  Normal end of execution.
+
+R8MAT_IS_EIGEN_LEFT_TEST:
+  R8MAT_IS_EIGEN_LEFT tests the error in the left eigensystem
+    A' * X - X * LAMBDA = 0
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :     0.136719       0.605469       0.253906     0.00390625   
+      1 :    0.0585938       0.527344       0.394531      0.0195312   
+      2 :    0.0195312       0.394531       0.527344      0.0585938   
+      3 :   0.00390625       0.253906       0.605469       0.136719   
+
+  Eigenmatrix X:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              1              1              1   
+      1 :           11              3             -1             -3   
+      2 :           11             -3             -1              3   
+      3 :            1             -1              1             -1   
+
+  Eigenvalues LAM:
+
+     0             1
+     1          0.25
+     2        0.0625
+     3      0.015625
+
+  Frobenius norm of A'*X-X*LAMBDA is 9.40908
+
+R8MAT_IS_EIGEN_LEFT_TEST
+  Normal end of execution.
+
+R8MAT_IS_EIGEN_RIGHT_TEST:
+  R8MAT_IS_EIGEN_RIGHT tests the error in the right eigensystem
+    A * X - X * LAMBDA = 0
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :     0.136719       0.605469       0.253906     0.00390625   
+      1 :    0.0585938       0.527344       0.394531      0.0195312   
+      2 :    0.0195312       0.394531       0.527344      0.0585938   
+      3 :   0.00390625       0.253906       0.605469       0.136719   
+
+  Eigenmatrix X:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              6             11              6   
+      1 :            1              2             -1             -2   
+      2 :            1             -2             -1              2   
+      3 :            1             -6             11             -6   
+
+  Eigenvalues LAM:
+
+     0             1
+     1          0.25
+     2        0.0625
+     3      0.015625
+
+  Frobenius norm of A*X-X*LAMBDA is 0
+
+R8MAT_IS_EIGEN_RIGHT_TEST
+  Normal end of execution.
+
+R8MAT_IS_INVERSE_TEST:
+  R8MAT_IS_INVERSE tests the error in a matrix inverse:
+    A * B - I = 0
+    B * A - I = 0
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            2              1              3              4   
+      1 :            1             -3              1              5   
+      2 :            3              1              6             -2   
+      3 :            4              5             -2             -1   
+
+  Inverse matrix B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :    -0.244718       0.290493       0.139085       0.195423   
+      1 :     0.290493      -0.272887      -0.100352    -0.00176056   
+      2 :     0.139085      -0.100352      0.0792254      -0.103873   
+      3 :     0.195423    -0.00176056      -0.103873     -0.0193662   
+
+  Frobenius norm of error is 7.08784e-16
+
+R8MAT_IS_INVERSE_TEST
+  Normal end of execution.
+
+R8MAT_IS_LLT_TEST:
+  R8MAT_IS_NULL_RIGHT tests the error in a lower triangular Cholesky
+  factorization ||A-L*L'||.
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            2              1              0              0   
+      1 :            1              2              1              0   
+      2 :            0              1              2              1   
+      3 :            0              0              1              2   
+
+  Factor L:
+
+  Col:        0              1              2              3        
+  Row
+      0 :      1.41421              0              0              0   
+      1 :     0.707107        1.22474              0              0   
+      2 :            0       0.816497         1.1547              0   
+      3 :            0              0       0.866025        1.11803   
+
+  Frobenius norm of A-L*L' is 2.18689e-15
+
+R8MAT_IS_LLT_TEST
+  Normal end of execution.
+
+R8MAT_IS_NULL_LEFT_TEST:
+  R8MAT_IS_NULL_LEFT tests whether the M vector X
+  is a left null vector of A, that is, A'*x=0.
+
+  Matrix A:
+
+  Col:        0              1              2        
+  Row
+      0 :            1              2              3   
+      1 :            4              5              6   
+      2 :            7              8              9   
+
+  Vector X:
+
+     0             1
+     1            -2
+     2             1
+
+  Frobenius norm of A'*x is 0
+
+R8MAT_IS_NULL_LEFT_TEST
+  Normal end of execution.
+
+R8MAT_IS_NULL_RIGHT_TEST:
+  R8MAT_IS_NULL_RIGHT tests whether the N vector X
+  is a right null vector of A, that is, A*x=0.
+
+  Matrix A:
+
+  Col:        0              1              2        
+  Row
+      0 :            1              2              3   
+      1 :            4              5              6   
+      2 :            7              8              9   
+
+  Vector X:
+
+     0             1
+     1            -2
+     2             1
+
+  Frobenius norm of A*x is 0
+
+R8MAT_IS_NULL_RIGHT_TEST
+  Normal end of execution.
+
+R8MAT_IS_PLU_TEST:
+  R8MAT_IS_PLU tests the error in the P*L*U factorization:
+    A - P * L * U = 0
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            5              7              6              5   
+      1 :            7             10              8              7   
+      2 :            6              8             10              9   
+      3 :            5              7              9             10   
+
+  Permutation P:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            0              0              0              1   
+      1 :            1              0              0              0   
+      2 :            0              1              0              0   
+      3 :            0              0              1              0   
+
+  Lower triangular L:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              0              0              0   
+      1 :     0.857143              1              0              0   
+      2 :     0.714286           0.25              1              0   
+      3 :     0.714286           0.25           -0.2              1   
+
+  Upper triangular U:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            7             10              8              7   
+      1 :            0      -0.571429        3.14286              3   
+      2 :            0              0            2.5           4.25   
+      3 :            0              0              0            0.1   
+
+  Frobenius norm of A-P*L*U is 7.32411e-15
+
+R8MAT_IS_PLU_TEST
+  Normal end of execution.
+
+R8MAT_IS_SOLUTION_TEST:
+  R8MAT_IS_SOLUTION tests whether X is the solution of
+  A*X=B by computing the Frobenius norm of the residual.
+
+  A is 3 by 10
+  X is 10 by 9
+  B is 3 by 9
+  Frobenius error in A*X-B is 0
+
+R8MAT_IS_SOLUTION_TEST
+  Normal end of execution.
+
+R8MAT_MM_TEST
+  R8MAT_MM computes a matrix-matrix product C = A * B;
+
+  A:
+
+  Col:        0              1              2        
+  Row
+      0 :            1              0              0   
+      1 :            1              1              0   
+      2 :            1              2              1   
+      3 :            1              3              3   
+
+  B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              1              1              1   
+      1 :            0              1              2              3   
+      2 :            0              0              1              3   
+
+  C = A*B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              1              1              1   
+      1 :            1              2              3              4   
+      2 :            1              3              6             10   
+      3 :            1              4             10             19   
+
+R8MAT_MM_TEST
+  Normal end of execution.
+
+R8MAT_MTM_TEST
+  R8MAT_MTM computes a matrix-matrix product C = A' * B;
+
+  A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              0              0              0   
+      1 :            1              1              0              0   
+      2 :            1              2              1              0   
+
+  B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              0              0              0   
+      1 :            1              1              0              0   
+      2 :            1              2              1              0   
+
+  C = A'*B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            3              3              1              0   
+      1 :            3              5              2              0   
+      2 :            1              2              1              0   
+      3 :            0              0              0              0   
+
+R8MAT_MTM_TEST
+  Normal end of execution.
+
+R8MAT_MTV_TEST
+  R8MAT_MTV computes a matrix-vector product b = A' * x;
+
+  A:
+
+  Col:        0              1        
+  Row
+      0 :            1              1   
+      1 :            2              1   
+      2 :            3              1   
+      3 :            4              1   
+
+  X:
+
+     0             1
+     1             2
+     2             3
+     3             4
+
+  B = A'*X:
+
+     0            30
+     1            10
+
+R8MAT_MTV_TEST
+  Normal end of execution.
+
+R8MAT_MV_TEST
+  R8MAT_MV computes a matrix-vector product b = A * x;
+
+  A:
+
+  Col:        0              1        
+  Row
+      0 :            1              1   
+      1 :            2              1   
+      2 :            3              1   
+      3 :            4              1   
+
+  X:
+
+     0             1
+     1             2
+
+  B = A*X:
+
+     0             3
+     1             4
+     2             5
+     3             6
+
+R8MAT_MV_TEST
+  Normal end of execution.
+
+R8MAT_PRINT_TEST
+  R8MAT_PRINT prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :           11             12             13             14             15   
+      1 :           21             22             23             24             25   
+      2 :           31             32             33             34             35   
+      3 :           41             42             43             44             45   
+
+  Col:        5        
+  Row
+      0 :           16   
+      1 :           26   
+      2 :           36   
+      3 :           46   
+
+R8MAT_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_SOME_TEST
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:        3              4              5        
+  Row
+      0 :           14             15             16   
+      1 :           24             25             26   
+      2 :           34             35             36   
+
+R8MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8MAT_SUB_TEST
+  R8MAT_SUB computes C = A - B;
+
+  A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :           11             12             13             14   
+      1 :           21             22             23             24   
+      2 :           31             32             33             34   
+      3 :           41             42             43             44   
+
+  B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :           11             21             31             41   
+      1 :           12             22             32             42   
+      2 :           13             23             33             43   
+      3 :           14             24             34             44   
+
+  C = A - B:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            0             -9            -18            -27   
+      1 :            9              0             -9            -18   
+      2 :           18              9              0             -9   
+      3 :           27             18              9              0   
+
+R8MAT_SUB_TEST
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_TEST
+  R8MAT_TRANSPOSE transposes an R8MAT.
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :           11             12             13             14   
+      1 :           21             22             23             24   
+      2 :           31             32             33             34   
+      3 :           41             42             43             44   
+      4 :           51             52             53             54   
+
+  Transposed matrix At:
+
+  Col:        0              1              2              3              4        
+  Row
+      0 :           11             21             31             41             51   
+      1 :           12             22             32             42             52   
+      2 :           13             23             33             43             53   
+      3 :           14             24             34             44             54   
+
+R8MAT_TRANSPOSE_TEST
+  Normal end of execution.
+
+R8MAT_UNIFORM_01_TEST
+  R8MAT_UNIFORM_01 computes a random R8MAT.
+
+  0 <= X <= 1
+  Initial seed is 123456789
+
+  Random R8MAT:
+
+  Col:        0              1              2              3        
+  Row
+      0 :     0.218418      0.0661187      0.0617272     0.00183837   
+      1 :     0.956318       0.257578       0.449539       0.897504   
+      2 :     0.829509       0.109957       0.401306       0.350752   
+      3 :     0.561695       0.043829       0.754673      0.0945448   
+      4 :     0.415307       0.633966       0.797287      0.0136169   
+
+R8MAT_UNIFORM_01_TEST:
+  Normal end of execution.
+
+R8MAT_UNIFORM_AB_TEST
+  R8MAT_UNIFORM_AB computes a random R8MAT.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random R8MAT:
+
+  Col:        0              1              2              3        
+  Row
+      0 :      0.31051      -0.603288      -0.629637       -0.98897   
+      1 :      4.73791       0.545467        1.69723        4.38502   
+      2 :      3.97706      -0.340259        1.40784        1.10451   
+      3 :      2.37017      -0.737026        3.52804      -0.432731   
+      4 :      1.49184        2.80379        3.78372      -0.918299   
+
+R8MAT_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+R8POLY_PRINT_TEST
+  R8POLY_PRINT prints an R8POLY.
+
+  The R8POLY:
+
+  p(x) =   9 * x^5
+         + 0.78 * x^4
+         + 56 * x^2
+         - 3.4 * x
+         + 12
+
+R8POLY_PRINT_TEST:
+  Normal end of execution.
+
+R8VEC_HOUSE_COLUMN_TEST
+  R8VEC_HOUSE_COLUMN returns the compact form of
+  a Householder matrix that "packs" a column
+  of a matrix.
+
+  Matrix A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :      1.09209        2.07654       0.219145        2.00653   
+      1 :      4.78159       0.330594        3.16983        3.77337   
+      2 :      4.14755        1.28789       0.308636        3.98643   
+      3 :      2.80848       0.549784        2.24769     0.00919186   
+
+  Working on column K = 0
+
+  Householder matrix H:
+
+  Col:        0              1              2              3        
+  Row
+      0 :    -0.155781      -0.682069      -0.591626      -0.400615   
+      1 :    -0.682069       0.597486       -0.34914      -0.236418   
+      2 :    -0.591626       -0.34914       0.697156      -0.205068   
+      3 :    -0.400615      -0.236418      -0.205068        0.86114   
+
+  Product H*A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :     -7.01042       -1.53117       -3.27924       -5.24844   
+      1 : -8.88178e-16       -1.79845         1.1053      -0.508058   
+      2 : -1.77636e-15      -0.558841       -1.48213       0.272729   
+      3 : -8.88178e-16      -0.700714        1.03509       -2.50551   
+
+  Working on column K = 1
+
+  Householder matrix H:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              0              0              0   
+      1 :            0      -0.895014      -0.278112      -0.348717   
+      2 :            0      -0.278112       0.959184     -0.0511776   
+      3 :            0      -0.348717     -0.0511776        0.93583   
+
+  Product H*A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :     -7.01042       -1.53117       -3.27924       -5.24844   
+      1 :  1.59868e-15        2.00941      -0.938018        1.25258   
+      2 : -1.41139e-15    7.63278e-17       -1.78201       0.531121   
+      3 : -4.30552e-16              0       0.659083       -2.18152   
+
+  Working on column K = 2
+
+  Householder matrix H:
+
+  Col:        0              1              2              3        
+  Row
+      0 :            1              0              0              0   
+      1 :            0              1              0              0   
+      2 :            0              0      -0.937906       0.346889   
+      3 :            0              0       0.346889       0.937906   
+
+  Product H*A:
+
+  Col:        0              1              2              3        
+  Row
+      0 :     -7.01042       -1.53117       -3.27924       -5.24844   
+      1 :  1.59868e-15        2.00941      -0.938018        1.25258   
+      2 :  1.17439e-15   -7.15884e-17        1.89999       -1.25489   
+      3 :  -8.9341e-16    2.64773e-17    1.11022e-16       -1.86183   
+
+R8VEC_HOUSE_COLUMN_TEST
+  Normal end of execution.
+
+R8VEC_NINT_TEST
+  R8VEC_NINT rounds an R8VEC.
+
+  Vector A:
+
+     0      -2.81582
+     1       4.56318
+     2       3.29509
+     3      0.616954
+     4     -0.846929
+
+  Rounded vector A:
+
+     0            -3
+     1             5
+     2             3
+     3             1
+     4            -1
+
+R8VEC_NINT_TEST:
+  Normal end of execution.
+
+R8VEC_NORM_L2_TEST
+  R8VEC_NORM_L2 computes the L2 norm of an R8VEC.
+
+  Input vector:
+
+     0      -5.63163
+     1       9.12635
+     2       6.59018
+     3       1.23391
+     4      -1.69386
+     5      -8.67763
+     6      -4.84844
+     7      -7.80086
+     8      -9.12342
+     9       2.67931
+
+  L2 norm = 20.3201
+
+R8VEC_NORM_L2_TEST:
+  Normal end of execution.
+
+R8VEC_PRINT_TEST
+  R8VEC_PRINT prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0       123.456
+     1         5e-06
+     2        -1e+06
+     3       3.14159
+
+R8VEC_PRINT_TEST:
+  Normal end of execution.
+
+R8VEC_UNIFORM_01_TEST
+  R8VEC_UNIFORM_01 computes a random R8VEC.
+
+  Initial seed is 123456789
+
+  Random R8VEC:
+
+     0      0.218418
+     1      0.956318
+     2      0.829509
+     3      0.561695
+     4      0.415307
+     5     0.0661187
+     6      0.257578
+     7      0.109957
+     8      0.043829
+     9      0.633966
+
+R8VEC_UNIFORM_01_TEST:
+  Normal end of execution.
+
+R8VEC_UNIFORM_AB_TEST
+  R8VEC_UNIFORM_AB computes a random R8VEC.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random R8VEC:
+
+     0       0.31051
+     1       4.73791
+     2       3.97706
+     3       2.37017
+     4       1.49184
+     5     -0.603288
+     6      0.545467
+     7     -0.340259
+     8     -0.737026
+     9       2.80379
+
+R8VEC_UNIFORM_AB_TEST:
+  Normal end of execution.
+
+TIMESTAMP_TEST:
+  Python version:
+  TIMESTAMP prints a timestamp of the current date and time.
+
+Sat Apr 18 08:48:00 2015
+
+TIMESTAMP_TEST:
+  Normal end of execution.
+
+TEST_CONDITION
+  Compute the L1 condition number of an example of each
+  test matrix
+
+  Title                    N            COND            COND
+
+  AEGERTER                 5              24              24
+  BAB                      5         8.46751         8.46751
+  BAUER                    6     8.52877e+06     8.52877e+06
+  BIS                      5         42.9756         42.9756
+  BIW                      5         59.9171         59.9171
+  BODEWIG                  4         10.4366         10.4366
+  BOOTHROYD                5       1.002e+06       1.002e+06
+  COMBIN                   3          5.4822          5.4822
+  COMPANION                5         14.5786         14.5786
+  CONEX1                   4         68.0622         68.0622
+  CONEX2                   3         17.7034         17.7034
+  CONEX3                   5              80              80
+  CONEX4                   4            4488            4488
+  DAUB2                    4               2               2
+  DAUB4                    8         2.79904         2.79904
+  DAUB6                   12         3.44146         3.44146
+  DAUB8                   16         3.47989         3.47989
+  DAUB10                  20         4.00375         4.00375
+  DAUB12                  24         4.80309         4.80309
+  DIAGONAL                 5         7.39629         7.39629
+  DIF2                     5              18              18
+  DOWNSHIFT                5               1               1
+  EXCHANGE                 5               1               1
+  FIBONACCI2               5              15              15
+  GFPP                     5         12.2633         12.2633
+  GIVENS                   5              50              50
+  HANKEL_N                 5          5.8368          5.8368
+  HARMAN                   8          77.069          77.069
+  HARTLEY                  5               5               5
+  IDENTITY                 5               1               1
+  ILL3                     3          216775          216775
+  JORDAN                   5         2.08956         2.08956
+  KERSHAW                  4              49              49
+  LIETZKE                  5              38              38
+  MAXIJ                    5             100             100
+  MINIJ                    5              60              60
+  ORTH_SYMM                5         4.39765         4.39765
+  OTO                      5              18              18
+  PASCAL1                  5             100             100
+  PASCAL3                  5         14333.5         14333.5
+  PEI                      5         4.90227         4.90227
+  RODMAN                   5           5.859           5.859
+  RUTIS1                   4              15              15
+  RUTIS2                   4           11.44           11.44
+  RUTIS3                   4               6               6
+  RUTIS5                   4           62608           62608
+  SUMMATION                5              10              10
+  SWEET1                   6         16.9669         16.9669
+  SWEET2                   6         49.2227         49.2227
+  SWEET3                   6         24.7785         24.7785
+  SWEET4                  13         51.1709         51.1709
+  TRI_UPPER                5          2599.9          2599.9
+  UPSHIFT                  5               1               1
+  WILK03                   3         2.6e+10         2.6e+10
+  WILK04                   4     2.45892e+16     2.45889e+16
+  WILK05                   5     7.93703e+06     7.93703e+06
+  WILSON                   4            4488            4488
+
+TEST_CONDITION
+  Normal end of execution.
+
+TEST_DETERMINANT
+  Compute the determinants of an example of each
+  test matrix compare with the determinant routine,
+  if available.  Print the matrix Frobenius norm
+  for an estimate of magnitude.
+
+  Title                    N       Determ          Determ          ||A||
+
+  A123                     3               0    -1.33259e-15          17
+  AEGERTER                 5             -25             -25         9.4
+  BAB                      5        -1980.11        -1980.11          14
+  BAUER                    6               1               1     1.9e+02
+  BERNSTEIN                5              96              96          25
+  BIS                      5         -177.02         -177.02          11
+  BIW                      5       0.0547223       0.0547223         2.4
+  BODEWIG                  4             568             568          13
+  BOOTHROYD                5               1               1     8.9e+02
+  BORDERBAND               5       -0.328125       -0.328125         2.8
+  CARRY                    5     1.65382e-08     1.65382e-08         1.4
+  CAUCHY                   5         38.7671         38.7671     6.8e+02
+  CHEBY_DIFF1              5                    -4.26326e-14          13
+  CHEBY_DIFF1              6                    -5.11591e-13          21
+  CHEBY_T                  5              64              64          13
+  CHEBY_U                  5            1024            1024          22
+  CHEBY_VAN1               5                              18         4.3
+  CHEBY_VAN2               2              -2              -2           2
+  CHEBY_VAN2               3        -1.41421        -1.41421           2
+  CHEBY_VAN2               4               1               1         2.1
+  CHEBY_VAN2               5        0.707107        0.707107         2.2
+  CHEBY_VAN2               6            -0.5            -0.5         2.3
+  CHEBY_VAN2               7       -0.353553       -0.353553         2.4
+  CHEBY_VAN2               8            0.25            0.25         2.5
+  CHEBY_VAN2               9        0.176777        0.176777         2.6
+  CHEBY_VAN2              10          -0.125          -0.125         2.7
+  CHEBY_VAN3               5         13.9754         13.9754         3.9
+  CHOW                     5        -70.5488        -70.5488       2e+02
+  CLEMENT1                 5               0               0         6.3
+  CLEMENT1                 6            -225            -225         8.4
+  CLEMENT2                 5               0               0           9
+  CLEMENT2                 6        -178.154        -178.154          10
+  COMBIN                   5         1257.33         1257.33          21
+  COMPANION                5        -2.81582        -2.81582         6.7
+  COMPLEX_I                2               1               1         1.4
+  CONEX1                   4        -2.81582        -2.81582         8.1
+  CONEX2                   3       -0.355137       -0.355137         2.6
+  CONEX3                   5              -1              -1         3.9
+  CONEX4                   4        -2.81582              -1          31
+  CREATION                 5               0               0         5.5
+  DAUB2                    4               1               1           2
+  DAUB4                    8              -1              -1         2.8
+  DAUB6                   12               1               1         3.5
+  DAUB8                   16              -1              -1           4
+  DAUB10                  20               1               1         4.5
+  DAUB12                  24              -1              -1         4.9
+  DIAGONAL                 5         22.1228         22.1228         6.4
+  DIF1                     5               0               0         2.8
+  DIF1                     6               1               1         3.2
+  DIF1CYCLIC               5               0               0         3.2
+  DIF2                     5               6               6         5.3
+  DIF2CYCLIC               5               0               0         5.5
+  DORR                     5    -6.33817e+10    -6.33817e+10     5.3e+02
+  DOWNSHIFT                5               1               1         2.2
+  EBERLEIN                 5               0    -9.29007e-13          18
+  EULERIAN                 5               1               1          77
+  EXCHANGE                 5               1               1         2.2
+  FIBONACCI1               5               0     1.44794e-43          95
+  FIBONACCI2               5              -1              -1           3
+  FIBONACCI3               5               8               8         3.6
+  FIEDLER                  5        -577.824         577.824          19
+  FORSYTHE                 5         1975.68         1975.68          11
+  FORSYTHE                 6         9031.06         9031.06          12
+  FOURIER_COSINE           5               1               1         2.2
+  FOURIER_SINE             5               1               1         2.2
+  FRANK                    5               1               1          12
+  GEAR                     4    -2.44929e-16               0         2.8
+  GEAR                     5               2               2         3.2
+  GEAR                     6              -4              -4         3.5
+  GEAR                     7               2               2         3.7
+  GEAR                     8     4.89859e-16               0           4
+  GFPP                     5         212.007         212.007         9.4
+  GIVENS                   5              16              16          21
+  GK316                    5             -25             -25         9.4
+  GK323                    5              32              32          10
+  GK324                    5          11.953          11.953          11
+  HANKEL_N                 5            3125            3125          15
+  HANOWA                   6          1803.1          1803.1         8.7
+  HARMAN                   8     0.000954779     0.000954779         5.1
+  HARTLEY                  5         55.9017         55.9017           5
+  HARTLEY                  6            -216            -216           6
+  HARTLEY                  7         907.493        -907.493           7
+  HARTLEY                  8           -4096           -4096           8
+  HELMERT                  5               1               1         2.2
+  HERMITE                  5            1024            1024          54
+  HERNDON                  5           -0.04           -0.04         1.8
+  HILBERT                  5      3.7493e-12      3.7493e-12         1.6
+  HOUSEHOLDER              5              -1              -1         2.2
+  IDEM_RANDOM              5               0    -7.56375e-71           1
+  IDENTITY                 5               1               1         2.2
+  IJFACT1                  5     7.16636e+09     7.16636e+09     3.7e+06
+  IJFACT2                  5      1.4948e-21      1.4948e-21        0.56
+  ILL3                     3               6               6     8.2e+02
+  INTEGRATION              5               1               1           4
+  INVOL                    5              -1              -1     1.9e+03
+  JACOBI                   5               0               0         1.5
+  JACOBI                   6       -0.021645       -0.021645         1.7
+  JORDAN                   5         -177.02         -177.02         6.6
+  KAHAN                    5    -3.78564e-08    -3.78564e-08        0.72
+  KERSHAW                  4               1               1         8.2
+  KERSHAWTRI               5         553.995         553.995         8.7
+  KMS                      5         2304.83         2304.83       1e+02
+  LAGUERRE                 5      0.00347222      0.00347222         6.9
+  LEGENDRE                 5         16.4062         16.4062         6.8
+  LEHMER                   5        0.065625        0.065625         3.3
+  LESLIE                   4        0.605244        0.605244         1.8
+  LESP                     5          -42300          -42300          22
+  LIETZKE                  5              48              48          18
+  LINE_ADJ                 5               0               0         2.8
+  LINE_ADJ                 6              -1              -1         3.2
+  LINE_LOOP_ADJ            5               0               0         3.6
+  LOTKIN                   5     1.87465e-11     1.87465e-11         2.5
+  MAXIJ                    5               5               5          20
+  MILNES                   5          11.953          11.953          11
+  MINIJ                    5               1               1          12
+  MOLER1                   5               1               1          62
+  MOLER2                   5               0     1.71577e-10       1e+05
+  MOLER3                   5               1               1         8.7
+  MOLER4                   4               1               1         2.8
+  NEUMANN                 25               0     0.000890221          23
+  ONE                      5               0               0           5
+  ORTEGA                   5        -16.5253        -16.5253     2.4e+02
+  ORTH_RANDOM              5               1               1         2.2
+  ORTH_SYMM                5               1               1         2.2
+  OTO                      5               6               6         5.3
+  PARTER                   5         131.917         131.917         6.3
+  PASCAL1                  5               1               1         9.9
+  PASCAL2                  5               1               1          92
+  PASCAL3                  5               1               1     1.2e+02
+  PDS_RANDOM               5       0.0404187       0.0404187         1.5
+  PEI                      5         137.311         137.311           6
+  PERMUTATION_RANDOM       5               1               1         2.2
+  PLU                      5     1.93261e+07     1.93261e+07     1.5e+02
+  POISSON                 25     3.25655e+13     3.25655e+13          22
+  REDHEFFER                5              -2              -2         3.7
+  RING_ADJ                 1               1               1           1
+  RING_ADJ                 2              -1              -1         1.4
+  RING_ADJ                 3               2               2         2.4
+  RING_ADJ                 4               0               0         2.8
+  RING_ADJ                 5               2               2         3.2
+  RING_ADJ                 6              -4              -4         3.5
+  RING_ADJ                 7               2               2         3.7
+  RING_ADJ                 8               0               0           4
+  RIS                      5         4.12239         4.12239         3.2
+  RODMAN                   5        -2175.88        -2175.88          13
+  ROSSER1                  8               0        -696.712     2.5e+03
+  ROUTH                    5         7.85813         7.85813         5.2
+  RUTIS1                   4            -375            -375          17
+  RUTIS2                   4             100             100          11
+  RUTIS3                   4             624             624          14
+  RUTIS4                   5             216             216          59
+  RUTIS5                   4               1               1          24
+  SCHUR_BLOCK              5         589.771         589.771         8.4
+  SPLINE                   5        -2566.72        -2566.72          21
+  STIRLING                 5               1               1          68
+  SUMMATION                5               1               1         3.9
+  SWEET1                   6    -2.04682e+07    -2.04682e+07          70
+  SWEET2                   6         9562.52         9562.52          30
+  SWEET3                   6    -5.40561e+07    -5.40561e+07          73
+  SWEET4                  13    -6.46348e+16    -6.46348e+16     1.2e+02
+  SYLVESTER_KAC            5               0               0         7.7
+  SYLVESTER_KAC            6            -225            -225          10
+  SYMM_RANDOM              5         22.1228         22.1228         6.4
+  TRI_UPPER                5               1               1         9.2
+  TRIS                     5         6683.42         6683.42          13
+  TRIV                     5        -700.369        -700.369          11
+  TRIW                     5               1               1         9.4
+  UPSHIFT                  5               1               1         2.2
+  VAND1                    5          133985          133985     4.7e+02
+  VAND2                    5          133985          133985     4.7e+02
+  WILK03                   3           9e-21           9e-21         1.4
+  WILK04                   4     4.42923e-17     4.42923e-17         1.9
+  WILK05                   5      3.7995e-15     3.79947e-15         1.5
+  WILK12                  12               1               1          54
+  WILK21                  21    -4.15825e+12    -4.15825e+12          28
+  WILSON                   4               1               1          31
+  ZERO                     5               0               0           0
+
+TEST_DETERMINANT
+  Normal end of execution.
+
+TEST_EIGEN_LEFT
+  Compute the Frobenius norm of the left eigensystem error:
+    X * A - LAMBDA * X
+  given K left eigenvectors X and eigenvalues lambda.
+
+  Title                    N     K      ||A||           ||X*A-LAMBDA*X||
+
+  A123                     3     3         16.8819     1.23246e-14
+  CARRY                    5     5         1.41391     3.57943e-15
+  CHOW                     5     5         202.501     4.61541e-13
+  DIAGONAL                 5     5          6.3802               0
+  ROSSER1                  8     8         2482.26     2.61994e-11
+  SYMM_RANDOM              5     5          6.3802     1.79855e-15
+
+TEST_EIGEN_LEFT:
+  Normal end of execution.
+
+TEST_EIGEN_RIGHT
+  Compute the Frobenius norm of the right eigensystem error:
+    A * X - X * lambda
+  given K right eigenvectors X and eigenvalues lambda.
+
+  Title                    N     K      ||A||           ||A*X-X*LAMBDA||
+
+  A123                     3     3         16.8819     1.33427e-14
+  BAB                      5     5         14.3605     4.36701e-15
+  BODEWIG                  4     4         12.7279     9.17346e-15
+  CARRY                    5     5         1.41391     1.17642e-15
+  CHOW                     5     5         202.501     2.40401e-13
+  COMBIN                   5     5         20.7778     7.10543e-15
+  DIF2                     5     5          5.2915     1.07099e-15
+  EXCHANGE                 5     5         2.23607               0
+  IDEM_RANDOM              5     5         1.73205     5.23369e-16
+  IDENTITY                 5     5         2.23607               0
+  ILL3                     3     3         817.763     1.62356e-11
+  KERSHAW                  4     4         8.24621     4.80549e-15
+  KMS                      5     5         2.32288      3.2055e-08
+  LINE_ADJ                 5     5         2.82843     8.99223e-16
+  LINE_LOOP_ADJ            5     5         3.60555     9.99459e-16
+  ONE                      5     5               5               0
+  ORTEGA                   5     5         244.268     3.45197e-13
+  OTO                      5     5          5.2915     1.07099e-15
+  PDS_RANDOM               5     5          1.4623     3.88036e-16
+  PEI                      5     5         6.04036               0
+  RODMAN                   5     5         12.7897               0
+  ROSSER1                  8     8         2482.26     2.61994e-11
+  RUTIS1                   4     4         16.6132               0
+  RUTIS2                   4     4         11.4018               0
+  RUTIS5                   4     4         23.7697     1.46286e-14
+  SYLVESTER_KAC            5     5         7.74597               0
+  SYMM_RANDOM              5     5          6.3802     1.75168e-15
+  WILK12                  12    12          53.591     1.01528e-07
+  WILSON                   4     4          30.545     2.48731e-14
+  ZERO                     5     5               0               0
+
+TEST_EIGEN_RIGHT:
+  Normal end of execution.
+
+TEST_INVERSE
+  A = a test matrix of order N
+  B = inverse as computed by a routine.
+  C = inverse as computed by the numpy.linalg.inv() function.
+
+  ||A||    = Frobenius norm of A.
+  ||C||    = Frobenius norm of C.
+  ||I-AC|| = Frobenius norm of I-A*C.
+  ||I-AB|| = Frobenius norm of I-A*B.
+
+  Title                    N       ||A||      ||C||      ||I-AC||    ||I-AB||
+
+  AEGERTER                 5         9.4         1.8     8.9e-16     7.1e-16
+  BAB                      5          14        0.72     7.6e-16     9.5e-16
+  BAUER                    6     1.9e+02     2.1e+04     6.6e-11           0
+  BERNSTEIN                5          25         3.2           0           0
+  BIS                      5          11         3.9     1.8e-15       2e-15
+  BIW                      5         2.4          26       3e-15       1e-15
+  BODEWIG                  4          13        0.68       7e-16     7.1e-16
+  BOOTHROYD                5     8.9e+02     8.9e+02     3.1e-11           0
+  BORDERBAND               5         2.8         6.8           0           0
+  CARRY                    5         1.4     3.1e+03     5.1e-13     1.2e-13
+  CAUCHY                   5     6.8e+02          61     2.3e-13     9.4e-14
+  CHEBY_T                  5          13         1.9           0           0
+  CHEBY_U                  5          22         1.2           0           0
+  CHEBY_VAN2               5         2.2         2.5     4.3e-16     5.9e-16
+  CHEBY_VAN3               5         3.9         1.3       6e-16     7.5e-16
+  CHOW                     5       2e+02     2.7e+02       2e-13     2.6e-13
+  CLEMENT1                 6         8.4         1.5     6.6e-16           0
+  CLEMENT2                 6          10         2.7       1e-15     1.1e-15
+  COMBIN                   5          21        0.71     1.1e-15     1.1e-15
+  COMPANION                5         6.7         2.9       4e-16     1.7e-16
+  COMPLEX_I                2         1.4         1.4           0           0
+  CONEX1                   4         8.1         6.4           0           0
+  CONEX2                   3         2.6         4.3           0           0
+  CONEX3                   5         3.9          11           0           0
+  CONEX4                   4          31          99     1.6e-13           0
+  DAUB2                    4           2           2           0     8.9e-16
+  DAUB4                    8         2.8         2.8     3.7e-16     2.1e-15
+  DAUB6                   12         3.5         3.5     1.3e-15     1.4e-15
+  DAUB8                   16           4           4     1.4e-15     4.6e-15
+  DAUB10                  20         4.5         4.5     1.5e-15     8.7e-15
+  DAUB12                  24         4.9         4.9     1.4e-15       2e-14
+  DIAGONAL                 5         6.4         2.1           0           0
+  DIF1                     6         3.2         3.5           0           0
+  DIF2                     5         5.3         3.9     1.1e-15     6.9e-16
+  DORR                     5     5.3e+02       0.038     1.4e-15     1.6e-15
+  DOWNSHIFT                5         2.2         2.2           0           0
+  EULERIAN                 5          77     7.8e+02     3.4e-13           0
+  EXCHANGE                 5         2.2         2.2           0           0
+  FIBONACCI2               5           3         3.5           0           0
+  FIBONACCI3               5         3.6         1.6     1.6e-16           0
+  FIEDLER                  7          30         3.3     5.1e-15     4.4e-15
+  FORSYTHE                 5          11        0.52     2.5e-16     6.1e-17
+  FOURIER_COSINE           5         2.2         2.2     6.9e-16       1e-15
+  FOURIER_SINE             5         2.2         2.2     6.2e-16     1.8e-15
+  FRANK                    5          12          59     7.6e-15           0
+  GFPP                     5         9.4           1     4.7e-16     2.2e-14
+  GIVENS                   5          21         2.7           0           0
+  GK316                    5         9.4         1.8     8.9e-16     7.1e-16
+  GK323                    5          10         2.3           0           0
+  GK324                    5          11         5.6     3.4e-15     1.3e-15
+  HANKEL_N                 5          15        0.55       5e-16           0
+  HANOWA                   6         8.7        0.71     5.8e-16     6.5e-16
+  HARMAN                   8         5.1          15     3.6e-15     1.1e-14
+  HARTLEY                  5           5           1     6.4e-16     2.8e-15
+  HELMERT                  5         2.2         2.2     4.1e-16     8.2e-16
+  HELMERT2                 5         2.2         2.2     7.9e-16     6.5e-16
+  HERMITE                  5          54         1.8     2.4e-15           0
+  HERNDON                  5         1.8         9.4     1.3e-15     7.1e-16
+  HILBERT                  5         1.6       3e+05     1.9e-11     7.3e-12
+  HOUSEHOLDER              5         2.2         2.2     8.5e-16       1e-15
+  IDENTITY                 5         2.2         2.2           0           0
+  ILL3                     3     8.2e+02     3.4e+02     1.7e-11           0
+  INTEGRATION              5           4         7.5           0     7.6e-16
+  INVOL                    5     1.9e+03     1.9e+03     3.7e-11     7.3e-12
+  JACOBI                   6         1.7         6.5     7.4e-16           0
+  JORDAN                   5         6.6        0.84     2.2e-16     2.2e-16
+  KAHAN                    5        0.72     4.3e+02     1.4e-14     1.5e-14
+  KERSHAW                  4         8.2         8.2     5.9e-15           0
+  KERSHAWTRI               5         8.7        0.69     3.7e-16     4.8e-16
+  KMS                      5       1e+02         2.5     1.1e-14     1.9e-14
+  LAGUERRE                 5         6.9       2e+02     1.8e-14           0
+  LEGENDRE                 5         6.8         1.9     3.5e-16     2.7e-16
+  LEHMER                   5         3.3         7.7     1.8e-15     1.4e-15
+  LESP                     5          22        0.32       4e-16     7.6e-16
+  LIETZKE                  5          18         2.4     1.9e-15       7e-16
+  LINE_ADJ                 6         3.2         3.5           0           0
+  LOTKIN                   5         2.5     2.4e+05     2.2e-11           0
+  MAXIJ                    5          20         4.7     7.8e-15           0
+  MILNES                   5          11         5.6     3.4e-15     1.3e-15
+  MINIJ                    5          12           5           0           0
+  MOLER1                   5          62     2.8e+04     3.3e-11     4.1e-11
+  MOLER3                   5         8.7     1.2e+02           0           0
+  ORTEGA                   5     2.4e+02          91     8.4e-13     3.1e-12
+  ORTH_SYMM                5         2.2         2.2     6.5e-16     2.2e-15
+  OTO                      5         5.3         3.9     1.1e-15     6.9e-16
+  PARTER                   5         6.3        0.94     6.7e-16       7e-17
+  PASCAL1                  5         9.9         9.9           0           0
+  PASCAL2                  5          92          92           0           0
+  PASCAL3                  5     1.2e+02     1.2e+02     4.3e-14     5.7e-14
+  PDS_RANDOM               5         1.5         5.7     1.1e-15     3.3e-15
+  PEI                      5           6        0.85       1e-15       2e-16
+  PERMUTATION_RANDOM       5         2.2         2.2           0           0
+  PLU                      5     1.5e+02        0.14     9.9e-16     1.3e-15
+  RIS                      5         3.2         1.9     6.7e-16     8.4e-17
+  RODMAN                   5          13        0.53     8.6e-16       8e-16
+  RUTIS1                   4          17           1     9.2e-16     1.1e-15
+  RUTIS2                   4          11         1.1     1.6e-16     6.8e-16
+  RUTIS3                   4          14        0.58       4e-16       6e-16
+  RUTIS4                   4          51          18     1.5e-13     9.1e-14
+  RUTIS5                   4          24     1.9e+03     3.8e-12           0
+  SCHUR_BLOCK              5         8.4        0.65     7.9e-17     6.3e-16
+  SPLINE                   5          21        0.97     6.8e-16     1.4e-15
+  STIRLING                 5          68          32       2e-14           0
+  SUMMATION                5         3.9           3           0           0
+  SWEET1                   6          70        0.26     1.2e-15     1.1e-13
+  SWEET2                   6          30         1.4     2.8e-15     3.4e-14
+  SWEET3                   6          73        0.34     9.8e-16     1.4e-13
+  SWEET4                  13     1.2e+02        0.38     3.8e-15     2.6e-13
+  SYLVESTER_KAC            6          10         2.5     2.2e-16           0
+  SYMM_RANDOM              5         6.4         2.1     1.1e-15     3.4e-15
+  TRI_UPPER                5         9.2     1.7e+02     4.2e-14     4.2e-14
+  TRIS                     5          13         0.4       5e-16     7.1e-16
+  TRIV                     5          11         1.1     5.8e-16     9.8e-16
+  TRIW                     5         9.4     4.6e+02           0           0
+  UPSHIFT                  5         2.2         2.2           0           0
+  VAND1                    5     4.7e+02         1.3     6.6e-15     5.1e-15
+  VAND2                    5     4.7e+02         1.3       4e-14     5.1e-15
+  WILK03                   3         1.4     1.8e+10     7.4e-07     6.7e-07
+  WILK04                   4         1.9     1.2e+16      0.0002          11
+  WILK05                   5         1.5     3.1e+06     3.9e-10     1.2e-09
+  WILK21                  21          28         4.3     1.4e-15     3.8e-15
+  WILSON                   4          31          99     1.6e-13           0
+
+TEST_INVERSE:
+  Normal end of execution.
+
+TEST_LLT
+  A = a test matrix of order M by M
+  L is an M by N lower triangular Cholesky factor.
+
+  ||A|| = Frobenius norm of A.
+  ||A-LLT|| = Frobenius norm of A-L*L'.
+
+  Title                    M     N       ||A||            ||A-LLT||
+
+  DIF2                     5     5          5.2915     8.88178e-16
+  GIVENS                   5     5         20.6155     4.23634e-15
+  KERSHAW                  4     4         8.24621     2.57035e-15
+  LEHMER                   5     5         3.28041     2.07704e-16
+  MINIJ                    5     5         12.4499               0
+  MOLER1                   5     5          61.885     6.15348e-15
+  MOLER3                   5     5         8.66025               0
+  OTO                      5     5          5.2915     7.36439e-16
+  PASCAL2                  5     5         92.4608               0
+  WILSON                   4     4          30.545     5.25453e-15
+
+TEST_LLT:
+  Normal end of execution.
+
+TEST_NULL_LEFT
+  A = a test matrix of order M by N
+  x = an M vector, candidate for a left null vector.
+
+  ||A|| = Frobenius norm of A.
+  ||x|| = L2 norm of x.
+  ||A*x||/||x|| = L2 norm of A'*x over L2 norm of x.
+
+  Title                    M     N       ||A||            ||x||        ||A'*x||/||x||
+
+  A123                     3     3         16.8819         2.44949           0
+  CHEBY_DIFF1              5     5         13.4722         3.74166     4.5e-16
+  CREATION                 5     5         5.47723               1           0
+  DIF1                     5     5         2.82843         1.73205           0
+  DIF1CYCLIC               5     5         3.16228         2.23607           0
+  DIF2CYCLIC               5     5         5.47723         2.23607           0
+  EBERLEIN                 5     5         18.1002         2.23607     5.6e-16
+  FIBONACCI1               5     5         95.3527         1.73205           0
+  LAUCHLI                  6     5         6.68163         3.59567           0
+  LINE_ADJ                 7     7          3.4641               2           0
+  MOLER2                   5     5          101035          263.82           0
+  ONE                      5     5               5         1.41421           0
+  RING_ADJ                12    12         4.89898          3.4641           0
+  ROSSER1                  8     8         2482.26         22.3607           0
+  ZERO                     5     5               0         2.23607           0
+
+TEST_NULL_LEFT:
+  Normal end of execution.
+
+TEST_NULL_RIGHT
+  A = a test matrix of order M by N
+  x = an N vector, candidate for a right null vector.
+
+  ||A|| = Frobenius norm of A.
+  ||x|| = L2 norm of x.
+  ||A*x||/||x|| = L2 norm of A*x over L2 norm of x.
+
+  Title                    M     N       ||A||            ||x||        ||A*x||/||x||
+
+  A123                     3     3         16.8819         2.44949           0
+  ARCHIMEDES               7     8          93.397     1.87697e+07           0
+  CHEBY_DIFF1              5     5         13.4722         2.23607     6.5e-16
+  CREATION                 5     5         5.47723               1           0
+  DIF1                     5     5         2.82843         1.73205           0
+  DIF1CYCLIC               5     5         3.16228         2.23607           0
+  DIF2CYCLIC               5     5         5.47723         2.23607           0
+  FIBONACCI1               5     5         95.3527         1.73205           0
+  HAMMING                  5    31         8.94427         2.44949           0
+  LINE_ADJ                 7     7          3.4641               2           0
+  MOLER2                   5     5          101035          1016.3           0
+  NEUMANN                 25    25         23.2379               5           0
+  ONE                      5     5               5         1.41421           0
+  RING_ADJ                12    12         4.89898          3.4641           0
+  ROSSER1                  8     8         2482.26         22.3607           0
+  ZERO                     5     5               0         2.23607           0
+
+TEST_NULL_RIGHT:
+  Normal end of execution.
+
+TEST_PLU
+  A = a test matrix of order M by N
+  P, L, U are the PLU factors.
+
+  ||A|| = Frobenius norm of A.
+  ||A-PLU|| = Frobenius norm of A-P*L*U.
+
+  Title                    M     N          ||A||        ||A-PLU||
+
+  BODEWIG                  4     4         12.7279      4.1243e-15
+  BORDERBAND               5     5         2.76699               0
+  DIF2                     5     5          5.2915               0
+  GFPP                     5     5         9.39618     2.92964e-14
+  GIVENS                   5     5         20.6155               0
+  KMS                      5     5         101.704     2.60787e-13
+  LEHMER                   5     5         3.28041     1.11022e-16
+  MAXIJ                    5     5         19.8746               0
+  MINIJ                    5     5         12.4499               0
+  MOLER1                   5     5          61.885     6.15348e-15
+  MOLER3                   5     5         8.66025               0
+  OTO                      5     5          5.2915               0
+  PASCAL2                  5     5         92.4608               0
+  PLU                      5     5         152.462               0
+  VAND2                    4     4         107.076     2.05727e-14
+  WILSON                   4     4          30.545     7.32411e-15
+
+TEST_PLU:
+  Normal end of execution.
+
+TEST_SOLUTION
+  Compute the Frobenius norm of the solution error:
+    A * X - B
+  given MxN matrix A, NxK solution X, MxK right hand side B.
+
+  Title                    M     N     K       ||A||             ||A*X-B||
+
+  A123                     3     3     1         16.8819               0
+  BODEWIG                  4     4     1         12.7279               0
+  DIF2                    10    10     2         7.61577               0
+  FRANK                   10    10     2         38.6652               0
+  POISSON                 20    20     1         19.5448               0
+  WILK03                   3     3     1         1.39284      6.7435e-07
+  WILK04                   4     4     1         1.89545     3.95105e-05
+  WILSON                   4     4     1          30.545               0
+
+TEST_SOLUTION
+  Normal end of execution.
+
+TEST_MAT_TEST:
+  Normal end of execution.
+
+Sat Apr 18 08:48:01 2015

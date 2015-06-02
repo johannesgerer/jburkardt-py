@@ -1,0 +1,862 @@
+<html>
+
+  <head>
+    <title>
+      POLPAK - Recursive Polynomials
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      POLPAK <br> Recursive Polynomials
+    </h1>
+
+    <hr>
+ 
+    <p>
+      <b>POLPAK</b> 
+      is a Python library which
+      evaluates a variety of mathematical functions.  
+    </p>
+
+    <p>
+      It includes routines to evaluate the 
+      recursively defined polynomial families of
+      <ul>
+        <li>
+          Bernoulli
+        </li>
+        <li>
+          Bernstein
+        </li>
+        <li>
+          Cardan
+        </li>
+        <li>
+          Charlier
+        </li>
+        <li>
+          Chebyshev
+        </li>
+        <li>
+          Euler
+        </li>
+        <li>
+          Gegenbauer
+        </li>
+        <li>
+          Hermite
+        </li>
+        <li>
+          Jacobi
+        </li>
+        <li>
+          Krawtchouk
+        </li>
+        <li>
+          Laguerre
+        </li>
+        <li>
+          Legendre
+        </li>
+        <li>
+          Meixner
+        </li>
+        <li>
+          Zernike
+        </li>
+      </ul>  
+      A variety of other polynomials and functions have been added.
+      In a few cases, the new <i>recursive</i> feature of FORTRAN90
+      has been used (but NOT for the factorial function!)
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+ 
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>POLPAK</b> is available in
+      <a href = "../../c_src/polpak/polpak.html">a C version</a> and
+      <a href = "../../cpp_src/polpak/polpak.html">a C++ version</a> and
+      <a href = "../../f77_src/polpak/polpak.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/polpak/polpak.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/polpak/polpak.html">a MATLAB version</a> and
+      <a href = "../../py_src/polpak/polpak.html">a Python version</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/test_values/test_values.html">
+      TEST_VALUES</a>,
+      a Python library which
+      contains some sample values of many mathematical functions.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "agm_values.py">agm_values.py</a>,
+          returns selected values of the arithmetic geometric mean function.
+        </li>
+        <li>
+          <a href = "agud.py">agud.py</a>,
+          computes the inverse Gudermannian.
+        </li>
+        <li>
+          <a href = "align_enum.py">align_enum.py</a>, 
+          counts the alignments of two sequences of M and N elements;
+        </li>
+        <li>
+          <a href = "bell.py">bell.py</a>, 
+          evaluates the Bell numbers;
+        </li>
+        <li>
+          <a href = "bell_values.py">bell_values.py</a>,
+          returns selected values of the Bell numbers.
+        </li>
+        <li>
+          <a href = "benford.py">benford.py</a>, 
+          returns the Benford probability of one or more significant digits;
+        </li>
+        <li>
+          <a href = "bernoulli_number.py">bernoulli_number.py</a>, 
+          returns the Bernoulli numbers;
+        </li>
+        <li>
+          <a href = "bernoulli_number2.py">bernoulli_number2.py</a>, 
+          returns the Bernoulli numbers;
+        </li>
+        <li>
+          <a href = "bernoulli_number3.py">bernoulli_number3.py</a>, 
+          computes the Bernoulli numbers;
+        </li>
+        <li>
+          <a href = "bernoulli_number_values.py">bernoulli_number_values.py</a>,
+          returns selected values of the Bernoulli numbers.
+        </li>
+        <li>
+          <a href = "bernoulli_poly.py">bernoulli_poly.py</a>, 
+          evaluates a Bernoulli polynomial;
+        </li>
+        <li>
+          <a href = "bernoulli_poly2.py">bernoulli_poly2.py</a>, 
+          evaluates the Nth Bernoulli polynomial at X;
+        </li>
+        <li>
+          <a href = "bernstein_poly.py">bernstein_poly.py</a>, 
+          evaluates the Bernstein polynomials at a point;
+        </li>
+        <li>
+          <a href = "bernstein_poly_01_values.py">bernstein_poly_01_values.py</a>, 
+          returns some values of the Bernstein polynomials;
+        </li>
+        <li>
+          <a href = "beta_values.py">beta_values.py</a>
+          returns some values of the Beta function.
+        </li>
+        <li>
+          <a href = "bpab.py">bpab.py</a>, 
+          evaluates the Bernstein polynomials defined on the interval [A,B];
+        </li>
+        <li>
+          <a href = "cardan_poly.py">cardan_poly.py</a>, 
+          evaluates the Cardan polynomials;
+        </li>
+        <li>
+          <a href = "cardan_poly_coef.py">cardan_poly_coef.py</a>, 
+          returns the coefficients of a Cardan polynomial;
+        </li>
+        <li>
+          <a href = "cardinal_cos.py">cardinal_cos.py</a>, 
+          evaluates the cardinal cosine basis functions.
+        </li>
+        <li>
+          <a href = "cardinal_sin.py">cardinal_sin.py</a>, 
+          evaluates the cardinal sine basis functions.
+        </li>
+        <li>
+          <a href = "catalan.py">catalan.py</a>, 
+          evaluates the Catalan numbers;
+        </li>
+        <li>
+          <a href = "catalan_row_next.py">catalan_row_next.py</a>, 
+          computes the next row of Catalan numbers;
+        </li>
+        <li>
+          <a href = "catalan_values.py">catalan_values.py</a>
+          returns some values of the Catalan numbers.
+        </li>
+        <li>
+          <a href = "charlier.py">charlier.py</a>, 
+          evaluates the Charlier polynomials;
+        </li>
+        <li>
+          <a href = "cheby_t_poly.py">cheby_t_poly.py</a>, 
+          evaluates the Chebyshev T polynomials;
+        </li>
+        <li>
+          <a href = "cheby_t_poly_coef.py">cheby_t_poly_coef.py</a>, 
+          returns the coefficients of the Chebyshev T polynomials;
+        </li>
+        <li>
+          <a href = "cheby_t_poly_values.py">cheby_t_values.py</a>, 
+          returns some values of the Chebyshev T polynomials;
+        </li>
+        <li>
+          <a href = "cheby_t_poly_zero.py">cheby_t_poly_zero.py</a>, 
+          returns the zeros of the Chebyshev T polynomials;
+        </li>
+        <li>
+          <a href = "cheby_u_poly.py">cheby_u_poly.py</a>, 
+          evaluates the Chebyshev U polynomials;
+        </li>
+        <li>
+          <a href = "cheby_u_poly_coef.py">cheby_u_poly_coef.py</a>, 
+          returns the coefficients of the Chebyshev U polynomials;
+        </li>
+        <li>
+          <a href = "cheby_u_poly_values.py">cheby_u_values.py</a>, 
+          returns some values of the Chebyshev U polynomials;
+        </li>
+        <li>
+          <a href = "cheby_u_poly_zero.py">cheby_u_poly_zero.py</a>, 
+          returns the zeros of the Chebyshev U polynomials;
+        </li>
+        <li>
+          <a href = "chebyshev_discrete.py">chebyshev_discrete.py</a>, 
+          evaluates the discrete Chebyshev polynomials;
+        </li>
+        <li>
+          <a href = "collatz_count.py">collatz_count.py</a>, 
+          counts the length of the Collatz sequence for a seed of N;
+        </li>
+        <li>
+          <a href = "collatz_count_max.py">collatz_count_max.py</a>, 
+          seeks the maximum Collatz count from 1 to N.
+        </li>
+        <li>
+          <a href = "collatz_count_values.py">collatz_count_values.py</a>, 
+          stores some values of the Collatz count function;
+        </li>
+        <li>
+          <a href = "comb_row_next.py">comb_row_next.py</a>, 
+          computes the next row of Pascal's triangle;
+        </li>
+        <li>
+          <a href = "commul.py">commul.py</a>, 
+          computes a multinomial coefficient;
+        </li>
+        <li>
+          <a href = "complete_symmetric_poly.py">complete_symmetric_poly.py</a>, 
+          evaluates the complete symmetric polynomial tau(n,r).
+        </li>
+        <li>
+          <a href = "cos_power_int.py">cos_power_int.py</a>, 
+          returns the value of the integral of the N-th power of 
+          the cosine function;
+        </li>
+        <li>
+          <a href = "cos_power_int_values.py">cos_power_int_values.py</a>, 
+          returns some values of the integral of the N-th power of
+          the cosine function;
+        </li>
+        <li>
+          <a href = "delannoy.py">delannoy.py</a>, 
+          computes the Delannoy numbers;
+        </li>
+        <li>
+          <a href = "erf_values.py">erf_values.py</a>,
+          returns selected values of the error function.
+        </li>
+        <li>
+          <a href = "euler_number.py">euler_number.py</a>, 
+          evaluates the Euler numbers;
+        </li>
+        <li>
+          <a href = "euler_number2.py">euler_number2.py</a>, 
+          computes the Euler numbers;
+        </li>
+        <li>
+          <a href = "euler_number_values.py">euler_number_values.py</a>, 
+          returns some values of the Euler numbers;
+        </li>
+        <li>
+          <a href = "euler_poly.py">euler_poly.py</a>, 
+          evaluates the N-th Euler polynomial at X;
+        </li>
+        <li>
+          <a href = "eulerian.py">eulerian.py</a>, 
+          computes the eulerian number E(N,K);
+        </li>
+        <li>
+          <a href = "f_hofstadter.py">f_hofstadter.py</a>, 
+          computes the Hofstadter F function;
+        </li>
+        <li>
+          <a href = "fibonacci_direct.py">fibonacci_direct.py</a>, 
+          computes the N-th Fibonacci number directly;
+        </li>
+        <li>
+          <a href = "fibonacci_floor.py">fibonacci_floor.py</a>, 
+          computes the largest Fibonacci number less than or equal to N;
+        </li>
+        <li>
+          <a href = "fibonacci_recursive.py">fibonacci_recursive.py</a>, 
+          computes the first N Fibonacci numbers recursively;
+        </li>
+        <li>
+          <a href = "g_hofstadter.py">g_hofstadter.py</a>, 
+          computes the Hofstadter G function;
+        </li>
+        <li>
+          <a href = "gamma_values.py">gamma_values.py</a>,
+          returns selected values of the Gamma function.
+        </li>
+        <li>
+          <a href = "gamma_log_values.py">gamma_log_values.py</a>,
+          returns selected values of the Log(Gamma) function.
+        </li>
+        <li>
+          <a href = "gegenbauer_poly.py">gegenbauer_poly.py</a>, 
+          evaluates the Gegenbauer polynomials at a point;
+        </li>
+        <li>
+          <a href = "gegenbauer_poly_values.py">gegenbauer_poly_values.py</a>, 
+          returns some values of the Gegenbauer polynomials;
+        </li>
+        <li>
+          <a href = "gen_hermite_poly.py">gen_hermite_poly.py</a>, 
+          evaluates the generalized Hermite polynomials;
+        </li>
+        <li>
+          <a href = "gen_laguerre_poly.py">gen_laguerre_poly.py</a>, 
+          evaluates the generalized Laguerre polynomials;
+        </li>
+        <li>
+          <a href = "gud.py">gud.py</a>,
+          computes the Gudermannian function.
+        </li>
+        <li>
+          <a href = "gud_values.py">gud_values.py</a>,
+          returns selected values of the Gudermannian function.
+        </li>
+        <li>
+          <a href = "hail.py">hail.py</a>, 
+          computes the hail function;
+        </li>
+        <li>
+          <a href = "h_hofstadter.py">h_hofstadter.py</a>, 
+          computes the Hofstadter H function;
+        </li>
+        <li>
+          <a href = "hermite_poly_phys.py">hermite_poly_phys.py</a>, 
+          evaluates the Hermite physicist polynomials;
+        </li>
+        <li>
+          <a href = "hermite_poly_phys_coef.py">hermite_poly_phys_coef.py</a>, 
+          evaluates the Hermite physicist polynomial coefficients;
+        </li>
+        <li>
+          <a href = "hermite_poly_phys_values.py">hermite_poly_phys_values.py</a>, 
+          returns some values of the Hermite physicist polynomials;
+        </li>
+        <li>
+          <a href = "hyper_2f1_values.py">hyper_2f1_values.py</a>, 
+          returns some values of the 2F1 hypergeometric function.
+        </li>
+        <li>
+          <a href = "i4_choose.py">i4_choose.py</a>,
+          computes the binomial coefficient C(N,K) as an I4.
+        </li>
+        <li>
+          <a href = "i4_factor.py">i4_factor.py</a>, 
+          factors an integer into prime factors;
+        </li>
+        <li>
+          <a href = "i4_factorial.py">i4_factorial.py</a>,
+          evaluates the factorial function.
+        </li>
+        <li>
+          <a href = "i4_factorial_values.py">i4_factorial_values.py</a>,
+          returns selected values of the factorial function.
+        </li>
+        <li>
+          <a href = "i4_factorial2.py">i4_factorial2.py</a>, 
+          computes the double factorial function;
+        </li>
+        <li>
+          <a href = "i4_factorial2_values.py">i4_factorial2_values.py</a>, 
+          returns some values of the double factorial function;
+        </li>
+        <li>
+          <a href = "i4_is_prime.py">i4_is_prime.py</a>, 
+          determines whether an integer is prime;
+        </li>
+        <li>
+          <a href = "i4_is_triangular.py">i4_is_triangular.py</a>, 
+          determines whether an integer is triangular;
+        </li>
+        <li>
+          <a href = "i4_partition_distinct_count.py">
+          i4_partition_distinct_count_values.py</a>, 
+          computes the value of Q(N);
+        </li>
+        <li>
+          <a href = "i4_to_triangle.py">i4_to_triangle.py</a>, 
+          converts an integer to triangular coordinates;
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>,
+          returns a scaled uniform I4 between A and B.
+        </li>
+        <li>
+          <a href = "i4mat_print.py">i4mat_print.py</a>,
+          prints an I4MAT.
+        </li>
+        <li>
+          <a href = "i4mat_print_some.py">i4mat_print_some.py</a>,
+          prints some of an I4MAT.
+        </li>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>,
+          prints an I4VEC.
+        </li>
+        <li>
+          <a href = "jacobi_poly.py">jacobi_poly.py</a>, 
+          evaluates the Jacobi polynomials at a point;
+        </li>
+        <li>
+          <a href = "jacobi_poly_values.py">jacobi_poly_values.py</a>, 
+          returns some values of the Jacobi polynomials;
+        </li>
+        <li>
+          <a href = "jacobi_symbol.py">jacobi_symbol.py</a>, 
+          evaluates the Jacobi symbol (Q/P);
+        </li>
+        <li>
+          <a href = "krawtchouk.py">krawtchouk.py</a>, 
+          evaluates the Krawtchouk polynomials;
+        </li>
+        <li>
+          <a href = "laguerre_associated.py">laguerre_associated.py</a>, 
+          evaluates the associated Laguerre polynomials L(N,M)(X);
+        </li>
+        <li>
+          <a href = "laguerre_poly.py">laguerre_poly.py</a>, 
+          evaluates the Laguerre polynomials;
+        </li>
+        <li>
+          <a href = "laguerre_poly_coef.py">laguerre_poly_coef.py</a>, 
+          evaluates the Laguerre polynomial coefficients;
+        </li>
+        <li>
+          <a href = "laguerre_polynomial_values.py">laguerre_polynomial_values.py</a>, 
+          returns some values of the Laguerre polynomials;
+        </li>
+        <li>
+          <a href = "legendre_associated.py">legendre_associated.py</a>, 
+          evaluates the associated Legendre functions P(N,M)(X);
+        </li>
+        <li>
+          <a href = "legendre_associated_values.py">
+          legendre_associated_values.py</a>, 
+          returns some values of the associated Legendre function;
+        </li>
+        <li>
+          <a href = "legendre_associated_normalized.py">
+          legendre_associated_normalized.py</a>, 
+          evaluates the associated Legendre functions P(N,M)(X),
+          normalized for use in spherical harmonic calculations;
+        </li>
+        <li>
+          <a href = "legendre_associated_normalized_sphere_values.py">
+          legendre_associated_normalized_sphere_values.py</a>, 
+          returns some values of the normalized associated Legendre function;
+        </li>
+        <li>
+          <a href = "legendre_function_q.py">legendre_function_q.py</a>, 
+          evaluates the Legendre functions Q(N)(X);
+        </li>
+        <li>
+          <a href = "legendre_function_q_values.py">
+          legendre_function_q_values.py</a>, 
+          returns some values of the Legendre Q(N) functions;
+        </li>
+        <li>
+          <a href = "legendre_poly_values.py">legendre_poly_values.py</a>, 
+          returns some values of the Legendre polynomials;
+        </li>
+        <li>
+          <a href = "legendre_poly.py">legendre_poly.py</a>, 
+          evaluates the Legendre polynomials P(N)(X);
+        </li>
+        <li>
+          <a href = "legendre_poly_coef.py">legendre_poly_coef.py</a>, 
+          evaluates the coefficients of the Legendre polynomials P(N)(X);
+        </li>
+        <li>
+          <a href = "legendre_symbol.py">legendre_symbol.py</a>, 
+          evaluates the Legendre symbol (Q/P);
+        </li>
+        <li>
+          <a href = "lerch.py">lerch.py</a>, 
+          evaluates the Lerch transcendent function;
+        </li>
+        <li>
+          <a href = "lerch_values.py">lerch_values.py</a>, 
+          returns some values of the Lerch transcendent function;
+        </li>
+        <li>
+          <a href = "lock.py">lock.py</a>, 
+          returns the number of codes for a lock with N buttons;
+        </li>
+        <li>
+          <a href = "meixner.py">meixner.py</a>, 
+          evaluates the Meixner polynomials;
+        </li>
+        <li>
+          <a href = "mertens.py">mertens.py</a>, 
+          returns the value of the Mertens function;
+        </li>
+        <li>
+          <a href = "mertens_values.py">mertens_values.py</a>, 
+          returns some tabulated values of the Mertens function;
+        </li>
+        <li>
+          <a href = "moebius.py">moebius.py</a>, 
+          returns the value of MU(N), the Moebius function of N;
+        </li>
+        <li>
+          <a href = "moebius_values.py">moebius_values.py</a>, 
+          returns some tabulated values of the Moebius function;
+        </li>
+        <li>
+          <a href = "motzkin.py">motzkin.py</a>, 
+          returns the Motzkin numbers up to order N;
+        </li>
+        <li>
+          <a href = "normal_01_cdf_inverse.py">normal_01_cdf_inverse.py</a> 
+          inverts the Normal 01 CDF.
+        </li>
+        <li>
+          <a href = "normal_01_cdf_values.py">
+          normal_01_cdf_values.py</a>
+          returns values of the Normal01 CDF.
+        </li>
+        <li>
+          <a href = "omega.py">omega.py</a>, 
+          returns the number of distinct prime divisors of an integer;
+        </li>
+        <li>
+          <a href = "omega_values.py">omega_values.py</a>, 
+          returns some values of the Omega function;
+        </li>
+        <li>
+          <a href = "partition_distinct_count_values.py">
+          partition_distinct_count_values.py</a>, 
+          returns some values of Q(N);
+        </li>
+        <li>
+          <a href = "pentagon_num.py">pentagon_num.py</a>, 
+          returns the N-th pentagonal number;
+        </li>
+        <li>
+          <a href = "phi.py">phi.py</a>, 
+          returns the number of relatively prime predecessors of an integer;
+        </li>
+        <li>
+          <a href = "phi_values.py">phi_values.py</a>, 
+          returns some values of the Phi function;
+        </li>
+        <li>
+          <a href = "plane_partition_num.py">plane_partition_num.py</a>, 
+          returns the number of plane partitions of an integer.
+        </li>
+        <li>
+          <a href = "poly_bernoulli.py">poly_bernoulli.py</a>, 
+          evaluates the poly-Bernoulli numbers of negative index;
+        </li>
+        <li>
+          <a href = "poly_coef_count.py">poly_coef_count.py</a>, 
+          counts the coefficients in a polynomial of given degree and dimension.
+        </li>
+        <li>
+          <a href = "prime.py">prime.py</a>,
+          returns a prime number from a stored table.
+        </li>
+        <li>
+          <a href = "psi_values.py">psi_values.py</a>, 
+          returns some values of the Psi function;
+        </li>
+        <li>
+          <a href = "pyramid_num.py">pyramid_num.py</a>, 
+          returns the N-th pyramidal number;
+        </li>
+        <li>
+          <a href = "pyramid_square_num.py">pyramid_square_num.py</a>, 
+          returns the N-th pyramidal square number;
+        </li>
+        <li>
+          <a href = "r8_agm.py">r8_agm.py</a>, 
+          computes the arithmetic geometric mean of two numbers;
+        </li>
+        <li>
+          <a href = "r8_beta.py">r8_beta.py</a>, 
+          evaluates the Beta function;
+        </li>
+        <li>
+          <a href = "r8_choose.py">r8_choose.py</a>, 
+          computes the combinatorial coefficient C(N,K);
+        </li>
+        <li>
+          <a href = "r8_erf.py">r8_erf.py</a>, 
+          evaluates the error function;
+        </li>
+        <li>
+          <a href = "r8_erf_inverse.py">r8_erf_inverse.py</a>, 
+          inverts the error function;
+        </li>
+        <li>
+          <a href = "r8_euler_constant.py">r8_euler_constant.py</a>, 
+          returns the value of the Euler-Mascheroni constant;
+        </li>
+        <li>
+          <a href = "r8_factorial.py">r8_factorial.py</a>,
+          evaluates the factorial function.
+        </li>
+        <li>
+          <a href = "r8_factorial_values.py">r8_factorial_values.py</a>
+          returns values of the real factorial function.
+        </li>
+        <li>
+          <a href = "r8_factorial_log.py">r8_factorial_log.py</a>, 
+          computes the logarithm of the (real) factorial function;
+        </li>
+        <li>
+          <a href = "r8_factorial_log_values.py">r8_factorial_log_values.py</a>, 
+          returns some values of the logarithm of the (real) factorial function;
+        </li>
+        <li>
+          <a href = "r8_gamma.py">r8_gamma.py</a>
+          returns values of the gamma function
+          (only here temporarily, because our local Python installation
+          is not making gamma available.)
+        </li>
+        <li>
+          <a href = "r8_gamma_log.py">r8_gamma_log.py</a>
+          returns values of the gamma function
+          (only here temporarily, because our local Python installation
+          is not making lgamma available.)
+        </li>
+        <li>
+          <a href = "r8_huge.py">r8_huge.py</a>, 
+          returns a "huge" R8;
+        </li>
+        <li>
+          <a href = "r8_mop.py">r8_mop.py</a>,
+          returns a power of -1 as an R8;
+        </li>
+        <li>
+          <a href = "r8_nint.py">r8_nint.py</a>, 
+          rounds an R8 to the nearest integer;
+        </li>
+        <li>
+          <a href = "r8_pi.py">r8_pi.py</a>, 
+          returns the value of Pi;
+        </li>
+        <li>
+          <a href = "r8_psi.py">r8_psi.py</a>, 
+          returns the Psi function;
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_01.py</a>,
+          returns a unit pseudorandom R8.
+        </li>
+        <li>
+          <a href = "r8_uniform_ab.py">r8_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8.
+        </li>
+        <li>
+          <a href = "r8poly_degree.py">r8poly_degree.py</a>
+          returns the degree of an R8POLY.
+        </li>
+        <li>
+          <a href = "r8poly_print.py">r8poly_print.py</a>, 
+          prints a polynomial;
+        </li>
+        <li>
+          <a href = "r8poly_value_horner.py">r8poly_value_horner.py</a>, 
+          evaluates a polynomial using Horner's method;
+        </li>
+        <li>
+          <a href = "r8vec_linspace.py">r8vec_linspace.py</a>,
+          returns an R8VEC of values evenly spaced between given limits.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>, 
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "sigma.py">sigma.py</a>, 
+          returns the value of SIGMA(N), the divisor sum;
+        </li>
+        <li>
+          <a href = "sigma_values.py">sigma_values.py</a>, 
+          returns some values of the Sigma function;
+        </li>
+        <li>
+          <a href = "simplex_num.py">simplex_num.py</a>, 
+          returns the N-th simplex number in M dimensions;
+        </li>
+        <li>
+          <a href = "sin_power_int.py">sin_power_int.py</a>, 
+          returns the value of the integral of the N-th power of 
+          the sine function;
+        </li>
+        <li>
+          <a href = "sin_power_int_values.py">sin_power_int_values.py</a>, 
+          returns some values of the integral of the N-th power of
+          the sine function;
+        </li>
+        <li>
+          <a href = "slice.py">slice.py</a>, 
+          maximum number of pieces created by a given number of slices.
+        </li>
+        <li>
+          <a href = "spherical_harmonic.py">
+          spherical_harmonic.py</a>, 
+          evaluates the spherical harmonic function.
+        <li>
+          <a href = "spherical_harmonic_values.py">
+          spherical_harmonic_values.py</a>, 
+          returns some values of the spherical harmonic function;
+        </li>
+        <li>
+          <a href = "stirling1.py">stirling1.py</a>, 
+          returns the Stirling numbers of the first kind;
+        </li>
+        <li>
+          <a href = "stirling2.py">stirling2.py</a>, 
+          returns the Stirling numbers of the second kind;
+        </li>
+        <li>
+          <a href = "tau.py">tau.py</a>, 
+          evaluates the Tau function, the number of distinct divisors;
+        </li>
+        <li>
+          <a href = "tau_values.py">tau_values.py</a>, 
+          returns some values of the Tau function;
+        </li>
+        <li>
+          <a href = "tetrahedron_num.py">tetrahedron_num.py</a>, 
+          returns the N-th tetrahedral number;
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>, 
+          prints the current YMDHMS date as a timestamp;
+        </li>
+        <li>
+          <a href = "triangle_num.py">triangle_num.py</a>, 
+          returns the N-th triangle number;
+        </li>
+        <li>
+          <a href = "triangle_to_i4.py">triangle_to_i4.py</a>, 
+          converts a triangular coordinate to an integer;
+        </li>
+        <li>
+          <a href = "v_hofstadter.py">v_hofstadter.py</a>, 
+          computes the Hofstadter V function;
+        </li>
+        <li>
+          <a href = "vibonacci.py">vibonacci.py</a>, 
+          computes the Vibonacci numbers;
+        </li>
+        <li>
+          <a href = "zernike_poly.py">zernike_poly.py</a>, 
+          evaluates a Zernike polynomial;
+        </li>
+        <li>
+          <a href = "zeta.py">zeta.py</a>, 
+          approximates the Riemann Zeta function;
+        </li>
+        <li>
+          <a href = "zeta_values.py">zeta_values.py</a>, 
+          returns some stored values of the Riemann Zeta function;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      NOT CONVERTED YET
+      <ul>
+        <li>
+          <a href = "r8_hyper_2f1.py">r8_hyper_2f1.py</a>, 
+          evaluates the 2F1 hypergeometric function.
+        </li>
+        <li>
+          <a href = "zeckendorf.py">zeckendorf.py</a>, 
+          produces the Zeckendorf decomposition of a positive integer;
+        </li>
+        <li>
+          <a href = "zernike_poly_coef.py">zernike_poly_coef.py</a>, 
+          returns the coefficients of a Zernike polynomial;
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "polpak_test.py">polpak_test.py</a>, 
+          calls all the tests;
+        </li>
+        <li>
+          <a href = "polpak_test.sh">polpak_test.sh</a>, 
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "polpak_test_output.txt">polpak_test_output.txt</a>, 
+          is the output from the tests;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+    
+    <hr>
+
+    <i>
+      Last revised on 25 February 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

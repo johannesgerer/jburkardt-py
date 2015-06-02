@@ -1,0 +1,227 @@
+<html>
+
+  <head>
+    <title>
+      FEM1D_CLASSES - Classes for the 1D Finite Element Method
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      FEM1D_CLASSES <br> Classes for the 1D Finite Element Method
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>FEM1D_CLASSES</b> 
+      is a Python library which
+      defines classes useful for solving a boundary value problem (BVP)
+      of the form u''+2u'+u=f in 1 spatial dimension, 
+      using the finite element method (FEM),
+      by Mike Sussman.
+    </p>
+
+    <p>
+      FEM1D_CLASSES is written in a way that is intended to suggest how
+      FENICS is used to define finite element problems.  
+    </p>
+
+    <p>
+      FEM1D_CLASSES includes the following classes:
+      <ul>
+        <li>
+          class Mesh ( object ): which stores the number of nodes,
+          the interval endpoints, the node coordinates, and the
+          sets of nodes that define each element;
+        </li>
+        <li>
+          class Shapefns ( object ): which defines the quadratic
+          Lagrange shape functions and their derivatives;
+        </li>
+        <li>
+          class FiniteElement ( object ): which takes a mesh and a set of
+          shape functions, and the index of a particular element, and
+          evaluates the integral over this element of a shape
+          function or its derivative multiplied by zero, one, or two 
+          arbitrary functions.
+        </li>
+        <li>
+          class FunctionSpace ( object ): which takes a mesh and a set of
+          shape functions and evaluates the integral over the entire region
+          of a product in which the first factor is a shape function, its 
+          derivative, or an arbitrary function, and the second factor is a 
+          shape function or its derivative.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>FEM1D_CLASSES</b> is available in
+      <a href = "../../py_src/fem1d_classes/fem1d_classes.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Software:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/dolfin/dolfin.html">
+      DOLFIN</a>,
+      Python programs which
+      are used with the DOLFIN library to set up and solve
+      a wide variety of problems using the finite element method.
+    </p>
+
+    <p>
+      <a href = "../../py_src/dolfin-convert/dolfin-convert.html">
+      DOLFIN-CONVERT</a>,
+      a Python program which
+      can convert a mesh file from a given format to an
+      XML format suitable for use by DOLFIN or FENICS.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">
+      FEM1D_BVP_LINEAR</a>,
+      a Python program which
+      applies the finite element method (FEM), with piecewise linear elements,
+      to a two point boundary value problem (BVP) in one spatial dimension,
+      and compares the computed and exact solutions 
+      with the L2 and seminorm errors.
+    </p>
+
+    <p>
+      <a href = "../../examples/fenics/fenics.html">
+      FENICS</a>, 
+      examples which
+      illustrate the use of FENICS, a collection of free software 
+      with an extensive list of features for 
+      automated, efficient solution of differential equations. 
+    </p>
+
+    <h3 align = "center">
+      Author:
+    </h3>
+
+    <p>
+      Mike Sussman,
+      Mathematics Department,
+      University of Pittsburgh,
+      Pittsburgh, Pennsylvania.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          Anders Logg, Garth Wells,<br>
+          DOLFIN: Automated finite element computing,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 37, Number 2, Article 20, April 2010.
+        </li>
+        <li>
+          Anders Logg, Kent-Andre Mardal, Garth Wells,<br>
+          Automated Solution of Differential Equations by the Finite Element Method:
+          The FEniCS Book,<br>
+          Lecture Notes in Computational Science and Engineering,<br>
+          Springer, 2011,<br>
+          ISBN13: 978-3642230981,<br>
+          LC:
+        </li>
+        <li>
+          <a href = "http://www.fenics.org">http://www.fenics.org</a>,
+          the web site for the FEniCS project.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem1d_classes.py">fem1d_classes.py</a>,
+          the library, which can also be run as a program.
+        </li>
+        <li>
+          <a href = "fem1d_classes.sh">fem1d_classes.sh</a>,
+          a BASH script which runs fem1d.
+        </li>
+        <li>
+          <a href = "fem1d_classes_output.txt">fem1d_classes_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      FEM1D_CLASSES_PRB sets up and solves problems of the form u''+2u'+u=f.
+      <ul>
+        <li>
+          <a href = "fem1d_classes_prb.py">fem1d_classes_prb.py</a>,
+          test problems.
+        </li>
+        <li>
+          <a href = "fem1d_classes_prb.sh">fem1d_classes_prb.sh</a>,
+          a BASH script which runs fem1d_classes_prb.py.
+        </li>
+        <li>
+          <a href = "fem1d_classes_prb_output.txt">fem1d_classes_prb_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      FEM1D_CLASSES_TEST sets up and solves problems of the form -u''=f.
+      <ul>
+        <li>
+          <a href = "fem1d_classes_test.py">fem1d_classes_test.py</a>,
+          test problems.
+        </li>
+        <li>
+          <a href = "fem1d_classes_test.sh">fem1d_classes_test.sh</a>,
+          a BASH script which runs fem1d_classes_test.py.
+        </li>
+        <li>
+          <a href = "fem1d_classes_test_output.txt">fem1d_classes_test_output.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "test01.png">test01.png</a>,
+          a plot of the exact and computed solutions for test #1.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the PYTHON source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 21 August 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

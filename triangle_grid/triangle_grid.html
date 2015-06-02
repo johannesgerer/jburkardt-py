@@ -1,0 +1,308 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGLE_GRID - Triangular Grid of Points
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGLE_GRID <br> Triangular Grid of Points
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGLE_GRID</b>
+      is a Python library which
+      generates a grid of points
+      over the interior of a triangle in 2D.
+    </p>
+
+    <p>
+      Starting with any 3 points A, B, and C that define a triangle,
+      we can divide each side of the triangle into N subintervals,
+      and create a triangular grid.  This defines ((N+1)*(N+2))/2
+      points that lie on the intersections of grid lines.  The 
+      arrangement is suggested by this diagram:
+      <pre>
+              X
+             9 X
+            8 9 X
+           7 8 9 X
+          6 7 8 9 X
+         5 6 7 8 9 X
+        4 5 6 7 8 9 X
+       3 4 5 6 7 8 9 X
+      2 3 4 5 6 7 8 9 X
+     1 2 3 4 5 6 7 8 9 X
+    0 1 2 3 4 5 6 7 8 9 X
+      </pre>
+    </p>
+
+    <p>
+      The library includes a routine which allows the user to pick an
+      arbitrary triangle and an arbitrary number of subdivisions.  It
+      then returns the triangular gridpoints defined by that choice.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGLE_GRID</b> is available in
+      <a href = "../../c_src/triangle_grid/triangle_grid.html">a C version</a> and
+      <a href = "../../cpp_src/triangle_grid/triangle_grid.html">a C++ version</a> and
+      <a href = "../../f77_src/triangle_grid/triangle_grid.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/triangle_grid/triangle_grid.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangle_grid/triangle_grid.html">a MATLAB version</a> and
+      <a href = "../../py_src/triangle_grid/triangle_grid.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/ball_grid/ball_grid.html">
+      BALL_GRID</a>, 
+      a Python library which 
+      computes a grid of points 
+      over the interior of a ball in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/circle_arc_grid/circle_arc_grid.html">
+      CIRCLE_ARC_GRID</a>,
+      a Python library which
+      computes a grid of points
+      along a circle or circular arc in 2D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/cube_grid/cube_grid.html">
+      CUBE_GRID</a>,
+      a Python library which
+      computes a grid of points
+      over the interior of a cube in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/disk_grid/disk_grid.html">
+      DISK_GRID</a>,
+      a Python library which
+      computes a grid of points 
+      over the interior of a disk in 2D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/ellipse_grid/ellipse_grid.html">
+      ELLIPSE_GRID</a>, 
+      a Python library which 
+      computes a grid of points 
+      over the interior of an ellipse in 2D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/ellipsoid_grid/ellipsoid_grid.html">
+      ELLIPSOID_GRID</a>, 
+      a Python library which 
+      computes a grid of points 
+      over the interior of an ellipsoid in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/hypercube_grid/hypercube_grid.html">
+      HYPERCUBE_GRID</a>,
+      a Python library which
+      computes a grid of points
+      over the interior of a hypercube in M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../py_src/line_grid/line_grid.html">
+      LINE_GRID</a>,
+      a Python library which
+      computes a grid of points
+      over the interior of a line segment in 1D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/polygon_grid/polygon_grid.html">
+      POLYGON_GRID</a>,
+      a Python library which
+      generates a grid of points
+      over the interior of a polygon in 2D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/pyramid_grid/pyramid_grid.html">
+      PYRAMID_GRID</a>,
+      a Python library which
+      computes a grid of points
+      over the interior of the unit pyramid in 3D;
+    </p>
+
+    <p>
+      <a href = "../../py_src/simplex_grid/simplex_grid.html">
+      SIMPLEX_GRID</a>,
+      a Python library which
+      generates a regular grid of points 
+      over the interior of an arbitrary simplex in M dimensions.
+    </p>
+
+    <p>
+      <a href = "../../py_src/sphere_fibonacci_grid/sphere_fibonacci_grid.html">
+      SPHERE_FIBONACCI_GRID</a>,
+      a Python library which
+      uses a Fibonacci spiral to create a grid of points 
+      on the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/sphere_llq_grid/sphere_llq_grid.html">
+      SPHERE_LLQ_GRID</a>,
+      a Python library which
+      uses longitudes and latitudes to create grids of points,
+      lines, and quadrilaterals
+      on the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/sphere_llt_grid/sphere_llt_grid.html">
+      SPHERE_LLT_GRID</a>,
+      a Python library which
+      uses longitudes and latitudes to create grids of points,
+      lines, and triangles
+      on the surface of the unit sphere in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/square_grid/square_grid.html">
+      SQUARE_GRID</a>,
+      a Python library which
+      computes a grid of points
+      over the interior of a square in 2D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/tetrahedron_grid/tetrahedron_grid.html">
+      TETRAHEDRON_GRID</a>, 
+      a Python library which 
+      computes a grid of points
+      over the interior of a tetrahedron in 3D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/wedge_grid/wedge_grid.html">
+      WEDGE_GRID</a>,
+      a Python library which
+      computes a grid of points
+      over the interior of the unit wedge in 3D.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "r82col_print_part.py">r82col_print_part.py</a>, 
+          prints part of an R82COL.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>, 
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>, 
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_write.py">r8mat_write.py</a>, 
+          writes an R8MAT to a file.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>, 
+          prints the current YMDHMS date as a time stamp.
+        </li>
+        <li>
+          <a href = "triangle_grid_count.py">triangle_grid_count.py</a>, 
+          counts grid points inside a triangle.
+        </li>
+        <li>
+          <a href = "triangle_grid_display.py">triangle_grid_display.py</a>, 
+          displays grid points inside a triangle.
+        </li>
+        <li>
+          <a href = "triangle_grid_points.py">triangle_grid_points.py</a>, 
+          computes points on a triangular grid.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangle_grid_test.py">triangle_grid_test.py</a>,
+          calls all the tests.
+        </li>
+        <li>
+          <a href = "triangle_grid_test.sh">triangle_grid_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "triangle_grid_test_output.txt">triangle_grid_test_output.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "triangle_grid_points.xy">triangle_grid_points.xy</a>,
+          a grid of points in a triangle.
+        </li>
+        <li>
+          <a href = "triangle_grid_points.png">triangle_grid_points.png</a>,
+          an image of the points.
+        </li>
+        <li>
+          <a href = "triangle_grid_display.png">triangle_grid_display.png</a>,
+          a grid of points in a triangle, as a demonstration of triangle_grid_display.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 09 April 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

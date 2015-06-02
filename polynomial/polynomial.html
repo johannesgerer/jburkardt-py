@@ -1,0 +1,295 @@
+<html>
+
+  <head>
+    <title>
+      POLYNOMIAL - Multivariate Polynomials
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      POLYNOMIAL <br> Multivariate Polynomials
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>POLYNOMIAL</b>,
+      a Python library which
+      adds, multiplies, differentiates, evaluates and prints multivariate 
+      polynomials in a space of M dimensions.
+    </p>
+
+    <p>
+      Any polynomial in M variables can be written as a linear
+      combination of monomials in M variables.  The "total degree" of the
+      polynomial is the maximum of the degrees of the monomials that it
+      comprises.  For instance, a polynomial in M = 2 variables of total
+      degree 3 might have the form:
+      <pre>
+        p(x,y) = c(0,0) x^0 y^0
+               + c(1,0) x^1 y^0 + c(0,1) x^0 y^1 
+               + c(2,0) x^2 y^0 + c(1,1) x^1 y^1 + c(0,2) x^0 y^2
+               + c(3,0) x^3 y^0 + c(2,1) x^2 y^1 + c(1,2) x^1 y^2 + c(0,3) x^0 y^3
+      </pre>
+      The monomials in M variables can be regarded as 
+      a natural basis for the polynomials in M variables.
+    </p>
+
+    <p>
+      When listing the monomials that form a polynomial, it is useful to have 
+      an ordering that organizes them.  One natural ordering can be illustrated
+      for the 3-dimensional case:
+      <pre>
+        1
+        x, y, z
+        x^2, xy, xz, y^2, yz, z^2
+        x^3, x^2y, x^2z, xy^2, xyz, xz^2, y^3, y^2z, yz^2, z^3
+        x^4, x^3y, ...
+      </pre>
+      Here, a monomial precedes another if it has a lower degree.
+      If the monomials have the same degree, then a monomial precedes another
+      if its exponent vector lexically precedes that of the other.  In other
+      words, we compare the two exponent vectors, reading from left to right,
+      looking for the first location where the exponents differ.  The monomial
+      with the higher exponent at this point precedes the other.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>POLYNOMIAL</b> is available in
+      <a href = "../../c_src/polynomial/polynomial.html">a C version</a> and
+      <a href = "../../cpp_src/polynomial/polynomial.html">a C++ version</a> and
+      <a href = "../../f77_src/polynomial/polynomial.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/polynomial/polynomial.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/polynomial/polynomial.html">a MATLAB version</a> and
+      <a href = "../../py_src/polynomial/polynomial.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/legendre_product_polynomial/legendre_product_polynomial.html">
+      LEGENDRE_PRODUCT_POLYNOMIAL</a>,
+      a Python library which
+      defines Legendre product polynomials, creating a multivariate 
+      polynomial as the product of univariate Legendre polynomials.
+    </p>
+
+    <p>
+      <a href = "../../py_src/monomial/monomial.html">
+      MONOMIAL</a>,
+      a Python library which 
+      enumerates, lists, ranks, unranks and randomizes 
+      multivariate monomials in a space of M dimensions, with total degree 
+      less than N, equal to N, or lying within a given range.
+    </p>
+
+    <p>
+      <a href = "../../py_src/subset/subset.html">
+      SUBSET</a>,
+      a Python library which
+      enumerates, generates, ranks and unranks combinatorial objects
+      including combinations, compositions, Gray codes, index sets, partitions, 
+      permutations, subsets, and Young tables.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "i4_choose.py">i4_choose.py</a>,
+          computes the binomial coefficient C(N,K) as an I4.
+        </li>
+        <li>
+          <a href = "i4_fall.py">i4_fall.py</a>,
+          computes the falling factorial function.
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>,
+          returns a scaled uniform I4 between A and B.
+        </li>
+        <li>
+          <a href = "i4vec_concatenate.py">i4vec_concatenate.py</a>,
+          concatenates two I4VEC's.
+        </li>
+        <li>
+          <a href = "i4vec_permute.py">i4vec_permute.py</a>,
+          applies a 0-based permutation to an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>,
+          prints an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_sort_heap_index_a.py">i4vec_sort_heap_index_a.py</a>,
+          returns an index vector to ascending sort an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_sum.py">i4vec_sum.py</a>,
+          sums the elements of an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_uniform_ab.py">i4vec_uniform_ab.py</a>,
+          returns an I4VEC whose entries are uniformly random between A and B.
+        </li>
+        <li>
+          <a href = "mono_next_grlex.py">mono_next_grlex.py</a>,
+          computes, one by one in grlex order, the monomials of D variables 
+          of successively higher degrees.
+        </li>
+        <li>
+          <a href = "mono_print.py">mono_print.py</a>, 
+          prints a monomial.
+        </li>
+        <li>
+          <a href = "mono_rank_grlex.py">mono_rank_grlex.py</a>, 
+          ranks a monomial in grlex order.
+        </li>
+        <li>
+          <a href = "mono_total_next_grlex.py">mono_total_next_grlex.py</a>, 
+          next monomial in grlex order, total degree equals N.
+        </li>
+        <li>
+          <a href = "mono_unrank_grlex.py">mono_unrank_grlex.py</a>, 
+          unranks a monomial in grlex order.
+        </li>
+        <li>
+          <a href = "mono_upto_enum.py">mono_upto_enum.py</a>,
+          enumerates the monomials of D variables of total degree 
+          up to N.
+        </li>
+        <li>
+          <a href = "mono_upto_next_grlex.py">mono_upto_next_grlex.py</a>, 
+          next monomial in grlex order, total degree up to N.
+        </li>
+        <li>
+          <a href = "mono_upto_random.py">mono_upto_random.py</a>, 
+          random monomial with total degree up to N.
+        </li>
+        <li>
+          <a href = "mono_value.py">mono_value.py</a>, 
+          evaluates a monomial.
+        </li>
+        <li>
+          <a href = "polynomial_add.m">polynomial_add.m</a>,
+          adds two polynomials.
+        </li>
+        <li>
+          <a href = "polynomial_axpy.m">polynomial_axpy.m</a>,
+          adds a multiple of one polynomial to another.
+        </li>
+        <li>
+          <a href = "polynomial_compress.m">polynomial_compress.m</a>,
+          "compresses" a polynomial by merging coefficients associated with
+          the same monomial.
+        </li>
+        <li>
+          <a href = "polynomial_dif.m">polynomial_dif.m</a>,
+          differentiates a polynomial several times with respect 
+          to several variables.
+        </li>
+        <li>
+          <a href = "polynomial_mul.m">polynomial_mul.m</a>,
+          multiplies two polynomials.
+        </li>
+        <li>
+          <a href = "polynomial_print.m">polynomial_print.m</a>,
+          prints a polynomial.
+        </li>
+        <li>
+          <a href = "polynomial_scale.m">polynomial_scale.m</a>,
+          scales a polynomial.
+        </li>
+        <li>
+          <a href = "polynomial_sort.m">polynomial_sort.m</a>,
+          sorts a polynomial.
+        </li>
+        <li>
+          <a href = "polynomial_value.m">polynomial_value.m</a>,
+          evaluates a polynomial.
+        </li>
+        <li>
+          <a href = "perm_check0.py">perm_check0.py</a>,
+          checks a 0-based permutation.
+        </li>
+        <li>
+          <a href = "perm_uniform.py">perm_uniform.py</a>,
+          randomly selects a permutation of the integers 0 through N-1.
+        </li>
+        <li>
+          <a href = "r8vec_concatenate.py">r8vec_concatenate.py</a>,
+          concatenates two R8VEC's.
+        </li>
+        <li>
+          <a href = "r8vec_permute.py">r8vec_permute.py</a>,
+          permutes an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "polynomial_test.py">polynomial_test.py</a>, 
+          calls all the tests;
+        </li>
+        <li>
+          <a href = "polynomial_test.sh">polynomial_test.sh</a>, 
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "polynomial_test_output.txt">polynomial_test_output.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 28 October 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

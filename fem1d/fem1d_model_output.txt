@@ -1,0 +1,30 @@
+
+FEM1D_MODEL
+  Python version
+  Given the model two point boundary value problem:
+    -u'' + u = x, 0 < x < 1
+  with boundary conditions
+    u(0) = 0, u(1) = 0,
+  demonstrate how the finite element method can be used to
+  define and compute a discrete approximation to the solution.
+
+  Nodes:
+
+  0  0.000000
+  1  0.200000
+  2  0.400000
+  3  0.600000
+  4  0.800000
+  5  1.000000
+
+  Node          Ucomp           Uexact          Error
+
+     0     4.59676e-17               0     4.59676e-17
+     1       0.0287656       0.0286795     8.60136e-05
+     2       0.0506358       0.0504834     0.000152372
+     3       0.0584376       0.0582599     0.000177701
+     4       0.0444316       0.0442945      0.00013708
+     5               0               0               0
+
+FEM1D_MODEL:
+  Normal end of execution.

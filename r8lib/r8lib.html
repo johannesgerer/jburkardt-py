@@ -1,0 +1,800 @@
+<html>
+
+  <head>
+    <title>
+      R8LIB - A Double Precision Real Arithmetic Utility Library
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      R8LIB <br> A Double Precision Real Arithmetic Utility Library
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>R8LIB</b>
+      is a Python library which
+      contains a number of utilities for 
+      double precision real (R8) arithmetic.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>R8LIB</b> is available in
+      <a href = "../../c_src/r8lib/r8lib.html">a C version</a> and
+      <a href = "../../cpp_src/r8lib/r8lib.html">a C++ version</a> and
+      <a href = "../../f77_src/r8lib/r8lib.html">a FORTRAN77 version</a> and
+      <a href = "../../f_src/r8lib/r8lib.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/r8lib/r8lib.html">a MATLAB version</a> and
+      <a href = "../../py_src/r8lib/r8lib.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/c4lib/c4lib.html">
+      C4LIB</a>, 
+      a Python library which
+      contains many utility routines, using "C4" or 
+      "single precision complex" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../py_src/c8lib/c8lib.html">
+      C8LIB</a>, 
+      a Python library which
+      contains many utility routines, using "C8" or 
+      "double precision complex" arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../py_src/i4lib/i4lib.html">
+      I4LIB</a>,
+      a PYTHON library which
+      contains many utility routines, using "I4" or "single precision integer"
+      arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../py_src/r4lib/r4lib.html">
+      R4LIB</a>,
+      a Python library which
+      contains many utility routines 
+      using single precision real (R4) arithmetic.
+    </p>
+
+    <p>
+      <a href = "../../py_src/uniform/uniform.html">
+      UNIFORM</a>,
+      a Python library which
+      contains uniform random number generators (RNG's) for 
+      several arithmetic types.
+    </p>
+
+    <h3 align = "center">
+      References:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Thomas Cormen, Charles Leiserson, Ronald Rivest,<br>
+          Introduction to Algorithms,<br>
+          MIT Press, 2001,<br>
+          ISBN: 0262032937,<br>
+          LC: QA76.C662.
+        </li>
+        <li>
+          Albert Nijenhuis, Herbert Wilf,<br>
+          Combinatorial Algorithms for Computers and Calculators,<br>
+          Second Edition,<br>
+          Academic Press, 1978,<br>
+          ISBN: 0-12-519260-6,<br>
+          LC: QA164.N54.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "agm_values.py">agm_values.py</a>,
+          returns selected values of the arithmetic geometric mean;
+        </li>
+        <li>
+          <a href = "gamma_values.py">gamma_values.py</a>,
+          returns selected values of the gamma function;
+        </li>
+        <li>
+          <a href = "gamma_log_values.py">gamma_log_values.py</a>,
+          returns selected values of the log(gamma) function;
+        </li>
+        <li>
+          <a href = "i4_log_10.py">i4_log_10.py</a>,
+          returns the integer part of the logarithm base 10 of ABS(X);
+        </li>
+        <li>
+          <a href = "i4_sign.py">i4_sign.py</a>,
+          returns the sign of an I4.
+        </li>
+        <li>
+          <a href = "i4_uniform_ab.py">i4_uniform_ab.py</a>,
+          returns a random I4 between A and B.
+        </li>
+        <li>
+          <a href = "i4vec_indicator0.py">i4vec_indicator0.py</a>,
+          returns an indicator vector as an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_indicator1.py">i4vec_indicator1.py</a>,
+          returns an indicator vector as an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_print.py">i4vec_print.py</a>,
+          prints an I4VEC.
+        </li>
+        <li>
+          <a href = "i4vec_transpose_print.py">i4vec_transpose_print.py</a>,
+          prints the transpose of an I4VEC.
+        </li>
+        <li>
+          <a href = "perm0_check.py">perm0_check.py</a>,
+          checks a permutation of ( 0,...,N-1).
+        </li>
+        <li>
+          <a href = "perm0_uniform.py">perm0_uniform.py</a>,
+          randomly selects a checks a permutation of ( 0,...,N-1).
+        </li>
+        <li>
+          <a href = "perm1_check.py">perm1_check.py</a>,
+          checks a checks a permutation of ( 1,...,N).
+        </li>
+        <li>
+          <a href = "perm1_uniform.py">perm1_uniform.py</a>,
+          randomly selects a permutation  of ( 1,...,N).
+        </li>
+        <li>
+          <a href = "r8_abs.py">r8_abs.py</a>,
+          returns the absolute value of an R8.
+        </li>
+        <li>
+          <a href = "r8_acos.py">r8_acos.py</a>,
+          returns the arc-cosine of an R8.
+        </li>
+        <li>
+          <a href = "r8_acosh.py">r8_acosh.py</a>,
+          returns the arc-hyperbolic cosine of an R8.
+        </li>
+        <li>
+          <a href = "r8_add.py">r8_add.py</a>,
+          adds two R8's.
+        </li>
+        <li>
+          <a href = "r8_agm.py">r8_agm.py</a>,
+          computes the arithmetic-geometry mean of two R8's.
+        </li>
+        <li>
+          <a href = "r8_aint.py">r8_aint.py</a>,
+          truncates an R8 to an integer value.
+        </li>
+        <li>
+          <a href = "r8_asin.py">r8_asin.py</a>,
+          returns the arc-sine of an R8.
+        </li>
+        <li>
+          <a href = "r8_asinh.py">r8_asinh.py</a>, 
+          computes the inverse hyperbolic sine;
+        </li>
+        <li>
+          <a href = "r8_atan.py">r8_atan.py</a>,
+          returns the arc-tangent of an R8.
+        </li>
+        <li>
+          <a href = "r8_atanh.py">r8_atanh.py</a>, 
+          computes the inverse hyperbolic tangent;
+        </li>
+        <li>
+          <a href = "r8_big.py">r8_big.py</a>,
+          returns a "big" R8;
+        </li>
+        <li>
+          <a href = "r8_cas.py">r8_cas.py</a>,
+          returns the "casine" of an R8.
+        </li>
+        <li>
+          <a href = "r8_ceiling.py">r8_ceiling.py</a>,
+          rounds an R8 up to the nearest integer.
+        </li>
+        <li>
+          <a href = "r8_choose.py">r8_choose.py</a>,
+          returns the combinatorial coefficient C(N,K).
+        </li>
+        <li>
+          <a href = "r8_chop.py">r8_chop.py</a>,
+          chops an R8 to a given number of binary places.
+        </li>
+        <li>
+          <a href = "r8_cosd.py">r8_cosd.py</a>,
+          returns the cosine of an angle in degrees.
+        </li>
+        <li>
+          <a href = "r8_cotd.py">r8_cotd.py</a>,
+          returns the cotangent of an angle in degrees.
+        </li>
+        <li>
+          <a href = "r8_csc.py">r8_csc.py</a>,
+          returns the cosecant of an R8.
+        </li>
+        <li>
+          <a href = "r8_cscd.py">r8_cscd.py</a>,
+          returns the cosecant of an angle in degrees.
+        </li>
+        <li>
+          <a href = "r8_cube_root.py">r8_cube_root.py</a>,
+          returns the cube root of an R8.
+        </li>
+        <li>
+          <a href = "r8_degrees.py">r8_degrees.py</a>,
+          converts a measurement from radians to degrees.
+        </li>
+        <li>
+          <a href = "r8_diff.py">r8_diff.py</a>,
+          computes (X-Y) to a specified accuracy.
+        </li>
+        <li>
+          <a href = "r8_digit.py">r8_digit.py</a>,
+          returns a particular decimal digit of an R8.
+        </li>
+        <li>
+          <a href = "r8_divide_i4.py">r8_divide_i4.py</a>,
+          returns an I4 fraction as an R8.
+        </li>
+        <li>
+          <a href = "r8_e.py">r8_e.py</a>,
+          returns the natural logarithm base as an R8.
+        </li>
+        <li>
+          <a href = "r8_epsilon.py">r8_epsilon.py</a>,
+          returns the R8 roundoff unit.
+        </li>
+        <li>
+          <a href = "r8_epsilon_compute.py">r8_epsilon_compute.py</a>,
+          computes the R8 roundoff unit.
+        </li>
+        <li>
+          <a href = "r8_exp.py">r8_exp.py</a>,
+          evaluates the exponential function, while avoiding underflow and overflow.
+        </li>
+        <li>
+          <a href = "r8_factorial.py">r8_factorial.py</a>,
+          evaluates the factorial function.
+        </li>
+        <li>
+          <a href = "r8_factorial_values.py">r8_factorial_values.py</a>
+          returns values of the real factorial function.
+        </li>
+        <li>
+          <a href = "r8_factorial2.py">r8_factorial2.py</a>,
+          evaluates the double factorial function.
+        </li>
+        <li>
+          <a href = "r8_factorial2_values.py">r8_factorial2_values.py</a>
+          returns values of the double factorial function.
+        </li>
+        <li>
+          <a href = "r8_fall.py">r8_fall.py</a>,
+          evaluates the falling factorial function of an R8.
+        </li>
+        <li>
+          <a href = "r8_fall_values.py">r8_fall_values.py</a>,
+          returns selected values of the falling factorial.
+        </li>
+        <li>
+          <a href = "r8_floor.py">r8_floor.py</a>,
+          rounds an R8 "down" (towards -oo) to the next integer.
+        </li>
+        <li>
+          <a href = "r8_fraction.py">r8_fraction.py</a>,
+          uses real arithmetic on an integer ratio.
+        </li>
+        <li>
+          <a href = "r8_fractional.py">r8_fractional.py</a>,
+          returns the fractional part of an R8.
+        </li>
+        <li>
+          <a href = "r8_gamma.py">r8_gamma.py</a>,
+          returns the gamma function of an R8.
+        </li>
+        <li>
+          <a href = "r8_gamma_log.py">r8_gamma_log.py</a>,
+          returns the logarithm of the gamma function of an R8.
+        </li>
+        <li>
+          <a href = "r8_huge.py">r8_huge.py</a>,
+          returns a "huge" R8;
+        </li>
+        <li>
+          <a href = "r8_hypot.py">r8_hypot.py</a>,
+          returns sqrt ( x^2 + y^2 );
+        </li>
+        <li>
+          <a href = "r8_in_01.py">r8_in_01.py</a>,
+          is true if the value is in [0,1];
+        </li>
+        <li>
+          <a href = "r8_insignificant.py">r8_insignificant.py</a>,
+          is true if an R8 is insignificant;
+        </li>
+        <li>
+          <a href = "r8_is_int.py">r8_is_int.py</a>,
+          is true if an R8 equals an integer value;
+        </li>
+        <li>
+          <a href = "r8_log_2.py">r8_log_2.py</a>,
+          returns the logarithm base 2 of the absolute value of an R8;
+        </li>
+        <li>
+          <a href = "r8_log_10.py">r8_log_10.py</a>,
+          returns the logarithm base 10 of the absolute value of an R8;
+        </li>
+        <li>
+          <a href = "r8_log_b.py">r8_log_b.py</a>,
+          returns the logarithm base B of the absolute value of an R8;
+        </li>
+        <li>
+          <a href = "r8_mant.py">r8_mant.py</a>,
+          returns the mantissa of an R8;
+        </li>
+        <li>
+          <a href = "r8_max.py">r8_max.py</a>,
+          returns the maximum of two R8's;
+        </li>
+        <li>
+          <a href = "r8_min.py">r8_min.py</a>,
+          returns the minimum of two R8's;
+        </li>
+        <li>
+          <a href = "r8_mod.py">r8_mod.py</a>,
+          returns the remainder of real division;
+        </li>
+        <li>
+          <a href = "r8_modp.py">r8_modp.py</a>,
+          returns the nonnegative remainder of real division;
+        </li>
+        <li>
+          <a href = "r8_mop.py">r8_mop.py</a>,
+          returns a power of -1 as an R8;
+        </li>
+        <li>
+          <a href = "r8_normal_01.py">r8_normal_01.py</a>,
+          returns a unit pseudonormal R8;
+        </li>
+        <li>
+          <a href = "r8_normal_ab.py">r8_normal_ab.py</a>,
+          returns a pseudonormal R8 with mean A and variance B.
+        </li>
+        <li>
+          <a href = "r8_pi.py">r8_pi.py</a>,
+          returns the value of Pi.
+        </li>
+        <li>
+          <a href = "r8_pi_sqrt.py">r8_pi_sqrt.py</a>,
+          returns the value of the square root of Pi.
+        </li>
+        <li>
+          <a href = "r8_power.py">r8_power.py</a>,
+          returns the value of an integral power of an R8;
+        </li>
+        <li>
+          <a href = "r8_power_fast.py">r8_power_fast.py</a>,
+          quickly returns the value of an integral power of an R8;
+        </li>
+        <li>
+          <a href = "r8_print.py">r8_print.py</a>,
+          prints an R8;
+        </li>
+        <li>
+          <a href = "r8_pythag.py">r8_pythag.py</a>,
+          computes sqrt ( A^2 + B^2 ) avoiding unnecessary overflow
+          and underflow;
+        </li>
+        <li>
+          <a href = "r8_radians.py">r8_radians.py</a>,
+          converts a measurement from degrees to radians.
+        </li>
+        <li>
+          <a href = "r8_rise.py">r8_rise.py</a>,
+          computes a rising factorial as an R8;
+        </li>
+        <li>
+          <a href = "r8_rise_values.py">r8_rise_values.py</a>,
+          returns selected values of the rising factorial.
+        </li>
+        <li>
+          <a href = "r8_round.py">r8_round.py</a>,
+          rounds an R8 to the nearest integral value.
+        </li>
+        <li>
+          <a href = "r8_round_i4.py">r8_round_i4.py</a>,
+          rounds an R8 to the nearest integral value, returned as an I4.
+        </li>
+        <li>
+          <a href = "r8_round2.py">r8_round2.py</a>,
+          rounds an R8 to a specified number of binary digits.
+        </li>
+        <li>
+          <a href = "r8_roundb.py">r8_roundb.py</a>,
+          rounds an R8 to a specified number of digits in a given base.
+        </li>
+        <li>
+          <a href = "r8_roundx.py">r8_roundx.py</a>,
+          rounds an R8 to a specified number of decimal digits.
+        </li>
+        <li>
+          <a href = "r8_secd.py">r8_secd.py</a>,
+          returns the secant of an angle in degrees.
+        </li>
+        <li>
+          <a href = "r8_sech.py">r8_sech.py</a>,
+          evaluates the hyperbolic secant of an R8.
+        </li>
+        <li>
+          <a href = "r8_sign.py">r8_sign.py</a>,
+          returns the sign of an R8.
+        </li>
+        <li>
+          <a href = "r8_sign3.py">r8_sign3.py</a>,
+          returns the three-way sign of an R8.
+        </li>
+        <li>
+          <a href = "r8_sign_char.py">r8_sign_char.py</a>,
+          returns a character indicating the sign of an R8.
+        </li>
+        <li>
+          <a href = "r8_sign_match.py">r8_sign_match.py</a>,
+          is TRUE if two R8's have the same sign.
+        </li>
+        <li>
+          <a href = "r8_sign_match_strict.py">r8_sign_match_strict.py</a>,
+          is TRUE if two R8's have the same strict sign.
+        </li>
+        <li>
+          <a href = "r8_sign_opposite.py">r8_sign_opposite.py</a>,
+          is TRUE if two R8's have opposite sign.
+        </li>
+        <li>
+          <a href = "r8_sign_opposite_strict.py">r8_sign_opposite_strict.py</a>,
+          is TRUE if two R8's have strictly opposite signs.
+        </li>
+        <li>
+          <a href = "r8_sind.py">r8_sind.py</a>,
+          returns the sine of an angle in degrees.
+        </li>
+        <li>
+          <a href = "r8_sqrt_i4.py">r8_sqrt_i4.py</a>,
+          returns the square root of an I4 as an R8.
+        </li>
+        <li>
+          <a href = "r8_swap.py">r8_swap.py</a>,
+          swaps two R8's.
+        </li>
+        <li>
+          <a href = "r8_swap3.py">r8_swap3.py</a>,
+          swaps three R8's.
+        </li>
+        <li>
+          <a href = "r8_tand.py">r8_tand.py</a>,
+          returns the tangent of an angle in degrees.
+        </li>
+        <li>
+          <a href = "r8_tiny.py">r8_tiny.py</a>,
+          returns a "tiny" R8.
+        </li>
+        <li>
+          <a href = "r8_to_dhms.py">r8_to_dhms.py</a>,
+          converts decimal days into days, hours, minutes, seconds.
+        </li>
+        <li>
+          <a href = "r8_to_i4.py">r8_to_i4.py</a>,
+          maps X in [XMIN,XMAX] to I in [IMIN,IMAX];
+        </li>
+        <li>
+          <a href = "r8_to_r8_discrete.py">r8_to_r8_discrete.py</a>,
+          maps R to RD in [RMIN, RMAX] with NR possible values.
+        </li>
+        <li>
+          <a href = "r8_uniform_01.py">r8_uniform_01.py</a>,
+          returns a unit pseudorandom R8.
+        </li>
+        <li>
+          <a href = "r8_uniform_ab.py">r8_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8.
+        </li>
+        <li>
+          <a href = "r8_unswap3.py">r8_unswap3.py</a>,
+          unswaps 3 R8's.
+        </li>
+        <li>
+          <a href = "r8_walsh_1d.py">r8_walsh_1d.py</a>,
+          evaluates the Walsh function;
+        </li>
+        <li>
+          <a href = "r8_wrap.py">r8_wrap.py</a>,
+          forces an R8 to lie between given limits by wrapping.
+        </li>
+        <li>
+          <a href = "r82col_print_part.py">r82col_print_part.py</a>, 
+          prints part of an (N,2) array of data.
+        </li>
+        <li>
+          <a href = "r82row_print_part.py">r82row_print_part.py</a>, 
+          prints part of a (2,N) array of data.
+        </li>
+        <li>
+          <a href = "r83col_print_part.py">r83col_print_part.py</a>, 
+          prints part of an (N,3) array of data.
+        </li>
+        <li>
+          <a href = "r83row_print_part.py">r83row_print_part.py</a>, 
+          prints part of a (3,N) array of data.
+        </li>
+        <li>
+          <a href = "r8col_swap.py">r8col_swap.py</a>,
+          swaps two columns of an R8COL.
+        </li>
+        <li>
+          <a href = "r8mat_house_form.py">
+          r8mat_house_form.py</a>, 
+          constructs a Householder matrix from its compact form;
+        </li>
+        <li>
+          <a href = "r8mat_indicator.py">r8mat_indicator.py</a>,
+          returns an indicator R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_mm.py">r8mat_mm.py</a>,
+          computes a matrix-matrix product.
+        </li>
+        <li>
+          <a href = "r8mat_mmt.py">r8mat_mmt.py</a>,
+          computes a matrix-transpose(matrix) product.
+        </li>
+        <li>
+          <a href = "r8mat_mtm.py">r8mat_mtm.py</a>,
+          computes a (transposed matrix)-matrix product.
+        </li>
+        <li>
+          <a href = "r8mat_mtv.py">r8mat_mtv.py</a>,
+          computes the product of a transposed R8MAT times an R8VEC.
+        </li>
+        <li>
+          <a href = "r8mat_mv.py">r8mat_mv.py</a>,
+          computes the product of an R8MAT times an R8VEC.
+        </li>
+        <li>
+          <a href = "r8mat_nint.py">r8mat_nint.py</a>,
+          rounds the entries of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_nonzeros.py">r8mat_nonzeros.py</a>,
+          returns the number of nonzeros in an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_norm_fro.py">r8mat_norm_fro.py</a>,
+          returns the Frobenius norm of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_norm_l1.py">r8mat_norm_l1.py</a>,
+          returns the L1 norm of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_norm_li.py">r8mat_norm_li.py</a>,
+          returns the Loo norm of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print.py">r8mat_print.py</a>,
+          prints an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_print_some.py">r8mat_print_some.py</a>,
+          prints some of an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_sub.py">r8mat_sub.py</a>,
+          subtracts one R8MAT from another.
+        </li>
+        <li>
+          <a href = "r8mat_transpose.py">r8mat_transpose.py</a>,
+          transposes an R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_transpose_print.py">r8mat_transpose_print.py</a>,
+          prints an R8MAT, transposed.
+        </li>
+        <li>
+          <a href = "r8mat_transpose_print_some.py">r8mat_transpose_print_some.py</a>,
+          prints some of an R8MAT, transposed.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_01.py">r8mat_uniform_01.py</a>,
+          returns a unit pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8mat_uniform_ab.py">r8mat_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8MAT.
+        </li>
+        <li>
+          <a href = "r8poly_degree.py">r8poly_degree.py</a>
+          returns the degree of an R8POLY.
+        </li>
+        <li>
+          <a href = "r8poly_print.py">r8poly_print.py</a>, 
+          prints a polynomial;
+        </li>
+        <li>
+          <a href = "r8poly_value_horner.py">r8poly_value_horner.py</a>, 
+          evaluates a polynomial using Horner's method;
+        </li>
+        <li>
+          <a href = "r8vec_amax.py">r8vec_amax.py</a>,
+          returns the maximum absolute value entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_amin.py">r8vec_amin.py</a>,
+          returns the minimum absolute value entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_asum.py">r8vec_asum.py</a>,
+          sums the absolute values of the entries in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_concatenate.py">r8vec_concatenate.py</a>,
+          concatenates two R8VECs.
+        </li>
+        <li>
+          <a href = "r8vec_copy.py">r8vec_copy.py</a>,
+          copies an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_direct_product.py">r8vec_direct_product.py</a>,
+          creates a direct product of R8VEC's.
+        </li>
+        <li>
+          <a href = "r8vec_house_column.py">r8vec_house_column.py</a>,
+          defines a Householder premultiplier that packs a column.
+        </li>
+        <li>
+          <a href = "r8vec_indicator0.py">r8vec_indicator0.py</a>,
+          evaluates the 0-based indicator vector (0,1,2,...) as an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_indicator1.py">r8vec_indicator1.py</a>,
+          evaluates the 1-based indicator vector (1,2,3,...) as an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_linspace.py">r8vec_linspace.py</a>,
+          returns an R8VEC of values evenly spaced between given limits.
+        </li>
+        <li>
+          <a href = "r8vec_max.py">r8vec_max.py</a>,
+          returns the maximum entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_min.py">r8vec_min.py</a>,
+          returns the minimum entry in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_nint.py">r8vec_nint.py</a>,
+          rounds an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_norm_l0.py">r8vec_norm_l0.py</a>,
+          computes the L0 "norm" of an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_norm_l2.py">r8vec_norm_l2.py</a>,
+          computes the L2 norm of an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_norm_li.py">r8vec_norm_li.py</a>,
+          computes the Loo norm of an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_permute.py">r8vec_permute.py</a>,
+          permutes an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_print.py">r8vec_print.py</a>,
+          prints an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_product.py">r8vec_product.py</a>,
+          computes the product of the entries in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_step.py">r8vec_step.py</a>,
+          evaluates a unit step function.
+        </li>
+        <li>
+          <a href = "r8vec_sum.py">r8vec_sum.py</a>,
+          sums the entries in an R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_01.py">r8vec_uniform_01.py</a>,
+          returns a unit pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "r8vec_uniform_ab.py">r8vec_uniform_ab.py</a>,
+          returns a scaled pseudorandom R8VEC.
+        </li>
+        <li>
+          <a href = "roots_to_r8poly.py">roots_to_r8poly.py</a>,
+          takes a set of N real roots and determines the N+1 coefficients
+          of the corresponding polynomial.
+        </li>
+        <li>
+          <a href = "timestamp.py">timestamp.py</a>,
+          prints the current YMDHMS date as a timestamp.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Examples and Tests:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "r8lib_test.py">r8lib_test.py</a>,
+          a program that calls all the tests.
+        </li>
+        <li>
+          <a href = "r8lib_test.sh">r8lib_test.sh</a>,
+          a BASH shell script that executes the test program.
+        </li>
+        <li>
+          <a href = "r8lib_test_output.txt">r8lib_test_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../py_src.html">
+      the Python source codes</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 20 March 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
